@@ -10,10 +10,10 @@
     <button onclick="submitIp()">提交</button>
     <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
     <button onclick="copyToClipboard()">全部复制</button>
-    <button onclick="copyPlayLink()">复制播放链接</button>
     <a id="downloadLink" style="display: none;" download="playlist.m3u">
         <button>下载 M3U 文件</button>
     </a>
+    <button onclick="copyPlayLink()">生成播放链接</button>
     <pre id="result">生成中，请稍候...</pre>
     <script>
         // M3U 文件的 URL

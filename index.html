@@ -49,6 +49,9 @@
         document.getElementById('fullUrlInput').value = fullUrl;
         document.getElementById('proxyCheckbox').checked = proxy;
 
+        // 存储原始 M3U 内容
+        let originalM3uData = '';
+
         // 加载 M3U 文件并处理
         fetch(m3uUrl)
             .then(response => {
@@ -56,16 +59,8 @@
                 return response.text();
             })
             .then(data => {
-                let result = processM3u(data);
-                document.getElementById('result').textContent = result;
-                document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
-
-                // 生成下载链接
-                const blob = new Blob([result], { type: 'audio/x-mpegurl' });
-                const url = URL.createObjectURL(blob);
-                const downloadLink = document.getElementById('downloadLink');
-                downloadLink.href = url;
-                downloadLink.style.display = 'inline';
+                originalM3uData = data; // 缓存原始内容
+                updateResultAndDownload();
             })
             .catch(err => {
                 console.error('加载失败: ', err);
@@ -79,15 +74,12 @@
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
 
             let result = data;
-            // 如果设置了完整URL，则替换整个URL
             if (fullUrl) {
                 result = result.replace(/http:\/\/192\.168\.1\.2:35455/g, fullUrl);
             } else {
-                // 否则只替换IP
                 result = result.replace(/192\.168\.1\.2/g, ip);
             }
 
-            // 如果启用反代，追加 ?url= 参数
             if (proxyEnabled && fullUrl) {
                 const lines = result.split('\n');
                 result = lines.map(line => {
@@ -101,6 +93,20 @@
             return result;
         }
 
+        // 更新结果和下载链接
+        function updateResultAndDownload() {
+            const result = processM3u(originalM3uData);
+            document.getElementById('result').textContent = result;
+            document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
+
+            // 更新下载链接
+            const blob = new Blob([result], { type: 'audio/x-mpegurl' });
+            const url = URL.createObjectURL(blob);
+            const downloadLink = document.getElementById('downloadLink');
+            downloadLink.href = url;
+            downloadLink.style.display = 'inline';
+        }
+
         // 复制到剪贴板
         function copyToClipboard() {
             const text = document.getElementById('result').textContent;
@@ -111,7 +117,7 @@
             });
         }
 
-        // 复制播放链接（包含所有参数）
+        // 复制播放链接
         function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim() || '192.168.1.2';
             const fullUrl = document.getElementById('fullUrlInput').value.trim();
@@ -128,7 +134,7 @@
             });
         }
 
-        // 提交 IP 并跳转（包含所有参数）
+        // 提交 IP 并跳转
         function submitIp() {
             const ipInput = document.getElementById('ipInput').value.trim();
             const fullUrl = document.getElementById('fullUrlInput').value.trim();
@@ -150,19 +156,10 @@
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
-        // 实时更新结果
-        document.getElementById('ipInput').addEventListener('input', updateResult);
-        document.getElementById('fullUrlInput').addEventListener('input', updateResult);
-        document.getElementById('proxyCheckbox').addEventListener('change', updateResult);
-
-        function updateResult() {
-            fetch(m3uUrl)
-                .then(response => response.text())
-                .then(data => {
-                    const result = processM3u(data);
-                    document.getElementById('result').textContent = result;
-                });
-        }
+        // 实时更新结果和下载链接
+        document.getElementById('ipInput').addEventListener('input', updateResultAndDownload);
+        document.getElementById('fullUrlInput').addEventListener('input', updateResultAndDownload);
+        document.getElementById('proxyCheckbox').addEventListener('change', updateResultAndDownload);
     </script>
 </body>
 </html>

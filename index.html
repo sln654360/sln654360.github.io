@@ -3,37 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Dynamic M3U Generator</title>
-    <style>
-        .input-group {
-            margin: 10px 0;
-        }
-        .input-group label {
-            margin-right: 10px;
-        }
-        .input-group input {
-            width: 150px; /* 设置输入框宽度 */
-            margin-right: 10px;
-        }
-        @media (max-width: 600px) { /* 移动端断点 */
-            .input-group {
-                display: block;
-            }
-            .input-group input {
-                width: 100%; /* 移动端全宽 */
-                margin-bottom: 10px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <p>请输入部署设备的 IP 地址和端口，会自动生成 M3U 文件：</p>
-    <div class="input-group">
-        <label for="ipInput">IP 地址:</label>
-        <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
-        <label for="portInput">端口:</label>
-        <input type="text" id="portInput" placeholder="例如: 35455">
-        <button onclick="submitIpAndPort()">提交</button>
-    </div>
+    <p>请输入部署设备的 IP 地址，会自动生成 M3U 文件：</p>
+    <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
+    <button onclick="submitIp()">提交</button>
     <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
     <button onclick="copyToClipboard()">全部复制</button>
     <a id="downloadLink" style="display: none;" download="playlist.m3u">
@@ -179,18 +153,15 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
 #EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://live.fanmingming.com/tv/北京新闻.png" group-title="数字频道",北京新闻
 http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8`;
 
-        // 获取 URL 参数中的 IP 和端口，默认值分别为 192.168.1.2 和 35455
+        // 获取 URL 参数中的 IP，默认值为 192.168.1.2
         const urlParams = new URLSearchParams(window.location.search);
         const ip = urlParams.get('ip') || '192.168.1.2';
-        const port = urlParams.get('port') || '35455';
 
-        // 设置输入框的值为 URL 参数中的 IP 和端口或默认值
+        // 设置输入框的值为 URL 参数中的 IP 或默认值
         document.getElementById('ipInput').value = ip;
-        document.getElementById('portInput').value = port;
 
-        // 生成 M3U 内容，先替换 IP，再替换端口
-        let result = baseM3uContent.replace(/192\.168\.1\.2/g, ip);
-        result = result.replace(/35455/g, port);
+        // 生成 M3U 内容
+        const result = baseM3uContent.replace(/192\.168\.1\.2/g, ip);
         document.getElementById('result').textContent = result;
         document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
 
@@ -211,14 +182,13 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8`;
             });
         }
 
-        // 提交 IP 和端口并跳转
-        function submitIpAndPort() {
+        // 提交 IP 并跳转
+        function submitIp() {
             const ipInput = document.getElementById('ipInput').value.trim();
-            const portInput = document.getElementById('portInput').value.trim();
-            if (ipInput && portInput) {
-                window.location.href = `${window.location.pathname}?ip=${encodeURIComponent(ipInput)}&port=${encodeURIComponent(portInput)}`;
+            if (ipInput) {
+                window.location.href = `${window.location.pathname}?ip=${encodeURIComponent(ipInput)}`;
             } else {
-                alert('请输入有效的 IP 地址和端口号！');
+                alert('请输入有效的 IP 地址！');
             }
         }
     </script>

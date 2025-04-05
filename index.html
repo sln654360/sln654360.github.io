@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Dynamic M3U Generator</title>
+    <style>
+        .input-group {
+            margin: 10px 0;
+        }
+        .input-group label {
+            margin-right: 10px;
+        }
+        .input-group input {
+            width: 150px; /* 设置输入框宽度 */
+            margin-right: 10px;
+        }
+        @media (max-width: 600px) { /* 移动端断点 */
+            .input-group {
+                display: block;
+            }
+            .input-group input {
+                width: 100%; /* 移动端全宽 */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <p>请输入部署设备的 IP 地址和端口，会自动生成 M3U 文件：</p>
-    <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
-    <input type="text" id="portInput" placeholder="例如: 35455">
-    <button onclick="submitIpAndPort()">提交</button>
+    <div class="input-group">
+        <label for="ipInput">IP 地址:</label>
+        <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
+        <label for="portInput">端口:</label>
+        <input type="text" id="portInput" placeholder="例如: 35455">
+        <button onclick="submitIpAndPort()">提交</button>
+    </div>
     <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
     <button onclick="copyToClipboard()">全部复制</button>
     <a id="downloadLink" style="display: none;" download="playlist.m3u">

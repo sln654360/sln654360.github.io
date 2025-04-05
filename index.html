@@ -19,7 +19,6 @@
 <body>
     <p>请输入部署设备的 IP 地址，会自动生成 M3U 文件：</p>
     <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
-    <button onclick="submitIp()">提交</button>
     
     <div class="advanced-options">
         <button onclick="toggleAdvanced()">高级选项</button>
@@ -130,16 +129,6 @@
             }).catch(err => {
                 console.error('复制失败: ', err);
             });
-        }
-
-        // 提交 IP（仅刷新页面）
-        function submitIp() {
-            const ipInput = document.getElementById('ipInput').value.trim();
-            if (ipInput) {
-                updateResultAndDownload();
-            } else {
-                alert('请输入有效的 IP 地址！');
-            }
         }
 
         // 展开/收起高级选项

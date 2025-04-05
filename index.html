@@ -39,7 +39,7 @@
         <a id="downloadLink" style="display: none;" download="playlist.m3u">
             <button>下载 M3U 文件</button>
         </a>
-        <button onclick="copyPlayLink()">复制播放链接</button>
+        <button onclick="copyPlayLink()">生成订阅链接</button>
     </div>
     <pre id="result">生成中，请稍候...</pre>
 
@@ -115,7 +115,7 @@
             });
         }
 
-        // 复制播放链接
+        // 生成订阅链接
       function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim();
             const fullUrl = document.getElementById('fullUrlInput').value.trim();
@@ -131,7 +131,7 @@
             }
         
             navigator.clipboard.writeText(playLink).then(() => {
-                alert('播放链接已复制到剪贴板！');
+                alert('订阅链接已复制到剪贴板！');
             }).catch(err => {
                 console.error('复制失败: ', err);
             });

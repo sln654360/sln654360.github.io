@@ -3,37 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Dynamic M3U Generator</title>
+    <style>
+        .advanced-options { margin-top: 10px; }
+        .advanced-content { display: none; margin-left: 20px; }
+    </style>
 </head>
 <body>
     <p>请输入部署设备的 IP 地址，会自动生成 M3U 文件：</p>
     <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
     <button onclick="submitIp()">提交</button>
+    
+    <div class="advanced-options">
+        <button onclick="toggleAdvanced()">高级选项</button>
+        <div id="advancedContent" class="advanced-content">
+            <p>
+                <label>自定义完整URL (格式: http://IP:PORT)：</label><br>
+                <input type="text" id="fullUrlInput" placeholder="例如: http://192.168.1.2:35455">
+            </p>
+            <p>
+                <label><input type="checkbox" id="proxyCheckbox"> 启用反代</label>
+            </p>
+        </div>
+    </div>
+
     <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
     <button onclick="copyToClipboard()">全部复制</button>
+    <button onclick="copyPlayLink()">复制播放链接</button>
     <a id="downloadLink" style="display: none;" download="playlist.m3u">
         <button>下载 M3U 文件</button>
     </a>
-    <button onclick="copyPlayLink()">复制播放链接</button>
     <pre id="result">生成中，请稍候...</pre>
+
     <script>
         // M3U 文件的 URL
         const m3uUrl = 'https://gcore.jsdelivr.net/gh/sln654360/bptv/fy192.168.1.2.m3u';
 
-        // 获取 URL 参数中的 IP，默认值为 192.168.1.2
+        // 从 URL 参数中获取配置
         const urlParams = new URLSearchParams(window.location.search);
         const ip = urlParams.get('ip') || '192.168.1.2';
+        const fullUrl = urlParams.get('url') || '';
+        const proxy = urlParams.get('proxy') === 'true';
 
-        // 设置输入框的值
+        // 设置初始值
         document.getElementById('ipInput').value = ip;
+        document.getElementById('fullUrlInput').value = fullUrl;
+        document.getElementById('proxyCheckbox').checked = proxy;
 
-        // 加载 M3U 文件并替换 IP
+        // 加载 M3U 文件并处理
         fetch(m3uUrl)
             .then(response => {
                 if (!response.ok) throw new Error('无法加载 M3U 文件');
                 return response.text();
             })
             .then(data => {
-                const result = data.replace(/192\.168\.1\.2/g, ip);
+                let result = processM3u(data);
                 document.getElementById('result').textContent = result;
                 document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
 
@@ -49,6 +72,35 @@
                 document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
             });
 
+        // 处理 M3U 内容的函数
+        function processM3u(data) {
+            const ip = document.getElementById('ipInput').value.trim() || '192.168.1.2';
+            const fullUrl = document.getElementById('fullUrlInput').value.trim();
+            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+
+            let result = data;
+            // 如果设置了完整URL，则替换整个URL
+            if (fullUrl) {
+                result = result.replace(/http:\/\/192\.168\.1\.2:35455/g, fullUrl);
+            } else {
+                // 否则只替换IP
+                result = result.replace(/192\.168\.1\.2/g, ip);
+            }
+
+            // 如果启用反代，追加 ?url= 参数
+            if (proxyEnabled && fullUrl) {
+                const lines = result.split('\n');
+                result = lines.map(line => {
+                    if (line.startsWith('http')) {
+                        return `${line}?url=${encodeURIComponent(fullUrl)}`;
+                    }
+                    return line;
+                }).join('\n');
+            }
+
+            return result;
+        }
+
         // 复制到剪贴板
         function copyToClipboard() {
             const text = document.getElementById('result').textContent;
@@ -59,10 +111,16 @@
             });
         }
 
-        // 复制播放链接
+        // 复制播放链接（包含所有参数）
         function copyPlayLink() {
-            const ipInput = document.getElementById('ipInput').value.trim();
-            const playLink = `https://fy.iptv1.ggff.net/?ip=${encodeURIComponent(ipInput || '192.168.1.2')}`;
+            const ipInput = document.getElementById('ipInput').value.trim() || '192.168.1.2';
+            const fullUrl = document.getElementById('fullUrlInput').value.trim();
+            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+
+            let playLink = `https://fy.iptv1.ggff.net/?ip=${encodeURIComponent(ipInput)}`;
+            if (fullUrl) playLink += `&url=${encodeURIComponent(fullUrl)}`;
+            if (proxyEnabled) playLink += `&proxy=true`;
+
             navigator.clipboard.writeText(playLink).then(() => {
                 alert('播放链接已复制到剪贴板！');
             }).catch(err => {
@@ -70,14 +128,40 @@
             });
         }
 
-        // 提交 IP 并跳转
+        // 提交 IP 并跳转（包含所有参数）
         function submitIp() {
             const ipInput = document.getElementById('ipInput').value.trim();
+            const fullUrl = document.getElementById('fullUrlInput').value.trim();
+            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+
             if (ipInput) {
-                window.location.href = `${window.location.pathname}?ip=${encodeURIComponent(ipInput)}`;
+                let url = `${window.location.pathname}?ip=${encodeURIComponent(ipInput)}`;
+                if (fullUrl) url += `&url=${encodeURIComponent(fullUrl)}`;
+                if (proxyEnabled) url += `&proxy=true`;
+                window.location.href = url;
             } else {
                 alert('请输入有效的 IP 地址！');
             }
+        }
+
+        // 展开/收起高级选项
+        function toggleAdvanced() {
+            const content = document.getElementById('advancedContent');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // 实时更新结果
+        document.getElementById('ipInput').addEventListener('input', updateResult);
+        document.getElementById('fullUrlInput').addEventListener('input', updateResult);
+        document.getElementById('proxyCheckbox').addEventListener('change', updateResult);
+
+        function updateResult() {
+            fetch(m3uUrl)
+                .then(response => response.text())
+                .then(data => {
+                    const result = processM3u(data);
+                    document.getElementById('result').textContent = result;
+                });
         }
     </script>
 </body>

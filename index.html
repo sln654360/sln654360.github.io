@@ -15,7 +15,7 @@
     </a>
     <pre id="result">生成中，请稍候...</pre>
     <script>
-        // 从 GitHub 获取数据的 URL（替换为你的文件 raw URL）
+        // 从 CDN 获取 M3U 文件的 URL
         const githubRawUrl = 'https://gcore.jsdelivr.net/gh/sln654360/bptv/fy192.168.1.2.m3u';
 
         // 获取 URL 参数中的 IP，默认值为 192.168.1.2
@@ -25,26 +25,17 @@
         // 设置输入框的值为 URL 参数中的 IP 或默认值
         document.getElementById('ipInput').value = ip;
 
-        // 生成 M3U 内容的函数
-        function generateM3uContent(ip, channels) {
-            let m3uContent = `#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"\n`;
-            channels.forEach(channel => {
-                m3uContent += `#EXTINF:-1 tvg-name="${channel.tvgName}" tvg-logo="${channel.logo}" group-title="${channel.group}",${channel.name}\n`;
-                m3uContent += `http://${ip}:35455/${channel.urlPath}\n`;
-            });
-            return m3uContent;
-        }
-
-        // 从 GitHub 加载数据并生成 M3U
+        // 从 CDN 加载 M3U 文件并替换 IP
         fetch(githubRawUrl)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('无法加载 GitHub 文件');
+                    throw new Error('无法加载 M3U 文件');
                 }
-                return response.json(); // 假设文件是 JSON 格式
+                return response.text(); // 读取纯文本内容，而不是 JSON
             })
             .then(data => {
-                const result = generateM3uContent(ip, data);
+                // 假设原始 M3U 文件中的 IP 是 192.168.1.2，将其替换为用户输入的 IP
+                const result = data.replace(/192\.168\.1\.2/g, ip);
                 document.getElementById('result').textContent = result;
                 document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
 
@@ -57,7 +48,7 @@
             })
             .catch(err => {
                 console.error('加载失败: ', err);
-                document.getElementById('result').textContent = '加载频道数据失败，请检查 GitHub 文件 URL 或网络连接。';
+                document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
             });
 
         // 复制功能

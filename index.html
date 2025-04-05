@@ -8,51 +8,62 @@
     <p>请输入部署设备的 IP 地址，会自动生成 M3U 文件：</p>
     <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
     <button onclick="submitIp()">提交</button>
-    <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
-    <button onclick="copyToClipboard()">全部复制</button>
-    <a id="downloadLink" style="display: none;" download="playlist.m3u">
-        <button>下载 M3U 文件</button>
-    </a>
+    <p>请将以下内容复制到播放器，或直接使用生成的 URL：</p>
+    <button onclick="copyToClipboard()">复制 M3U URL</button>
     <pre id="result">生成中，请稍候...</pre>
     <script>
-        // M3U 文件的 URL
+        // M3U 文件的模板 URL
         const m3uUrl = 'https://gcore.jsdelivr.net/gh/sln654360/bptv/fy192.168.1.2.m3u';
 
-        // 获取 URL 参数中的 IP，默认值为 192.168.1.2
+        // 获取 URL 参数中的 IP 和 mode
         const urlParams = new URLSearchParams(window.location.search);
         const ip = urlParams.get('ip') || '192.168.1.2';
+        const mode = urlParams.get('mode'); // 新增 mode 参数，用于区分显示或播放
 
         // 设置输入框的值
         document.getElementById('ipInput').value = ip;
 
-        // 加载 M3U 文件并替换 IP
-        fetch(m3uUrl)
-            .then(response => {
-                if (!response.ok) throw new Error('无法加载 M3U 文件');
-                return response.text();
-            })
-            .then(data => {
-                const result = data.replace(/192\.168\.1\.2/g, ip);
-                document.getElementById('result').textContent = result;
-                document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
+        // 如果 mode=play，则直接输出 M3U 内容给播放器
+        if (mode === 'play') {
+            fetch(m3uUrl)
+                .then(response => {
+                    if (!response.ok) throw new Error('无法加载 M3U 文件');
+                    return response.text();
+                })
+                .then(data => {
+                    const result = data.replace(/192\.168\.1\.2/g, ip);
+                    // 直接将页面替换为纯 M3U 内容
+                    document.open();
+                    document.write(result);
+                    document.close();
+                    // 设置正确的 MIME 类型（仅在本地测试有效，GitHub Pages 不支持动态 MIME）
+                    document.contentType = 'audio/x-mpegurl';
+                })
+                .catch(err => {
+                    document.body.textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
+                });
+        } else {
+            // 普通模式：显示 M3U 内容
+            fetch(m3uUrl)
+                .then(response => {
+                    if (!response.ok) throw new Error('无法加载 M3U 文件');
+                    return response.text();
+                })
+                .then(data => {
+                    const result = data.replace(/192\.168\.1\.2/g, ip);
+                    document.getElementById('result').textContent = result;
+                    document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
+                })
+                .catch(err => {
+                    document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
+                });
+        }
 
-                // 生成下载链接
-                const blob = new Blob([result], { type: 'audio/x-mpegurl' });
-                const url = URL.createObjectURL(blob);
-                const downloadLink = document.getElementById('downloadLink');
-                downloadLink.href = url;
-                downloadLink.style.display = 'inline';
-            })
-            .catch(err => {
-                console.error('加载失败: ', err);
-                document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
-            });
-
-        // 复制到剪贴板
+        // 复制播放器的 URL 到剪贴板
         function copyToClipboard() {
-            const text = document.getElementById('result').textContent;
-            navigator.clipboard.writeText(text).then(() => {
-                alert('已复制到剪贴板！');
+            const playUrl = `${window.location.origin}${window.location.pathname}?ip=${encodeURIComponent(ip)}&mode=play`;
+            navigator.clipboard.writeText(playUrl).then(() => {
+                alert('已复制播放器 URL 到剪贴板！请粘贴到播放器中。');
             }).catch(err => {
                 console.error('复制失败: ', err);
             });

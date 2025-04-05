@@ -13,6 +13,9 @@
             align-items: center; 
         }
         .left-buttons { display: flex; gap: 10px; }
+        #fullUrlInput { 
+            width: 300px; /* 加长输入框，默认值可以根据需要调整 */
+        }
     </style>
 </head>
 <body>
@@ -137,7 +140,7 @@
         function submitIp() {
             const ipInput = document.getElementById('ipInput').value.trim();
             if (ipInput) {
-                updateResultAndDownload(); // 直接更新结果，不跳转
+                updateResultAndDownload();
             } else {
                 alert('请输入有效的 IP 地址！');
             }

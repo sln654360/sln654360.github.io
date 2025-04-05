@@ -6,6 +6,13 @@
     <style>
         .advanced-options { margin-top: 10px; }
         .advanced-content { display: none; margin-left: 20px; }
+        .button-group { 
+            margin-top: 10px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .left-buttons { display: flex; gap: 10px; }
     </style>
 </head>
 <body>
@@ -27,27 +34,20 @@
     </div>
 
     <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
-    <button onclick="copyToClipboard()">全部复制</button>
-    <button onclick="copyPlayLink()">复制播放链接</button>
-    <a id="downloadLink" style="display: none;" download="playlist.m3u">
-        <button>下载 M3U 文件</button>
-    </a>
+    <div class="button-group">
+        <div class="left-buttons">
+            <button onclick="copyToClipboard()">全部复制</button>
+            <a id="downloadLink" style="display: none;" download="playlist.m3u">
+                <button>下载 M3U 文件</button>
+            </a>
+        </div>
+        <button onclick="copyPlayLink()">复制播放链接</button>
+    </div>
     <pre id="result">生成中，请稍候...</pre>
 
     <script>
         // M3U 文件的 URL
         const m3uUrl = 'https://gcore.jsdelivr.net/gh/sln654360/bptv/fy192.168.1.2.m3u';
-
-        // 从 URL 参数中获取配置
-        const urlParams = new URLSearchParams(window.location.search);
-        const ip = urlParams.get('ip') || '192.168.1.2';
-        const fullUrl = urlParams.get('url') || '';
-        const proxy = urlParams.get('proxy') === 'true';
-
-        // 设置初始值
-        document.getElementById('ipInput').value = ip;
-        document.getElementById('fullUrlInput').value = fullUrl;
-        document.getElementById('proxyCheckbox').checked = proxy;
 
         // 存储原始 M3U 内容
         let originalM3uData = '';
@@ -59,7 +59,7 @@
                 return response.text();
             })
             .then(data => {
-                originalM3uData = data; // 缓存原始内容
+                originalM3uData = data;
                 updateResultAndDownload();
             })
             .catch(err => {
@@ -99,7 +99,6 @@
             document.getElementById('result').textContent = result;
             document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
 
-            // 更新下载链接
             const blob = new Blob([result], { type: 'audio/x-mpegurl' });
             const url = URL.createObjectURL(blob);
             const downloadLink = document.getElementById('downloadLink');
@@ -134,17 +133,11 @@
             });
         }
 
-        // 提交 IP 并跳转
+        // 提交 IP（仅刷新页面）
         function submitIp() {
             const ipInput = document.getElementById('ipInput').value.trim();
-            const fullUrl = document.getElementById('fullUrlInput').value.trim();
-            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
-
             if (ipInput) {
-                let url = `${window.location.pathname}?ip=${encodeURIComponent(ipInput)}`;
-                if (fullUrl) url += `&url=${encodeURIComponent(fullUrl)}`;
-                if (proxyEnabled) url += `&proxy=true`;
-                window.location.href = url;
+                updateResultAndDownload(); // 直接更新结果，不跳转
             } else {
                 alert('请输入有效的 IP 地址！');
             }

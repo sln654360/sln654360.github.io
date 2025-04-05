@@ -5,10 +5,11 @@
     <title>Dynamic M3U Generator</title>
 </head>
 <body>
+    <p>请将以下内容复制到播放器，或点击下方下载 m3u 文件：</p>
     <pre id="result">生成中，请稍候...</pre>
+    <a id="downloadLink" style="display: none;" download="playlist.m3u">下载 m3u 文件</a>
     <script>
-        // 基础 m3u 内容直接嵌入（假设这是你的 base.m3u）
-        const baseM3uContent = `#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+          const baseM3uContent = `#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="央视频道",CCTV-1 综合
 http://192.168.1.2:35455/gaoma/cctv1.m3u8
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" group-title="央视频道",CCTV-2 财经
@@ -146,18 +147,19 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
 #EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://live.fanmingming.com/tv/北京新闻.png" group-title="数字频道",北京新闻
 http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8`;
 
-        // 获取 URL 中的 ip 参数
         const urlParams = new URLSearchParams(window.location.search);
-        const ip = urlParams.get('ip') || '192.168.1.2'; // 默认 IP
-
-        // 同步替换 IP
+        const ip = urlParams.get('ip') || '192.168.1.2';
         const result = baseM3uContent.replace(/192\.168\.1\.2/g, ip);
 
-        // 输出结果
         document.getElementById('result').textContent = result;
-
-        // 设置样式（可选）
         document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
+
+        // 生成下载链接
+        const blob = new Blob([result], { type: 'audio/x-mpegurl' });
+        const url = URL.createObjectURL(blob);
+        const downloadLink = document.getElementById('downloadLink');
+        downloadLink.href = url;
+        downloadLink.style.display = 'block';
     </script>
 </body>
 </html>

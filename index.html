@@ -15,26 +15,23 @@
     </a>
     <pre id="result">生成中，请稍候...</pre>
     <script>
-        // 从 CDN 获取 M3U 文件的 URL
-        const githubRawUrl = 'https://gcore.jsdelivr.net/gh/sln654360/bptv/fy192.168.1.2.m3u';
+        // M3U 文件的 URL
+        const m3uUrl = 'https://gcore.jsdelivr.net/gh/sln654360/bptv/fy192.168.1.2.m3u';
 
         // 获取 URL 参数中的 IP，默认值为 192.168.1.2
         const urlParams = new URLSearchParams(window.location.search);
         const ip = urlParams.get('ip') || '192.168.1.2';
 
-        // 设置输入框的值为 URL 参数中的 IP 或默认值
+        // 设置输入框的值
         document.getElementById('ipInput').value = ip;
 
-        // 从 CDN 加载 M3U 文件并替换 IP
-        fetch(githubRawUrl)
+        // 加载 M3U 文件并替换 IP
+        fetch(m3uUrl)
             .then(response => {
-                if (!response.ok) {
-                    throw new Error('无法加载 M3U 文件');
-                }
-                return response.text(); // 读取纯文本内容，而不是 JSON
+                if (!response.ok) throw new Error('无法加载 M3U 文件');
+                return response.text();
             })
             .then(data => {
-                // 假设原始 M3U 文件中的 IP 是 192.168.1.2，将其替换为用户输入的 IP
                 const result = data.replace(/192\.168\.1\.2/g, ip);
                 document.getElementById('result').textContent = result;
                 document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
@@ -51,7 +48,7 @@
                 document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
             });
 
-        // 复制功能
+        // 复制到剪贴板
         function copyToClipboard() {
             const text = document.getElementById('result').textContent;
             navigator.clipboard.writeText(text).then(() => {

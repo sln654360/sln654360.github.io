@@ -5,11 +5,14 @@
     <title>Dynamic M3U Generator</title>
 </head>
 <body>
-    <p>请将以下内容复制到播放器，或点击下方下载 m3u 文件：</p>
+    <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
+    <button onclick="copyToClipboard()">全部复制</button>
+    <a id="downloadLink" style="display: none;" download="playlist.m3u">
+        <button>下载 M3U 文件</button>
+    </a>
     <pre id="result">生成中，请稍候...</pre>
-    <a id="downloadLink" style="display: none;" download="playlist.m3u">下载 m3u 文件</a>
     <script>
-          const baseM3uContent = `#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+        const baseM3uContent = `#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" group-title="央视频道",CCTV-1 综合
 http://192.168.1.2:35455/gaoma/cctv1.m3u8
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" group-title="央视频道",CCTV-2 财经
@@ -159,7 +162,17 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8`;
         const url = URL.createObjectURL(blob);
         const downloadLink = document.getElementById('downloadLink');
         downloadLink.href = url;
-        downloadLink.style.display = 'block';
+        downloadLink.style.display = 'inline';
+
+        // 复制功能
+        function copyToClipboard() {
+            const text = document.getElementById('result').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('已复制到剪贴板！');
+            }).catch(err => {
+                console.error('复制失败: ', err);
+            });
+        }
     </script>
 </body>
 </html>

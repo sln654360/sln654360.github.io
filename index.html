@@ -9,12 +9,10 @@
         .button-group { 
             margin-top: 10px; 
             display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
+            gap: 10px; /* 按钮之间的间距 */
         }
-        .left-buttons { display: flex; gap: 10px; }
         #fullUrlInput { 
-            width: 300px; /* 加长输入框，默认值可以根据需要调整 */
+            width: 300px; 
         }
     </style>
 </head>
@@ -38,12 +36,10 @@
 
     <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
     <div class="button-group">
-        <div class="left-buttons">
-            <button onclick="copyToClipboard()">全部复制</button>
-            <a id="downloadLink" style="display: none;" download="playlist.m3u">
-                <button>下载 M3U 文件</button>
-            </a>
-        </div>
+        <button onclick="copyToClipboard()">全部复制</button>
+        <a id="downloadLink" style="display: none;" download="playlist.m3u">
+            <button>下载 M3U 文件</button>
+        </a>
         <button onclick="copyPlayLink()">复制播放链接</button>
     </div>
     <pre id="result">生成中，请稍候...</pre>

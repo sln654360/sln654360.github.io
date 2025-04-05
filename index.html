@@ -10,6 +10,7 @@
     <button onclick="submitIp()">提交</button>
     <p>请将以下内容复制到播放器，或下载 M3U 文件：</p>
     <button onclick="copyToClipboard()">全部复制</button>
+    <button onclick="copyPlayLink()">复制播放链接</button>
     <a id="downloadLink" style="display: none;" download="playlist.m3u">
         <button>下载 M3U 文件</button>
     </a>
@@ -53,6 +54,17 @@
             const text = document.getElementById('result').textContent;
             navigator.clipboard.writeText(text).then(() => {
                 alert('已复制到剪贴板！');
+            }).catch(err => {
+                console.error('复制失败: ', err);
+            });
+        }
+
+        // 复制播放链接
+        function copyPlayLink() {
+            const ipInput = document.getElementById('ipInput').value.trim();
+            const playLink = `https://fy.iptv1.ggff.net/?ip=${encodeURIComponent(ipInput || '192.168.1.2')}`;
+            navigator.clipboard.writeText(playLink).then(() => {
+                alert('播放链接已复制到剪贴板！');
             }).catch(err => {
                 console.error('复制失败: ', err);
             });

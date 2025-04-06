@@ -69,7 +69,13 @@
                 document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
             });
 
-        // 处理 M3U 内容的函数
+        // 判断是否需要 URL 编码的函数
+        function needsUrlEncoding(str) {
+            const specialChars = /[&=?#\s]|[^\x00-\x7F]/; // 包括特殊字符和非 ASCII 字符（如中文）
+            return specialChars.test(str);
+        }
+
+        // 处理 M3U 内容的函数（编辑部分）
         function processM3u(data) {
             const ip = document.getElementById('ipInput').value.trim() || '192.168.1.2';
             const fullUrl = document.getElementById('fullUrlInput').value.trim();
@@ -83,11 +89,11 @@
             }
         
             if (proxyEnabled && fullUrl) {
+                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
                 const lines = result.split('\n');
                 result = lines.map(line => {
                     if (line.startsWith('http')) {
-                        // 启用反代时不编码URL参数
-                        return `${line}?url=${fullUrl}`;
+                        return `${line}?url=${urlParam}`;
                     }
                     return line;
                 }).join('\n');
@@ -109,7 +115,7 @@
             downloadLink.style.display = 'inline';
         }
 
-        // 复制到剪贴板
+        // 复制到剪贴板（复制部分）
         function copyToClipboard() {
             const text = document.getElementById('result').textContent;
             navigator.clipboard.writeText(text).then(() => {
@@ -119,19 +125,19 @@
             });
         }
 
-        // 生成订阅链接（不使用 URL 编码）
+        // 生成订阅链接（恢复原始逻辑，添加有条件编码）
         function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim();
             const fullUrl = document.getElementById('fullUrlInput').value.trim();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
         
-            // 优先使用 fullUrl，如果未填写则回退到 ipInput
             let playLink;
             if (fullUrl) {
-                playLink = `https://fy.iptv1.ggff.net/?url=${fullUrl}`; // 去掉 encodeURIComponent
+                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
+                playLink = `https://fy.iptv1.ggff.net/?url=${urlParam}`;
                 if (proxyEnabled) playLink += `&proxy=true`;
             } else {
-                playLink = `https://fy.iptv1.ggff.net/?ip=${ipInput || '192.168.1.2'}`; // 去掉 encodeURIComponent
+                playLink = `https://fy.iptv1.ggff.net/?ip=${ipInput || '192.168.1.2'}`;
             }
         
             navigator.clipboard.writeText(playLink).then(() => {

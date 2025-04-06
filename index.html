@@ -44,13 +44,14 @@
         </div>
     </div>
 
-    <p>配置ip后，可复制和下载，一般用户直接生成订阅链接即可！</p>
+    <p>配置 IP 或 URL 后，可复制内容、下载 M3U 文件或生成订阅链接！</p>
     <div class="button-group">
         <button onclick="copyToClipboard()">复制以下内容</button>
         <a id="downloadLink" style="display: none;" download="playlist.m3u">
             <button>下载 M3U 文件</button>
         </a>
         <button onclick="copyPlayLink()">生成订阅链接</button>
+        <button onclick="copyPlayLink2()">生成订阅链接2（备用线路）</button>
     </div>
     <pre id="result">生成中，请稍候...</pre>
 
@@ -149,6 +150,27 @@
         
             navigator.clipboard.writeText(playLink).then(() => {
                 alert('订阅链接已复制到剪贴板！请粘贴到播放器中使用！');
+            }).catch(err => {
+                console.error('复制失败: ', err);
+            });
+        }
+
+        function copyPlayLink2() {
+            const ipInput = document.getElementById('ipInput').value.trim();
+            const fullUrl = getFullUrl();
+            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+        
+            let playLink;
+            if (fullUrl) {
+                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
+                playLink = `https://bptv.deno.dev/?url=${urlParam}`;
+                if (proxyEnabled) playLink += `&proxy=true`;
+            } else {
+                playLink = `https://bptv.deno.dev/?ip=${ipInput || '192.168.1.2'}`;
+            }
+        
+            navigator.clipboard.writeText(playLink).then(() => {
+                alert('订阅链接2（备用线路）已复制到剪贴板！请粘贴到播放器中使用！');
             }).catch(err => {
                 console.error('复制失败: ', err);
             });

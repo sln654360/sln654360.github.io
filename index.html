@@ -9,10 +9,15 @@
         .button-group { 
             margin-top: 10px; 
             display: flex; 
-            gap: 10px; /* 按钮之间的间距 */
+            gap: 10px;
         }
         #fullUrlInput { 
-            width: 300px; 
+            width: 250px; 
+        }
+        .protocol-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
     </style>
 </head>
@@ -24,8 +29,14 @@
         <button onclick="toggleAdvanced()">高级选项</button>
         <div id="advancedContent" class="advanced-content">
             <p>
-                <label>自定义完整URL (格式: http://IP:PORT)：</label><br>
-                <input type="text" id="fullUrlInput" placeholder="例如: http://192.168.1.2:35455">
+                <label>自定义完整URL（选择协议并输入域名和端口）：</label><br>
+                <div class="protocol-group">
+                    <select id="protocolSelect">
+                        <option value="https://">https://</option>
+                        <option value="http://">http://</option>
+                    </select>
+                    <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455">
+                </div>
             </p>
             <p>
                 <label><input type="checkbox" id="proxyCheckbox"> 启用反代</label>
@@ -33,7 +44,7 @@
         </div>
     </div>
 
-    <p>配置ip后，可复制和下载，一般用户直接生成订阅链接即可！</p>
+    <p>配置 IP 或自定义 URL 后，可复制内容、下载 M3U 文件或生成订阅链接！</p>
     <div class="button-group">
         <button onclick="copyToClipboard()">复制以下内容</button>
         <a id="downloadLink" style="display: none;" download="playlist.m3u">
@@ -44,17 +55,11 @@
     <pre id="result">生成中，请稍候...</pre>
 
     <script>
-        // M3U 文件的 URL
         const m3uUrl = 'https://gcore.jsdelivr.net/gh/sln654360/bptv/fy192.168.1.2.m3u';
-
-        // 存储原始 M3U 内容
         let originalM3uData = '';
-
-        // 添加时间戳以绕过缓存
         const timestamp = new Date().getTime();
         const noCacheUrl = `${m3uUrl}?t=${timestamp}`;
 
-        // 加载 M3U 文件并处理，禁用缓存
         fetch(noCacheUrl, { cache: 'no-cache' })
             .then(response => {
                 if (!response.ok) throw new Error('无法加载 M3U 文件');
@@ -69,21 +74,21 @@
                 document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
             });
 
-        // 判断是否需要 URL 编码的函数
         function needsUrlEncoding(str) {
-            // 如果已包含 %XX 格式，认为已编码，无需再次编码
-            if (/%[0-9A-Fa-f]{2}/.test(str)) {
-                return false;
-            }
-            // 匹配你的核心需求：&=?#、空格、非 ASCII
+            if (/%[0-9A-Fa-f]{2}/.test(str)) return false;
             const specialChars = /[&=?#\s]|[^\x00-\x7F]/;
             return specialChars.test(str);
         }
 
-        // 处理 M3U 内容的函数（编辑部分）
+        function getFullUrl() {
+            const protocol = document.getElementById('protocolSelect').value;
+            const domain = document.getElementById('fullUrlInput').value.trim();
+            return domain ? `${protocol}${domain}` : '';
+        }
+
         function processM3u(data) {
             const ip = document.getElementById('ipInput').value.trim() || '192.168.1.2';
-            const fullUrl = document.getElementById('fullUrlInput').value.trim();
+            const fullUrl = getFullUrl();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
         
             let result = data;
@@ -107,7 +112,6 @@
             return result;
         }
 
-        // 更新结果和下载链接
         function updateResultAndDownload() {
             const result = processM3u(originalM3uData);
             document.getElementById('result').textContent = result;
@@ -120,7 +124,6 @@
             downloadLink.style.display = 'inline';
         }
 
-        // 复制到剪贴板（复制部分）
         function copyToClipboard() {
             const text = document.getElementById('result').textContent;
             navigator.clipboard.writeText(text).then(() => {
@@ -130,10 +133,9 @@
             });
         }
 
-        // 生成订阅链接（恢复原始逻辑，添加有条件编码）
         function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim();
-            const fullUrl = document.getElementById('fullUrlInput').value.trim();
+            const fullUrl = getFullUrl();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
         
             let playLink;
@@ -152,16 +154,15 @@
             });
         }
 
-        // 展开/收起高级选项
         function toggleAdvanced() {
             const content = document.getElementById('advancedContent');
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
-        // 实时更新结果和下载链接
         document.getElementById('ipInput').addEventListener('input', updateResultAndDownload);
         document.getElementById('fullUrlInput').addEventListener('input', updateResultAndDownload);
         document.getElementById('proxyCheckbox').addEventListener('change', updateResultAndDownload);
+        document.getElementById('protocolSelect').addEventListener('change', updateResultAndDownload);
     </script>
 </body>
 </html>

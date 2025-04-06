@@ -50,8 +50,12 @@
         // 存储原始 M3U 内容
         let originalM3uData = '';
 
-        // 加载 M3U 文件并处理
-        fetch(m3uUrl)
+        // 添加时间戳以绕过缓存
+        const timestamp = new Date().getTime();
+        const noCacheUrl = `${m3uUrl}?t=${timestamp}`;
+
+        // 加载 M3U 文件并处理，禁用缓存
+        fetch(noCacheUrl, { cache: 'no-cache' })
             .then(response => {
                 if (!response.ok) throw new Error('无法加载 M3U 文件');
                 return response.text();
@@ -67,29 +71,29 @@
 
         // 处理 M3U 内容的函数
         function processM3u(data) {
-                const ip = document.getElementById('ipInput').value.trim() || '192.168.1.2';
-                const fullUrl = document.getElementById('fullUrlInput').value.trim();
-                const proxyEnabled = document.getElementById('proxyCheckbox').checked;
-            
-                let result = data;
-                if (fullUrl) {
-                    result = result.replace(/http:\/\/192\.168\.1\.2:35455/g, fullUrl);
-                } else {
-                    result = result.replace(/192\.168\.1\.2/g, ip);
-                }
-            
-                if (proxyEnabled && fullUrl) {
-                    const lines = result.split('\n');
-                    result = lines.map(line => {
-                        if (line.startsWith('http')) {
-                            // 启用反代时不编码URL参数
-                            return `${line}?url=${fullUrl}`;
-                        }
-                        return line;
-                    }).join('\n');
-                }
-            
-                return result;
+            const ip = document.getElementById('ipInput').value.trim() || '192.168.1.2';
+            const fullUrl = document.getElementById('fullUrlInput').value.trim();
+            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+        
+            let result = data;
+            if (fullUrl) {
+                result = result.replace(/http:\/\/192\.168\.1\.2:35455/g, fullUrl);
+            } else {
+                result = result.replace(/192\.168\.1\.2/g, ip);
+            }
+        
+            if (proxyEnabled && fullUrl) {
+                const lines = result.split('\n');
+                result = lines.map(line => {
+                    if (line.startsWith('http')) {
+                        // 启用反代时不编码URL参数
+                        return `${line}?url=${fullUrl}`;
+                    }
+                    return line;
+                }).join('\n');
+            }
+        
+            return result;
         }
 
         // 更新结果和下载链接
@@ -116,7 +120,7 @@
         }
 
         // 生成订阅链接
-      function copyPlayLink() {
+        function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim();
             const fullUrl = document.getElementById('fullUrlInput').value.trim();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;

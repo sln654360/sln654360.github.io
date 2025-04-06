@@ -119,7 +119,7 @@
             });
         }
 
-        // 生成订阅链接（不使用 URL 编码）
+        // 生成订阅链接
         function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim();
             const fullUrl = document.getElementById('fullUrlInput').value.trim();
@@ -128,10 +128,10 @@
             // 优先使用 fullUrl，如果未填写则回退到 ipInput
             let playLink;
             if (fullUrl) {
-                playLink = `https://fy.iptv1.ggff.net/?url=${fullUrl}`; // 去掉 encodeURIComponent
+                playLink = `https://fy.iptv1.ggff.net/?url=${encodeURIComponent(fullUrl)}`;
                 if (proxyEnabled) playLink += `&proxy=true`;
             } else {
-                playLink = `https://fy.iptv1.ggff.net/?ip=${ipInput || '192.168.1.2'}`; // 去掉 encodeURIComponent
+                playLink = `https://fy.iptv1.ggff.net/?ip=${encodeURIComponent(ipInput || '192.168.1.2')}`;
             }
         
             navigator.clipboard.writeText(playLink).then(() => {

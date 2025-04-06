@@ -71,7 +71,12 @@
 
         // 判断是否需要 URL 编码的函数
         function needsUrlEncoding(str) {
-            const specialChars = /[&=?#\s]|[^\x00-\x7F]/; // 包括特殊字符和非 ASCII 字符（如中文）
+            // 如果已包含 %XX 格式，认为已编码，无需再次编码
+            if (/%[0-9A-Fa-f]{2}/.test(str)) {
+                return false;
+            }
+            // 匹配你的核心需求：&=?#、空格、非 ASCII
+            const specialChars = /[&=?#\s]|[^\x00-\x7F]/;
             return specialChars.test(str);
         }
 

@@ -122,15 +122,15 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003887454.m3u8
 http://192.168.1.2:35455/bptv/10000100000000050000000003887494.m3u8
 #EXTINF:-1 tvg-name="北京IPTV4K" tvg-logo="https://live.fanmingming.cn/tv/北京IPTV4K.png" group-title="数字频道",北京IPTV4K
 http://192.168.1.2:35455/bptv/10000100000000050000000003887500.m3u8
-#EXTINF:-1 tvg-name="萌宠TV" tvg-logo="https://live.fanmingming.cn/tv/萌宠TV.png" group-title="数字频道",萌宠TV
+#EXTINF:-1 tvg-name="萌宠TV" tvg-logo="https://epg.v1.mk/logo/萌宠TV.png" group-title="数字频道",萌宠TV
 http://192.168.1.2:35455/bptv/10000100000000050000000003887495.m3u8
-#EXTINF:-1 tvg-name="淘BABY" tvg-logo="https://live.fanmingming.cn/tv/淘BABY.png" group-title="数字频道",淘BABY
+#EXTINF:-1 tvg-name="淘BABY" tvg-logo="https://epg.v1.mk/logo/淘BABY.png" group-title="数字频道",淘BABY
 http://192.168.1.2:35455/bptv/10000100000000050000000003887496.m3u8
-#EXTINF:-1 tvg-name="淘剧场" tvg-logo="https://live.fanmingming.cn/tv/淘剧场.png" group-title="数字频道",淘剧场
+#EXTINF:-1 tvg-name="淘剧场" tvg-logo="https://epg.v1.mk/logo/淘剧场.png" group-title="数字频道",淘剧场
 http://192.168.1.2:35455/bptv/10000100000000050000000003887497.m3u8
-#EXTINF:-1 tvg-name="淘电影" tvg-logo="https://live.fanmingming.cn/tv/淘电影.png" group-title="数字频道",淘电影
+#EXTINF:-1 tvg-name="淘电影" tvg-logo="https://epg.v1.mk/logo/淘电影.png" group-title="数字频道",淘电影
 http://192.168.1.2:35455/bptv/10000100000000050000000003887498.m3u8
-#EXTINF:-1 tvg-name="淘娱乐" tvg-logo="https://live.fanmingming.cn/tv/淘娱乐.png" group-title="数字频道",淘娱乐
+#EXTINF:-1 tvg-name="淘娱乐" tvg-logo="https://epg.v1.mk/logo/淘娱乐.png" group-title="数字频道",淘娱乐
 http://192.168.1.2:35455/bptv/10000100000000050000000003887499.m3u8
 #EXTINF:-1 tvg-name="北京体育休闲" tvg-logo="https://live.fanmingming.cn/tv/北京体育休闲.png" group-title="数字频道",北京体育休闲
 http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8

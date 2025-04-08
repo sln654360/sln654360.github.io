@@ -73,7 +73,7 @@
                     urls.map(url => fetch(`${url}?t=${timestamp}`, { cache: 'no-cache' }))
                 );
                 const texts = await Promise.all(responses.map(res => {
-                    if (!res.ok) throw new Error('无法加载 M3U 文件');
+                    if (!res.ok) throw new Error('无法加载ээM3U 文件');
                     return res.text();
                 }));
                 originalM3uData = texts.join('\n');
@@ -173,6 +173,28 @@
             const content = document.getElementById('advancedContent');
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
+
+        // 处理粘贴的完整 URL
+        document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
+            // 获取粘贴内容
+            const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
+            if (pastedData.match(/^https?:\/\//)) {
+                e.preventDefault(); // 阻止默认粘贴行为
+                let cleanedValue = pastedData.replace(/^(https?:\/\/)/, ''); // 去掉协议
+                cleanedValue = cleanedValue.replace(/\/+$/, ''); // 去掉末尾的 /
+                this.value = cleanedValue;
+
+                // 根据协议自动选择下拉框
+                const protocolSelect = document.getElementById('protocolSelect');
+                if (pastedData.startsWith('https://')) {
+                    protocolSelect.value = 'https://';
+                } else if (pastedData.startsWith('http://')) {
+                    protocolSelect.value = 'http://';
+                }
+
+                updateResultAndDownload(); // 更新结果
+            }
+        });
 
         document.getElementById('ipInput').addEventListener('input', updateResultAndDownload);
         document.getElementById('fullUrlInput').addEventListener('input', updateResultAndDownload);

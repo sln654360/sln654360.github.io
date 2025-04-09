@@ -61,7 +61,6 @@
         const bptvUrl = 'https://show.iptv1.ggff.net/bptv.m3u';
         const mishitongUrl = 'https://show.iptv1.ggff.net/mishitong.m3u';
         let originalM3uData = '';
-        const timestamp = new Date().getTime();
 
         async function fetchM3uFiles() {
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
@@ -70,10 +69,10 @@
 
             try {
                 const responses = await Promise.all(
-                    urls.map(url => fetch(`${url}?t=${timestamp}`, { cache: 'no-cache' }))
+                    urls.map(url => fetch(url, { cache: 'no-cache' }))
                 );
                 const texts = await Promise.all(responses.map(res => {
-                    if (!res.ok) throw new Error('无法加载ээM3U 文件');
+                    if (!res.ok) throw new Error('无法加载M3U 文件');
                     return res.text();
                 }));
                 originalM3uData = texts.join('\n');

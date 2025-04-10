@@ -119,7 +119,7 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003887499.m3u8
 http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
 #EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://live.fanmingming.cn/tv/北京新闻.png" group-title="数字频道",北京新闻
 http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8
-#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://live.fanmingming.cn/tv/CGTN.png" group-title="央视频道",CGTN英语
+#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://live.fanmingming.cn/tv/CGTN.png" group-title="数字频道",CGTN英语
 http://192.168.1.2:35455/gaoma/cgtnen.m3u8
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://live.fanmingming.cn/tv/CGTN纪录.png" group-title="数字频道",CGTN记录
 http://192.168.1.2:35455/gaoma/cgtndoc.m3u8

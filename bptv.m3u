@@ -75,6 +75,8 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003873471.m3u8
 http://192.168.1.2:35455/bptv/10000100000000050000000004972569.m3u8
 #EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://live.fanmingming.cn/tv/四川卫视.png" group-title="卫视频道",四川卫视
 http://192.168.1.2:35455/bptv/10000100000000050000000003887274.m3u8
+#EXTINF:-1 tvg-name="海南卫视" tvg-logo="https://live.fanmingming.cn/tv/海南卫视.png" group-title="卫视频道",海南卫视
+http://192.168.1.2:35455/bptv/10000100000000050000000004796877.m3u8
 #EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://live.fanmingming.cn/tv/河南卫视.png" group-title="卫视频道",河南卫视
 http://192.168.1.2:35455/bptv/10000100000000050000000003887270.m3u8
 #EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://live.fanmingming.cn/tv/广西卫视.png" group-title="卫视频道",广西卫视
@@ -105,6 +107,12 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003887456.m3u8
 http://192.168.1.2:35455/bptv/10000100000000050000000003887454.m3u8
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="数字频道",重温经典
 http://192.168.1.2:35455/bptv/10000100000000050000000003887494.m3u8
+#EXTINF:-1 tvg-name="卡酷少儿" tvg-logo="https://epg.v1.mk/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
+http://192.168.1.2:35455/bptv/10000100000000050000000003904597.m3u8
+#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://epg.v1.mk/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
+http://192.168.1.2:35455/bptv/10000100000000050000000004796942.m3u8
+#EXTINF:-1 tvg-name="嘉佳卡通" tvg-logo="https://epg.v1.mk/logo/嘉佳卡通.png" group-title="数字频道",嘉佳卡通
+http://192.168.1.2:35455/bptv/10000100000000050000000003887459.m3u8
 #EXTINF:-1 tvg-name="萌宠TV" tvg-logo="https://epg.v1.mk/logo/萌宠TV.png" group-title="数字频道",萌宠TV
 http://192.168.1.2:35455/bptv/10000100000000050000000003887495.m3u8
 #EXTINF:-1 tvg-name="淘BABY" tvg-logo="https://epg.v1.mk/logo/淘BABY.png" group-title="数字频道",淘BABY

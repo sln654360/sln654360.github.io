@@ -141,6 +141,10 @@ http://192.168.1.2:35455/gaoma/cgtnsp.m3u8
 http://192.168.1.2:35455/gaoma/cgtnar.m3u8
 #EXTINF:-1 tvg-name="北京IPTV4K" tvg-logo="https://epg.v1.mk/logo/北京IPTV4K.png" group-title="4 K 8 K",北京IPTV4K
 http://192.168.1.2:35455/bptv/10000100000000050000000003887500.m3u8
+#EXTINF:-1 tvg-name="北京体育休闲" tvg-logo="https://epg.v1.mk/logo/北京体育休闲.png" group-title="4 K 8 K",北京体育休闲-4K-HLG
+http://192.168.1.2:35455/bptv/10000100000000050000000004270524.m3u8
+#EXTINF:-1 tvg-name="北京体育休闲" tvg-logo="https://epg.v1.mk/logo/北京体育休闲.png" group-title="4 K 8 K",北京体育休闲-4K
+http://192.168.1.2:35455/bptv/10000100000000050000000004270525.m3u8
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://epg.v1.mk/logo/cctv4k.png" group-title="4 K 8 K",CCTV4K-HLG
 http://192.168.1.2:35455/gaoma/cctv4k.m3u8
 #EXTINF:-1 tvg-name="CCTV8K" tvg-logo="https://epg.v1.mk/logo/cctv8k.png" group-title="4 K 8 K",CCTV8K-36m-HLG

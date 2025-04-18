@@ -58,15 +58,14 @@
     <pre id="result">生成中，请稍候...</pre>
 
     <script>
-        const bptvUrl = 'https://gcore.jsdelivr.net/gh/sln654360/sln654360.github.io@main/bptv.m3u';
-        const mishitongUrl = 'https://gcore.jsdelivr.net/gh/sln654360/sln654360.github.io@main/mishitong.m3u';
+        const bptvUrl = 'https://show.iptv1.ggff.net/bptv.m3u';
+        const mishitongUrl = 'https://show.iptv1.ggff.net/mishitong.m3u';
         let originalM3uData = '';
 
         async function fetchM3uFiles() {
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-            const timestamp = Date.now();
-            const urls = [`${bptvUrl}?t=${timestamp}`];
-            if (includeMishitong) urls.push(`${mishitongUrl}?t=${timestamp}`);
+            const urls = [bptvUrl];
+            if (includeMishitong) urls.push(mishitongUrl);
 
             try {
                 const responses = await Promise.all(

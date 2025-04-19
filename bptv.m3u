@@ -67,7 +67,6 @@ http://192.168.1.2:35455/gaoma/cctv10.m3u8
 #EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://live.fanmingming.cn/tv/CCTV11.png" group-title="央视频道",CCTV-11 戏曲
 http://1.82.234.109:80/tencent.live.cbncdn.cn/__cl/cg:live/__c/cctv11HD/__op/default/__f/index.m3u8
 http://1.24.190.122:1080/hls/11/index.m3u8
-http://183.186.89.226:8899/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
 http://iptv.huuc.edu.cn/hls/cctv11hd.m3u8
 http://192.168.1.2:35455/gaoma/cctv11.m3u8
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="央视频道",CCTV-12 社会与法
@@ -79,7 +78,6 @@ http://192.168.1.2:35455/gaoma/cctv12.m3u8
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="央视频道",CCTV-13 新闻
 http://1.82.234.109:80/tencent.live.cbncdn.cn/__cl/cg:live/__c/CCTVNewsHD/__op/default/__f/index.m3u8
 http://1.24.190.122:1080/hls/13/index.m3u8
-http://183.186.89.226:8899/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
 http://iptv.huuc.edu.cn/hls/cctv13hd.m3u8
 http://192.168.1.2:35455/gaoma/cctv13.m3u8
 #EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://live.fanmingming.cn/tv/CCTV14.png" group-title="央视频道",CCTV-14 少儿

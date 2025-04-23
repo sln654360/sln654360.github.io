@@ -133,6 +133,7 @@ http://192.168.1.2:35455/gaoma/cctv9.m3u8
 http://111.43.126.240:9003/hls/23/index.m3u8
 http://101.228.217.41:9091/hls/10/index.m3u8
 http://211.141.56.169:9901/tsfile/live/0010_1.m3u8
+http://222.89.16.104:808/hls/10/index.m3u8
 http://1.24.190.122:1080/hls/10/index.m3u8
 http://42.225.117.174:11199/tsfile/live/0010_1.m3u8
 http://60.214.104.110:352/tsfile/live/0010_1.m3u8
@@ -144,6 +145,7 @@ http://192.168.1.2:35455/gaoma/cctv10.m3u8
 http://111.43.126.240:9003/hls/24/index.m3u8
 http://101.228.217.41:9091/hls/11/index.m3u8
 http://211.141.56.169:9901/tsfile/live/0011_1.m3u8
+http://222.89.16.104:808/hls/11/index.m3u8
 http://1.24.190.122:1080/hls/11/index.m3u8
 http://60.214.104.110:352/tsfile/live/0011_1.m3u8
 http://113.64.146.135:2024/hls/29/index.m3u8
@@ -155,6 +157,7 @@ http://111.43.126.240:9003/hls/25/index.m3u8
 http://101.228.217.41:9091/hls/12/index.m3u8
 http://211.141.56.169:9901/tsfile/live/0012_1.m3u8
 http://110.53.52.63:8888/newlive/live/hls/14/live.m3u8
+http://222.89.16.104:808/hls/12/index.m3u8
 http://1.24.190.122:1080/hls/12/index.m3u8
 http://42.225.117.174:11199/tsfile/live/0012_1.m3u8
 http://60.214.104.110:352/tsfile/live/0012_1.m3u8
@@ -170,6 +173,7 @@ http://211.141.56.169:9901/tsfile/live/0013_1.m3u8
 https://event.pull.hebtv.com/jishi/cp1.m3u8
 http://jwplay.hebyun.com.cn/live/cctv13/1500k/tzwj_video.m3u8
 https://ldncctvwbcdcnc.v.wscdns.com/ldncctvwbcd/cdrmldcctv13_1/index.m3u8
+http://222.89.16.104:808/hls/13/index.m3u8
 http://1.24.190.122:1080/hls/13/index.m3u8
 http://183.215.134.239:19901/tsfile/live/0013_1.m3u8
 http://60.214.104.110:352/tsfile/live/0013_1.m3u8
@@ -182,6 +186,7 @@ http://111.43.126.240:9003/hls/27/index.m3u8
 http://101.228.217.41:9091/hls/14/index.m3u8
 http://211.141.56.169:9901/tsfile/live/0014_1.m3u8
 http://110.53.52.63:8888/newlive/live/hls/16/live.m3u8
+http://222.89.16.104:808/hls/14/index.m3u8
 http://1.24.190.122:1080/hls/14/index.m3u8
 http://42.225.117.174:11199/tsfile/live/0014_1.m3u8
 http://60.214.104.110:352/tsfile/live/0014_1.m3u8
@@ -193,6 +198,7 @@ http://192.168.1.2:35455/gaoma/cctv14.m3u8
 http://111.43.126.240:9003/hls/28/index.m3u8
 http://101.228.217.41:9091/hls/15/index.m3u8
 http://211.141.56.169:9901/tsfile/live/0015_1.m3u8
+http://222.89.16.104:808/hls/15/index.m3u8
 http://1.24.190.122:1080/hls/15/index.m3u8
 http://60.214.104.110:352/tsfile/live/0015_1.m3u8
 http://113.64.146.135:2024/hls/33/index.m3u8
@@ -211,6 +217,7 @@ http://101.228.217.41:9091/hls/16/index.m3u8
 http://211.141.56.169:9901/tsfile/live/0017_1.m3u8
 http://183.11.239.36:808/hls/35/index.m3u8
 http://113.64.146.135:2024/hls/34/index.m3u8
+http://222.89.16.104:808/hls/17/index.m3u8
 http://1.24.190.122:1080/hls/17/index.m3u8
 http://192.168.1.2:35455/gaoma/cctv17.m3u8
 #EXTINF:-1 tvg-id="HunanTV" tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.cn/tv/湖南卫视.png" group-title="卫视频道",湖南卫视

@@ -107,12 +107,6 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003887456.m3u8
 http://192.168.1.2:35455/bptv/10000100000000050000000003887454.m3u8
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="数字频道",重温经典
 http://192.168.1.2:35455/bptv/10000100000000050000000003887494.m3u8
-#EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" group-title="数字频道",CHC家庭影院
-https://migu.iptv1.ggff.net/请使用订阅链接观看/CHC家庭影院
-#EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="数字频道",CHC动作电影
-https://migu.iptv1.ggff.net/请使用订阅链接观看/CHC动作电影
-#EXTINF:-1 tvg-id="CHC影迷电影" tvg-name="CHC影迷电影" tvg-logo="https://live.fanmingming.cn/tv/CHC影迷电影.png" group-title="数字频道",CHC影迷电影
-https://migu.iptv1.ggff.net/请使用订阅链接观看/CHC影迷电影
 #EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://epg.v1.mk/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
 http://192.168.1.2:35455/bptv/10000100000000050000000003904597.m3u8
 #EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://epg.v1.mk/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
@@ -133,6 +127,12 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003887499.m3u8
 http://192.168.1.2:35455/bptependency://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
 #EXTINF:-1 tvg-id="北京新闻" tvg-name="北京新闻" tvg-logo="https://live.fanmingming.cn/tv/北京新闻.png" group-title="数字频道",北京新闻
 http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8
+#EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" group-title="数字频道",CHC家庭影院
+https://migu.iptv1.ggff.net/请使用订阅链接观看/CHC家庭影院
+#EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="数字频道",CHC动作电影
+https://migu.iptv1.ggff.net/请使用订阅链接观看/CHC动作电影
+#EXTINF:-1 tvg-id="CHC影迷电影" tvg-name="CHC影迷电影" tvg-logo="https://live.fanmingming.cn/tv/CHC影迷电影.png" group-title="数字频道",CHC影迷电影
+https://migu.iptv1.ggff.net/请使用订阅链接观看/CHC影迷电影
 #EXTINF:-1 tvg-id="北京IPTV4K" tvg-name="北京IPTV4K" tvg-logo="https://epg.v1.mk/logo/北京IPTV4K.png" group-title="4 K 8 K",北京IPTV4K
 http://192.168.1.2:35455/bptv/10000100000000050000000003887500.m3u8
 #EXTINF:-1 tvg-id="咪咕4K-1" tvg-name="咪咕4K" tvg-logo="https://epg.v1.mk/logo/咪咕4K.png" group-title="4 K 8 K",咪咕4K-1

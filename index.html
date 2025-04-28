@@ -116,6 +116,9 @@
                 const lines = result.split('\n');
                 result = lines.map(line => {
                     if (line.startsWith('http')) {
+                         if (line.includes('migu')) {
+                            return line;
+                          }
                         return `${line}?url=${urlParam}`;
                     }
                     return line;

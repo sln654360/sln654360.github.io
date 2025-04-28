@@ -138,6 +138,9 @@ http://60.214.104.110:352/tsfile/live/0016_1.m3u8
 #EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="央视频道",CCTV-5+ 体育赛事
 http://iptv.huuc.edu.cn/hls/cctv5phd.m3u8
 
+#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="央视频道",CCTV-5+ 体育赛事
+https://migu.iptv1.ggff.net/请使用订阅链接观看/5p
+
 #EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="央视频道",CCTV-6 电影
 http://itv.iptv1688.top:2016/itv.php?id=CCTV6
 #EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="央视频道",CCTV-6 电影
@@ -391,8 +394,6 @@ http://211.141.56.169:9901/tsfile/live/0017_1.m3u8
 http://183.11.239.36:808/hls/35/index.m3u8
 #EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://live.fanmingming.cn/tv/CCTV17.png" group-title="央视频道",CCTV-17 农业农村
 http://113.64.146.135:2024/hls/34/index.m3u8
-#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://live.fanmingming.cn/tv/CCTV17.png" group-title="央视频道",CCTV-17 农业农村
-https://migu.iptv1.ggff.net/请使用订阅链接观看/17
 
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.cn/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
 http://192.168.1.2:35455/bptv/10000100000000050000000003873458.m3u8

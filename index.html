@@ -149,12 +149,32 @@
             });
         }
 
+        function validateUrlInput(value) {
+            if (value && !value.includes(':')) {
+                return confirm('您输入的自定义URL（' + value + '）缺少端口号。\n通常需要端口号（例如: example.com:35455）。\n确定要继续生成订阅链接吗？\n点击“是”继续生成，点击“否”返回补充端口号。');
+            }
+            return true;
+        }
+
         function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim();
+            const fullUrlInput = document.getElementById('fullUrlInput').value.trim();
             const fullUrl = getFullUrl();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-        
+
+            // 验证端口号
+            if (fullUrlInput && !validateUrlInput(fullUrlInput)) {
+                // 用户点击“否”，展开高级选项，保留输入，聚焦输入框
+                const advancedContent = document.getElementById('advancedContent');
+                advancedContent.style.display = 'block';
+                const fullUrlInputEl = document.getElementById('fullUrlInput');
+                fullUrlInputEl.focus();
+                fullUrlInputEl.select();
+                alert('请补充端口号（例如: ' + fullUrlInput + ':35455），然后重新生成订阅链接。');
+                return;
+            }
+
             let playLink;
             if (fullUrl) {
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
@@ -178,33 +198,20 @@
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
-        function validateUrlInput(value) {
-            if (value && !value.includes(':')) {
-                return confirm('您输入的URL不包含端口号，是否确定不需要端口？\n如果不是故意省略，请填写端口号（例如: example.com:35455）。');
-            }
-            return true;
-        }
-
-        // 仅在失去焦点时验证
-        document.getElementById('fullUrlInput').addEventListener('blur', function() {
+        // 处理输入或粘贴，自动去掉协议部分
+        document.getElementById('fullUrlInput').addEventListener('input', function() {
             const value = this.value.trim();
-            if (value && validateUrlInput(value)) {
-                // 处理粘贴或输入的协议部分
-                if (value.match(/^https?:\/\//)) {
-                    let cleanedValue = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
-                    this.value = cleanedValue;
-                    const protocolSelect = document.getElementById('protocolSelect');
-                    if (value.startsWith('https://')) {
-                        protocolSelect.value = 'https://';
-                    } else if (value.startsWith('http://')) {
-                        protocolSelect.value = 'http://';
-                    }
+            if (value.match(/^https?:\/\//)) {
+                let cleanedValue = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
+                this.value = cleanedValue;
+                const protocolSelect = document.getElementById('protocolSelect');
+                if (value.startsWith('https://')) {
+                    protocolSelect.value = 'https://';
+                } else if (value.startsWith('http://')) {
+                    protocolSelect.value = 'http://';
                 }
-                updateResultAndDownload();
-            } else if (value) {
-                this.value = '';
-                alert('请输入包含端口号的URL，或确认无需端口号。');
             }
+            updateResultAndDownload();
         });
 
         document.getElementById('ipInput').addEventListener('input', updateResultAndDownload);

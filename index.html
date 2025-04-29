@@ -185,34 +185,21 @@
             return true;
         }
 
-        // 处理粘贴的完整 URL
-        document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
-            const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
-            if (pastedData.match(/^https?:\/\//)) {
-                e.preventDefault();
-                let cleanedValue = pastedData.replace(/^(https?:\/\/)/, '');
-                cleanedValue = cleanedValue.replace(/\/+$/, '');
-                this.value = cleanedValue;
-
-                const protocolSelect = document.getElementById('protocolSelect');
-                if (pastedData.startsWith('https://')) {
-                    protocolSelect.value = 'https://';
-                } else if (pastedData.startsWith('http://')) {
-                    protocolSelect.value = 'http://';
-                }
-
-                if (validateUrlInput(cleanedValue)) {
-                    updateResultAndDownload();
-                } else {
-                    this.value = '';
-                }
-            }
-        });
-
-        // 使用 blur 事件代替 input 事件，避免逐字符触发
+        // 仅在失去焦点时验证
         document.getElementById('fullUrlInput').addEventListener('blur', function() {
             const value = this.value.trim();
             if (value && validateUrlInput(value)) {
+                // 处理粘贴或输入的协议部分
+                if (value.match(/^https?:\/\//)) {
+                    let cleanedValue = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
+                    this.value = cleanedValue;
+                    const protocolSelect = document.getElementById('protocolSelect');
+                    if (value.startsWith('https://')) {
+                        protocolSelect.value = 'https://';
+                    } else if (value.startsWith('http://')) {
+                        protocolSelect.value = 'http://';
+                    }
+                }
                 updateResultAndDownload();
             } else if (value) {
                 this.value = '';

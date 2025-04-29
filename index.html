@@ -44,12 +44,13 @@
             display: flex;
             gap: 10px;
             justify-content: center;
+            flex-wrap: wrap; /* 支持多个按钮换行 */
         }
         .modal-buttons button {
             padding: 8px 16px;
             cursor: pointer;
         }
-    </style>
+    </STYLE>
 </head>
 <body>
     <p>请输入部署了肥羊的设备 IP 地址，会自动更改 M3U 内容：</p>
@@ -220,24 +221,24 @@
         function validateUrlInput(value, callback) {
             if (value && !value.includes(':')) {
                 showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n确定要继续生成订阅链接吗？`, [
-                    { text: '确定不用端口号', onClick: () => callback(true) },
-                    { text: '返回修改', onClick: () => callback(false) }
+                    { text: '确定不用端口号', onClick: () => callback('noPort') },
+                    { text: '使用默认端口35455', onClick: () => callback('defaultPort') },
+                    { text: '返回修改', onClick: () => callback('edit') }
                 ]);
             } else {
-                callback(true);
+                callback('valid');
             }
         }
 
         function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim();
-            const fullUrlInput = document.getElementById('fullUrlInput').value.trim();
-            const fullUrl = getFullUrl();
+            let fullUrlInput = document.getElementById('fullUrlInput').value.trim();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
 
             // 验证端口号
-            validateUrlInput(fullUrlInput, (isValid) => {
-                if (!isValid) {
+            validateUrlInput(fullUrlInput, (result) => {
+                if (result === 'edit') {
                     // 用户选择“返回修改”
                     const advancedContent = document.getElementById('advancedContent');
                     advancedContent.style.display = 'block';
@@ -247,7 +248,15 @@
                     return;
                 }
 
-                // 用户选择“确定不用端口号”或输入有效
+                if (result === 'defaultPort') {
+                    // 用户选择“使用默认端口35455”
+                    fullUrlInput = `${fullUrlInput}:35455`;
+                    document.getElementById('fullUrlInput').value = fullUrlInput;
+                    updateResultAndDownload(); // 更新 M3U 内容
+                }
+
+                // 用户选择“确定不用端口号”、默认端口或输入有效
+                const fullUrl = getFullUrl();
                 let playLink;
                 if (fullUrl) {
                     const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;

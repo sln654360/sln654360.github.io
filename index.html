@@ -209,12 +209,14 @@
             }
         });
 
-        document.getElementById('fullUrlInput').addEventListener('input', function() {
+        // 使用 blur 事件代替 input 事件，避免逐字符触发
+        document.getElementById('fullUrlInput').addEventListener('blur', function() {
             const value = this.value.trim();
             if (value && validateUrlInput(value)) {
                 updateResultAndDownload();
             } else if (value) {
                 this.value = '';
+                alert('请输入包含端口号的URL，或确认无需端口号。');
             }
         });
 

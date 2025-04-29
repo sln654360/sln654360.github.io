@@ -44,7 +44,7 @@
             display: flex;
             gap: 10px;
             justify-content: center;
-            flex-wrap: wrap; /* 支持多个按钮换行 */
+            flex-wrap: wrap;
         }
         .modal-buttons button {
             padding: 8px 16px;
@@ -148,20 +148,19 @@
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
         
             let result = data;
+            let proxyUrl = fullUrl;
             if (fullUrl) {
                 result = result.replace(/http:\/\/192\.168\.1\.2:35455/g, fullUrl);
             } else {
                 result = result.replace(/192\.168\.1\.2/g, ip);
+                proxyUrl = `http://${ip}:35455`; // 用于反代
             }
         
-            if (proxyEnabled && fullUrl) {
-                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
+            if (proxyEnabled) {
+                const urlParam = needsUrlEncoding(proxyUrl) ? encodeURIComponent(proxyUrl) : proxyUrl;
                 const lines = result.split('\n');
                 result = lines.map(line => {
                     if (line.startsWith('http')) {
-                         if (!line.includes('192.168.')) {
-                         return line;
-                       }
                         return `${line}?url=${urlParam}`;
                     }
                     return line;
@@ -220,9 +219,9 @@
 
         function validateUrlInput(value, callback) {
             if (value && !value.includes(':')) {
-                showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n请选择如何处理：`, [  
-                    { text: '使用默认端口35455', onClick: () => callback('defaultPort') },
+                showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n请选择如何处理：`, [
                     { text: '确定不用端口号', onClick: () => callback('noPort') },
+                    { text: '使用默认端口35455', onClick: () => callback('defaultPort') },
                     { text: '返回修改', onClick: () => callback('edit') }
                 ]);
             } else {
@@ -243,7 +242,10 @@
                 if (proxyEnabled) playLink += `&proxy=true`;
                 if (!includeMishitong) playLink += `&mishitong=false`;
             } else {
-                playLink = `https://fy.iptv1.ggff.net/?ip=${ipInput || '192.168.1.2'}`;
+                const ipUrl = `http://${ipInput || '192.168.1.2'}:35455`;
+                const urlParam = needsUrlEncoding(ipUrl) ? encodeURIComponent(ipUrl) : ipUrl;
+                playLink = `https://fy.iptv1.ggff.net/?url=${urlParam}`;
+                if (proxyEnabled) playLink += `&proxy=true`;
                 if (!includeMishitong) playLink += `&mishitong=false`;
             }
         

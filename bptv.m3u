@@ -111,6 +111,8 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003887454.m3u8
 http://192.168.1.2:35455/bptv/10000100000000050000000003887494.m3u8
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="数字频道",重温经典
 https://gdcucc.v1.mk/gdcucc/cwjd.m3u8
+#EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="数字频道",重温经典
+https://migu.iptv1.ggff.net/请使用订阅链接观看/重温经典
 #EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" group-title="数字频道",CHC家庭影院
 https://migu.iptv1.ggff.net/请使用订阅链接观看/CHC家庭影院
 #EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" group-title="数字频道",CHC动作电影

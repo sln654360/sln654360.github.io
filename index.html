@@ -219,9 +219,9 @@
 
         function validateUrlInput(value, callback) {
             if (value && !value.includes(':')) {
-                showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n请选择如何处理：`, [
-                    { text: '确定不用端口号', onClick: () => callback('noPort') },
+                showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n请选择如何处理：`, [ 
                     { text: '使用默认端口35455', onClick: () => callback('defaultPort') },
+                    { text: '确定不用端口号', onClick: () => callback('noPort') },
                     { text: '返回修改', onClick: () => callback('edit') }
                 ]);
             } else {

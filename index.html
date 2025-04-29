@@ -50,7 +50,7 @@
             padding: 8px 16px;
             cursor: pointer;
         }
-    </STYLE>
+    </style>
 </head>
 <body>
     <p>请输入部署了肥羊的设备 IP 地址，会自动更改 M3U 内容：</p>
@@ -220,7 +220,7 @@
 
         function validateUrlInput(value, callback) {
             if (value && !value.includes(':')) {
-                showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n确定要继续生成订阅链接吗？`, [
+                showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n请选择如何处理：`, [
                     { text: '确定不用端口号', onClick: () => callback('noPort') },
                     { text: '使用默认端口35455', onClick: () => callback('defaultPort') },
                     { text: '返回修改', onClick: () => callback('edit') }
@@ -232,52 +232,30 @@
 
         function copyPlayLink() {
             const ipInput = document.getElementById('ipInput').value.trim();
-            let fullUrlInput = document.getElementById('fullUrlInput').value.trim();
+            const fullUrl = getFullUrl();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
 
-            // 验证端口号
-            validateUrlInput(fullUrlInput, (result) => {
-                if (result === 'edit') {
-                    // 用户选择“返回修改”
-                    const advancedContent = document.getElementById('advancedContent');
-                    advancedContent.style.display = 'block';
-                    const fullUrlInputEl = document.getElementById('fullUrlInput');
-                    fullUrlInputEl.focus();
-                    fullUrlInputEl.select();
-                    return;
-                }
-
-                if (result === 'defaultPort') {
-                    // 用户选择“使用默认端口35455”
-                    fullUrlInput = `${fullUrlInput}:35455`;
-                    document.getElementById('fullUrlInput').value = fullUrlInput;
-                    updateResultAndDownload(); // 更新 M3U 内容
-                }
-
-                // 用户选择“确定不用端口号”、默认端口或输入有效
-                const fullUrl = getFullUrl();
-                let playLink;
-                if (fullUrl) {
-                    const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
-                    playLink = `https://fy.iptv1.ggff.net/?url=${urlParam}`;
-                    if (proxyEnabled) playLink += `&proxy=true`;
-                    if (!includeMishitong) playLink += `&mishitong=false`;
-                } else {
-                    playLink = `https://fy.iptv1.ggff.net/?ip=${ipInput || '192.168.1.2'}`;
-                    if (!includeMishitong) playLink += `&mishitong=false`;
-                }
-            
-                navigator.clipboard.writeText(playLink).then(() => {
-                    showModal('订阅链接已复制到剪贴板！请粘贴到播放器中使用！', [
-                        { text: '确定', onClick: () => {} }
-                    ]);
-                }).catch(err => {
-                    console.error('复制失败: ', err);
-                    showModal('复制失败，请重试！', [
-                        { text: '确定', onClick: () => {} }
-                    ]);
-                });
+            let playLink;
+            if (fullUrl) {
+                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
+                playLink = `https://fy.iptv1.ggff.net/?url=${urlParam}`;
+                if (proxyEnabled) playLink += `&proxy=true`;
+                if (!includeMishitong) playLink += `&mishitong=false`;
+            } else {
+                playLink = `https://fy.iptv1.ggff.net/?ip=${ipInput || '192.168.1.2'}`;
+                if (!includeMishitong) playLink += `&mishitong=false`;
+            }
+        
+            navigator.clipboard.writeText(playLink).then(() => {
+                showModal('订阅链接已复制到剪贴板！请粘贴到播放器中使用！', [
+                    { text: '确定', onClick: () => {} }
+                ]);
+            }).catch(err => {
+                console.error('复制失败: ', err);
+                showModal('复制失败，请重试！', [
+                    { text: '确定', onClick: () => {} }
+                ]);
             });
         }
 
@@ -286,7 +264,47 @@
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
-        // 处理输入或粘贴，自动去掉协议部分
+        // 处理粘贴事件
+        document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
+            const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
+            let cleanedValue = pastedData;
+            if (pastedData.match(/^https?:\/\//)) {
+                e.preventDefault();
+                cleanedValue = pastedData.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
+                this.value = cleanedValue;
+                const protocolSelect = document.getElementById('protocolSelect');
+                if (pastedData.startsWith('https://')) {
+                    protocolSelect.value = 'https://';
+                } else if (pastedData.startsWith('http://')) {
+                    protocolSelect.value = 'http://';
+                }
+            }
+            // 粘贴后不立即验证，等待 blur 事件
+        });
+
+        // 处理失去焦点事件
+        document.getElementById('fullUrlInput').addEventListener('blur', function() {
+            const value = this.value.trim();
+            if (!value) return; // 空值不验证
+            validateUrlInput(value, (result) => {
+                if (result === 'edit') {
+                    // 返回修改
+                    const advancedContent = document.getElementById('advancedContent');
+                    advancedContent.style.display = 'block';
+                    this.focus();
+                    this.select();
+                } else if (result === 'defaultPort') {
+                    // 使用默认端口35455
+                    this.value = `${value}:35455`;
+                    updateResultAndDownload();
+                } else if (result === 'noPort') {
+                    // 确定不用端口号
+                    updateResultAndDownload();
+                }
+            });
+        });
+
+        // 处理输入，自动去掉协议部分
         document.getElementById('fullUrlInput').addEventListener('input', function() {
             const value = this.value.trim();
             if (value.match(/^https?:\/\//)) {
@@ -299,7 +317,7 @@
                     protocolSelect.value = 'http://';
                 }
             }
-            updateResultAndDownload();
+            // 不立即更新 M3U，等待 blur 事件验证
         });
 
         document.getElementById('ipInput').addEventListener('input', updateResultAndDownload);

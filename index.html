@@ -178,17 +178,22 @@
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
+        function validateUrlInput(value) {
+            if (value && !value.includes(':')) {
+                return confirm('您输入的URL不包含端口号，是否确定不需要端口？\n如果不是故意省略，请填写端口号（例如: example.com:35455）。');
+            }
+            return true;
+        }
+
         // 处理粘贴的完整 URL
         document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
-            // 获取粘贴内容
             const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
             if (pastedData.match(/^https?:\/\//)) {
-                e.preventDefault(); // 阻止默认粘贴行为
-                let cleanedValue = pastedData.replace(/^(https?:\/\/)/, ''); // 去掉协议
-                cleanedValue = cleanedValue.replace(/\/+$/, ''); // 去掉末尾的 /
+                e.preventDefault();
+                let cleanedValue = pastedData.replace(/^(https?:\/\/)/, '');
+                cleanedValue = cleanedValue.replace(/\/+$/, '');
                 this.value = cleanedValue;
 
-                // 根据协议自动选择下拉框
                 const protocolSelect = document.getElementById('protocolSelect');
                 if (pastedData.startsWith('https://')) {
                     protocolSelect.value = 'https://';
@@ -196,12 +201,24 @@
                     protocolSelect.value = 'http://';
                 }
 
-                updateResultAndDownload(); // 更新结果
+                if (validateUrlInput(cleanedValue)) {
+                    updateResultAndDownload();
+                } else {
+                    this.value = '';
+                }
+            }
+        });
+
+        document.getElementById('fullUrlInput').addEventListener('input', function() {
+            const value = this.value.trim();
+            if (value && validateUrlInput(value)) {
+                updateResultAndDownload();
+            } else if (value) {
+                this.value = '';
             }
         });
 
         document.getElementById('ipInput').addEventListener('input', updateResultAndDownload);
-        document.getElementById('fullUrlInput').addEventListener('input', updateResultAndDownload);
         document.getElementById('proxyCheckbox').addEventListener('change', updateResultAndDownload);
         document.getElementById('protocolSelect').addEventListener('change', updateResultAndDownload);
         document.getElementById('mishitongCheckbox').addEventListener('change', fetchM3uFiles);

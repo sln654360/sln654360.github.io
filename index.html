@@ -19,6 +19,36 @@
             align-items: center;
             gap: 5px;
         }
+        /* 自定义模态框样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            text-align: center;
+        }
+        .modal-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .modal-buttons button {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -58,6 +88,17 @@
         <button onclick="copyPlayLink()">生成订阅链接</button>
     </div>
     <pre id="result">生成中，请稍候...</pre>
+
+    <!-- 自定义模态框 -->
+    <div id="portConfirmModal" class="modal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <div class="modal-buttons">
+                <button id="confirmNoPort">确定不用端口号</button>
+                <button id="returnEdit">返回修改</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         const bptvUrl = 'https://show.iptv1.ggff.net/bptv.m3u';
@@ -149,11 +190,33 @@
             });
         }
 
-        function validateUrlInput(value) {
+        function validateUrlInput(value, callback) {
             if (value && !value.includes(':')) {
-                return confirm('您输入的自定义URL（' + value + '）缺少端口号。\n通常需要端口号（例如: example.com:35455）。\n确定要继续生成订阅链接吗？\n点击“是”继续生成，点击“否”返回补充端口号。');
+                const modal = document.getElementById('portConfirmModal');
+                const message = document.getElementById('modalMessage');
+                message.textContent = `您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n确定要继续生成订阅链接吗？`;
+                modal.style.display = 'flex';
+
+                const confirmNoPort = document.getElementById('confirmNoPort');
+                const returnEdit = document.getElementById('returnEdit');
+
+                // 清理旧的事件监听器
+                const newConfirm = confirmNoPort.cloneNode(true);
+                const newReturn = returnEdit.cloneNode(true);
+                confirmNoPort.parentNode.replaceChild(newConfirm, confirmNoPort);
+                returnEdit.parentNode.replaceChild(newReturn, returnEdit);
+
+                newConfirm.onclick = () => {
+                    modal.style.display = 'none';
+                    callback(true);
+                };
+                newReturn.onclick = () => {
+                    modal.style.display = 'none';
+                    callback(false);
+                };
+            } else {
+                callback(true);
             }
-            return true;
         }
 
         function copyPlayLink() {
@@ -164,32 +227,35 @@
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
 
             // 验证端口号
-            if (fullUrlInput && !validateUrlInput(fullUrlInput)) {
-                // 用户点击“否”，展开高级选项，保留输入，聚焦输入框
-                const advancedContent = document.getElementById('advancedContent');
-                advancedContent.style.display = 'block';
-                const fullUrlInputEl = document.getElementById('fullUrlInput');
-                fullUrlInputEl.focus();
-                fullUrlInputEl.select();
-                alert('请补充端口号（例如: ' + fullUrlInput + ':35455），然后重新生成订阅链接。');
-                return;
-            }
+            validateUrlInput(fullUrlInput, (isValid) => {
+                if (!isValid) {
+                    // 用户选择“返回修改”
+                    const advancedContent = document.getElementById('advancedContent');
+                    advancedContent.style.display = 'block';
+                    const fullUrlInputEl = document.getElementById('fullUrlInput');
+                    fullUrlInputEl.focus();
+                    fullUrlInputEl.select();
+                    alert(`请补充端口号（例如: ${fullUrlInput}:35455），然后重新生成订阅链接。`);
+                    return;
+                }
 
-            let playLink;
-            if (fullUrl) {
-                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
-                playLink = `https://fy.iptv1.ggff.net/?url=${urlParam}`;
-                if (proxyEnabled) playLink += `&proxy=true`;
-                if (!includeMishitong) playLink += `&mishitong=false`;
-            } else {
-                playLink = `https://fy.iptv1.ggff.net/?ip=${ipInput || '192.168.1.2'}`;
-                if (!includeMishitong) playLink += `&mishitong=false`;
-            }
-        
-            navigator.clipboard.writeText(playLink).then(() => {
-                alert('订阅链接已复制到剪贴板！请粘贴到播放器中使用！');
-            }).catch(err => {
-                console.error('复制失败: ', err);
+                // 用户选择“确定不用端口号”或输入有效
+                let playLink;
+                if (fullUrl) {
+                    const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
+                    playLink = `https://fy.iptv1.ggff.net/?url=${urlParam}`;
+                    if (proxyEnabled) playLink += `&proxy=true`;
+                    if (!includeMishitong) playLink += `&mishitong=false`;
+                } else {
+                    playLink = `https://fy.iptv1.ggff.net/?ip=${ipInput || '192.168.1.2'}`;
+                    if (!includeMishitong) playLink += `&mishitong=false`;
+                }
+            
+                navigator.clipboard.writeText(playLink).then(() => {
+                    alert('订阅链接已复制到剪贴板！请粘贴到播放器中使用！');
+                }).catch(err => {
+                    console.error('复制失败: ', err);
+                });
             });
         }
 

@@ -90,12 +90,11 @@
     <pre id="result">生成中，请稍候...</pre>
 
     <!-- 自定义模态框 -->
-    <div id="portConfirmModal" class="modal">
+    <div id="customModal" class="modal">
         <div class="modal-content">
             <p id="modalMessage"></p>
-            <div class="modal-buttons">
-                <button id="confirmNoPort">确定不用端口号</button>
-                <button id="returnEdit">返回修改</button>
+            <div class="modal-buttons" id="modalButtons">
+                <!-- 按钮动态插入 -->
             </div>
         </div>
     </div>
@@ -122,7 +121,9 @@
                 updateResultAndDownload();
             } catch (err) {
                 console.error('加载失败: ', err);
-                document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。';
+                showModal('加载 M3U 文件失败，请检查 URL 或网络连接。', [
+                    { text: '确定', onClick: () => document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。' }
+                ]);
             }
         }
 
@@ -181,39 +182,47 @@
             downloadLink.style.display = 'inline';
         }
 
+        function showModal(message, buttons) {
+            const modal = document.getElementById('customModal');
+            const messageEl = document.getElementById('modalMessage');
+            const buttonsEl = document.getElementById('modalButtons');
+            
+            messageEl.textContent = message;
+            buttonsEl.innerHTML = ''; // 清空旧按钮
+
+            buttons.forEach(btn => {
+                const button = document.createElement('button');
+                button.textContent = btn.text;
+                button.onclick = () => {
+                    modal.style.display = 'none';
+                    if (btn.onClick) btn.onClick();
+                };
+                buttonsEl.appendChild(button);
+            });
+
+            modal.style.display = 'flex';
+        }
+
         function copyToClipboard() {
             const text = document.getElementById('result').textContent;
             navigator.clipboard.writeText(text).then(() => {
-                alert('已复制到剪贴板！');
+                showModal('已复制到剪贴板！', [
+                    { text: '确定', onClick: () => {} }
+                ]);
             }).catch(err => {
                 console.error('复制失败: ', err);
+                showModal('复制失败，请重试！', [
+                    { text: '确定', onClick: () => {} }
+                ]);
             });
         }
 
         function validateUrlInput(value, callback) {
             if (value && !value.includes(':')) {
-                const modal = document.getElementById('portConfirmModal');
-                const message = document.getElementById('modalMessage');
-                message.textContent = `您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n确定要继续生成订阅链接吗？`;
-                modal.style.display = 'flex';
-
-                const confirmNoPort = document.getElementById('confirmNoPort');
-                const returnEdit = document.getElementById('returnEdit');
-
-                // 清理旧的事件监听器
-                const newConfirm = confirmNoPort.cloneNode(true);
-                const newReturn = returnEdit.cloneNode(true);
-                confirmNoPort.parentNode.replaceChild(newConfirm, confirmNoPort);
-                returnEdit.parentNode.replaceChild(newReturn, returnEdit);
-
-                newConfirm.onclick = () => {
-                    modal.style.display = 'none';
-                    callback(true);
-                };
-                newReturn.onclick = () => {
-                    modal.style.display = 'none';
-                    callback(false);
-                };
+                showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n确定要继续生成订阅链接吗？`, [
+                    { text: '确定不用端口号', onClick: () => callback(true) },
+                    { text: '返回修改', onClick: () => callback(false) }
+                ]);
             } else {
                 callback(true);
             }
@@ -235,7 +244,6 @@
                     const fullUrlInputEl = document.getElementById('fullUrlInput');
                     fullUrlInputEl.focus();
                     fullUrlInputEl.select();
-                    alert(`请补充端口号（例如: ${fullUrlInput}:35455），然后重新生成订阅链接。`);
                     return;
                 }
 
@@ -252,9 +260,14 @@
                 }
             
                 navigator.clipboard.writeText(playLink).then(() => {
-                    alert('订阅链接已复制到剪贴板！请粘贴到播放器中使用！');
+                    showModal('订阅链接已复制到剪贴板！请粘贴到播放器中使用！', [
+                        { text: '确定', onClick: () => {} }
+                    ]);
                 }).catch(err => {
                     console.error('复制失败: ', err);
+                    showModal('复制失败，请重试！', [
+                        { text: '确定', onClick: () => {} }
+                    ]);
                 });
             });
         }

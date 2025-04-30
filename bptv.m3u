@@ -140,9 +140,9 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8
 #EXTINF:-1 tvg-name="东方影视" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5500/002/274/202105271333_5100001715_2_HSJ720H.jpg" group-title="数字频道",东方影视
 https://migu.iptv1.ggff.net/订阅后播放/shys
 #EXTINF:-1 tvg-name="金色剧场" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/019/525/202411060921_1730856028525_H169_1080.jpg" group-title="数字频道",金色剧场
-https://migu.iptv1.ggff.net/订阅后播放/shys
+https://migu.iptv1.ggff.net/订阅后播放/jsjc
 #EXTINF:-1 tvg-name="红色轮播台" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/019/527/202407181250_1721278183765_H169_1080.jpg" group-title="数字频道",红色轮播台
-https://migu.iptv1.ggff.net/订阅后播放/shys
+https://migu.iptv1.ggff.net/订阅后播放/hslb
 #EXTINF:-1 tvg-id="NBA经典" tvg-name="NBA经典" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/021/528/202304201401_1681962013739_H169_1080.jpg" group-title="数字频道",NBA经典
 https://migu.iptv1.ggff.net/订阅后播放/nba
 #EXTINF:-1 tvg-id="五大联赛经典" tvg-name="五大联赛经典" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/021/338/202304201403_1681970538994_H169_1080.jpg" group-title="数字频道",五大联赛经典

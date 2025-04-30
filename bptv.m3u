@@ -139,6 +139,24 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
 http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8
 #EXTINF:-1 tvg-name="东方影视" tvg-logo="https://live.fanmingming.cn/tv/东方影视.png" group-title="数字频道",东方影视
 https://migu.iptv1.ggff.net/订阅后播放/shys
+#EXTINF:-1 tvg-name="金色剧场" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/019/525/202411060921_1730856028525_H169_1080.jpg" group-title="数字频道",金色剧场
+https://migu.iptv1.ggff.net/订阅后播放/shys
+#EXTINF:-1 tvg-name="红色轮播台" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/019/527/202407181250_1721278183765_H169_1080.jpg" group-title="数字频道",红色轮播台
+https://migu.iptv1.ggff.net/订阅后播放/shys
+#EXTINF:-1 tvg-id="NBA经典" tvg-name="NBA经典" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/021/528/202304201401_1681962013739_H169_1080.jpg" group-title="数字频道",NBA经典
+https://migu.iptv1.ggff.net/订阅后播放/nba
+#EXTINF:-1 tvg-id="五大联赛经典" tvg-name="五大联赛经典" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/021/338/202304201403_1681970538994_H169_1080.jpg" group-title="数字频道",五大联赛经典
+https://migu.iptv1.ggff.net/订阅后播放/lsjd
+#EXTINF:-1 tvg-id="足球风云" tvg-name="足球风云" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/021/530/202404091152_1712634646523_H169_1080.jpg" group-title="数字频道",中国足球风云
+https://migu.iptv1.ggff.net/订阅后播放/zqfy
+#EXTINF:-1 tvg-id="咪咕24小时体育" tvg-name="咪咕24小时体育" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5500/751/211/202106111236_5102223687_201903181136295010914_HSJ720H.jpg" group-title="数字频道",咪咕24小时体育台
+https://migu.iptv1.ggff.net/订阅后播放/mgty
+#EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/022/150/202407181432_1721283643483_H169_1080.jpg" group-title="数字频道",CETV-1
+https://migu.iptv1.ggff.net/订阅后播放/cetv1
+#EXTINF:-1 tvg-id="CETV2" tvg-name="CETV2" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/022/152/202407181432_1721283773509_H169_1080.jpg" group-title="数字频道",CETV-2
+https://migu.iptv1.ggff.net/订阅后播放/cetv2
+#EXTINF:-1 tvg-id="CETV4" tvg-name="CETV4" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/022/154/202407181433_1721283860085_H169_1080.jpg" group-title="数字频道",CETV-4
+https://migu.iptv1.ggff.net/订阅后播放/cetv4
 #EXTINF:-1 tvg-name="CGTN英语" tvg-logo="https://live.fanmingming.cn/tv/CGTN.png" group-title="数字频道",CGTN英语
 https://0472.org/hls/cgtn.m3u8
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://live.fanmingming.cn/tv/CGTN纪录.png" group-title="数字频道",CGTN记录

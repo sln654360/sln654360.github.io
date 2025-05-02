@@ -131,21 +131,21 @@ http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
 https://cdn6.163189.xyz/live/fhhk/stream.m3u8
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/凤凰卫视香港台.png" group-title="数字频道",凤凰香港
 http://php.jdshipin.com/TVOD/iptv.php?id=fhhk
-#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://upload.112114.xyz/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
+#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/卡酷少儿.png" group-title="数字频道",卡酷少儿
 http://192.168.1.2:35455/bptv/10000100000000050000000003904597.m3u8
-#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://upload.112114.xyz/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
+#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/金鹰卡通.png" group-title="数字频道",金鹰卡通
 http://192.168.1.2:35455/bptv/10000100000000050000000004796942.m3u8
-#EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://upload.112114.xyz/logo/嘉佳卡通.png" group-title="数字频道",嘉佳卡通
+#EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/嘉佳卡通.png" group-title="数字频道",嘉佳卡通
 http://192.168.1.2:35455/bptv/10000100000000050000000003887459.m3u8
-#EXTINF:-1 tvg-id="萌宠TV" tvg-name="萌宠TV" tvg-logo="https://upload.112114.xyz/logo/萌宠TV.png" group-title="数字频道",萌宠TV
+#EXTINF:-1 tvg-id="萌宠TV" tvg-name="萌宠TV" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京萌宠TV.png" group-title="数字频道",萌宠TV
 http://192.168.1.2:35455/bptv/10000100000000050000000003887495.m3u8
-#EXTINF:-1 tvg-id="淘BABY" tvg-name="淘BABY" tvg-logo="https://upload.112114.xyz/logo/淘BABY.png" group-title="数字频道",淘BABY
+#EXTINF:-1 tvg-id="淘BABY" tvg-name="淘BABY" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京淘BABY.png" group-title="数字频道",淘BABY
 http://192.168.1.2:35455/bptv/10000100000000050000000003887496.m3u8
-#EXTINF:-1 tvg-id="淘剧场" tvg-name="淘剧场" tvg-logo="https://upload.112114.xyz/logo/淘剧场.png" group-title="数字频道",淘剧场
+#EXTINF:-1 tvg-id="淘剧场" tvg-name="淘剧场" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京淘剧场.png" group-title="数字频道",淘剧场
 http://192.168.1.2:35455/bptv/10000100000000050000000003887497.m3u8
-#EXTINF:-1 tvg-id="淘电影" tvg-name="淘电影" tvg-logo="https://upload.112114.xyz/logo/淘电影.png" group-title="数字频道",淘电影
+#EXTINF:-1 tvg-id="淘电影" tvg-name="淘电影" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京淘电影.png" group-title="数字频道",淘电影
 http://192.168.1.2:35455/bptv/10000100000000050000000003887498.m3u8
-#EXTINF:-1 tvg-id="淘娱乐" tvg-name="淘娱乐" tvg-logo="https://upload.112114.xyz/logo/淘娱乐.png" group-title="数字频道",淘娱乐
+#EXTINF:-1 tvg-id="淘娱乐" tvg-name="淘娱乐" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京淘娱乐.png" group-title="数字频道",淘娱乐
 http://192.168.1.2:35455/bptv/10000100000000050000000003887499.m3u8
 #EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/北京体育休闲.png" group-title="数字频道",北京体育休闲
 http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
@@ -177,136 +177,136 @@ https://0472.org/hls/cgtnf.m3u8
 https://0472.org/hls/cgtnx.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/CGTN阿语.png" group-title="数字频道",CGTN阿语
 https://0472.org/hls/cgtna.m3u8
-#EXTINF:-1 tvg-id="北京IPTV4K" tvg-name="北京IPTV4K" tvg-logo="https://upload.112114.xyz/logo/北京IPTV4K.png" group-title="4K频道",北京IPTV4K
+#EXTINF:-1 tvg-id="北京IPTV4K" tvg-name="北京IPTV4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京IPTV4K.png" group-title="4K频道",北京IPTV4K
 http://192.168.1.2:35455/bptv/10000100000000050000000003887500.m3u8
 #EXTINF:-1 tvg-id="北京卫视4K" tvg-name="北京卫视4K" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/北京卫视4K.png" group-title="4K频道",北京卫视4K
 https://migu.188766.xyz/请使用订阅链接观看/北京卫视
-#EXTINF:-1 tvg-id="咪咕4K-1" tvg-name="咪咕4K" tvg-logo="https://upload.112114.xyz/logo/咪咕4K.png" group-title="4K频道",咪咕4K-1
+#EXTINF:-1 tvg-id="咪咕体育-1" tvg-name="咪咕体育" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/咪咕体育.png" group-title="4K频道",咪咕体育-1
 http://192.168.1.2:35455/itv/3000000010000005180.m3u8
-#EXTINF:-1 tvg-id="咪咕4K-2" tvg-name="咪咕4K" tvg-logo="https://upload.112114.xyz/logo/咪咕4K.png" group-title="4K频道",咪咕国际4K-2
+#EXTINF:-1 tvg-id="咪咕体育-2" tvg-name="咪咕体育" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/咪咕体育.png" group-title="4K频道",咪咕国际4K-2
 http://192.168.1.2:35455/itv/3000000010000015686.m3u8
-#EXTINF:-1 tvg-id="Love Nature 4K" tvg-name="LOVENATURE" tvg-logo="https://upload.112114.xyz/logo/LOVENATURE.png" group-title="4K频道",Love Nature 4K
+#EXTINF:-1 tvg-id="Love Nature 4K" tvg-name="LOVENATURE" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/LOVENATURE.png" group-title="4K频道",Love Nature 4K
 https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
-#EXTINF:-1 tvg-id="Loupe 4K" tvg-name="LOUPE4K" tvg-logo="https://upload.112114.xyz/logo/LOUPE4K.png" group-title="4K频道",Loupe 4K
+#EXTINF:-1 tvg-id="Loupe 4K" tvg-name="LOUPE4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/LOUPE4K.png" group-title="4K频道",Loupe 4K
 https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
-#EXTINF:-1 tvg-id="Fashion 4K" tvg-name="FASHIONONE" tvg-logo="https://upload.112114.xyz/logo/FASHIONONE.png" group-title="4K频道",Fashion 4K
+#EXTINF:-1 tvg-id="Fashion 4K" tvg-name="FASHIONONE" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/FASHIONONE.png" group-title="4K频道",Fashion 4K
 https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="北京纪实科教8K" tvg-name="北京纪实科教8K" tvg-logo="https://upload.112114.xyz/logo/北京纪实科教8K.png" group-title="4K频道",北京纪实科教8K
+#EXTINF:-1 tvg-id="北京纪实科教8K" tvg-name="北京纪实科教8K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京纪实科教8K.png" group-title="4K频道",北京纪实科教8K
 https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8
-#EXTINF:-1 tvg-id="北京体育休闲-4K-HLG" tvg-name="北京体育休闲" tvg-logo="https://upload.112114.xyz/logo/北京体育休闲.png" group-title="4K频道",北京体育休闲-4K-HLG
+#EXTINF:-1 tvg-id="北京体育休闲-4K-HLG" tvg-name="北京体育休闲" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京体育休闲.png" group-title="4K频道",北京体育休闲-4K-HLG
 http://192.168.1.2:35455/bptv/10000100000000050000000004270524.m3u8
-#EXTINF:-1 tvg-id="北京体育休闲-4K" tvg-name="北京体育休闲" tvg-logo="https://upload.112114.xyz/logo/北京体育休闲.png" group-title="4K频道",北京体育休闲-4K
+#EXTINF:-1 tvg-id="北京体育休闲-4K" tvg-name="北京体育休闲" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京体育休闲.png" group-title="4K频道",北京体育休闲-4K
 http://192.168.1.2:35455/bptv/10000100000000050000000004270525.m3u8
 
-#EXTINF:-1 tvg-id="电影_星爷" tvg-name="电影_星爷" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_星爷
+#EXTINF:-1 tvg-id="电影_星爷" tvg-name="电影_星爷" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_星爷
 http://192.168.1.2:35455/huya/11342412
-#EXTINF:-1 tvg-id="电影_英叔" tvg-name="电影_英叔" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_英叔
+#EXTINF:-1 tvg-id="电影_英叔" tvg-name="电影_英叔" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_英叔
 http://192.168.1.2:35455/huya/11342421
-#EXTINF:-1 tvg-id="电影_发哥" tvg-name="电影_发哥" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_发哥
+#EXTINF:-1 tvg-id="电影_发哥" tvg-name="电影_发哥" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_发哥
 http://192.168.1.2:35455/huya/11342387
-#EXTINF:-1 tvg-id="电影_成龙" tvg-name="电影_成龙" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_成龙
+#EXTINF:-1 tvg-id="电影_成龙" tvg-name="电影_成龙" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_成龙
 http://192.168.1.2:35455/huya/11342386
-#EXTINF:-1 tvg-id="电影_王晶" tvg-name="电影_王晶" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_王晶
+#EXTINF:-1 tvg-id="电影_王晶" tvg-name="电影_王晶" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_王晶
 http://192.168.1.2:35455/huya/11602058
-#EXTINF:-1 tvg-id="电影_沈腾" tvg-name="电影_沈腾" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_沈腾
+#EXTINF:-1 tvg-id="电影_沈腾" tvg-name="电影_沈腾" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_沈腾
 http://192.168.1.2:35455/huya/11601968
-#EXTINF:-1 tvg-id="电影_黄渤" tvg-name="电影_黄渤" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_黄渤
+#EXTINF:-1 tvg-id="电影_黄渤" tvg-name="电影_黄渤" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_黄渤
 http://192.168.1.2:35455/huya/11352876
-#EXTINF:-1 tvg-id="电影_强森" tvg-name="电影_强森" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_强森
+#EXTINF:-1 tvg-id="电影_强森" tvg-name="电影_强森" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_强森
 http://192.168.1.2:35455/huya/21059581
-#EXTINF:-1 tvg-id="电影_漫威" tvg-name="电影_漫威" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_漫威
+#EXTINF:-1 tvg-id="电影_漫威" tvg-name="电影_漫威" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_漫威
 http://192.168.1.2:35455/huya/11602034
-#EXTINF:-1 tvg-id="电影_宇宙" tvg-name="电影_宇宙" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_宇宙
+#EXTINF:-1 tvg-id="电影_宇宙" tvg-name="电影_宇宙" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_宇宙
 http://192.168.1.2:35455/huya/11342428
-#EXTINF:-1 tvg-id="电影_怪兽" tvg-name="电影_怪兽" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_怪兽
+#EXTINF:-1 tvg-id="电影_怪兽" tvg-name="电影_怪兽" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_怪兽
 http://192.168.1.2:35455/huya/21059577
-#EXTINF:-1 tvg-id="电影_贺岁" tvg-name="电影_贺岁" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_贺岁
+#EXTINF:-1 tvg-id="电影_贺岁" tvg-name="电影_贺岁" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_贺岁
 http://192.168.1.2:35455/huya/11601971
-#EXTINF:-1 tvg-id="电影_玄幻" tvg-name="电影_玄幻" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_玄幻
+#EXTINF:-1 tvg-id="电影_玄幻" tvg-name="电影_玄幻" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_玄幻
 http://192.168.1.2:35455/huya/11342414
-#EXTINF:-1 tvg-id="电影_谍战" tvg-name="电影_谍战" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_谍战
+#EXTINF:-1 tvg-id="电影_谍战" tvg-name="电影_谍战" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_谍战
 http://192.168.1.2:35455/huya/21059585
-#EXTINF:-1 tvg-id="电影_战争" tvg-name="电影_战争" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_战争
+#EXTINF:-1 tvg-id="电影_战争" tvg-name="电影_战争" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_战争
 http://192.168.1.2:35455/huya/21059592
-#EXTINF:-1 tvg-id="电影_喜剧" tvg-name="电影_喜剧" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_喜剧
+#EXTINF:-1 tvg-id="电影_喜剧" tvg-name="电影_喜剧" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_喜剧
 http://192.168.1.2:35455/huya/11352877
-#EXTINF:-1 tvg-id="电影_港片" tvg-name="电影_港片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_港片
+#EXTINF:-1 tvg-id="电影_港片" tvg-name="电影_港片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_港片
 http://192.168.1.2:35455/huya/11602043
-#EXTINF:-1 tvg-id="电影_国产" tvg-name="电影_国产" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_国产
+#EXTINF:-1 tvg-id="电影_国产" tvg-name="电影_国产" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_国产
 http://192.168.1.2:35455/huya/11352973
-#EXTINF:-1 tvg-id="电影_周星星" tvg-name="电影_周星星" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_周星星
+#EXTINF:-1 tvg-id="电影_周星星" tvg-name="电影_周星星" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_周星星
 http://192.168.1.2:35455/huya/11336587
-#EXTINF:-1 tvg-id="电影_李连杰" tvg-name="电影_李连杰" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_李连杰
+#EXTINF:-1 tvg-id="电影_李连杰" tvg-name="电影_李连杰" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_李连杰
 http://192.168.1.2:35455/huya/11342390
-#EXTINF:-1 tvg-id="电影_洪金宝" tvg-name="电影_洪金宝" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_洪金宝
+#EXTINF:-1 tvg-id="电影_洪金宝" tvg-name="电影_洪金宝" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_洪金宝
 http://192.168.1.2:35455/huya/11279251
-#EXTINF:-1 tvg-id="电影_梁家辉" tvg-name="电影_梁家辉" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_梁家辉
+#EXTINF:-1 tvg-id="电影_梁家辉" tvg-name="电影_梁家辉" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_梁家辉
 http://192.168.1.2:35455/huya/11342429
-#EXTINF:-1 tvg-id="电影_许冠英" tvg-name="电影_许冠英" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_许冠英
+#EXTINF:-1 tvg-id="电影_许冠英" tvg-name="电影_许冠英" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_许冠英
 http://192.168.1.2:35455/huya/11601972
-#EXTINF:-1 tvg-id="电影_刘德华" tvg-name="电影_刘德华" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_刘德华
+#EXTINF:-1 tvg-id="电影_刘德华" tvg-name="电影_刘德华" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_刘德华
 http://192.168.1.2:35455/huya/11342424
-#EXTINF:-1 tvg-id="电影_斯坦森" tvg-name="电影_斯坦森" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_斯坦森
+#EXTINF:-1 tvg-id="电影_斯坦森" tvg-name="电影_斯坦森" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_斯坦森
 http://192.168.1.2:35455/huya/21059588
-#EXTINF:-1 tvg-id="电影_蜘蛛侠" tvg-name="电影_蜘蛛侠" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_蜘蛛侠
+#EXTINF:-1 tvg-id="电影_蜘蛛侠" tvg-name="电影_蜘蛛侠" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_蜘蛛侠
 http://192.168.1.2:35455/huya/21059599
-#EXTINF:-1 tvg-id="电影_贺岁片" tvg-name="电影_贺岁片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_贺岁片
+#EXTINF:-1 tvg-id="电影_贺岁片" tvg-name="电影_贺岁片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_贺岁片
 http://192.168.1.2:35455/huya/11601986
-#EXTINF:-1 tvg-id="电影_功夫片" tvg-name="电影_功夫片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_功夫片
+#EXTINF:-1 tvg-id="电影_功夫片" tvg-name="电影_功夫片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_功夫片
 http://192.168.1.2:35455/huya/11352941
-#EXTINF:-1 tvg-id="电影_黑帮片" tvg-name="电影_黑帮片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_黑帮片
+#EXTINF:-1 tvg-id="电影_黑帮片" tvg-name="电影_黑帮片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_黑帮片
 http://192.168.1.2:35455/huya/11336719
-#EXTINF:-1 tvg-id="电影_丧尸片" tvg-name="电影_丧尸片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_丧尸片
+#EXTINF:-1 tvg-id="电影_丧尸片" tvg-name="电影_丧尸片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_丧尸片
 http://192.168.1.2:35455/huya/21059578
-#EXTINF:-1 tvg-id="电影_灾难片" tvg-name="电影_灾难片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_灾难片
+#EXTINF:-1 tvg-id="电影_灾难片" tvg-name="电影_灾难片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_灾难片
 http://192.168.1.2:35455/huya/11602075
-#EXTINF:-1 tvg-id="电影_谍战片" tvg-name="电影_谍战片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_谍战片
+#EXTINF:-1 tvg-id="电影_谍战片" tvg-name="电影_谍战片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_谍战片
 http://192.168.1.2:35455/huya/21059587
-#EXTINF:-1 tvg-id="电影_战争片" tvg-name="电影_战争片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_战争片
+#EXTINF:-1 tvg-id="电影_战争片" tvg-name="电影_战争片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_战争片
 http://192.168.1.2:35455/huya/21059574
-#EXTINF:-1 tvg-id="电影_犯罪片" tvg-name="电影_犯罪片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_犯罪片
+#EXTINF:-1 tvg-id="电影_犯罪片" tvg-name="电影_犯罪片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_犯罪片
 http://192.168.1.2:35455/huya/11352974
-#EXTINF:-1 tvg-id="电影_古装片" tvg-name="电影_古装片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_古装片
+#EXTINF:-1 tvg-id="电影_古装片" tvg-name="电影_古装片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_古装片
 http://192.168.1.2:35455/huya/11336590
-#EXTINF:-1 tvg-id="电影_高分动作" tvg-name="电影_高分动作" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_高分动作
+#EXTINF:-1 tvg-id="电影_高分动作" tvg-name="电影_高分动作" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_高分动作
 http://192.168.1.2:35455/huya/11352884
-#EXTINF:-1 tvg-id="电影_动作电影" tvg-name="电影_动作电影" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_动作电影
+#EXTINF:-1 tvg-id="电影_动作电影" tvg-name="电影_动作电影" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_动作电影
 http://192.168.1.2:35455/huya/11602077
-#EXTINF:-1 tvg-id="电影_搞笑喜剧" tvg-name="电影_搞笑喜剧" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_搞笑喜剧
+#EXTINF:-1 tvg-id="电影_搞笑喜剧" tvg-name="电影_搞笑喜剧" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_搞笑喜剧
 http://192.168.1.2:35455/huya/11342423
-#EXTINF:-1 tvg-id="电影_喜剧专场" tvg-name="电影_喜剧专场" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_喜剧专场
+#EXTINF:-1 tvg-id="电影_喜剧专场" tvg-name="电影_喜剧专场" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_喜剧专场
 http://192.168.1.2:35455/huya/11602044
-#EXTINF:-1 tvg-id="电影_欢笑影院" tvg-name="电影_欢笑影院" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_欢笑影院
+#EXTINF:-1 tvg-id="电影_欢笑影院" tvg-name="电影_欢笑影院" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_欢笑影院
 http://192.168.1.2:35455/huya/11352894
-#EXTINF:-1 tvg-id="电影_不挤影院" tvg-name="电影_不挤影院" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_不挤影院
+#EXTINF:-1 tvg-id="电影_不挤影院" tvg-name="电影_不挤影院" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_不挤影院
 http://192.168.1.2:35455/huya/11352897
-#EXTINF:-1 tvg-id="电影_国产悬疑" tvg-name="电影_国产悬疑" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_国产悬疑
+#EXTINF:-1 tvg-id="电影_国产悬疑" tvg-name="电影_国产悬疑" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_国产悬疑
 http://192.168.1.2:35455/huya/11342395
-#EXTINF:-1 tvg-id="电影_快意江湖" tvg-name="电影_快意江湖" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_快意江湖
+#EXTINF:-1 tvg-id="电影_快意江湖" tvg-name="电影_快意江湖" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_快意江湖
 http://192.168.1.2:35455/huya/11342435
-#EXTINF:-1 tvg-id="电影_黑帮斗争" tvg-name="电影_黑帮斗争" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_黑帮斗争
+#EXTINF:-1 tvg-id="电影_黑帮斗争" tvg-name="电影_黑帮斗争" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_黑帮斗争
 http://192.168.1.2:35455/huya/11342419
-#EXTINF:-1 tvg-id="电影_古墓系列" tvg-name="电影_古墓系列" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_古墓系列
+#EXTINF:-1 tvg-id="电影_古墓系列" tvg-name="电影_古墓系列" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_古墓系列
 http://192.168.1.2:35455/huya/11352913
-#EXTINF:-1 tvg-id="电影_嫣然影厅" tvg-name="电影_嫣然影厅" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_嫣然影厅
+#EXTINF:-1 tvg-id="电影_嫣然影厅" tvg-name="电影_嫣然影厅" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_嫣然影厅
 http://192.168.1.2:35455/huya/11601977
-#EXTINF:-1 tvg-id="电影_女神系列" tvg-name="电影_女神系列" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_女神系列
+#EXTINF:-1 tvg-id="电影_女神系列" tvg-name="电影_女神系列" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_女神系列
 http://192.168.1.2:35455/huya/11336571
-#EXTINF:-1 tvg-id="电影_经典女神" tvg-name="电影_经典女神" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_经典女神
+#EXTINF:-1 tvg-id="电影_经典女神" tvg-name="电影_经典女神" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_经典女神
 http://192.168.1.2:35455/huya/11352909
-#EXTINF:-1 tvg-id="电影_经典港片" tvg-name="电影_经典港片" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_经典港片
+#EXTINF:-1 tvg-id="电影_经典港片" tvg-name="电影_经典港片" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_经典港片
 http://192.168.1.2:35455/huya/11352965
-#EXTINF:-1 tvg-id="电影_喜乐影院" tvg-name="电影_喜乐影院" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_喜乐影院
+#EXTINF:-1 tvg-id="电影_喜乐影院" tvg-name="电影_喜乐影院" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_喜乐影院
 http://192.168.1.2:35455/huya/21059580
-#EXTINF:-1 tvg-id="电影_蘑菇影厅" tvg-name="电影_蘑菇影厅" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_蘑菇影厅
+#EXTINF:-1 tvg-id="电影_蘑菇影厅" tvg-name="电影_蘑菇影厅" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_蘑菇影厅
 http://192.168.1.2:35455/huya/11601981
-#EXTINF:-1 tvg-id="电影_搞笑恐怖" tvg-name="电影_搞笑恐怖" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_搞笑恐怖
+#EXTINF:-1 tvg-id="电影_搞笑恐怖" tvg-name="电影_搞笑恐怖" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_搞笑恐怖
 http://192.168.1.2:35455/huya/11601960
-#EXTINF:-1 tvg-id="电影_死神来了" tvg-name="电影_死神来了" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_死神来了
+#EXTINF:-1 tvg-id="电影_死神来了" tvg-name="电影_死神来了" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_死神来了
 http://192.168.1.2:35455/huya/11352903
-#EXTINF:-1 tvg-id="电影_变形金刚" tvg-name="电影_变形金刚" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_变形金刚
+#EXTINF:-1 tvg-id="电影_变形金刚" tvg-name="电影_变形金刚" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_变形金刚
 http://192.168.1.2:35455/huya/21059596
-#EXTINF:-1 tvg-id="电影_怪兽系列" tvg-name="电影_怪兽系列" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",电影_怪兽系列
+#EXTINF:-1 tvg-id="电影_怪兽系列" tvg-name="电影_怪兽系列" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",电影_怪兽系列
 http://192.168.1.2:35455/huya/21059554
-#EXTINF:-1 tvg-id="搞笑_陈翔六点半" tvg-name="搞笑_陈翔六点半" tvg-logo="https://upload.112114.xyz/logo/huya.png" group-title="虎牙轮播",搞笑_陈翔六点半
+#EXTINF:-1 tvg-id="搞笑_陈翔六点半" tvg-name="搞笑_陈翔六点半" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/虎牙直播.png" group-title="虎牙轮播",搞笑_陈翔六点半
 http://192.168.1.2:35455/huya/11274154

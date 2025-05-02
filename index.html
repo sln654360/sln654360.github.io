@@ -247,20 +247,21 @@
             const fullUrl = getFullUrl();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-
+        
             let playLink;
             if (fullUrl) {
+                // 使用高级选项中的完整 URL，生成 url= 参数
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
                 playLink = `https://fy.188766.xyz/?url=${urlParam}`;
-                if (proxyEnabled) playLink += `&proxy=true`;
-                if (!includeMishitong) playLink += `&mishitong=false`;
             } else {
-                const ipUrl = `http://${ipInput || '192.168.1.2'}:35455`;
-                const urlParam = needsUrlEncoding(ipUrl) ? encodeURIComponent(ipUrl) : ipUrl;
-                playLink = `https://fy.188766.xyz/?url=${urlParam}`;
-                if (proxyEnabled) playLink += `&proxy=true`;
-                if (!includeMishitong) playLink += `&mishitong=false`;
+                // 只使用 IP 输入框，生成 ip= 参数
+                const ipParam = ipInput || '192.168.1.2';
+                playLink = `https://fy.188766.xyz/?ip=${ipParam}`;
             }
+        
+            // 添加其他参数
+            if (proxyEnabled) playLink += `&proxy=true`;
+            if (!includeMishitong) playLink += `&mishitong=false`;
         
             navigator.clipboard.writeText(playLink).then(() => {
                 showModal('订阅链接已复制到剪贴板！请粘贴到播放器中使用！', [
@@ -273,7 +274,6 @@
                 ]);
             });
         }
-
         function toggleAdvanced() {
             const content = document.getElementById('advancedContent');
             content.style.display = content.style.display === 'block' ? 'none' : 'block';

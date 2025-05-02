@@ -11,7 +11,8 @@
         "raw.githubusercontent.com"
     ],
     "hosts": [
-        "ywotttv.bj.chinamobile.com=19.136.88.246"
+         "ywotttv.bj.chinamobile.com=19.136.88.246",
+         "ywotttv.bj.chinamobile.com.c8c10c27.d.cdn.10086.cn=19.136.88.246"
     ],
     "ads": [
         "static-mozai.4gtv.tv"

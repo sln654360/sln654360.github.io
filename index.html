@@ -82,6 +82,7 @@
     <p>除了bptv外，额外提供一些migu和特色频道，不定时补充。看不了请检查ip和原始列表，疑难杂症请加群，<a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank">Telegram 群</a></p>
     <div class="button-group">
         <button onclick="copyToClipboard()">复制以下内容</button>
+        <button id="convertButton" onclick="toggleFormat()">转换TXT格式</button>
         <a id="downloadLink" style="display: none;" download="playlist.m3u">
             <button>下载 M3U 文件</button>
         </a>
@@ -103,6 +104,7 @@
         const bptvUrl = 'https://show.188766.xyz/bptv.m3u';
         const mishitongUrl = 'https://show.188766.xyz/mishitong.m3u';
         let originalM3uData = '';
+        let isTxtFormat = false;
 
         async function fetchM3uFiles() {
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
@@ -183,16 +185,105 @@
             return result;
         }
 
-        function updateResultAndDownload() {
-            const result = processM3u(originalM3uData);
-            document.getElementById('result').textContent = result;
-            document.querySelector('pre').setAttribute('style', 'white-space: pre-wrap;');
+        function m3uToTxt(m3uData) {
+            const lines = m3uData.split('\n');
+            let txtContent = '';
+            let currentGroup = '';
 
-            const blob = new Blob([result], { type: 'audio/x-mpegurl' });
-            const url = URL.createObjectURL(blob);
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (line.startsWith('#EXTINF')) {
+                    const nameMatch = line.match(/,(.+)$/);
+                    if (nameMatch) {
+                        const channelName = nameMatch[1].trim();
+                        const nextLine = lines[i + 1]?.trim();
+                        if (nextLine && nextLine.startsWith('http')) {
+                            if (currentGroup !== '') {
+                                txtContent += `${currentGroup},#genre#\n`;
+                                currentGroup = '';
+                            }
+                            txtContent += `${channelName},${nextLine}\n`;
+                            i++; // 跳过URL行
+                        }
+                    }
+                } else if (line.includes('group-title=')) {
+                    const groupMatch = line.match(/group-title="([^"]+)"/);
+                    if (groupMatch) {
+                        currentGroup = groupMatch[1].trim();
+                    }
+                }
+            }
+
+            return txtContent.trim();
+        }
+
+        function txtToM3u(txtData) {
+            const lines = txtData.split('\n');
+            let m3uContent = '#EXTM3U\n';
+            let currentGroup = '';
+
+            for (const line of lines) {
+                if (line.includes(',#genre#')) {
+                    currentGroup = line.split(',#genre#')[0].trim();
+                } else {
+                    const [name, url] = line.split(',', 2);
+                    if (name && url) {
+                        m3uContent += `#EXTINF:-1 group-title="${currentGroup}",${name}\n${url}\n`;
+                    }
+                }
+            }
+
+            return m3uContent;
+        }
+
+        function toggleFormat() {
+            const convertButton = document.getElementById('convertButton');
+            const resultEl = document.getElementById('result');
+
+            if (!isTxtFormat) {
+                // 转换为TXT格式
+                const m3uData = processM3u(originalM3uData);
+                const txtData = m3uToTxt(m3uData);
+                resultEl.textContent = txtData;
+                convertButton.textContent = '转换M3U格式';
+                isTxtFormat = true;
+            } else {
+                // 还原为M3U格式
+                const m3uData = processM3u(originalM3uData);
+                resultEl.textContent = m3uData;
+                convertButton.textContent = '转换TXT格式';
+                isTxtFormat = false;
+            }
+
+            // 更新显示区域样式
+            resultEl.setAttribute('style', 'white-space: pre-wrap;');
+        }
+
+        function updateResultAndDownload() {
+            const resultEl = document.getElementById('result');
             const downloadLink = document.getElementById('downloadLink');
+
+            // 更新显示内容
+            if (isTxtFormat) {
+                // 显示TXT格式
+                const m3uData = processM3u(originalM3uData);
+                const txtData = m3uToTxt(m3uData);
+                resultEl.textContent = txtData;
+            } else {
+                // 显示M3U格式
+                const m3uData = processM3u(originalM3uData);
+                resultEl.textContent = m3uData;
+            }
+
+            // 始终为下载链接生成M3U格式
+            const m3uData = processM3u(originalM3uData);
+            const blob = new Blob([m3uData], { type: 'audio/x-mpegurl' });
+            const url = URL.createObjectURL(blob);
             downloadLink.href = url;
+            downloadLink.download = 'playlist.m3u';
             downloadLink.style.display = 'inline';
+
+            resultEl.setAttribute('style', 'white-space: pre-wrap;');
         }
 
         function showModal(message, buttons) {
@@ -250,16 +341,13 @@
         
             let playLink;
             if (fullUrl) {
-                // 使用高级选项中的完整 URL，生成 url= 参数
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
                 playLink = `https://fy.188766.xyz/?url=${urlParam}`;
             } else {
-                // 只使用 IP 输入框，生成 ip= 参数
                 const ipParam = ipInput || '192.168.1.2';
                 playLink = `https://fy.188766.xyz/?ip=${ipParam}`;
             }
         
-            // 添加其他参数
             if (proxyEnabled) playLink += `&proxy=true`;
             if (!includeMishitong) playLink += `&mishitong=false`;
         
@@ -274,12 +362,12 @@
                 ]);
             });
         }
+
         function toggleAdvanced() {
             const content = document.getElementById('advancedContent');
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
-        // 处理粘贴事件
         document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
             const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
             let cleanedValue = pastedData;
@@ -294,40 +382,32 @@
                     protocolSelect.value = 'http://';
                 }
             }
-            // 粘贴后不立即验证，等待 blur 事件
         });
 
-        // 处理失去焦点事件
         document.getElementById('fullUrlInput').addEventListener('blur', function() {
             const value = this.value.trim();
             if (!value) {
-                updateResultAndDownload(); // 空值时更新 M3U（使用 ip）
+                updateResultAndDownload();
                 return;
             }
-            // 清空 ipInput
             document.getElementById('ipInput').value = '';
             validateUrlInput(value, (result) => {
                 if (result === 'edit') {
-                    // 返回修改
                     const advancedContent = document.getElementById('advancedContent');
                     advancedContent.style.display = 'block';
                     this.focus();
                     this.select();
                 } else if (result === 'defaultPort') {
-                    // 使用默认端口35455
-                    this.value = `${value}:35455`;
+                    this.value  = `${value}:35455`;
                     updateResultAndDownload();
                 } else if (result === 'noPort') {
-                    // 确定不用端口号
                     updateResultAndDownload();
                 } else if (result === 'valid') {
-                    // 有效输入，更新 M3U
                     updateResultAndDownload();
                 }
             });
         });
 
-        // 处理输入，自动去掉协议部分
         document.getElementById('fullUrlInput').addEventListener('input', function() {
             const value = this.value.trim();
             if (value.match(/^https?:\/\//)) {
@@ -340,7 +420,6 @@
                     protocolSelect.value = 'http://';
                 }
             }
-            // 不立即更新 M3U，等待 blur 事件验证
         });
 
         document.getElementById('ipInput').addEventListener('input', updateResultAndDownload);

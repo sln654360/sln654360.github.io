@@ -113,18 +113,41 @@
 
             try {
                 const responses = await Promise.all(
-                    urls.map(url => fetch(url, { cache: 'no-cache' }))
+                    urls.map(url => 
+                        fetch(url, { cache: 'no-cache' })
+                            .then(res => ({ res, url }))
+                            .catch(err => ({ err, url }))
+                    )
                 );
-                const texts = await Promise.all(responses.map(res => {
-                    if (!res.ok) throw new Error('无法加载M3U 文件');
+
+                const texts = await Promise.all(responses.map(({ res, err, url }) => {
+                    if (err) {
+                        throw new Error(`无法加载 ${url}: 网络错误 (${err.message})`);
+                    }
+                    if (!res.ok) {
+                        throw new Error(`无法加载 ${url}: HTTP 状态码 ${res.status} (${res.statusText})`);
+                    }
                     return res.text();
                 }));
+
                 originalM3uData = texts.join('\n');
                 updateResultAndDownload();
             } catch (err) {
                 console.error('加载失败: ', err);
-                showModal('加载 M3U 文件失败，请检查 URL 或网络连接。', [
-                    { text: '确定', onClick: () => document.getElementById('result').textContent = '加载 M3U 文件失败，请检查 URL 或网络连接。' }
+                let errorMessage = err.message.includes('HTTP 状态码') 
+                    ? err.message 
+                    : err.message.includes('网络错误') 
+                    ? '无法连接到服务器，请检查网络或URL是否正确。'
+                    : '加载 M3U 文件失败，可能是URL无效或服务器限制。';
+                showModal(errorMessage, [
+                    { 
+                        text: '确定', 
+                        onClick: () => document.getElementById('result').textContent = errorMessage 
+                    },
+                    { 
+                        text: '重试', 
+                        onClick: () => fetchM3uFiles() 
+                    }
                 ]);
             }
         }
@@ -188,28 +211,26 @@
         function m3uToTxt(m3uData) {
             const lines = m3uData.split('\n');
             let txtContent = '';
-            let currentGroup = '';
+            let currentGroup = null;
+            let lastGroup = null;
 
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i].trim();
                 if (line.startsWith('#EXTINF')) {
+                    const groupMatch = line.match(/group-title="([^"]+)"/);
                     const nameMatch = line.match(/,(.+)$/);
                     if (nameMatch) {
                         const channelName = nameMatch[1].trim();
                         const nextLine = lines[i + 1]?.trim();
                         if (nextLine && nextLine.startsWith('http')) {
-                            if (currentGroup !== '') {
+                            currentGroup = groupMatch ? groupMatch[1].trim() : '未分组';
+                            if (currentGroup !== lastGroup) {
                                 txtContent += `${currentGroup},#genre#\n`;
-                                currentGroup = '';
+                                lastGroup = currentGroup;
                             }
                             txtContent += `${channelName},${nextLine}\n`;
-                            i++; // 跳过URL行
+                            i++;
                         }
-                    }
-                } else if (line.includes('group-title=')) {
-                    const groupMatch = line.match(/group-title="([^"]+)"/);
-                    if (groupMatch) {
-                        currentGroup = groupMatch[1].trim();
                     }
                 }
             }
@@ -241,21 +262,18 @@
             const resultEl = document.getElementById('result');
 
             if (!isTxtFormat) {
-                // 转换为TXT格式
                 const m3uData = processM3u(originalM3uData);
                 const txtData = m3uToTxt(m3uData);
                 resultEl.textContent = txtData;
                 convertButton.textContent = '转换M3U格式';
                 isTxtFormat = true;
             } else {
-                // 还原为M3U格式
                 const m3uData = processM3u(originalM3uData);
                 resultEl.textContent = m3uData;
                 convertButton.textContent = '转换TXT格式';
                 isTxtFormat = false;
             }
 
-            // 更新显示区域样式
             resultEl.setAttribute('style', 'white-space: pre-wrap;');
         }
 
@@ -263,19 +281,15 @@
             const resultEl = document.getElementById('result');
             const downloadLink = document.getElementById('downloadLink');
 
-            // 更新显示内容
             if (isTxtFormat) {
-                // 显示TXT格式
                 const m3uData = processM3u(originalM3uData);
                 const txtData = m3uToTxt(m3uData);
                 resultEl.textContent = txtData;
             } else {
-                // 显示M3U格式
                 const m3uData = processM3u(originalM3uData);
                 resultEl.textContent = m3uData;
             }
 
-            // 始终为下载链接生成M3U格式
             const m3uData = processM3u(originalM3uData);
             const blob = new Blob([m3uData], { type: 'audio/x-mpegurl' });
             const url = URL.createObjectURL(blob);
@@ -292,7 +306,7 @@
             const buttonsEl = document.getElementById('modalButtons');
             
             messageEl.textContent = message;
-            buttonsEl.innerHTML = ''; // 清空旧按钮
+            buttonsEl.innerHTML = '';
 
             buttons.forEach(btn => {
                 const button = document.createElement('button');
@@ -398,7 +412,7 @@
                     this.focus();
                     this.select();
                 } else if (result === 'defaultPort') {
-                    this.value  = `${value}:35455`;
+                    this.value = `${value}:35455`;
                     updateResultAndDownload();
                 } else if (result === 'noPort') {
                     updateResultAndDownload();

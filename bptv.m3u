@@ -124,7 +124,7 @@ https://migu1.188766.xyz/请使用订阅链接观看/CHC动作电影
 #EXTINF:-1 tvg-id="CHC影迷电影" tvg-name="CHC影迷电影" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/CHC影迷电影.png" group-title="数字频道",CHC影迷电影
 https://migu1.188766.xyz/订阅后播放/CHC影迷电影
 #EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/东方影视.png" group-title="数字频道",东方影视
-https://migu1.188766.xyz/订阅后播放/shys
+https://migu1.188766.xyz/订阅后播放/上视东方影视
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/凤凰卫视中文台.png" group-title="数字频道",凤凰中文
 http://php.jdshipin.com:8880/smt.php?id=phoenixtv_hd
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/凤凰卫视中文台.png" group-title="数字频道",凤凰中文
@@ -164,15 +164,15 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
 #EXTINF:-1 tvg-id="北京新闻" tvg-name="北京新闻" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/北京新闻.png" group-title="数字频道",北京新闻
 http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8
 #EXTINF:-1 tvg-id="NBA经典" tvg-name="NBA经典" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/021/528/202304201401_1681962013739_H169_1080.jpg" group-title="数字频道",NBA经典
-https://migu1.188766.xyz/订阅后播放/nba
+https://migu1.188766.xyz/订阅后播放/NBA经典
 #EXTINF:-1 tvg-id="咪咕24小时体育" tvg-name="咪咕24小时体育" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5500/751/211/202106111236_5102223687_201903181136295010914_HSJ720H.jpg" group-title="数字频道",咪咕24小时体育台
-https://migu1.188766.xyz/订阅后播放/mgty
+https://migu1.188766.xyz/订阅后播放/咪咕24小时体育台
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/022/150/202407181432_1721283643483_H169_1080.jpg" group-title="数字频道",CETV-1
-https://migu1.188766.xyz/订阅后播放/cetv1
+https://migu1.188766.xyz/订阅后播放/CETV1
 #EXTINF:-1 tvg-id="CETV2" tvg-name="CETV2" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/022/152/202407181432_1721283773509_H169_1080.jpg" group-title="数字频道",CETV-2
-https://migu1.188766.xyz/订阅后播放/cetv2
+https://migu1.188766.xyz/订阅后播放/CETV2
 #EXTINF:-1 tvg-id="CETV4" tvg-name="CETV4" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/022/154/202407181433_1721283860085_H169_1080.jpg" group-title="数字频道",CETV-4
-https://migu1.188766.xyz/订阅后播放/cetv4
+https://migu1.188766.xyz/订阅后播放/CETV4
 #EXTINF:-1 tvg-name="CGTN英语" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/CGTN.png" group-title="数字频道",CGTN英语
 https://0472.org/hls/cgtn.m3u8
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/CGTN纪录.png" group-title="数字频道",CGTN记录

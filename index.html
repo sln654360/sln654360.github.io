@@ -182,6 +182,12 @@
             let result = data;
             let proxyUrl = fullUrl;
             let targetHostname;
+            
+            // 替换 e.xml 为 /epg/YYYYMMDD.xml
+            const date = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }));
+            const dateString = date.toISOString().slice(0, 10).replace(/-/g, ''); // 格式：YYYYMMDD           
+            result = result.replace(/e\.xml/g, `epg/${dateString}.xml`);
+            
             if (fullUrl) {
                 result = result.replace(/http:\/\/192\.168\.1\.2:35455/g, fullUrl);
                 targetHostname = getHostname(fullUrl);

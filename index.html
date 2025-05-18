@@ -184,8 +184,7 @@
             let targetHostname;
             
             // 替换 e.xml 为 /epg/YYYYMMDD.xml
-            const date = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }));
-            const dateString = date.toISOString().slice(0, 10).replace(/-/g, ''); // 格式：YYYYMMDD           
+            const dateString = new Date(Date.now() + 8 * 3600 * 1000).toISOString().slice(0, 10).replace(/-/g, '');             
             result = result.replace(/e\.xml/g, `epg/${dateString}.xml`);
             
             if (fullUrl) {

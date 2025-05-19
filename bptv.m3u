@@ -121,18 +121,6 @@ https://migu1.188766.xyz/订阅后播放/CHC影迷电影
 http://192.168.1.2:35455/bptv/10000100000000050000000003887494.m3u8
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/重温经典.png" group-title="数字频道",重温经典
 https://migu1.188766.xyz/请使用订阅链接观看/重温经典
-#EXTINF:-1 tvg-name="东方影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方影视.png" group-title="数字频道",东方影视
-https://migu1.188766.xyz/订阅后播放/上视东方影视
-#EXTINF:-1 tvg-name="新片放映厅" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/新片放映厅.png" group-title="数字频道",新片放映厅
-https://migu1.188766.xyz/订阅后播放/新片放映厅
-#EXTINF:-1 tvg-name="高清大片" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/高清大片.png" group-title="数字频道",高清大片
-https://migu1.188766.xyz/订阅后播放/高清大片
-#EXTINF:-1 tvg-name="南方影视" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南方影视.png" group-title="数字频道",南方影视
-https://migu1.188766.xyz/订阅后播放/南方影视
-#EXTINF:-1 tvg-name="红色轮播台" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/红色轮播台.png" group-title="数字频道",红色轮播台
-https://migu1.188766.xyz/订阅后播放/红色轮播台
-#EXTINF:-1 tvg-name="金色剧场" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/金色剧场.png" group-title="数字频道",金色剧场
-https://migu1.188766.xyz/订阅后播放/金色剧场
 #EXTINF:-1 tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/卡酷少儿.png" group-title="数字频道",卡酷少儿
 http://192.168.1.2:35455/bptv/10000100000000050000000003904597.m3u8
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/金鹰卡通.png" group-title="数字频道",金鹰卡通
@@ -163,6 +151,18 @@ http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8
 http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
 #EXTINF:-1 tvg-name="北京纪实科教" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京纪实科教.png" group-title="数字频道",北京纪实科教
 https://migu1.188766.xyz/要用订阅的地址/北京纪实科教
+#EXTINF:-1 tvg-name="新片放映厅" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/新片放映厅.png" group-title="数字频道",新片放映厅
+https://migu1.188766.xyz/订阅后播放/新片放映厅
+#EXTINF:-1 tvg-name="高清大片" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/高清大片.png" group-title="数字频道",高清大片
+https://migu1.188766.xyz/订阅后播放/高清大片
+#EXTINF:-1 tvg-name="南方影视" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南方影视.png" group-title="数字频道",南方影视
+https://migu1.188766.xyz/订阅后播放/南方影视
+#EXTINF:-1 tvg-name="红色轮播台" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/红色轮播台.png" group-title="数字频道",红色轮播台
+https://migu1.188766.xyz/订阅后播放/红色轮播台
+#EXTINF:-1 tvg-name="金色剧场" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/金色剧场.png" group-title="数字频道",金色剧场
+https://migu1.188766.xyz/订阅后播放/金色剧场
+#EXTINF:-1 tvg-name="东方影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方影视.png" group-title="数字频道",东方影视
+https://migu1.188766.xyz/订阅后播放/上视东方影视
 #EXTINF:-1 tvg-name="NBA经典" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/021/528/202304201401_1681962013739_H169_1080.jpg" group-title="数字频道",NBA经典
 https://migu1.188766.xyz/订阅后播放/NBA经典
 #EXTINF:-1 tvg-name="咪咕24小时体育" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5500/751/211/202106111236_5102223687_201903181136295010914_HSJ720H.jpg" group-title="数字频道",咪咕24小时体育台

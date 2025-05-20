@@ -1,4 +1,22 @@
 #EXTM3U x-tvg-url="https://fy.188766.xyz/e.xml"
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV1.png" group-title="央视频道",CCTV-1 综合
+http://192.168.1.2:35455/bptv/10000100000000050000000003864351.m3u8
+#EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV2.png" group-title="央视频道",CCTV-2 财经
+http://192.168.1.2:35455/bptv/10000100000000050000000003870745.m3u8
+#EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV3.png" group-title="央视频道",CCTV-3 综艺
+http://192.168.1.2:35455/bptv/10000100000000050000000003870746.m3u8
+#EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4.png" group-title="央视频道",CCTV-4 中文国际
+http://192.168.1.2:35455/bptv/10000100000000050000000003870747.m3u8
+#EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV5.png" group-title="央视频道",CCTV-5 体育
+http://192.168.1.2:35455/bptv/10000100000000050000000003870748.m3u8
+#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV5+.png" group-title="央视频道",CCTV-5+ 体育赛事
+http://192.168.1.2:35455/bptv/10000100000000050000000003870759.m3u8
+#EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV6.png" group-title="央视频道",CCTV-6 电影
+http://192.168.1.2:35455/bptv/10000100000000050000000003870749.m3u8
+#EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV7.png" group-title="央视频道",CCTV-7 国防军事
+http://192.168.1.2:35455/bptv/10000100000000050000000003870750.m3u8
+#EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV8.png" group-title="央视频道",CCTV-8 电视剧
+http://192.168.1.2:35455/bptv/10000100000000050000000003870838.m3u8
 #EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/咪咕体育.png" group-title="咪咕体育",5月20日03:00_英超联赛_布莱顿 vs 利物浦_苏东 徐阳
 https://migu1.188766.xyz/play?migutoken=c539c5ec9c8a836aa765a6739d1db2da&id=Ux5olpRoX2C1Ebp%2Fks%2FyNnJl4qSHnUdxpXYAsb0c3YcpUMLuhnUu7Y7lVKlE1ovQpovc%2BfKw1QgF3sVFDYJPccY95o%2FAtR2f0InIH9g981j4wXJwOaiZOchMsf16In68rM%2BsGeLGW6gXxW4Zwvk98umi5mau54Ogc00iWiM9iHR%2BVeVPWN%2FcQzUPGbyF%2FVs%2B0T48d2aVud1Nrnd74vCV3g%3D%3D&name=8ZUVZKCLqMoiK8Fw5G55xJdA%2BY6X2JkI4skWV3WpzYO87xEfgccTimuIeorujbYhF2rnU0Dpqzs9d1AWRdVDTKjzKxhfi7%2BlwotChdqFfm7miltBXTLNBrkW6EmsqsRU
 #EXTINF:-1 tvg-id="" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/咪咕体育.png" group-title="咪咕体育",5月20日03:00_英超联赛_布莱顿 vs 利物浦_苏东 徐阳

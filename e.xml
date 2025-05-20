@@ -16392,8 +16392,58 @@
 <channel id="243">
 <display-name lang="zh">安徽经济生活</display-name>
 </channel>
-<programme start="20250520000000 +0800" stop="20250520235959 +0800" channel="243">
-<title lang="zh">精彩节目</title>
+<programme start="20250520000000 +0800" stop="20250520010700 +0800" channel="243">
+<title lang="zh">精彩呈现</title>
+</programme><programme start="20250520010700 +0800" stop="20250520053200 +0800" channel="243">
+<title lang="zh">节目结束</title>
+</programme><programme start="20250520053200 +0800" stop="20250520060000 +0800" channel="243">
+<title lang="zh">帮女郎帮你忙</title>
+</programme><programme start="20250520060000 +0800" stop="20250520070500 +0800" channel="243">
+<title lang="zh">第1时间</title>
+</programme><programme start="20250520070500 +0800" stop="20250520075000 +0800" channel="243">
+<title lang="zh">东四牌楼东</title>
+</programme><programme start="20250520075000 +0800" stop="20250520082000 +0800" channel="243">
+<title lang="zh">健康行天下</title>
+</programme><programme start="20250520082000 +0800" stop="20250520090000 +0800" channel="243">
+<title lang="zh">东四牌楼东</title>
+</programme><programme start="20250520090000 +0800" stop="20250520094500 +0800" channel="243">
+<title lang="zh">东四牌楼东</title>
+</programme><programme start="20250520094500 +0800" stop="20250520105000 +0800" channel="243">
+<title lang="zh">东四牌楼东</title>
+</programme><programme start="20250520105000 +0800" stop="20250520114000 +0800" channel="243">
+<title lang="zh">东四牌楼东</title>
+</programme><programme start="20250520114000 +0800" stop="20250520121000 +0800" channel="243">
+<title lang="zh">帮女郎帮你忙</title>
+</programme><programme start="20250520121000 +0800" stop="20250520125500 +0800" channel="243">
+<title lang="zh">人世间</title>
+</programme><programme start="20250520125500 +0800" stop="20250520134500 +0800" channel="243">
+<title lang="zh">人世间</title>
+</programme><programme start="20250520134500 +0800" stop="20250520142500 +0800" channel="243">
+<title lang="zh">人世间</title>
+</programme><programme start="20250520142500 +0800" stop="20250520151000 +0800" channel="243">
+<title lang="zh">人世间</title>
+</programme><programme start="20250520151000 +0800" stop="20250520164000 +0800" channel="243">
+<title lang="zh">人世间</title>
+</programme><programme start="20250520164000 +0800" stop="20250520173000 +0800" channel="243">
+<title lang="zh">谢谢你来了</title>
+</programme><programme start="20250520173000 +0800" stop="20250520175500 +0800" channel="243">
+<title lang="zh">健康行天下</title>
+</programme><programme start="20250520175500 +0800" stop="20250520183000 +0800" channel="243">
+<title lang="zh">帮女郎帮你忙</title>
+</programme><programme start="20250520183000 +0800" stop="20250520194000 +0800" channel="243">
+<title lang="zh">第1时间</title>
+</programme><programme start="20250520194000 +0800" stop="20250520201000 +0800" channel="243">
+<title lang="zh">直播安徽</title>
+</programme><programme start="20250520201000 +0800" stop="20250520205500 +0800" channel="243">
+<title lang="zh">暗夜与黎明</title>
+</programme><programme start="20250520205500 +0800" stop="20250520214000 +0800" channel="243">
+<title lang="zh">暗夜与黎明</title>
+</programme><programme start="20250520214000 +0800" stop="20250520222000 +0800" channel="243">
+<title lang="zh">暗夜与黎明</title>
+</programme><programme start="20250520222000 +0800" stop="20250520230000 +0800" channel="243">
+<title lang="zh">帮女郎帮你忙</title>
+</programme><programme start="20250520230000 +0800" stop="20250520235959 +0800" channel="243">
+<title lang="zh">健康行天下</title>
 </programme>
 <channel id="244">
 <display-name lang="zh">安徽影视</display-name>
@@ -20569,7 +20619,7 @@
 </programme><programme start="20250520194000 +0800" stop="20250520205000 +0800" channel="305">
 <title lang="zh">门当户对</title>
 </programme><programme start="20250520205000 +0800" stop="20250520214500 +0800" channel="305">
-<title lang="zh">门当户对</title>
+<title lang="zh">壮志守山河</title>
 </programme><programme start="20250520214500 +0800" stop="20250520221500 +0800" channel="305">
 <title lang="zh">壮志守山河</title>
 </programme><programme start="20250520221500 +0800" stop="20250520224500 +0800" channel="305">

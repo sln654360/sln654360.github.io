@@ -209,23 +209,23 @@ https://migu.777189.xyz/订阅后播放/CGTN法语
 https://migu.777189.xyz/订阅后播放/CGTN西班牙语
 #EXTINF:-1 tvg-id="CGTN阿语" tvg-name="CGTN阿语" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CGTN阿语.png" group-title="数字频道",CGTN阿语
 https://migu.777189.xyz/订阅后播放/CGTN阿拉伯语
-#EXTINF:-1 tvg-id="北京IPTV4K" tvg-name="北京IPTV4K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京IPTV4K.png" group-title="4K频道",北京IPTV4K
+#EXTINF:-1 tvg-id="北京IPTV4K" tvg-name="北京IPTV4K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京IPTV4K.png" group-title="超清频道",北京IPTV4K
 http://192.168.1.2:35455/bptv/10000100000000050000000003887500.m3u8
-#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="4K频道",北京卫视4K
+#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="超清频道",北京卫视4K
 https://migu.777189.xyz/要用订阅的地址/北京卫视4K超高清
-#EXTINF:-1 tvg-id="咪咕体育" tvg-name="咪咕体育" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/咪咕体育.png" group-title="4K频道",咪咕体育-1
+#EXTINF:-1 tvg-id="咪咕体育" tvg-name="咪咕体育" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/咪咕体育.png" group-title="超清频道",咪咕体育-1
 http://192.168.1.2:35455/itv/3000000010000005180.m3u8
-#EXTINF:-1 tvg-id="咪咕体育" tvg-name="咪咕体育" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/咪咕体育.png" group-title="4K频道",咪咕国际4K-2
+#EXTINF:-1 tvg-id="咪咕体育" tvg-name="咪咕体育" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/咪咕体育.png" group-title="超清频道",咪咕国际4K-2
 http://192.168.1.2:35455/itv/3000000010000015686.m3u8
-#EXTINF:-1 tvg-id="LOVENATURE" tvg-name="LOVENATURE" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/LOVENATURE.png" group-title="4K频道",Love Nature 4K
+#EXTINF:-1 tvg-id="LOVENATURE" tvg-name="LOVENATURE" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/LOVENATURE.png" group-title="超清频道",Love Nature 4K
 https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
-#EXTINF:-1 tvg-id="LOUPE4K" tvg-name="LOUPE4K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/LOUPE.png" group-title="4K频道",Loupe 4K
+#EXTINF:-1 tvg-id="LOUPE4K" tvg-name="LOUPE4K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/LOUPE.png" group-title="超清频道",Loupe 4K
 https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
-#EXTINF:-1 tvg-id="FASHIONONE" tvg-name="FASHIONONE" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/FASHIONONE.png" group-title="4K频道",Fashion 4K
+#EXTINF:-1 tvg-id="FASHIONONE" tvg-name="FASHIONONE" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/FASHIONONE.png" group-title="超清频道",Fashion 4K
 https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="北京纪实科教8K" tvg-name="北京纪实科教8K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京纪实科教8K.png" group-title="4K频道",北京纪实科教8K
+#EXTINF:-1 tvg-id="北京纪实科教8K" tvg-name="北京纪实科教8K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京纪实科教8K.png" group-title="超清频道",北京纪实科教8K
 https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8
-#EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京体育休闲.png" group-title="4K频道",北京体育休闲-4K-HLG
+#EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京体育休闲.png" group-title="超清频道",北京体育休闲-4K-HLG
 http://192.168.1.2:35455/bptv/10000100000000050000000004270524.m3u8
-#EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京体育休闲.png" group-title="4K频道",北京体育休闲-4K
+#EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京体育休闲.png" group-title="超清频道",北京体育休闲-4K
 http://192.168.1.2:35455/bptv/10000100000000050000000004270525.m3u8

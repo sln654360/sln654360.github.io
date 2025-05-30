@@ -57,7 +57,7 @@ https://nptv.freetv.top/nptv/shenzheng.m3u8
 #EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东南卫视.png" group-title="卫视频道",东南卫视
 https://migu.777189.xyz/请使用订阅链接观看/东南卫视
 #EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/山东卫视.png" group-title="卫视频道",山东卫视
-htthttps://nptv.freetv.top/nptv/shandong.m3u8
+https://nptv.freetv.top/nptv/shandong.m3u8
 #EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安徽卫视.png" group-title="卫视频道",安徽卫视
 https://nptv.freetv.top/nptv/anhui.m3u8
 #EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/天津卫视.png" group-title="卫视频道",天津卫视
@@ -114,26 +114,10 @@ https://migu.777189.xyz/请使用订阅链接观看/CHC家庭影院
 https://migu.777189.xyz/请使用订阅链接观看/CHC动作电影
 #EXTINF:-1 tvg-id="CHC影迷电影" tvg-name="CHC影迷电影" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC影迷电影.png" group-title="数字频道",CHC影迷电影
 https://migu.777189.xyz/请使用订阅链接观看/CHC影迷电影
-#EXTINF:-1 tvg-id="重温经典" tvg-name="BTV-重温经典" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/重温经典.png" group-title="数字频道",BTV-重温经典
-http://192.168.1.2:35455/bptv/10000100000000050000000003887494.m3u8
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/重温经典.png" group-title="数字频道",重温经典
 https://migu.777189.xyz/请使用订阅链接观看/重温经典
 #EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/卡酷少儿.png" group-title="数字频道",卡酷少儿
-http://192.168.1.2:35455/bptv/10000100000000050000000003904597.m3u8
-#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/金鹰卡通.png" group-title="数字频道",金鹰卡通
-http://192.168.1.2:35455/bptv/10000100000000050000000004796942.m3u8
-#EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/嘉佳卡通.png" group-title="数字频道",嘉佳卡通
-http://192.168.1.2:35455/bptv/10000100000000050000000003887459.m3u8
-#EXTINF:-1 tvg-id="萌宠TV" tvg-name="萌宠TV" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京萌宠TV.png" group-title="数字频道",萌宠TV
-http://192.168.1.2:35455/bptv/10000100000000050000000003887495.m3u8
-#EXTINF:-1 tvg-id="淘BABY" tvg-name="淘BABY" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京淘BABY.png" group-title="数字频道",淘BABY
-http://192.168.1.2:35455/bptv/10000100000000050000000003887496.m3u8
-#EXTINF:-1 tvg-id="淘剧场" tvg-name="淘剧场" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京淘剧场.png" group-title="数字频道",淘剧场
-http://192.168.1.2:35455/bptv/10000100000000050000000003887497.m3u8
-#EXTINF:-1 tvg-id="淘电影" tvg-name="淘电影" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京淘电影.png" group-title="数字频道",淘电影
-http://192.168.1.2:35455/bptv/10000100000000050000000003887498.m3u8
-#EXTINF:-1 tvg-id="淘娱乐" tvg-name="淘娱乐" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京淘娱乐.png" group-title="数字频道",淘娱乐
-http://192.168.1.2:35455/bptv/10000100000000050000000003887499.m3u8
+https://migu.777189.xyz/要用订阅的地址/北京卡酷少儿
 #EXTINF:-1 tvg-id="北京影视" tvg-name="北京影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京影视.png" group-title="数字频道",北京影视
 https://migu.777189.xyz/要用订阅的地址/北京影视
 #EXTINF:-1 tvg-id="北京文艺" tvg-name="北京文艺" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京文艺.png" group-title="数字频道",北京文艺
@@ -143,9 +127,9 @@ https://migu.777189.xyz/要用订阅的地址/北京财经
 #EXTINF:-1 tvg-id="北京生活" tvg-name="北京生活" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京生活.png" group-title="数字频道",北京生活
 https://migu.777189.xyz/要用订阅的地址/北京i生活
 #EXTINF:-1 tvg-id="北京新闻" tvg-name="北京新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京新闻.png" group-title="数字频道",北京新闻
-http://192.168.1.2:35455/bptv/10000100000000050000000003870780.m3u8
+https://migu.777189.xyz/要用订阅的地址/北京新闻
 #EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京体育休闲.png" group-title="数字频道",北京体育休闲
-http://192.168.1.2:35455/bptv/10000100000000050000000003870779.m3u8
+https://migu.777189.xyz/要用订阅的地址/北京体育休闲
 #EXTINF:-1 tvg-id="北京纪实科教" tvg-name="北京纪实科教" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京纪实科教.png" group-title="数字频道",北京纪实科教
 https://migu.777189.xyz/要用订阅的地址/北京纪实科教
 #EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方影视.png" group-title="数字频道",东方影视
@@ -216,8 +200,6 @@ https://migu.777189.xyz/订阅后播放/CGTN阿拉伯语
 https://nptv.freetv.top/nptv/cctv4k.m3u8
 #EXTINF:-1 tvg-id="CCTV8K" tvg-name="CCTV8K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV8K.png" group-title="超清频道",CCTV8K
 https://nptv.freetv.top/nptv/cctv8k.m3u8
-#EXTINF:-1 tvg-id="北京IPTV4K" tvg-name="北京IPTV4K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京IPTV4K.png" group-title="超清频道",北京IPTV4K
-http://192.168.1.2:35455/bptv/10000100000000050000000003887500.m3u8
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="超清频道",北京卫视4K
 https://migu.777189.xyz/要用订阅的地址/北京卫视4K超高清
 #EXTINF:-1 tvg-id="咪咕体育" tvg-name="咪咕体育" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/咪咕体育.png" group-title="超清频道",咪咕体育-1
@@ -232,7 +214,3 @@ https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
 https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="北京纪实科教8K" tvg-name="北京纪实科教8K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京纪实科教8K.png" group-title="超清频道",北京纪实科教8K
 https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8
-#EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京体育休闲.png" group-title="超清频道",北京体育休闲-4K-HLG
-http://192.168.1.2:35455/bptv/10000100000000050000000004270524.m3u8
-#EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京体育休闲.png" group-title="超清频道",北京体育休闲-4K
-http://192.168.1.2:35455/bptv/10000100000000050000000004270525.m3u8

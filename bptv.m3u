@@ -31,17 +31,12 @@ https://migu.777189.xyz/请使用订阅链接观看/CCTV13
 https://migu.777189.xyz/请使用订阅链接观看/CCTV14
 #EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV15" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV15.png" group-title="央视频道",CCTV-15 音乐
 https://migu.777189.xyz/请使用订阅链接观看/CCTV15
-#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV16.png" group-title="央视频道",CCTV-16 奥林匹克
-https://nptv.freetv.top/nptv/cctv16.m3u8
 #EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV17.png" group-title="央视频道",CCTV-17 农业农村
 https://migu.777189.xyz/请使用订阅链接观看/CCTV17
 #EXTINF:-1 tvg-id="CCTV4欧洲" tvg-name="CCTV4欧洲" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4欧洲.png" group-title="央视频道",CCTV-4 中文国际 欧洲
 https://migu.777189.xyz/订阅后播放/CCTV4欧洲
 #EXTINF:-1 tvg-id="CCTV4美洲" tvg-name="CCTV4美洲" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4美洲.png" group-title="央视频道",CCTV-4 中文国际 美洲
 https://migu.777189.xyz/订阅后播放/CCTV4美洲
-
-#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
-https://nptv.freetv.top/nptv/hunan.m3u8
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/浙江卫视.png" group-title="卫视频道",浙江卫视
 https://migu.777189.xyz/请使用订阅链接观看/浙江卫视
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏卫视.png" group-title="卫视频道",江苏卫视
@@ -49,65 +44,33 @@ https://migu.777189.xyz/请使用订阅链接观看/江苏卫视
 #EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方卫视.png" group-title="卫视频道",东方卫视
 https://migu.777189.xyz/请使用订阅链接观看/东方卫视
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视.png" group-title="卫视频道",北京卫视
-https://nptv.freetv.top/nptv/beijing.m3u8
+https://migu.777189.xyz/请使用订阅链接观看/北京卫视
 #EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/广东卫视.png" group-title="卫视频道",广东卫视
 https://migu.777189.xyz/请使用订阅链接观看/广东卫视
-#EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/深圳卫视.png" group-title="卫视频道",深圳卫视
-https://nptv.freetv.top/nptv/shenzheng.m3u8
 #EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东南卫视.png" group-title="卫视频道",东南卫视
-https://nptv.freetv.top/nptv/dongnan.m3u8
-#EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/山东卫视.png" group-title="卫视频道",山东卫视
-https://nptv.freetv.top/nptv/shandong.m3u8
-#EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安徽卫视.png" group-title="卫视频道",安徽卫视
-https://nptv.freetv.top/nptv/anhui.m3u8
-#EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/天津卫视.png" group-title="卫视频道",天津卫视
-https://nptv.freetv.top/nptv/tianjing.m3u8
+https://migu.777189.xyz/请使用订阅链接观看/东南卫视
 #EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖北卫视.png" group-title="卫视频道",湖北卫视
 https://migu.777189.xyz/请使用订阅链接观看/湖北卫视
-#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/辽宁卫视.png" group-title="卫视频道",辽宁卫视
-https://nptv.freetv.top/nptv/liaoning.m3u8
 #EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江西卫视.png" group-title="卫视频道",江西卫视
 https://migu.777189.xyz/请使用订阅链接观看/江西卫视
-#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河北卫视.png" group-title="卫视频道",河北卫视
-https://nptv.freetv.top/nptv/hebei.m3u8
-#EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/黑龙江卫视.png" group-title="卫视频道",黑龙江卫视
-https://nptv.freetv.top/nptv/heilongjiang.m3u8
-#EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/重庆卫视.png" group-title="卫视频道",重庆卫视
-https://nptv.freetv.top/nptv/chongqing.m3u8
-#EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/贵州卫视.png" group-title="卫视频道",贵州卫视
-https://nptv.freetv.top/nptv/guizhou.m3u8
-#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/吉林卫视.png" group-title="卫视频道",吉林卫视
-https://nptv.freetv.top/nptv/jiling.m3u8
-#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/四川卫视.png" group-title="卫视频道",四川卫视
-https://nptv.freetv.top/nptv/sichuan.m3u8
-#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/海南卫视.png" group-title="卫视频道",海南卫视
-https://nptv.freetv.top/nptv/hainan.m3u8
-#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南卫视.png" group-title="卫视频道",河南卫视
-https://nptv.freetv.top/nptv/henan.m3u8
-#EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/广西卫视.png" group-title="卫视频道",广西卫视
-https://nptv.freetv.top/nptv/guangxi.m3u8
-#EXTINF:-1 tvg-id="山西卫视" tvg-name="山西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/山西卫视.png" group-title="卫视频道",山西卫视
-https://nptv.freetv.top/nptv/shanxi.m3u8
-#EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/云南卫视.png" group-title="卫视频道",云南卫视
-https://nptv.freetv.top/nptv/yunnan.m3u8
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/陕西卫视.png" group-title="卫视频道",陕西卫视
 https://migu.777189.xyz/请使用订阅链接观看/陕西卫视
 #EXTINF:-1 tvg-id="内蒙古卫视" tvg-name="内蒙古卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/内蒙古卫视.png" group-title="卫视频道",内蒙古卫视
 https://migu.777189.xyz/请使用订阅链接观看/内蒙古卫视
-#EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/甘肃卫视.png" group-title="卫视频道",甘肃卫视
-https://nptv.freetv.top/nptv/gansu.m3u8
-#EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/宁夏卫视.png" group-title="卫视频道",宁夏卫视
-https://nptv.freetv.top/nptv/ningxia.m3u8
-#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/青海卫视.png" group-title="卫视频道",青海卫视
-https://nptv.freetv.top/nptv/qinghai.m3u8
 #EXTINF:-1 tvg-id="新疆卫视" tvg-name="新疆卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/新疆卫视.png" group-title="卫视频道",新疆卫视
-https://nptv.freetv.top/nptv/xinjiang.m3u8
+https://migu.777189.xyz/请使用订阅链接观看/新疆卫视
 #EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/西藏卫视.png" group-title="卫视频道",西藏卫视
 https://migu.777189.xyz/请使用订阅链接观看/西藏卫视
+#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南卫视.png" group-title="卫视频道",河南卫视
+https://migu.777189.xyz/订阅后播放/河南卫视
+#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/吉林卫视.png" group-title="卫视频道",吉林卫视
+https://migu.777189.xyz/订阅后播放/吉林卫视
+#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/青海卫视.png" group-title="卫视频道",青海卫视
+https://migu.777189.xyz/订阅后播放/青海卫视
+#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/海南卫视.png" group-title="卫视频道",海南卫视
+https://migu.777189.xyz/订阅后播放/海南卫视
 #EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/大湾区卫视.png" group-title="卫视频道",大湾区卫视
 https://migu.777189.xyz/订阅后播放/大湾区卫视
-
-
 #EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC家庭影院.png" group-title="数字频道",CHC家庭影院
 https://migu.777189.xyz/请使用订阅链接观看/CHC家庭影院
 #EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC动作电影.png" group-title="数字频道",CHC动作电影
@@ -154,12 +117,6 @@ https://migu.777189.xyz/订阅后播放/CETV1
 https://migu.777189.xyz/订阅后播放/CETV2
 #EXTINF:-1 tvg-id="CETV4" tvg-name="CETV4" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV4.png" group-title="数字频道",CETV-4
 https://migu.777189.xyz/订阅后播放/CETV4
-#EXTINF:-1 tvg-id="第一剧场" tvg-name="第一剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/第一剧场.png" group-title="数字频道",第一剧场
-https://nptv.freetv.top/nptv/dyjc.m3u8
-#EXTINF:-1 tvg-id="风云剧场" tvg-name="风云剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/风云剧场.png" group-title="数字频道",风云剧场
-https://nptv.freetv.top/nptv/fyjc.m3u8
-#EXTINF:-1 tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/怀旧剧场.png" group-title="数字频道",怀旧剧场
-https://nptv.freetv.top/nptv/hjjc.m3u8
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视中文台.png" group-title="数字频道",凤凰中文
 https://live.tvfix.org/live/fhzw/index.m3u8
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视中文台.png" group-title="数字频道",凤凰中文
@@ -196,10 +153,6 @@ https://migu.777189.xyz/订阅后播放/CGTN法语
 https://migu.777189.xyz/订阅后播放/CGTN西班牙语
 #EXTINF:-1 tvg-id="CGTN阿语" tvg-name="CGTN阿语" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CGTN阿语.png" group-title="数字频道",CGTN阿语
 https://migu.777189.xyz/订阅后播放/CGTN阿拉伯语
-#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4K.png" group-title="超清频道",CCTV4K
-https://nptv.freetv.top/nptv/cctv4k.m3u8
-#EXTINF:-1 tvg-id="CCTV8K" tvg-name="CCTV8K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV8K.png" group-title="超清频道",CCTV8K
-https://nptv.freetv.top/nptv/cctv8k.m3u8
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="超清频道",北京卫视4K
 https://migu.777189.xyz/订阅后播放/北京卫视4K超高清
 #EXTINF:-1 tvg-id="咪咕体育" tvg-name="咪咕体育" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/咪咕体育.png" group-title="超清频道",咪咕体育-1

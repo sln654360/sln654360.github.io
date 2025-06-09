@@ -167,10 +167,6 @@ https://migu.777189.xyz/请使用订阅链接观看/CCTV14
 https://migu.777189.xyz/请使用订阅链接观看/CCTV15
 #EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV17.png" group-title="央视频道",CCTV-17 农业农村
 https://migu.777189.xyz/请使用订阅链接观看/CCTV17
-#EXTINF:-1 tvg-id="CCTV4欧洲" tvg-name="CCTV4欧洲" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4欧洲.png" group-title="央视频道",CCTV-4 中文国际 欧洲
-https://migu.777189.xyz/订阅后播放/CCTV4欧洲
-#EXTINF:-1 tvg-id="CCTV4美洲" tvg-name="CCTV4美洲" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4美洲.png" group-title="央视频道",CCTV-4 中文国际 美洲
-https://migu.777189.xyz/订阅后播放/CCTV4美洲
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/浙江卫视.png" group-title="卫视频道",浙江卫视
 https://migu.777189.xyz/请使用订阅链接观看/浙江卫视
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏卫视.png" group-title="卫视频道",江苏卫视
@@ -195,23 +191,13 @@ https://migu.777189.xyz/请使用订阅链接观看/内蒙古卫视
 https://migu.777189.xyz/请使用订阅链接观看/新疆卫视
 #EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/西藏卫视.png" group-title="卫视频道",西藏卫视
 https://migu.777189.xyz/请使用订阅链接观看/西藏卫视
-#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南卫视.png" group-title="卫视频道",河南卫视
-https://migu.777189.xyz/订阅后播放/河南卫视
-#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/吉林卫视.png" group-title="卫视频道",吉林卫视
-https://migu.777189.xyz/订阅后播放/吉林卫视
-#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/青海卫视.png" group-title="卫视频道",青海卫视
-https://migu.777189.xyz/订阅后播放/青海卫视
-#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/海南卫视.png" group-title="卫视频道",海南卫视
-https://migu.777189.xyz/订阅后播放/海南卫视
-#EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/大湾区卫视.png" group-title="卫视频道",大湾区卫视
-https://migu.777189.xyz/订阅后播放/大湾区卫视
 
 #EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC家庭影院.png" group-title="数字频道",CHC家庭影院
-https://migu.777189.xyz/请使用订阅链接观看/CHC家庭影院
+http://192.168.1.2:35455/mgtv/644368373.m3u8
 #EXTINF:-1 tvg-id="CHC动作电影" tvg-name="CHC动作电影" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC动作电影.png" group-title="数字频道",CHC动作电影
-https://migu.777189.xyz/请使用订阅链接观看/CHC动作电影
+http://192.168.1.2:35455/mgtv/644368714.m3u8
 #EXTINF:-1 tvg-id="CHC影迷电影" tvg-name="CHC影迷电影" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC影迷电影.png" group-title="数字频道",CHC影迷电影
-https://migu.777189.xyz/请使用订阅链接观看/CHC影迷电影
+http://192.168.1.2:35455/mgtv/952383261.m3u8
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/重温经典.png" group-title="数字频道",重温经典
 https://migu.777189.xyz/请使用订阅链接观看/重温经典
 #EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方影视.png" group-title="数字频道",东方影视

@@ -131,7 +131,8 @@ https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
 http://192.168.1.2:35455/mgtv/849119120.m3u8
 #EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/大湾区卫视.png" group-title="卫视频道",大湾区卫视
 http://192.168.1.2:35455/mgtv/608917627.m3u8
-
+#EXTINF:-1 tvg-id="香港卫视" tvg-name="香港卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/香港卫视.png" group-title="卫视频道",香港卫视
+https://migu.777189.xyz/请使用订阅链接观看/香港卫视
 
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV1.png" group-title="央视频道",CCTV-1 综合
 https://migu.777189.xyz/请使用订阅链接观看/CCTV1

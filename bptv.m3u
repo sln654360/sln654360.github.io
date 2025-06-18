@@ -40,6 +40,12 @@ http://192.168.1.2:35455/mgtv/673168256.m3u8
 http://192.168.1.2:35455/mgtv/608807419.m3u8
 #EXTINF:-1 tvg-id="CCTV4美洲" tvg-name="CCTV4美洲" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4美洲.png" group-title="央视频道",CCTV-4 中文国际 美洲
 http://192.168.1.2:35455/mgtv/608807416.m3u8
+#EXTINF:-1 tvg-id="第一剧场" tvg-name="第一剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/第一剧场.png" group-title="央视频道",第一剧场
+http://192.168.1.2:35455/nptv/dyjc.m3u8
+#EXTINF:-1 tvg-id="风云剧场" tvg-name="风云剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/风云剧场.png" group-title="央视频道",风云剧场
+http://192.168.1.2:35455/nptv/fyjc.m3u8
+#EXTINF:-1 tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/怀旧剧场.png" group-title="央视频道",怀旧剧场
+http://192.168.1.2:35455/nptv/hjjc.m3u8
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
 http://192.168.1.2:35455/nptv/hunan.m3u8
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/浙江卫视.png" group-title="卫视频道",浙江卫视
@@ -225,12 +231,6 @@ http://192.168.1.2:35455/mgtv/639731747.m3u8
 http://192.168.1.2:35455/mgtv/626064703.m3u8
 #EXTINF:-1 tvg-id="开封鼓楼" tvg-name="开封鼓楼" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/开封鼓楼.png" group-title="数字频道",开封鼓楼
 http://192.168.1.2:35455/mgtv/681448619.m3u8
-#EXTINF:-1 tvg-id="第一剧场" tvg-name="第一剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/第一剧场.png" group-title="数字频道",第一剧场
-http://192.168.1.2:35455/nptv/dyjc.m3u8
-#EXTINF:-1 tvg-id="风云剧场" tvg-name="风云剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/风云剧场.png" group-title="数字频道",风云剧场
-http://192.168.1.2:35455/nptv/fyjc.m3u8
-#EXTINF:-1 tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/怀旧剧场.png" group-title="数字频道",怀旧剧场
-http://192.168.1.2:35455/nptv/hjjc.m3u8
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV1.png" group-title="数字频道",CETV-1
 http://192.168.1.2:35455/nptv/cetv1.m3u8
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV1.png" group-title="数字频道",CETV-1

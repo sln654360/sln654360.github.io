@@ -197,6 +197,10 @@ https://migu.188766.xyz/用接口播放/北京新闻
 https://migu.188766.xyz/用接口播放/北京体育休闲
 #EXTINF:-1 tvg-id="北京纪实科教" tvg-name="北京纪实科教" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京纪实科教.png" group-title="数字频道",北京纪实科教
 https://migu.188766.xyz/用接口播放/北京纪实科教
+#EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海新闻综合.png" group-title="数字频道",上海新闻综合
+http://192.168.1.2:35455/mgtv/651632657.m3u8
+#EXTINF:-1 tvg-id="上海第一财经" tvg-name="上海第一财经" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海第一财经.png" group-title="数字频道",上海第一财经
+http://192.168.1.2:35455/mgtv/608780988.m3u8
 #EXTINF:-1 tvg-id="南京新闻综合频道" tvg-name="南京新闻综合频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南京新闻综合频道.png" group-title="数字频道",南京新闻综合频道
 http://192.168.1.2:35455/mgtv/838109047.m3u8
 #EXTINF:-1 tvg-id="南京教科频道" tvg-name="南京教科频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南京教科频道.png" group-title="数字频道",南京教科频道
@@ -233,6 +237,20 @@ http://192.168.1.2:35455/mgtv/626064703.m3u8
 http://192.168.1.2:35455/mgtv/681448619.m3u8
 #EXTINF:-1 tvg-id="钱塘江" tvg-name="钱塘江" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/钱塘江.png" group-title="数字频道",钱塘江
 http://192.168.1.2:35455/mgtv/647370520.m3u8
+#EXTINF:-1 tvg-id="老故事" tvg-name="老故事" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/老故事.png" group-title="数字频道",老故事
+http://192.168.1.2:35455/mgtv/884121956.m3u8
+#EXTINF:-1 tvg-id="发现之旅" tvg-name="发现之旅" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/发现之旅.png" group-title="数字频道",发现之旅
+http://192.168.1.2:35455/mgtv/624878970.m3u8
+#EXTINF:-1 tvg-id="中学生" tvg-name="中学生" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/钱塘江.png" group-title="数字频道",中学生
+http://192.168.1.2:35455/mgtv/708869532.m3u8
+#EXTINF:-1 tvg-id="深度对话" tvg-name="深度对话" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/钱塘江.png" group-title="数字频道",深度对话
+http://192.168.1.2:35455/mgtv/625703337.m3u8
+#EXTINF:-1 tvg-id="新动力量创一流" tvg-name="新动力量创一流" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/新动力量创一流.png" group-title="数字频道",新动力量创一流
+http://192.168.1.2:35455/mgtv/713589837.m3u8
+#EXTINF:-1 tvg-id="中国航天“逆袭”之路" tvg-name="中国航天“逆袭”之路" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/中国航天“逆袭”之路.png" group-title="数字频道",中国航天“逆袭”之路
+http://192.168.1.2:35455/mgtv/617432318.m3u8
+#EXTINF:-1 tvg-id="《长安的荔枝》主演作品集" tvg-name="《长安的荔枝》主演作品集" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/《长安的荔枝》主演作品集.png" group-title="数字频道",《长安的荔枝》主演作品集
+http://192.168.1.2:35455/mgtv/625133682.m3u8
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV1.png" group-title="数字频道",CETV-1
 http://192.168.1.2:35455/nptv/cetv1.m3u8
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV1.png" group-title="数字频道",CETV-1
@@ -265,6 +283,26 @@ http://192.168.1.2:35455/nptv/cgtnfr.m3u8
 http://192.168.1.2:35455/nptv/cgtnsp.m3u8
 #EXTINF:-1 tvg-id="CGTN阿语" tvg-name="CGTN阿语" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CGTN阿语.png" group-title="数字频道",CGTN阿语
 http://192.168.1.2:35455/nptv/cgtnar.m3u8
+#EXTINF:-1 tvg-id="熊猫频道1" tvg-name="熊猫频道1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道1.png" group-title="数字频道",熊猫频道1
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道2" tvg-name="熊猫频道2" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道2.png" group-title="数字频道",熊猫频道2
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道3" tvg-name="熊猫频道3" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道3.png" group-title="数字频道",熊猫频道3
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道4" tvg-name="熊猫频道4" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道4.png" group-title="数字频道",熊猫频道4
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道5" tvg-name="熊猫频道5" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道5.png" group-title="数字频道",熊猫频道5
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道6" tvg-name="熊猫频道6" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道6.png" group-title="数字频道",熊猫频道6
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道7" tvg-name="熊猫频道7" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道7.png" group-title="数字频道",熊猫频道7
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道8" tvg-name="熊猫频道8" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道8.png" group-title="数字频道",熊猫频道8
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道9" tvg-name="熊猫频道9" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道9.png" group-title="数字频道",熊猫频道9
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="熊猫频道10" tvg-name="熊猫频道10" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道10.png" group-title="数字频道",熊猫频道10
+http://192.168.1.2:35455/mgtv/626064703.m3u8
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="超清频道",北京卫视4K
 https://migu.188766.xyz/请使用接口链接观看/北京卫视
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="超清频道",北京卫视4K

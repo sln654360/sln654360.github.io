@@ -78,15 +78,15 @@
         </div>
     </div>
 
-    <p>配置ip后，可复制和下载，但建议使用下方的生成接口链接，用接口链接播放！</p>
-    <p>已支持nptv（需更新allinone），接口链接额外提供一些宝藏频道，不定时补充。看不了请检查ip和原始列表。建议进群，后续可能验证，<a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank">Tg群</a></p>
+    <p>配置ip后，可复制和下载，但建议使用下方的生成订阅链接，用订阅链接播放！</p>
+    <p>已支持nptv（需更新allinone），订阅链接额外提供一些宝藏频道，不定时补充。看不了请检查ip和原始列表。建议进群，后续可能验证，<a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank">Tg群</a></p>
     <div class="button-group">
         <button onclick="copyToClipboard()">复制以下内容</button>
         <button id="convertButton" onclick="toggleFormat()">转换TXT格式</button>
         <a id="downloadLink" style="display: none;" download="playlist.m3u">
             <button>下载 M3U 文件</button>
         </a>
-        <button onclick="copyPlayLink()">生成接口链接</button>
+        <button onclick="copyPlayLink()">生成订阅链接</button>
     </div>
     <pre id="result">生成中，请稍候...</pre>
 
@@ -366,7 +366,7 @@
             if (!includeMishitong) playLink += `&mishitong=false`;
         
             navigator.clipboard.writeText(playLink).then(() => {
-                showModal('接口链接已复制到剪贴板！请粘贴到播放器中使用！', [
+                showModal('订阅链接已复制到剪贴板！请粘贴到播放器中使用！', [
                     { text: '确定', onClick: () => {} }
                 ]);
             }).catch(err => {

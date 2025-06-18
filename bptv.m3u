@@ -163,6 +163,8 @@ http://192.168.1.2:35455/mgtv/629943678.m3u8
 http://192.168.1.2:35455/mgtv/614961829.m3u8
 #EXTINF:-1 tvg-id="红色轮播台" tvg-name="红色轮播台" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/红色轮播台.png" group-title="数字频道",红色轮播台
 http://192.168.1.2:35455/mgtv/713600957.m3u8
+#EXTINF:-1 tvg-id="和美乡途轮播台" tvg-name="和美乡途轮播台" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/和美乡途轮播台.png" group-title="数字频道",和美乡途轮播台
+http://192.168.1.2:35455/mgtv/和美乡途轮播台.m3u8
 #EXTINF:-1 tvg-id="掼蛋精英赛" tvg-name="掼蛋精英赛" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/掼蛋精英赛.png" group-title="数字频道",掼蛋精英赛
 http://192.168.1.2:35455/mgtv/631354620.m3u8
 #EXTINF:-1 tvg-id="赛事最经典" tvg-name="赛事最经典" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/赛事最经典.png" group-title="数字频道",赛事最经典
@@ -241,9 +243,9 @@ http://192.168.1.2:35455/mgtv/647370520.m3u8
 http://192.168.1.2:35455/mgtv/884121956.m3u8
 #EXTINF:-1 tvg-id="发现之旅" tvg-name="发现之旅" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/发现之旅.png" group-title="数字频道",发现之旅
 http://192.168.1.2:35455/mgtv/624878970.m3u8
-#EXTINF:-1 tvg-id="中学生" tvg-name="中学生" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/钱塘江.png" group-title="数字频道",中学生
+#EXTINF:-1 tvg-id="中学生" tvg-name="中学生" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/中学生.png" group-title="数字频道",中学生
 http://192.168.1.2:35455/mgtv/708869532.m3u8
-#EXTINF:-1 tvg-id="深度对话" tvg-name="深度对话" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/钱塘江.png" group-title="数字频道",深度对话
+#EXTINF:-1 tvg-id="深度对话" tvg-name="深度对话" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/深度对话.png" group-title="数字频道",深度对话
 http://192.168.1.2:35455/mgtv/625703337.m3u8
 #EXTINF:-1 tvg-id="新动力量创一流" tvg-name="新动力量创一流" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/新动力量创一流.png" group-title="数字频道",新动力量创一流
 http://192.168.1.2:35455/mgtv/713589837.m3u8

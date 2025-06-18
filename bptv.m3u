@@ -231,6 +231,8 @@ http://192.168.1.2:35455/mgtv/639731747.m3u8
 http://192.168.1.2:35455/mgtv/626064703.m3u8
 #EXTINF:-1 tvg-id="开封鼓楼" tvg-name="开封鼓楼" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/开封鼓楼.png" group-title="数字频道",开封鼓楼
 http://192.168.1.2:35455/mgtv/681448619.m3u8
+#EXTINF:-1 tvg-id="钱塘江" tvg-name="钱塘江" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/钱塘江.png" group-title="数字频道",钱塘江
+http://192.168.1.2:35455/mgtv/647370520.m3u8
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV1.png" group-title="数字频道",CETV-1
 http://192.168.1.2:35455/nptv/cetv1.m3u8
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV1.png" group-title="数字频道",CETV-1

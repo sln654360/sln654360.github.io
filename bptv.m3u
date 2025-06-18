@@ -175,8 +175,6 @@ http://192.168.1.2:35455/mgtv/629942219.m3u8
 http://192.168.1.2:35455/mgtv/629943305.m3u8
 #EXTINF:-1 tvg-id="咪咕24小时体育台" tvg-name="咪咕24小时体育台" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/咪咕24小时体育台.png" group-title="数字频道",咪咕24小时体育台
 http://192.168.1.2:35455/mgtv/654102378.m3u8
-#EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/重温经典.png" group-title="数字频道",重温经典
-https://migu.188766.xyz/请使用接口链接观看/重温经典
 #EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/卡酷少儿.png" group-title="数字频道",卡酷少儿
 https://migu.188766.xyz/用接口播放/北京卡酷少儿
 #EXTINF:-1 tvg-id="北京影视" tvg-name="北京影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京影视.png" group-title="数字频道",北京影视
@@ -193,6 +191,46 @@ https://migu.188766.xyz/用接口播放/北京新闻
 https://migu.188766.xyz/用接口播放/北京体育休闲
 #EXTINF:-1 tvg-id="北京纪实科教" tvg-name="北京纪实科教" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京纪实科教.png" group-title="数字频道",北京纪实科教
 https://migu.188766.xyz/用接口播放/北京纪实科教
+#EXTINF:-1 tvg-id="南京新闻综合频道" tvg-name="南京新闻综合频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南京新闻综合频道.png" group-title="数字频道",南京新闻综合频道
+http://192.168.1.2:35455/mgtv/838109047.m3u8
+#EXTINF:-1 tvg-id="南京教科频道" tvg-name="南京教科频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南京教科频道.png" group-title="数字频道",南京教科频道
+http://192.168.1.2:35455/mgtv/838153729.m3u8
+#EXTINF:-1 tvg-id="南京十八频道" tvg-name="南京十八频道" tvg-logo="https://fy.188766.xyz/logo//sln162/iptv-back/logo/南京十八频道.png" group-title="数字频道",南京十八频道
+http://192.168.1.2:35455/mgtv/838151753.m3u8
+#EXTINF:-1 tvg-id="体育休闲频道" tvg-name="体育休闲频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/体育休闲频道.png" group-title="数字频道",体育休闲频道
+http://192.168.1.2:35455/mgtv/626064707.m3u8
+#EXTINF:-1 tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/江苏国际.png" group-title="数字频道",江苏国际
+http://192.168.1.2:35455/mgtv/626064674.m3u8
+#EXTINF:-1 tvg-id="江苏教育" tvg-name="江苏教育" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/江苏教育.png" group-title="数字频道",江苏教育
+http://192.168.1.2:35455/mgtv/628008321.m3u8
+#EXTINF:-1 tvg-id="江苏影视频道" tvg-name="江苏影视频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/江苏影视频道.png" group-title="数字频道",江苏影视频道
+http://192.168.1.2:35455/mgtv/626064697.m3u8
+#EXTINF:-1 tvg-id="江苏综艺频道" tvg-name="江苏综艺频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/江苏综艺频道.png" group-title="数字频道",江苏综艺频道
+http://192.168.1.2:35455/mgtv/626065193.m3u8
+#EXTINF:-1 tvg-id="公共新闻频道" tvg-name="公共新闻频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/公共新闻频道.png" group-title="数字频道",公共新闻频道
+http://192.168.1.2:35455/mgtv/626064693.m3u8
+#EXTINF:-1 tvg-id="盐城新闻综合" tvg-name="盐城新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/盐城新闻综合.png" group-title="数字频道",盐城新闻综合
+http://192.168.1.2:35455/mgtv/639731825.m3u8
+#EXTINF:-1 tvg-id="淮安新闻综合" tvg-name="淮安新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/淮安新闻综合.png" group-title="数字频道",淮安新闻综合
+http://192.168.1.2:35455/mgtv/639731826.m3u8
+#EXTINF:-1 tvg-id="泰州新闻综合" tvg-name="泰州新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/泰州新闻综合.png" group-title="数字频道",泰州新闻综合
+http://192.168.1.2:35455/mgtv/639731818.m3u8
+#EXTINF:-1 tvg-id="连云港新闻综合" tvg-name="连云港新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/连云港新闻综合.png" group-title="数字频道",连云港新闻综合
+http://192.168.1.2:35455/mgtv/639731715.m3u8
+#EXTINF:-1 tvg-id="宿迁新闻综合" tvg-name="宿迁新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/宿迁新闻综合.png" group-title="数字频道",宿迁新闻综合
+http://192.168.1.2:35455/mgtv/639731832.m3u8
+#EXTINF:-1 tvg-id="徐州新闻综合" tvg-name="徐州新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/徐州新闻综合.png" group-title="数字频道",徐州新闻综合
+http://192.168.1.2:35455/mgtv/639731747.m3u8
+#EXTINF:-1 tvg-id="优漫卡通频道" tvg-name="优漫卡通频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/优漫卡通频道.png" group-title="数字频道",优漫卡通频道
+http://192.168.1.2:35455/mgtv/626064703.m3u8
+#EXTINF:-1 tvg-id="开封鼓楼" tvg-name="开封鼓楼" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/开封鼓楼.png" group-title="数字频道",开封鼓楼
+http://192.168.1.2:35455/mgtv/681448619.m3u8
+#EXTINF:-1 tvg-id="第一剧场" tvg-name="第一剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/第一剧场.png" group-title="数字频道",第一剧场
+http://192.168.1.2:35455/nptv/dyjc.m3u8
+#EXTINF:-1 tvg-id="风云剧场" tvg-name="风云剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/风云剧场.png" group-title="数字频道",风云剧场
+http://192.168.1.2:35455/nptv/fyjc.m3u8
+#EXTINF:-1 tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/怀旧剧场.png" group-title="数字频道",怀旧剧场
+http://192.168.1.2:35455/nptv/hjjc.m3u8
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV1.png" group-title="数字频道",CETV-1
 http://192.168.1.2:35455/nptv/cetv1.m3u8
 #EXTINF:-1 tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV1.png" group-title="数字频道",CETV-1

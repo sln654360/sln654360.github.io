@@ -240,13 +240,13 @@ https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
 http://192.168.1.2:35455/mgtv/849119120.m3u8
 #EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/大湾区卫视.png" group-title="卫视频道",大湾区卫视
 http://192.168.1.2:35455/mgtv/608917627.m3u8
-#EXTINF:-1 tvg-id="厦门卫视" tvg-name="厦门卫视" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/厦门卫视.png" group-title="卫视频道",厦门卫视
+#EXTINF:-1 tvg-id="厦门卫视" tvg-name="厦门卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/厦门卫视.png" group-title="卫视频道",厦门卫视
 http://192.168.1.2:35455/bptv/3221226542.m3u8
-#EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/三沙卫视.png" group-title="卫视频道",三沙卫视
+#EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/三沙卫视.png" group-title="卫视频道",三沙卫视
 http://192.168.1.2:35455/bptv/3221226544.m3u8
-#EXTINF:-1 tvg-id="延边卫视" tvg-name="延边卫视" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/延边卫视.png" group-title="卫视频道",延边卫视
+#EXTINF:-1 tvg-id="延边卫视" tvg-name="延边卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/延边卫视.png" group-title="卫视频道",延边卫视
 http://192.168.1.2:35455/bptv/3221227045.m3u8
-#EXTINF:-1 tvg-id="康巴卫视" tvg-name="康巴卫视" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/康巴卫视.png" group-title="卫视频道",康巴卫视
+#EXTINF:-1 tvg-id="康巴卫视" tvg-name="康巴卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/康巴卫视.png" group-title="卫视频道",康巴卫视
 http://192.168.1.2:35455/bptv/3221227027.m3u8
 
 #EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC家庭影院.png" group-title="数字频道",CHC家庭影院

@@ -263,7 +263,6 @@ https://migu.188766.xyz/请使用订阅链接观看/fhzw
 https://migu.188766.xyz/请使用订阅链接观看/fhzx
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视香港台.png" group-title="数字频道",凤凰香港
 https://migu.188766.xyz/请使用订阅链接观看/fhhk
-
 #EXTINF:-1 tvg-id="睛彩青少" tvg-name="睛彩青少" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/睛彩青少.png" group-title="数字频道",睛彩青少
 http://192.168.1.2:35455/bptv/3221227000.m3u8
 #EXTINF:-1 tvg-id="黑莓电影" tvg-name="黑莓电影" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/黑莓电影.png" group-title="数字频道",黑莓电影
@@ -340,7 +339,6 @@ http://192.168.1.2:35455/bptv/3221226438.m3u8
 http://192.168.1.2:35455/bptv/3221226510.m3u8
 #EXTINF:-1 tvg-id="金鹰纪实" tvg-name="金鹰纪实" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/金鹰纪实.png" group-title="数字频道",金鹰纪实
 http://192.168.1.2:35455/bptv/3221226572.m3u8
-
 #EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/重温经典.png" group-title="数字频道",重温经典
 https://migu.188766.xyz/请使用订阅链接观看/重温经典
 #EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方影视.png" group-title="数字频道",东方影视
@@ -509,6 +507,7 @@ http://192.168.1.2:35455/mgtv/609169287.m3u8
 http://192.168.1.2:35455/mgtv/609169226.m3u8
 #EXTINF:-1 tvg-id="熊猫频道10" tvg-name="熊猫频道10" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/熊猫频道10.png" group-title="数字频道",熊猫频道10
 http://192.168.1.2:35455/mgtv/609169285.m3u8
+
 #EXTINF:-1 tvg-id="北京IPTV4K" tvg-name="北京IPTV4K" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/北京IPTV4K.png" group-title="超清频道",北京IPTV4K
 http://192.168.1.2:35455/bptv/3221226550.m3u8
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="超清频道",北京卫视4K

@@ -257,14 +257,16 @@ http://192.168.1.2:35455/bptv/3221226974.m3u8
 http://192.168.1.2:35455/mgtv/644368714.m3u8
 #EXTINF:-1 tvg-id="CHC影迷电影" tvg-name="CHC影迷电影" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC影迷电影.png" group-title="数字频道",CHC影迷电影
 http://192.168.1.2:35455/mgtv/952383261.m3u8
+#EXTINF:-1 tvg-id="五星体育" tvg-name="五星体育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/五星体育.png" group-title="数字频道",五星体育
+https://migu.188766.xyz/请使用订阅链接观看/五星体育
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视中文台.png" group-title="数字频道",凤凰中文
 https://migu.188766.xyz/请使用订阅链接观看/fhzw
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视资讯台.png" group-title="数字频道",凤凰资讯
 https://migu.188766.xyz/请使用订阅链接观看/fhzx
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视香港台.png" group-title="数字频道",凤凰香港
 https://migu.188766.xyz/请使用订阅链接观看/fhhk
-#EXTINF:-1 tvg-id="五星体育" tvg-name="五星体育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/五星体育.png" group-title="数字频道",五星体育
-https://migu.188766.xyz/请使用订阅链接观看/五星体育
+#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/翡翠台.png" group-title="数字频道",翡翠台
+https://migu.188766.xyz/请使用订阅链接观看/翡翠台
 #EXTINF:-1 tvg-id="睛彩青少" tvg-name="睛彩青少" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/睛彩青少.png" group-title="数字频道",睛彩青少
 http://192.168.1.2:35455/bptv/3221227000.m3u8
 #EXTINF:-1 tvg-id="黑莓电影" tvg-name="黑莓电影" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/黑莓电影.png" group-title="数字频道",黑莓电影

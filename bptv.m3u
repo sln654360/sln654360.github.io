@@ -211,22 +211,6 @@ http://192.168.1.2:35455/mgtv/625133682.m3u8
 http://192.168.1.2:35455/mgtv/629943305.m3u8
 #EXTINF:-1 tvg-id="咪咕24小时体育台" tvg-name="咪咕24小时体育台" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/咪咕24小时体育台.png" group-title="数字频道",咪咕24小时体育台
 http://192.168.1.2:35455/mgtv/654102378.m3u8
-#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/卡酷少儿.png" group-title="数字频道",卡酷少儿
-https://migu.188766.xyz/订阅后播放/北京卡酷少儿
-#EXTINF:-1 tvg-id="北京影视" tvg-name="北京影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京影视.png" group-title="数字频道",北京影视
-https://migu.188766.xyz/订阅后播放/北京影视
-#EXTINF:-1 tvg-id="北京文艺" tvg-name="北京文艺" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京文艺.png" group-title="数字频道",北京文艺
-https://migu.188766.xyz/订阅后播放/北京文艺
-#EXTINF:-1 tvg-id="北京财经" tvg-name="北京财经" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京财经.png" group-title="数字频道",北京财经
-https://migu.188766.xyz/订阅后播放/北京财经
-#EXTINF:-1 tvg-id="北京生活" tvg-name="北京生活" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京生活.png" group-title="数字频道",北京生活
-https://migu.188766.xyz/订阅后播放/北京i生活
-#EXTINF:-1 tvg-id="北京新闻" tvg-name="北京新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京新闻.png" group-title="数字频道",北京新闻
-https://migu.188766.xyz/订阅后播放/北京新闻
-#EXTINF:-1 tvg-id="北京体育休闲" tvg-name="北京体育休闲" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京体育休闲.png" group-title="数字频道",北京体育休闲
-https://migu.188766.xyz/订阅后播放/北京体育休闲
-#EXTINF:-1 tvg-id="北京纪实科教" tvg-name="北京纪实科教" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京纪实科教.png" group-title="数字频道",北京纪实科教
-https://migu.188766.xyz/订阅后播放/北京纪实科教
 #EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海新闻综合.png" group-title="数字频道",上海新闻综合
 http://192.168.1.2:35455/mgtv/651632657.m3u8
 #EXTINF:-1 tvg-id="上海第一财经" tvg-name="上海第一财经" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海第一财经.png" group-title="数字频道",上海第一财经
@@ -316,8 +300,6 @@ http://192.168.1.2:35455/mgtv/609169285.m3u8
 
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="超清频道",北京卫视4K
 https://migu.188766.xyz/请使用订阅链接观看/北京卫视
-#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="超清频道",北京卫视4K
-https://migu.188766.xyz/订阅后播放/北京卫视4K超高清
 #EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/深圳卫视4K.png" group-title="超清频道",深圳卫视4K
 https://migu.188766.xyz/请使用订阅链接观看/深圳卫视
 #EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/广东卫视4K.png" group-title="超清频道",广东卫视4K

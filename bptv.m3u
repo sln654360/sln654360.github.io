@@ -249,9 +249,9 @@ https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
 http://192.168.1.2:35455/mgtv/849119120.m3u8
 #EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/大湾区卫视.png" group-title="卫视频道",大湾区卫视
 http://192.168.1.2:35455/mgtv/608917627.m3u8
-#EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/三沙卫视.png" group-title="数字频道",三沙卫视
+#EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/三沙卫视.png" group-title="卫视频道",三沙卫视
 http://192.168.1.2:35455/bst/ssws2d5m%242500000.m3u8
-#EXTINF:-1 tvg-id="安多卫视" tvg-name="安多卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安多卫视.png" group-title="数字频道",安多卫视
+#EXTINF:-1 tvg-id="安多卫视" tvg-name="安多卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安多卫视.png" group-title="卫视频道",安多卫视
 http://192.168.1.2:35455/bst/adws2d5m%242500000.m3u8
 
 #EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC家庭影院.png" group-title="数字频道",CHC家庭影院

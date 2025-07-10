@@ -270,18 +270,6 @@ https://migu.188766.xyz/请使用订阅链接观看/fhzx
 https://migu.188766.xyz/请使用订阅链接观看/fhhk
 #EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/翡翠台.png" group-title="数字频道",翡翠台
 https://migu.188766.xyz/请使用订阅链接观看/翡翠台
-#EXTINF:-1 tvg-id="哈哈炫动" tvg-name="哈哈炫动" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/哈哈炫动.png" group-title="数字频道",哈哈炫动
-http://192.168.1.2:35455/bst/hhxdhd%244000000.m3u8
-#EXTINF:-1 tvg-id="金鹰纪实" tvg-name="金鹰纪实" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰纪实.png" group-title="数字频道",金鹰纪实
-http://192.168.1.2:35455/bst/jyjs8m%248000000.m3u8
-#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
-http://192.168.1.2:35455/bst/jykt%241300000.m3u8
-#EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/嘉佳卡通.png" group-title="数字频道",嘉佳卡通
-http://192.168.1.2:35455/bst/jjkt%241300000.m3u8
-#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
-http://192.168.1.2:35455/bst/kkkt%241300000.m3u8
-#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
-http://192.168.1.2:35455/bst/kkkt2d5m%242500000.m3u8
 #EXTINF:-1 tvg-id="中国天气" tvg-name="中国天气" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/中国天气.png" group-title="数字频道",中国天气
 http://192.168.1.2:35455/bst/zgqxhd4mc%244000000.m3u8
 #EXTINF:-1 tvg-id="欢笑剧场" tvg-name="欢笑剧场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/欢笑剧场.png" group-title="数字频道",欢笑剧场
@@ -300,6 +288,18 @@ http://192.168.1.2:35455/bst/xgyyvcc4m%244000000.m3u8
 http://192.168.1.2:35455/bst/qqdpvcc4m%244000000.m3u8
 #EXTINF:-1 tvg-id="热门综艺" tvg-name="热门综艺" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/热门综艺.png" group-title="数字频道",热门综艺
 http://192.168.1.2:35455/bst/rmzyvcc4m%244000000.m3u8
+#EXTINF:-1 tvg-id="哈哈炫动" tvg-name="哈哈炫动" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/哈哈炫动.png" group-title="数字频道",哈哈炫动
+http://192.168.1.2:35455/bst/hhxdhd%244000000.m3u8
+#EXTINF:-1 tvg-id="金鹰纪实" tvg-name="金鹰纪实" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰纪实.png" group-title="数字频道",金鹰纪实
+http://192.168.1.2:35455/bst/jyjs8m%248000000.m3u8
+#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
+http://192.168.1.2:35455/bst/jykt%241300000.m3u8
+#EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/嘉佳卡通.png" group-title="数字频道",嘉佳卡通
+http://192.168.1.2:35455/bst/jjkt%241300000.m3u8
+#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
+http://192.168.1.2:35455/bst/kkkt%241300000.m3u8
+#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
+http://192.168.1.2:35455/bst/kkkt2d5m%242500000.m3u8
 #EXTINF:-1 tvg-id="动漫秀场" tvg-name="动漫秀场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/动漫秀场.png" group-title="数字频道",动漫秀场
 http://192.168.1.2:35455/bst/dmxchd%244000000.m3u8
 #EXTINF:-1 tvg-id="宝宝动画" tvg-name="宝宝动画" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/宝宝动画.png" group-title="数字频道",宝宝动画

@@ -332,7 +332,7 @@ http://192.168.1.2:35455/bst/jtlcsd2d5mc%242500000.m3u8
 http://192.168.1.2:35455/bst/cftx%242500000.m3u8
 #EXTINF:-1,tvg-id="法治天地" tvg-name="法治天地" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/法治天地.png" group-title="数字频道",法治天地
 http://192.168.1.2:35455/bst/fztd2d5m%242500000.m3u8
-#EXTINF:-1,tvg-id="看天下精选" tvg-name="看天下精选" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/看天下精选.png" group-title="数字频道",看天下精选
+#EXTINF:-1,tvg-id="看天下精选" tvg-name="看天下精选" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/看天下精选.png" group-title="数字频道",看天下精选
 http://192.168.1.2:35455/bst/ktxjx8m%248000000.m3u8
 #EXTINF:-1,tvg-id="乐游" tvg-name="乐游" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/乐游.png" group-title="数字频道",乐游
 http://192.168.1.2:35455/bst/qjshd%244000000.m3u8
@@ -491,7 +491,7 @@ http://192.168.1.2:35455/itv/3000000010000005180.m3u8
 http://192.168.1.2:35455/itv/3000000010000015686.m3u8
 #EXTINF:-1,tvg-id="欢笑剧场4K" tvg-name="欢笑剧场4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/欢笑剧场.png" group-title="超清频道",欢笑剧场4K
 http://192.168.1.2:35455/bst/hxjc4k%2415000000.m3u8
-#EXTINF:-1,tvg-id="cctv164k" tvg-name="cctv164k" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/cctv16.png" group-title="超清频道",cctv16-4K
+#EXTINF:-1,tvg-id="CCTV164K" tvg-name="CCTV164K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV16.png" group-title="超清频道",CCTV16-4K
 http://192.168.1.2:35455/bst/cctv16hd4k%2415000000.m3u8
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4K.png" group-title="超清频道",CCTV4K
 http://192.168.1.2:35455/bst/cctv4k%2415000000

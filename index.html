@@ -86,8 +86,8 @@
         <a id="downloadLink" style="display: none;" download="playlist.m3u">
             <button>下载 M3U 文件</button>
         </a>
+        <button onclick="copyOverseasJsonLink()">生成影视专用接口(海外建议)</button>
         <button onclick="copyPlayLink()">生成订阅链接</button>
-        <button onclick="copyOverseasJsonLink()">生成影视JSON（海外专用）</button>
     </div>
     <pre id="result">生成中，请稍候...</pre>
 
@@ -397,7 +397,7 @@
             if (!includeMishitong) playLink += `&mishitong=false`;
         
             navigator.clipboard.writeText(playLink).then(() => {
-                showModal('影视JSON（海外专用）链接已复制到剪贴板！请粘贴到播放器中使用！', [
+                showModal('影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', [
                     { text: '确定', onClick: () => {} }
                 ]);
             }).catch(err => {

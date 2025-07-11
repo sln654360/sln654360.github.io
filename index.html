@@ -131,29 +131,6 @@
         }
 
         async function fetchM3uFiles() {
-            const ip = document.getElementById('ipInput').value.trim() || '192.168.1.2';
-            const fullUrl = getFullUrl();
-
-            if (!fullUrl) {
-                const isReachable = await testIpConnectivity(ip);
-                if (!isReachable) {
-                    showModal(`无法连接到 IP: ${ip}:35455，请检查IP地址是否正确，建议使用部署设备的IP地址。是否继续使用此IP？`, [
-                        {
-                            text: '继续使用',
-                            onClick: () => proceedWithFetch()
-                        },
-                        {
-                            text: '修改IP',
-                            onClick: () => {
-                                document.getElementById('ipInput').focus();
-                                document.getElementById('ipInput').select();
-                            }
-                        }
-                    ]);
-                    return;
-                }
-            }
-
             proceedWithFetch();
         }
 
@@ -403,19 +380,46 @@
             const fullUrl = getFullUrl();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-        
+
+            if (!fullUrl) {
+                const ip = ipInput || '192.168.1.2';
+                testIpConnectivity(ip).then(isReachable => {
+                    if (!isReachable) {
+                        showModal(`无法连接到 IP: ${ip}:35455，请检查IP地址是否正确，建议使用部署设备的IP地址。是否继续使用此IP？`, [
+                            {
+                                text: '继续使用',
+                                onClick: () => generatePlayLink(ip, proxyEnabled, includeMishitong)
+                            },
+                            {
+                                text: '修改IP',
+                                onClick: () => {
+                                    document.getElementById('ipInput').focus();
+                                    document.getElementById('ipInput').select();
+                                }
+                            }
+                        ]);
+                    } else {
+                        generatePlayLink(ip, proxyEnabled, includeMishitong);
+                    }
+                });
+            } else {
+                generatePlayLink(null, proxyEnabled, includeMishitong, fullUrl);
+            }
+        }
+
+        function generatePlayLink(ip, proxyEnabled, includeMishitong, fullUrl = '') {
             let playLink;
             if (fullUrl) {
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
                 playLink = `https://fy.188766.xyz/?url=${urlParam}`;
             } else {
-                const ipParam = ipInput || '192.168.1.2';
+                const ipParam = ip || '192.168.1.2';
                 playLink = `https://fy.188766.xyz/?ip=${ipParam}`;
             }
-        
+
             if (proxyEnabled) playLink += `&proxy=true`;
             if (!includeMishitong) playLink += `&mishitong=false`;
-        
+
             navigator.clipboard.writeText(playLink).then(() => {
                 showModal('订阅链接已复制到剪贴板！请粘贴到播放器中使用！', [
                     { text: '确定', onClick: () => {} }
@@ -518,27 +522,8 @@
         });
 
         document.getElementById('ipInput').addEventListener('input', function() {
-            const ip = this.value.trim() || '192.168.1.2';
             document.getElementById('fullUrlInput').value = '';
-            testIpConnectivity(ip).then(isReachable => {
-                if (!isReachable) {
-                    showModal(`无法连接到 IP: ${ip}:35455，请检查IP地址是否正确，建议使用部署设备的IP地址。是否继续使用此IP？`, [
-                        {
-                            text: '继续使用',
-                            onClick: () => updateResultAndDownload()
-                        },
-                        {
-                            text: '修改IP',
-                            onClick: () => {
-                                this.focus();
-                                this.select();
-                            }
-                        }
-                    ]);
-                } else {
-                    updateResultAndDownload();
-                }
-            });
+            updateResultAndDownload();
         });
 
         document.getElementById('proxyCheckbox').addEventListener('change', updateResultAndDownload);

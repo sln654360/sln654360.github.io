@@ -117,7 +117,7 @@
         let isTxtFormat = false;
 
         async function testIpConnectivity(ip, port = '35455') {
-            const testUrl = `http://${ip}:${port}/bptv.m3u`;
+            const testUrl = `http://${ip}:${port}`;
             try {
                 const response = await fetch(testUrl, {
                     method: 'HEAD',

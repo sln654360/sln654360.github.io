@@ -19,7 +19,6 @@
             align-items: center;
             gap: 5px;
         }
-        /* 自定义模态框样式 */
         .modal {
             display: none;
             position: fixed;
@@ -91,18 +90,14 @@
     </div>
     <pre id="result">生成中，请稍候...</pre>
 
-    <!-- 自定义模态框 -->
     <div id="customModal" class="modal">
         <div class="modal-content">
             <p id="modalMessage"></p>
-            <div class="modal-buttons" id="modalButtons">
-                <!-- 按钮动态插入 -->
-            </div>
+            <div class="modal-buttons" id="modalButtons"></div>
         </div>
     </div>
 
     <script>
-        // AbortSignal.timeout polyfill
         if (!AbortSignal.timeout) {
             AbortSignal.timeout = function(ms) {
                 const controller = new AbortController();
@@ -118,14 +113,17 @@
 
         async function testIpConnectivity(ip, port = '35455') {
             const testUrl = `http://${ip}:${port}`;
+            console.log(`测试连通性: ${testUrl}`);
             try {
                 const response = await fetch(testUrl, {
                     method: 'GET',
                     cache: 'no-cache',
                     signal: AbortSignal.timeout(5000)
                 });
+                console.log(`测试结果: ${response.ok ? '成功' : '失败'}，状态码: ${response.status}`);
                 return response.ok;
             } catch (err) {
+                console.error('连通性测试失败:', err.message);
                 return false;
             }
         }
@@ -168,14 +166,8 @@
                     ? '无法连接到服务器，请检查网络或URL是否正确。'
                     : '加载 M3U 文件失败，可能是URL无效或服务器限制。';
                 showModal(errorMessage, [
-                    { 
-                        text: '确定', 
-                        onClick: () => document.getElementById('result').textContent = errorMessage 
-                    },
-                    { 
-                        text: '重试', 
-                        onClick: () => fetchM3uFiles() 
-                    }
+                    { text: '确定', onClick: () => document.getElementById('result').textContent = errorMessage },
+                    { text: '重试', onClick: () => fetchM3uFiles() }
                 ]);
             }
         }
@@ -385,7 +377,11 @@
                 const ip = ipInput || '192.168.1.2';
                 testIpConnectivity(ip).then(isReachable => {
                     if (!isReachable) {
-                        showModal(`无法连接到 IP: ${ip}:35455，请检查IP地址是否正确，建议使用部署设备的IP地址。是否继续使用此IP？`, [
+                        showModal(`无法连接到 IP: ${ip}:35455，请检查：
+1. IP地址是否正确（建议使用部署设备的IP）。
+2. 服务器是否运行并监听35455端口。
+3. 服务器是否启用CORS（允许跨源请求）。
+是否继续使用此IP？`, [
                             {
                                 text: '继续使用',
                                 onClick: () => generatePlayLink(ip, proxyEnabled, includeMishitong)

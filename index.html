@@ -111,23 +111,6 @@
         let originalM3uData = '';
         let isTxtFormat = false;
 
-        async function testIpConnectivity(ip, port = '35455') {
-            const testUrl = `http://${ip}:${port}`;
-            console.log(`测试连通性: ${testUrl}`);
-            try {
-                const response = await fetch(testUrl, {
-                    method: 'GET',
-                    cache: 'no-cache',
-                    signal: AbortSignal.timeout(5000)
-                });
-                console.log(`测试结果: ${response.ok ? '成功' : '失败'}，状态码: ${response.status}`);
-                return response.ok;
-            } catch (err) {
-                console.error('连通性测试失败:', err.message);
-                return false;
-            }
-        }
-
         async function fetchM3uFiles() {
             proceedWithFetch();
         }
@@ -373,33 +356,22 @@
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
 
-            if (!fullUrl) {
-                const ip = ipInput || '192.168.1.2';
-                testIpConnectivity(ip).then(isReachable => {
-                    if (!isReachable) {
-                        showModal(`无法连接到 IP: ${ip}:35455，请检查：
-1. IP地址是否正确（建议使用部署设备的IP）。
-2. 服务器是否运行并监听35455端口。
-3. 服务器是否启用CORS（允许跨源请求）。
-是否继续使用此IP？`, [
-                            {
-                                text: '继续使用',
-                                onClick: () => generatePlayLink(ip, proxyEnabled, includeMishitong)
-                            },
-                            {
-                                text: '修改IP',
-                                onClick: () => {
-                                    document.getElementById('ipInput').focus();
-                                    document.getElementById('ipInput').select();
-                                }
-                            }
-                        ]);
-                    } else {
-                        generatePlayLink(ip, proxyEnabled, includeMishitong);
+            if (!fullUrl && !ipInput) {
+                showModal(`您未填写IP地址，将采用默认IP 192.168.1.2 作为部署了肥羊allinone的设备IP。如果您部署的IP不是此地址，可能无法正常使用。是否继续使用默认IP？`, [
+                    {
+                        text: '继续使用',
+                        onClick: () => generatePlayLink('192.168.1.2', proxyEnabled, includeMishitong)
+                    },
+                    {
+                        text: '输入IP',
+                        onClick: () => {
+                            document.getElementById('ipInput').focus();
+                            document.getElementById('ipInput').select();
+                        }
                     }
-                });
+                ]);
             } else {
-                generatePlayLink(null, proxyEnabled, includeMishitong, fullUrl);
+                generatePlayLink(ipInput || '192.168.1.2', proxyEnabled, includeMishitong, fullUrl);
             }
         }
 

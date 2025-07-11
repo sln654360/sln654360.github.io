@@ -120,7 +120,7 @@
             const testUrl = `http://${ip}:${port}`;
             try {
                 const response = await fetch(testUrl, {
-                    method: 'HEAD',
+                    method: 'GET',
                     cache: 'no-cache',
                     signal: AbortSignal.timeout(5000)
                 });

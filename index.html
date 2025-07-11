@@ -87,6 +87,7 @@
             <button>下载 M3U 文件</button>
         </a>
         <button onclick="copyPlayLink()">生成订阅链接</button>
+        <button onclick="copyOverseasJsonLink()">生成影视JSON（海外专用）</button>
     </div>
     <pre id="result">生成中，请稍候...</pre>
 
@@ -377,6 +378,36 @@
             });
         }
 
+        function copyOverseasJsonLink() {
+            const ipInput = document.getElementById('ipInput').value.trim();
+            const fullUrl = getFullUrl();
+            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+            const includeMishitong = document.getElementById('mishitongCheckbox').checked;
+        
+            let playLink;
+            if (fullUrl) {
+                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
+                playLink = `https://fy.188766.xyz/?url=${urlParam}&haiwai=true`;
+            } else {
+                const ipParam = ipInput || '192.168.1.2';
+                playLink = `https://fy.188766.xyz/?ip=${ipParam}&haiwai=true`;
+            }
+        
+            if (proxyEnabled) playLink += `&proxy=true`;
+            if (!includeMishitong) playLink += `&mishitong=false`;
+        
+            navigator.clipboard.writeText(playLink).then(() => {
+                showModal('影视JSON（海外专用）链接已复制到剪贴板！请粘贴到播放器中使用！', [
+                    { text: '确定', onClick: () => {} }
+                ]);
+            }).catch(err => {
+                console.error('复制失败: ', err);
+                showModal('复制失败，请重试！', [
+                    { text: '确定', onClick: () => {} }
+                ]);
+            });
+        }
+
         function toggleAdvanced() {
             const content = document.getElementById('advancedContent');
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
@@ -424,7 +455,7 @@
 
         document.getElementById('fullUrlInput').addEventListener('input', function() {
             const value = this.value.trim();
-            if (value.match(/^https?:\/\//)) {
+            if ( darkly.match(/^https?:\/\//)) {
                 let cleanedValue = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
                 this.value = cleanedValue;
                 const protocolSelect = document.getElementById('protocolSelect');

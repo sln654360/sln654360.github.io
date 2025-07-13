@@ -478,7 +478,7 @@ http://192.168.1.2:35455/nptv/cctv4k.m3u8
 #EXTINF:-1 tvg-id="CCTV8K" tvg-name="CCTV8K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV8K.png" group-title="超清频道",CCTV8K
 http://192.168.1.2:35455/nptv/cctv8k.m3u8
 #EXTINF:-1 tvg-id="LOVENATURE" tvg-name="LOVENATURE" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/LOVENATURE.png" group-title="超清频道",Love Nature 4K
-http://s1.m16tv.cfd/aktv/lovenaturehd/AKTV.m3u8
+http://bvm.808848.xyz:50007/4gtv-live208/index.m3u8
 #EXTINF:-1 tvg-id="LOUPE4K" tvg-name="LOUPE4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/LOUPE.png" group-title="超清频道",Loupe 4K
 https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
 #EXTINF:-1 tvg-id="FASHIONONE" tvg-name="FASHIONONE" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/FASHIONONE.png" group-title="超清频道",Fashion 4K

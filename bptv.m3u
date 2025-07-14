@@ -366,8 +366,6 @@ http://192.168.1.2:35455/mgtv/629942219.m3u8
 #EXTINF:-1 tvg-id="优漫卡通频道" tvg-name="优漫卡通频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/优漫卡通频道.png" group-title="数字频道",优漫卡通频道
 http://192.168.1.2:35455/mgtv/626064703.m3u8
 #EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海新闻综合.png" group-title="数字频道",上海新闻综合
-https://migu.188766.xyz/要用订阅的地址/xwzh
-#EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海新闻综合.png" group-title="数字频道",上海新闻综合
 http://192.168.1.2:35455/mgtv/651632657.m3u8
 #EXTINF:-1 tvg-id="上海第一财经" tvg-name="上海第一财经" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海第一财经.png" group-title="数字频道",上海第一财经
 https://migu.188766.xyz/要用订阅的地址/dycj
@@ -379,7 +377,7 @@ https://migu.188766.xyz/要用订阅的地址/xjs
 https://migu.188766.xyz/要用订阅的地址/ds
 #EXTINF:-1 tvg-id="上海乐游" tvg-name="乐游" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/乐游.png" group-title="数字频道",上海乐游
 https://migu.188766.xyz/要用订阅的地址/ly
-#EXTINF:-1 tvg-id="上海魔都眼" tvg-name="上海魔都眼" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/魔都眼.png" group-title="数字频道",上海魔都眼
+#EXTINF:-1 tvg-id="上海魔都眼" tvg-name="上海魔都眼" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/上海魔都眼.png" group-title="数字频道",上海魔都眼
 https://migu.188766.xyz/要用订阅的地址/mdy
 #EXTINF:-1 tvg-id="南京新闻综合频道" tvg-name="南京新闻综合频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南京新闻综合频道.png" group-title="数字频道",南京新闻综合频道
 http://192.168.1.2:35455/mgtv/838109047.m3u8

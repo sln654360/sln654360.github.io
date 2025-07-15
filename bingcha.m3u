@@ -55,21 +55,23 @@ https://migu.188766.xyz/订阅后播放/河南卫视
 #EXTINF:-1 tvg-name="内蒙古卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/内蒙古卫视.png" group-title="冰茶卫视",内蒙古卫视
 https://migu.188766.xyz/请使用订阅链接观看/内蒙古卫视
 #EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东南卫视.png" group-title="冰茶卫视",东南卫视
-https://migu.188766.xyz/订阅后播放/东南卫视
+https://migu.188766.xyz/要用订阅的地址/东南卫视
 #EXTINF:-1 tvg-name="江西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江西卫视.png" group-title="冰茶卫视",江西卫视
 https://migu.188766.xyz/请使用订阅链接观看/江西卫视
 #EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/陕西卫视.png" group-title="冰茶卫视",陕西卫视
 https://migu.188766.xyz/请使用订阅链接观看/陕西卫视
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/广东卫视.png" group-title="冰茶卫视",湖北卫视
 https://migu.188766.xyz/请使用订阅链接观看/湖北卫视
+#EXTINF:-1 tvg-name="厦门卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/厦门卫视.png" group-title="冰茶卫视",厦门卫视
+https://migu.188766.xyz/要用订阅的地址/厦门卫视
 #EXTINF:-1 tvg-name="海峡卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/海峡卫视.png" group-title="冰茶卫视",海峡卫视
-https://migu.188766.xyz/订阅后播放/海峡卫视
+https://migu.188766.xyz/要用订阅的地址/海峡卫视
 #EXTINF:-1 tvg-name="新疆卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/新疆卫视.png" group-title="冰茶卫视",新疆卫视
 https://migu.188766.xyz/请使用订阅链接观看/新疆卫视
 #EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/西藏卫视.png" group-title="冰茶卫视",西藏卫视
 https://migu.188766.xyz/请使用订阅链接观看/西藏卫视
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/兵团卫视.png" group-title="冰茶卫视",兵团卫视
-https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
+https://migu.188766.xyz/要用订阅的地址/兵团卫视
 
 #EXTINF:-1 tvg-name="CHC家庭影院" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC家庭影院.png" group-title="冰茶其他",CHC家庭影院
 https://migu.188766.xyz/请使用订阅链接观看/CHC家庭影院
@@ -127,8 +129,6 @@ https://migu.188766.xyz/订阅后播放/最强综艺趴
 https://migu.188766.xyz/订阅后播放/嘉佳卡通
 #EXTINF:-1 tvg-id="经典动画大集合" tvg-name="经典动画大集合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/经典动画大集合.png" group-title="冰茶其他",经典动画大集合
 https://migu.188766.xyz/订阅后播放/经典动画大集合
-#EXTINF:-1 tvg-id="优漫卡通" tvg-name="优漫卡通" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/优漫卡通频道.png" group-title="冰茶其他",优漫卡通
-https://migu.188766.xyz/要用订阅的地址/ymkt
 #EXTINF:-1 tvg-id="优漫卡通" tvg-name="优漫卡通" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/优漫卡通频道.png" group-title="冰茶其他",优漫卡通
 https://migu.188766.xyz/订阅后播放/优漫卡通频道
 #EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/卡酷少儿.png" group-title="冰茶其他",卡酷少儿

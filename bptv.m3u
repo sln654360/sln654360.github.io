@@ -257,6 +257,8 @@ http://192.168.1.2:35455/mgtv/644368373.m3u8
 http://192.168.1.2:35455/mgtv/644368714.m3u8
 #EXTINF:-1 tvg-id="CHC影迷电影" tvg-name="CHC影迷电影" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC影迷电影.png" group-title="数字频道",CHC影迷电影
 http://192.168.1.2:35455/mgtv/952383261.m3u8
+#EXTINF:-1 tvg-id="新视觉" tvg-name="新视觉" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/新视觉.png" group-title="数字频道",新视觉
+http://192.168.1.2:35455/bst/xsjhd@4000000.m3u8
 #EXTINF:-1 tvg-id="中国天气" tvg-name="中国天气" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/中国天气.png" group-title="数字频道",中国天气
 http://192.168.1.2:35455/bst/zgqxhd4mc@4000000.m3u8
 #EXTINF:-1 tvg-id="欢笑剧场" tvg-name="欢笑剧场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/欢笑剧场.png" group-title="数字频道",欢笑剧场

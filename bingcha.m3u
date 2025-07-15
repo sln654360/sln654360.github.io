@@ -81,6 +81,8 @@ https://migu.188766.xyz/请使用订阅链接观看/CHC影迷电影
 https://migu.188766.xyz/请使用订阅链接观看/五星体育
 #EXTINF:-1 tvg-id="五星体育" tvg-name="五星体育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/五星体育.png" group-title="冰茶其他",五星体育
 https://migu.188766.xyz/要用订阅的地址/wxty
+#EXTINF:-1 tvg-name="河南梨园" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南梨园.png" group-title="冰茶其他",河南梨园
+https://migu.188766.xyz/订阅后播放/梨园频道
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视中文台.png" group-title="冰茶其他",凤凰中文
 https://migu.188766.xyz/请使用订阅链接观看/fhzw
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视资讯台.png" group-title="冰茶其他",凤凰资讯
@@ -155,36 +157,34 @@ https://migu.188766.xyz/要用订阅的地址/ds
 https://migu.188766.xyz/要用订阅的地址/ly
 #EXTINF:-1 tvg-id="上海魔都眼" tvg-name="上海魔都眼" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/上海魔都眼.png" group-title="冰茶其他",上海魔都眼
 https://migu.188766.xyz/要用订阅的地址/mdy
-#EXTINF:-1 tvg-name="河南梨园" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南梨园.png" group-title="冰茶其他",河南梨园
-https://migu.188766.xyz/要用订阅的地址/梨园频道
 #EXTINF:-1 tvg-name="河南新闻" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南新闻.png" group-title="冰茶其他",河南新闻
-https://migu.188766.xyz/要用订阅的地址/新闻频道
+https://migu.188766.xyz/订阅后播放/新闻频道
 #EXTINF:-1 tvg-name="河南都市" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南都市.png" group-title="冰茶其他",河南都市
-https://migu.188766.xyz/要用订阅的地址/都市频道
+https://migu.188766.xyz/订阅后播放/都市频道
 #EXTINF:-1 tvg-name="河南民生" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南民生.png" group-title="冰茶其他",河南民生
-https://migu.188766.xyz/要用订阅的地址/民生频道
+https://migu.188766.xyz/订阅后播放/民生频道
 #EXTINF:-1 tvg-name="河南电视剧" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南电视剧.png" group-title="冰茶其他",河南电视剧
-https://migu.188766.xyz/要用订阅的地址/电视剧频道
+https://migu.188766.xyz/订阅后播放/电视剧频道
 #EXTINF:-1 tvg-name="河南公共" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南公共.png" group-title="冰茶其他",河南公共
-https://migu.188766.xyz/要用订阅的地址/公共频道
+https://migu.188766.xyz/订阅后播放/公共频道
 #EXTINF:-1 tvg-name="河南乡村" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南乡村频道.png" group-title="冰茶其他",河南乡村
-https://migu.188766.xyz/要用订阅的地址/河南乡村频道
+https://migu.188766.xyz/订阅后播放/河南乡村频道
 #EXTINF:-1 tvg-name="河南法治" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南法治.png" group-title="冰茶其他",河南法治
-https://migu.188766.xyz/要用订阅的地址/法治频道
+https://migu.188766.xyz/订阅后播放/法治频道
 #EXTINF:-1 tvg-name="河南国际" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南国际.png" group-title="冰茶其他",河南国际
-https://migu.188766.xyz/要用订阅的地址/河南国际
+https://migu.188766.xyz/订阅后播放/河南国际
 #EXTINF:-1 tvg-name="河南武术" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南武术世界.png" group-title="冰茶其他",河南武术
-https://migu.188766.xyz/要用订阅的地址/武术频道
+https://migu.188766.xyz/订阅后播放/武术频道
 #EXTINF:-1 tvg-name="河南睛彩中原" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南睛彩中原.png" group-title="冰茶其他",河南睛彩中原
-https://migu.188766.xyz/要用订阅的地址/武术频道
+https://migu.188766.xyz/订阅后播放/武术频道
 #EXTINF:-1 tvg-name="河南移动戏曲" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南移动戏曲.png" group-title="冰茶其他",河南移动戏曲
-https://migu.188766.xyz/要用订阅的地址/移动戏曲频道
+https://migu.188766.xyz/订阅后播放/移动戏曲频道
 #EXTINF:-1 tvg-name="河南国学" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/IPTV国学.png" group-title="冰茶其他",河南国学
-https://migu.188766.xyz/要用订阅的地址/国学频道
+https://migu.188766.xyz/订阅后播放/国学频道
 #EXTINF:-1 tvg-name="河南文物宝库" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南文物宝库.png" group-title="冰茶其他",河南文物宝库
-https://migu.188766.xyz/要用订阅的地址/文物宝库
+https://migu.188766.xyz/订阅后播放/文物宝库
 #EXTINF:-1 tvg-name="河南象视界" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南象视界.png" group-title="冰茶其他",河南象视界
-https://migu.188766.xyz/要用订阅的地址/象视界
+https://migu.188766.xyz/订阅后播放/象视界
 #EXTINF:-1 tvg-id="南京新闻综合频道" tvg-name="南京新闻综合频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南京新闻综合频道.png" group-title="冰茶其他",南京新闻综合频道
 https://migu.188766.xyz/订阅后播放/南京新闻综合频道
 #EXTINF:-1 tvg-id="南京教科频道" tvg-name="南京教科频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南京教科频道.png" group-title="冰茶其他",南京教科频道

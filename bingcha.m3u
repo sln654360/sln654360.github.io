@@ -147,18 +147,6 @@ https://migu.188766.xyz/订阅后播放/北京新闻
 https://migu.188766.xyz/订阅后播放/北京体育休闲
 #EXTINF:-1 tvg-id="北京纪实科教" tvg-name="北京纪实科教" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京纪实科教.png" group-title="冰茶其他",北京纪实科教
 https://migu.188766.xyz/订阅后播放/北京纪实科教
-#EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海新闻综合.png" group-title="冰茶其他",上海新闻综合
-https://migu.188766.xyz/要用订阅的地址/xwzh
-#EXTINF:-1 tvg-id="上海第一财经" tvg-name="上海第一财经" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海第一财经.png" group-title="冰茶其他",上海第一财经
-https://migu.188766.xyz/要用订阅的地址/dycj
-#EXTINF:-1 tvg-id="上海新纪实" tvg-name="上海新纪实" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/新纪实频道.png" group-title="冰茶其他",上海新纪实
-https://migu.188766.xyz/要用订阅的地址/xjs
-#EXTINF:-1 tvg-id="上海都市" tvg-name="上海都市" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/上海都市.png" group-title="冰茶其他",上海都市
-https://migu.188766.xyz/要用订阅的地址/ds
-#EXTINF:-1 tvg-id="上海乐游" tvg-name="乐游" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/乐游.png" group-title="冰茶其他",上海乐游
-https://migu.188766.xyz/要用订阅的地址/ly
-#EXTINF:-1 tvg-id="上海魔都眼" tvg-name="上海魔都眼" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/上海魔都眼.png" group-title="冰茶其他",上海魔都眼
-https://migu.188766.xyz/要用订阅的地址/mdy
 #EXTINF:-1 tvg-name="河南新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南新闻.png" group-title="冰茶其他",河南新闻
 https://migu.188766.xyz/订阅后播放/新闻频道
 #EXTINF:-1 tvg-name="河南都市" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南都市.png" group-title="冰茶其他",河南都市
@@ -181,6 +169,18 @@ https://migu.188766.xyz/订阅后播放/移动戏曲频道
 https://migu.188766.xyz/订阅后播放/文物宝库
 #EXTINF:-1  tvg-name="河南象视界" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南象视界.png" group-title="冰茶其他",河南象视界
 https://migu.188766.xyz/订阅后播放/象视界
+#EXTINF:-1 tvg-id="上海新闻综合" tvg-name="上海新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海新闻综合.png" group-title="冰茶其他",上海新闻综合
+https://migu.188766.xyz/要用订阅的地址/xwzh
+#EXTINF:-1 tvg-id="上海第一财经" tvg-name="上海第一财经" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/上海第一财经.png" group-title="冰茶其他",上海第一财经
+https://migu.188766.xyz/要用订阅的地址/dycj
+#EXTINF:-1 tvg-id="上海新纪实" tvg-name="上海新纪实" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/新纪实频道.png" group-title="冰茶其他",上海新纪实
+https://migu.188766.xyz/要用订阅的地址/xjs
+#EXTINF:-1 tvg-id="上海都市" tvg-name="上海都市" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/上海都市.png" group-title="冰茶其他",上海都市
+https://migu.188766.xyz/要用订阅的地址/ds
+#EXTINF:-1 tvg-id="上海乐游" tvg-name="乐游" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/乐游.png" group-title="冰茶其他",上海乐游
+https://migu.188766.xyz/要用订阅的地址/ly
+#EXTINF:-1 tvg-id="上海魔都眼" tvg-name="上海魔都眼" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/上海魔都眼.png" group-title="冰茶其他",上海魔都眼
+https://migu.188766.xyz/要用订阅的地址/mdy
 #EXTINF:-1 tvg-id="江苏新闻" tvg-name="江苏新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏公共新闻.png" group-title="冰茶其他",江苏新闻
 https://migu.188766.xyz/订阅后播放/公共新闻频道
 #EXTINF:-1 tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏国际.png" group-title="冰茶其他",江苏国际

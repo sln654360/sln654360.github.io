@@ -188,30 +188,16 @@ https://migu.188766.xyz/订阅后播放/文物宝库
 #EXTINF:-1  tvg-name="河南象视界" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河南象视界.png" group-title="冰茶其他",河南象视界
 https://migu.188766.xyz/订阅后播放/象视界
 #EXTINF:-1 tvg-id="江苏新闻" tvg-name="江苏新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏公共新闻.png" group-title="冰茶其他",江苏新闻
-https://migu.188766.xyz/要用订阅的地址/jsxw
-#EXTINF:-1 tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏国际.png" group-title="冰茶其他",江苏国际
-https://migu.188766.xyz/要用订阅的地址/jsgj
-#EXTINF:-1 tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏城市.png" group-title="冰茶其他",江苏城市
-https://migu.188766.xyz/要用订阅的地址/jscs
-#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏综艺.png" group-title="冰茶其他",江苏综艺
-https://migu.188766.xyz/要用订阅的地址/jszy
-#EXTINF:-1 tvg-id="江苏影视" tvg-name="江苏影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏影视.png" group-title="冰茶其他",江苏影视
-https://migu.188766.xyz/要用订阅的地址/jsys
-#EXTINF:-1 tvg-id="江苏教育" tvg-name="江苏教育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏教育.png" group-title="冰茶其他",江苏教育
-https://migu.188766.xyz/要用订阅的地址/jsjy
-#EXTINF:-1 tvg-id="江苏体育" tvg-name="江苏体育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏体育.png" group-title="冰茶其他",江苏体育
-https://migu.188766.xyz/要用订阅的地址/jsty
-#EXTINF:-1 tvg-id="江苏新闻" tvg-name="江苏新闻" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/公共新闻频道.png" group-title="冰茶其他",江苏新闻
 https://migu.188766.xyz/订阅后播放/公共新闻频道
-#EXTINF:-1 tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/江苏国际.png" group-title="冰茶其他",江苏国际
+#EXTINF:-1 tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏国际.png" group-title="冰茶其他",江苏国际
 https://migu.188766.xyz/订阅后播放/江苏国际
-#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/江苏综艺频道.png" group-title="冰茶其他",江苏综艺
+#EXTINF:-1 tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏综艺.png" group-title="冰茶其他",江苏综艺
 https://migu.188766.xyz/订阅后播放/江苏综艺频道
-#EXTINF:-1 tvg-id="江苏影视" tvg-name="江苏影视" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/江苏影视频道.png" group-title="冰茶其他",江苏影视
+#EXTINF:-1 tvg-id="江苏影视" tvg-name="江苏影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏影视.png" group-title="冰茶其他",江苏影视
 https://migu.188766.xyz/订阅后播放/江苏影视频道
-#EXTINF:-1 tvg-id="江苏教育" tvg-name="江苏教育" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/江苏教育.png" group-title="冰茶其他",江苏教育
+#EXTINF:-1 tvg-id="江苏教育" tvg-name="江苏教育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏教育.png" group-title="冰茶其他",江苏教育
 https://migu.188766.xyz/订阅后播放/江苏国际
-#EXTINF:-1 tvg-id="江苏体育" tvg-name="江苏体育" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/体育休闲频道.png" group-title="冰茶其他",江苏体育
+#EXTINF:-1 tvg-id="江苏体育" tvg-name="江苏体育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏体育.png" group-title="冰茶其他",江苏体育
 https://migu.188766.xyz/订阅后播放/体育休闲频道
 #EXTINF:-1 tvg-id="南京新闻综合" tvg-name="南京新闻综合" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/南京新闻综合频道.png" group-title="冰茶其他",南京新闻综合
 https://migu.188766.xyz/订阅后播放/南京新闻综合频道

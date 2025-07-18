@@ -94,16 +94,14 @@ https://migu.188766.xyz/请使用订阅链接观看/CHC影迷电影
 https://migu.188766.xyz/请使用订阅链接观看/五星体育
 #EXTINF:-1 tvg-id="五星体育" tvg-name="五星体育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/五星体育.png" group-title="冰茶其他",五星体育
 https://migu.188766.xyz/要用订阅的地址/wxty
+#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/翡翠台.png" group-title="冰茶其他",翡翠台
+https://migu.188766.xyz/请使用订阅链接观看/翡翠台
 #EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视中文台.png" group-title="冰茶其他",凤凰中文
 https://migu.188766.xyz/请使用订阅链接观看/fhzw
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视资讯台.png" group-title="冰茶其他",凤凰资讯
 https://migu.188766.xyz/请使用订阅链接观看/fhzx
 #EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/凤凰卫视香港台.png" group-title="冰茶其他",凤凰香港
 https://migu.188766.xyz/请使用订阅链接观看/fhhk
-#EXTINF:-1 tvg-id="翡翠台" tvg-name="翡翠台" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/翡翠台.png" group-title="冰茶其他",翡翠台
-https://migu.188766.xyz/请使用订阅链接观看/翡翠台
-#EXTINF:-1 tvg-id="河南梨园" tvg-name="河南梨园" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南梨园.png" group-title="冰茶其他",河南梨园
-https://migu.188766.xyz/订阅后播放/梨园频道
 #EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方影视.png" group-title="冰茶其他",东方影视
 https://migu.188766.xyz/订阅后播放/上视东方影视
 #EXTINF:-1 tvg-id="新片放映厅" tvg-name="新片放映厅" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/新片放映厅.png" group-title="冰茶其他",新片放映厅
@@ -130,8 +128,6 @@ https://migu.188766.xyz/订阅后播放/嘉佳卡通
 https://migu.188766.xyz/订阅后播放/经典动画大集合
 #EXTINF:-1 tvg-id="优漫卡通" tvg-name="优漫卡通" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/优漫卡通频道.png" group-title="冰茶其他",优漫卡通
 https://migu.188766.xyz/订阅后播放/优漫卡通频道
-#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/卡酷少儿.png" group-title="冰茶其他",卡酷少儿
-https://migu.188766.xyz/订阅后播放/北京卡酷少儿
 #EXTINF:-1 tvg-id="老故事" tvg-name="老故事" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/老故事.png" group-title="冰茶其他",老故事
 https://migu.188766.xyz/订阅后播放/老故事
 #EXTINF:-1 tvg-id="发现之旅" tvg-name="发现之旅" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/发现之旅.png" group-title="冰茶其他",发现之旅
@@ -148,6 +144,8 @@ https://migu.188766.xyz/订阅后播放/CETV1
 https://migu.188766.xyz/订阅后播放/CETV2
 #EXTINF:-1 tvg-id="CETV4" tvg-name="CETV4" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CETV4.png" group-title="冰茶其他",CETV-4
 https://migu.188766.xyz/订阅后播放/CETV4
+#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/卡酷少儿.png" group-title="冰茶地方",卡酷少儿
+https://migu.188766.xyz/订阅后播放/北京卡酷少儿
 #EXTINF:-1 tvg-id="北京影视" tvg-name="北京影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京影视.png" group-title="冰茶地方",北京影视
 https://migu.188766.xyz/订阅后播放/北京影视
 #EXTINF:-1 tvg-id="北京文艺" tvg-name="北京文艺" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京文艺.png" group-title="冰茶地方",北京文艺
@@ -162,6 +160,8 @@ https://migu.188766.xyz/订阅后播放/北京新闻
 https://migu.188766.xyz/订阅后播放/北京体育休闲
 #EXTINF:-1 tvg-id="北京纪实科教" tvg-name="北京纪实科教" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京纪实科教.png" group-title="冰茶地方",北京纪实科教
 https://migu.188766.xyz/订阅后播放/北京纪实科教
+#EXTINF:-1 tvg-id="河南梨园" tvg-name="河南梨园" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南梨园.png" group-title="冰茶地方",河南梨园
+https://migu.188766.xyz/订阅后播放/梨园频道
 #EXTINF:-1 tvg-id="河南新闻" tvg-name="河南新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南新闻.png" group-title="冰茶地方",河南新闻
 https://migu.188766.xyz/订阅后播放/新闻频道
 #EXTINF:-1 tvg-id="河南都市" tvg-name="河南都市" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/河南都市.png" group-title="冰茶地方",河南都市

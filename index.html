@@ -74,6 +74,12 @@
             <p>
                 <label><input type="checkbox" id="mishitongCheckbox" checked> 包含咪视通</label>
             </p>
+            <p>
+                <label><input type="checkbox" id="lunboCheckbox" checked> 包含影视轮播</label>
+            </p>
+            <p>
+                <label><input type="checkbox" id="bcOnlyCheckbox"> 只生成冰茶频道</label>
+            </p>
         </div>
     </div>
 
@@ -120,8 +126,10 @@
 
         async function proceedWithFetch() {
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
+            const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const urls = [bptvUrl];
             if (includeMishitong) urls.push(mishitongUrl);
+            // Note: Assuming lunbo content is included in bptv.m3u or mishitong.m3u, no separate URL added
 
             try {
                 const responses = await Promise.all(
@@ -358,12 +366,14 @@
             const fullUrl = getFullUrl();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
+            const includeLunbo = document.getElementById('lunboCheckbox').checked;
+            const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
 
             if (!fullUrl && !ipInput) {
                 showModal(`您未填写IP地址，将采用默认IP 192.168.1.2 作为部署了肥羊allinone的设备IP。如果您部署的IP不是此地址，可能无法正常使用。是否继续使用默认IP？`, [
                     {
                         text: '继续使用',
-                        onClick: () => generatePlayLink('192.168.1.2', proxyEnabled, includeMishitong)
+                        onClick: () => generatePlayLink('192.168.1.2', proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled)
                     },
                     {
                         text: '输入IP',
@@ -374,11 +384,11 @@
                     }
                 ]);
             } else {
-                generatePlayLink(ipInput || '192.168.1.2', proxyEnabled, includeMishitong, fullUrl);
+                generatePlayLink(ipInput || '192.168.1.2', proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
             }
         }
 
-        function generatePlayLink(ip, proxyEnabled, includeMishitong, fullUrl = '') {
+        function generatePlayLink(ip, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '') {
             let playLink;
             if (fullUrl) {
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
@@ -390,6 +400,8 @@
 
             if (proxyEnabled) playLink += `&proxy=true`;
             if (!includeMishitong) playLink += `&mishitong=false`;
+            if (!includeLunbo) playLink += `&lunbo=false`;
+            if (bcOnlyEnabled) playLink += `&bconly=true`;
 
             navigator.clipboard.writeText(playLink).then(() => {
                 showModal('订阅链接已复制到剪贴板！请粘贴到播放器中使用！', [
@@ -408,6 +420,8 @@
             const fullUrl = getFullUrl();
             const proxyEnabled = document.getElementById('proxyCheckbox').checked;
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
+            const includeLunbo = document.getElementById('lunboCheckbox').checked;
+            const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
         
             let playLink;
             if (fullUrl) {
@@ -420,6 +434,8 @@
         
             if (proxyEnabled) playLink += `&proxy=true`;
             if (!includeMishitong) playLink += `&mishitong=false`;
+            if (!includeLunbo) playLink += `&lunbo=false`;
+            if (bcOnlyEnabled) playLink += `&bconly=true`;
         
             navigator.clipboard.writeText(playLink).then(() => {
                 showModal('影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', [
@@ -437,6 +453,30 @@
             const content = document.getElementById('advancedContent');
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
+
+        document.getElementById('bcOnlyCheckbox').addEventListener('change', function() {
+            if (this.checked) {
+                showModal('勾选后，生成的订阅将仅包含冰茶专用频道，不包含肥羊内容。确定要这样吗？', [
+                    {
+                        text: '确定',
+                        onClick: () => {
+                            updateResultAndDownload();
+                        }
+                    },
+                    {
+                        text: '取消',
+                        onClick: () => {
+                            this.checked = false;
+                            updateResultAndDownload();
+                        }
+                    }
+                ]);
+            } else {
+                updateResultAndDownload();
+            }
+        });
+
+        document.getElementById('lunboCheckbox').addEventListener('change', fetchM3uFiles);
 
         document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
             const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();

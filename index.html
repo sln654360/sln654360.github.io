@@ -369,7 +369,7 @@
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
 
-            if (!fullUrl && !ipInput) {
+            if (!fullUrl && !ipInput &&!bcOnlyEnabled) {
                 showModal(`您未填写IP地址，将采用默认IP 192.168.1.2 作为部署了肥羊allinone的设备IP。如果您部署的IP不是此地址，可能无法正常使用。是否继续使用默认IP？`, [
                     {
                         text: '继续使用',

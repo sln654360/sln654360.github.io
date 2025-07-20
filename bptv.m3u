@@ -719,7 +719,7 @@ http://192.168.1.2:35455/yhyx/IP-BJWS-4K.m3u8
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4K.png" group-title="超清频道",CCTV4K
 http://192.168.1.2:35455/gptv/G_CCTV-4K-HD.m3u8
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4K.png" group-title="超清频道",CCTV4K
-http://192.168.1.2:35455/yhyx/IP-CCTV-4K.m3u8
+http://192.168.1.2:35455/bst/cctv4k@15000000
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4K.png" group-title="超清频道",CCTV4K
 http://192.168.1.2:35455/yhyx/IP-CCTV-4K.m3u8
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4K.png" group-title="超清频道",CCTV4K

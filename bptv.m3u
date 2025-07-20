@@ -450,10 +450,6 @@ http://192.168.1.2:35455/gptv/G_BINGTUAN.m3u8
 http://192.168.1.2:35455/bst/btws@1300000.m3u8
 #EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/兵团卫视.png" group-title="卫视频道",兵团卫视
 http://192.168.1.2:35455/yhyx/IP-BTWS-SD.m3u8
-#EXTINF:-1 tvg-id="海峡卫视" tvg-name="海峡卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/海峡卫视.png" group-title="卫视频道",海峡卫视
-http://192.168.1.2:35455/mgtv/849119120.m3u8
-#EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/大湾区卫视.png" group-title="卫视频道",大湾区卫视
-http://192.168.1.2:35455/mgtv/608917627.m3u8
 #EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/三沙卫视.png" group-title="卫视频道",三沙卫视
 http://192.168.1.2:35455/gptv/G_SANSHA-HQ.m3u8
 #EXTINF:-1 tvg-id="三沙卫视" tvg-name="三沙卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/三沙卫视.png" group-title="卫视频道",三沙卫视
@@ -468,6 +464,10 @@ http://192.168.1.2:35455/gptv/G_KANGBA.m3u8
 http://192.168.1.2:35455/gptv/G_NONGLIN.m3u8
 #EXTINF:-1 tvg-id="延边卫视" tvg-name="延边卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/延边卫视.png" group-title="卫视频道",延边卫视
 http://192.168.1.2:35455/gptv/G_YANBIAN.m3u8
+#EXTINF:-1 tvg-id="海峡卫视" tvg-name="海峡卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/海峡卫视.png" group-title="卫视频道",海峡卫视
+http://192.168.1.2:35455/mgtv/849119120.m3u8
+#EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/大湾区卫视.png" group-title="卫视频道",大湾区卫视
+http://192.168.1.2:35455/mgtv/608917627.m3u8
 
 #EXTINF:-1 tvg-id="CHC家庭影院" tvg-name="CHC家庭影院" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CHC家庭影院.png" group-title="数字频道",CHC家庭影院
 http://192.168.1.2:35455/mgtv/644368373.m3u8

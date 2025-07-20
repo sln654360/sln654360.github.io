@@ -175,6 +175,8 @@ http://192.168.1.2:35455/yhyx/IP-BQKJ-HD.m3u8
 http://192.168.1.2:35455/yhyx/IP-GEFWQ-HD.m3u8
 #EXTINF:-1 tvg-id="女性时尚" tvg-name="女性时尚" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/女性时尚.png" group-title="央视频道",CCTV-女性时尚
 http://192.168.1.2:35455/yhyx/IP-NXSS-HD.m3u8
+#EXTINF:-1 tvg-id="女性时尚" tvg-name="女性时尚" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/女性时尚.png" group-title="央视频道",CCTV-女性时尚
+http://192.168.1.2:35455/gptv/G_NVXINGSS.m3u8
 #EXTINF:-1 tvg-id="文化精品" tvg-name="文化精品" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/文化精品.png" group-title="央视频道",CCTV-文化精品
 http://192.168.1.2:35455/yhyx/IP-YSJP-HD.m3u8
 #EXTINF:-1 tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/怀旧剧场.png" group-title="央视频道",CCTV-怀旧剧场
@@ -493,6 +495,8 @@ http://192.168.1.2:35455/yhyx/IP-YXFY-HD.m3u8
 http://192.168.1.2:35455/yhyx/IP-WSSJ-HD.m3u8
 #EXTINF:-1 tvg-id="北京冬奥纪实" tvg-name="北京冬奥纪实" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/北京冬奥纪实.png" group-title="数字频道",北京冬奥纪实
 http://192.168.1.2:35455/gptv/G_BEIJINGJS-HD.m3u8
+#EXTINF:-1 tvg-id="天元围棋" tvg-name="天元围棋" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/天元围棋.png" group-title="数字频道",天元围棋
+http://192.168.1.2:35455/gptv/G_TIANYUANWQ.m3u8
 #EXTINF:-1 tvg-id="新视觉" tvg-name="新视觉" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/新视觉.png" group-title="数字频道",新视觉
 http://192.168.1.2:35455/bst/xsjhd@4000000.m3u8
 #EXTINF:-1 tvg-id="中国天气" tvg-name="中国天气" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/中国天气.png" group-title="数字频道",中国天气
@@ -581,10 +585,6 @@ http://192.168.1.2:35455/bst/ktxjx8m@8000000.m3u8
 http://192.168.1.2:35455/bst/qjshd@4000000.m3u8
 #EXTINF:-1 tvg-id="乐游" tvg-name="乐游" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/乐游.png" group-title="数字频道",乐游
 http://192.168.1.2:35455/yhyx/IP-LY-HD.m3u8
-#EXTINF:-1 tvg-id="天元围棋" tvg-name="天元围棋" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/天元围棋.png" group-title="数字频道",天元围棋
-http://192.168.1.2:35455/gptv/G_TIANYUANWQ.m3u8
-#EXTINF:-1 tvg-id="女性时尚" tvg-name="女性时尚" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/女性时尚.png" group-title="数字频道",女性时尚
-http://192.168.1.2:35455/gptv/G_NVXINGSS.m3u8
 #EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方影视.png" group-title="数字频道",东方影视
 http://192.168.1.2:35455/mgtv/617290047.m3u8
 #EXTINF:-1 tvg-id="新片放映厅" tvg-name="新片放映厅" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/新片放映厅.png" group-title="数字频道",新片放映厅

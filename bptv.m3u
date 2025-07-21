@@ -300,15 +300,12 @@ http://192.168.1.2:35455/bst/lnwshd@4000000.m3u8
 http://192.168.1.2:35455/gptv/G_LIAONING-HQ.m3u8
 #EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/辽宁卫视.png" group-title="卫视频道",辽宁卫视
 http://192.168.1.2:35455/nptv/liaoning.m3u8
-
 #EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江西卫视.png" group-title="卫视频道",江西卫视
 http://192.168.1.2:35455/gptv/G_JIANGXI-HQ.m3u8
 #EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江西卫视.png" group-title="卫视频道",江西卫视
 http://192.168.1.2:35455/bst/jxwshd@4000000.m3u8
 #EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江西卫视.png" group-title="卫视频道",江西卫视
 http://192.168.1.2:35455/yhyx/IP-JXWS-HD.m3u8
-#EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江西卫视.png" group-title="卫视频道",江西卫视
-http://192.168.1.2:35455/gptv/G_JIANGXI-HQ.m3u8
 #EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江西卫视.png" group-title="卫视频道",江西卫视
 http://192.168.1.2:35455/mgtv/783847495.m3u8
 #EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江西卫视.png" group-title="卫视频道",江西卫视
@@ -398,13 +395,13 @@ http://192.168.1.2:35455/nptv/yunnan.m3u8
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/陕西卫视.png" group-title="卫视频道",陕西卫视
 http://192.168.1.2:35455/gptv/G_SHANXI-HQ.m3u8
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/陕西卫视.png" group-title="卫视频道",陕西卫视
-http://192.168.1.2:35455/bst/sxws@1300000.m3u8
+http://192.168.1.2:35455/nptv/shanxiws.m3u8
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/陕西卫视.png" group-title="卫视频道",陕西卫视
 http://192.168.1.2:35455/yhyx/IP-SHXWS-SD.m3u8
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/陕西卫视.png" group-title="卫视频道",陕西卫视
-http://192.168.1.2:35455/mgtv/738910838.m3u8
+http://192.168.1.2:35455/bst/sxws@1300000.m3u8
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/陕西卫视.png" group-title="卫视频道",陕西卫视
-http://192.168.1.2:35455/nptv/shanxiws.m3u8
+http://192.168.1.2:35455/mgtv/738910838.m3u8
 #EXTINF:-1 tvg-id="内蒙古卫视" tvg-name="内蒙古卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/内蒙古卫视.png" group-title="卫视频道",内蒙古卫视
 http://192.168.1.2:35455/yhyx/IP-NMGWS-SD.m3u8
 #EXTINF:-1 tvg-id="内蒙古卫视" tvg-name="内蒙古卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/内蒙古卫视.png" group-title="卫视频道",内蒙古卫视
@@ -535,15 +532,16 @@ http://192.168.1.2:35455/bst/jyjs8m@8000000.m3u8
 #EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
 http://192.168.1.2:35455/yhyx/IP-JYKT-HD.m3u8
 #EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
-http://192.168.1.2:35455/bst/jykt@1300000.m3u8
-#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
 http://192.168.1.2:35455/gptv/G_JINYING.m3u8
+#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰卡通.png" group-title="数字频道",金鹰卡通
+http://192.168.1.2:35455/bst/jykt@1300000.m3u8
+
 #EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/嘉佳卡通.png" group-title="数字频道",嘉佳卡通
 http://192.168.1.2:35455/bst/jjkt@1300000.m3u8
 #EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
-http://192.168.1.2:35455/bst/kkkt@1300000.m3u8
-#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
 http://192.168.1.2:35455/gptv/G_KAKU.m3u8
+#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="数字频道",卡酷少儿
+http://192.168.1.2:35455/bst/kkkt@1300000.m3u8
 #EXTINF:-1 tvg-id="动漫秀场" tvg-name="动漫秀场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/动漫秀场.png" group-title="数字频道",动漫秀场
 http://192.168.1.2:35455/yhyx/IP-DMXC-HD.m3u8
 #EXTINF:-1 tvg-id="动漫秀场" tvg-name="动漫秀场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/动漫秀场.png" group-title="数字频道",动漫秀场

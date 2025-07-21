@@ -185,6 +185,7 @@ http://192.168.1.2:35455/yhyx/IP-YSJP-HD.m3u8
 http://192.168.1.2:35455/yhyx/IP-HJJC-HD.m3u8
 #EXTINF:-1 tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/怀旧剧场.png" group-title="央视频道",CCTV-怀旧剧场
 http://192.168.1.2:35455/nptv/hjjc.m3u8
+
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
 http://192.168.1.2:35455/yhyx/IP-HUNWS-HD.m3u8
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视

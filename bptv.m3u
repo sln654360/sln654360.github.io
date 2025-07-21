@@ -622,7 +622,7 @@ http://192.168.1.2:35455/gptv/G_YOUMAN.m3u8
 http://192.168.1.2:35455/mgtv/626064703.m3u8
 #EXTINF:-1 tvg-id="河北经济" tvg-name="河北经济" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河北经济.png" group-title="数字频道",河北经济
 http://192.168.1.2:35455/yhyx/IP-HEBJJ-HD.m3u8
-#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/北京纪实.png" group-title="数字频道",河北农民
+#EXTINF:-1 tvg-id="河北农民" tvg-name="河北农民" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河北农民.png" group-title="数字频道",河北农民
 http://192.168.1.2:35455/yhyx/IP-HEBNM-HD.m3u8
 #EXTINF:-1 tvg-id="河北都市" tvg-name="河北都市" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/河北都市.png" group-title="数字频道",河北都市
 http://192.168.1.2:35455/yhyx/IP-HEBDS-HD.m3u8

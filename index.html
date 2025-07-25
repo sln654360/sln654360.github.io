@@ -84,20 +84,20 @@
     </div>
 
     <p>配置ip后，可复制和下载，但建议使用下方的生成订阅链接，用订阅链接播放！<a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank">点击加入Tg群</a></p>
-    <p>1、同时支持肥羊的bst、migu、nptv、yhyx、gptv，请使用支持多线路的播放器，aptv增加为聚合订阅。</p>
-    <p>2、订阅链接额外提供凤凰三台、五星体育、翡翠台、北京卫视4K、深圳卫视4K等等节目，不定时补充...</p>
-    <p>3、订阅链接增加爱奇艺体育、腾讯体育、优酷体育、咪咕体育，可看每日直播和之前的回看。</p>
-    <p>4、影视专用接口，专门解决海外看不了央卫问题，不部署肥羊一样看，看冰茶专用的频道分组。</p>
     <div class="button-group">
+        <!-- Commented out the following buttons to hide them -->
+        <!--
         <button onclick="copyToClipboard()">复制以下内容</button>
         <button id="convertButton" onclick="toggleFormat()">转换TXT格式</button>
         <a id="downloadLink" style="display: none;" download="playlist.m3u">
             <button>下载 M3U 文件</button>
         </a>
+        -->
         <button onclick="copyOverseasJsonLink()">生成影视专用接口(海外建议)</button>
         <button onclick="copyPlayLink()">生成订阅链接</button>
     </div>
-    <pre id="result">生成中，请稍候...</pre>
+    <!-- Commented out the result pre element to prevent displaying M3U content -->
+    <!-- <pre id="result">生成中，请稍候...</pre> -->
 
     <div id="customModal" class="modal">
         <div class="modal-content">
@@ -120,6 +120,8 @@
         let originalM3uData = '';
         let isTxtFormat = false;
 
+        // Commented out the fetchM3uFiles function to prevent M3U requests
+        /*
         async function fetchM3uFiles() {
             proceedWithFetch();
         }
@@ -129,7 +131,6 @@
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const urls = [bptvUrl];
             if (includeMishitong) urls.push(mishitongUrl);
-            // Note: Assuming lunbo content is included in bptv.m3u or mishitong.m3u, no separate URL added
 
             try {
                 const responses = await Promise.all(
@@ -165,8 +166,10 @@
                 ]);
             }
         }
+        */
 
-        fetchM3uFiles();
+        // Commented out the initial fetch call
+        // fetchM3uFiles();
 
         function needsUrlEncoding(str) {
             if (/%[0-9A-Fa-f]{2}/.test(str)) return false;
@@ -188,6 +191,8 @@
             }
         }
 
+        // Commented out processM3u function as it's related to M3U processing
+        /*
         function processM3u(data) {
             const ip = document.getElementById('ipInput').value.trim() || '192.168.1.2';
             const fullUrl = getFullUrl();
@@ -221,7 +226,10 @@
         
             return result;
         }
+        */
 
+        // Commented out m3uToTxt and txtToM3u functions as they are related to format conversion
+        /*
         function m3uToTxt(m3uData) {
             const lines = m3uData.split('\n');
             let txtContent = '';
@@ -270,7 +278,10 @@
 
             return m3uContent;
         }
+        */
 
+        // Commented out toggleFormat and updateResultAndDownload as they relate to displaying/converting M3U content
+        /*
         function toggleFormat() {
             const convertButton = document.getElementById('convertButton');
             const resultEl = document.getElementById('result');
@@ -313,6 +324,7 @@
 
             resultEl.setAttribute('style', 'white-space: pre-wrap;');
         }
+        */
 
         function showModal(message, buttons) {
             const modal = document.getElementById('customModal');
@@ -335,6 +347,8 @@
             modal.style.display = 'flex';
         }
 
+        // Commented out copyToClipboard as it relates to copying M3U content
+        /*
         function copyToClipboard() {
             const text = document.getElementById('result').textContent;
             navigator.clipboard.writeText(text).then(() => {
@@ -348,6 +362,7 @@
                 ]);
             });
         }
+        */
 
         function validateUrlInput(value, callback) {
             if (value && !value.includes(':')) {
@@ -369,7 +384,7 @@
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
 
-            if (!fullUrl && !ipInput &&!bcOnlyEnabled) {
+            if (!fullUrl && !ipInput && !bcOnlyEnabled) {
                 showModal(`您未填写IP地址，将采用默认IP 192.168.1.2 作为部署了肥羊allinone的设备IP。如果您部署的IP不是此地址，可能无法正常使用。是否继续使用默认IP？`, [
                     {
                         text: '继续使用',
@@ -454,6 +469,8 @@
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
+        // Commented out event listener for bcOnlyCheckbox to remove dependency on updateResultAndDownload
+        /*
         document.getElementById('bcOnlyCheckbox').addEventListener('change', function() {
             if (this.checked) {
                 showModal('勾选后，生成的订阅将仅包含冰茶专用频道，不包含肥羊内容。确定要这样吗？', [
@@ -475,8 +492,28 @@
                 updateResultAndDownload();
             }
         });
+        */
 
-        document.getElementById('lunboCheckbox').addEventListener('change', fetchM3uFiles);
+        // Keep the bcOnlyCheckbox event listener but without M3U processing
+        document.getElementById('bcOnlyCheckbox').addEventListener('change', function() {
+            if (this.checked) {
+                showModal('勾选后，生成的订阅将仅包含冰茶专用频道，不包含肥羊内容。确定要这样吗？', [
+                    {
+                        text: '确定',
+                        onClick: () => {}
+                    },
+                    {
+                        text: '取消',
+                        onClick: () => {
+                            this.checked = false;
+                        }
+                    }
+                ]);
+            }
+        });
+
+        // Commented out lunboCheckbox event listener as it triggers fetchM3uFiles
+        // document.getElementById('lunboCheckbox').addEventListener('change', fetchM3uFiles);
 
         document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
             const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
@@ -494,10 +531,10 @@
             }
         });
 
+        // Modified fullUrlInput blur event to remove dependency on updateResultAndDownload
         document.getElementById('fullUrlInput').addEventListener('blur', function() {
             const value = this.value.trim();
             if (!value) {
-                updateResultAndDownload();
                 return;
             }
             document.getElementById('ipInput').value = '';
@@ -509,11 +546,6 @@
                     this.select();
                 } else if (result === 'defaultPort') {
                     this.value = `${value}:35455`;
-                    updateResultAndDownload();
-                } else if (result === 'noPort') {
-                    updateResultAndDownload();
-                } else if (result === 'valid') {
-                    updateResultAndDownload();
                 }
             });
         });
@@ -532,14 +564,15 @@
             }
         });
 
+        // Modified ipInput event listener to remove dependency on updateResultAndDownload
         document.getElementById('ipInput').addEventListener('input', function() {
             document.getElementById('fullUrlInput').value = '';
-            updateResultAndDownload();
         });
 
-        document.getElementById('proxyCheckbox').addEventListener('change', updateResultAndDownload);
-        document.getElementById('protocolSelect').addEventListener('change', updateResultAndDownload);
-        document.getElementById('mishitongCheckbox').addEventListener('change', fetchM3uFiles);
+        document.getElementById('proxyCheckbox').addEventListener('change', () => {});
+        document.getElementById('protocolSelect').addEventListener('change', () => {});
+        // Commented out mishitongCheckbox event listener as it triggers fetchM3uFiles
+        // document.getElementById('mishitongCheckbox').addEventListener('change', fetchM3uFiles);
     </script>
 </body>
 </html>

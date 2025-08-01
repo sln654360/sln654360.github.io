@@ -249,6 +249,22 @@ https://migu.188766.xyz/要用订阅的地址/shtv%2fshtv2.php%3fid%3dds
 https://migu.188766.xyz/要用订阅的地址/shtv%2fshtv2.php%3fid%3dly
 #EXTINF:-1 tvg-id="上海魔都眼" tvg-name="上海魔都眼" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/上海魔都眼.png" group-title="冰茶地方",上海魔都眼
 https://migu.188766.xyz/要用订阅的地址/shtv%2fshtv2.php%3fid%3dmdy
+#EXTINF:-1 tvg-id="福建综合" tvg-name="福建综合" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/福建综合.png" group-title="冰茶地方",福建综合
+https://migu.188766.xyz/要用订阅的地址/fjtv%2ffjxl.html%3fid%3dfjzh
+#EXTINF:-1 tvg-id="福建新闻" tvg-name="福建新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/福建新闻.png" group-title="冰茶地方",福建新闻
+https://migu.188766.xyz/要用订阅的地址/fjtv%2ffjxl.html%3fid%3dfjxw
+#EXTINF:-1 tvg-id="福建公共" tvg-name="福建公共" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/福建公共.png" group-title="冰茶地方",福建公共
+https://migu.188766.xyz/要用订阅的地址/fjtv%2ffjxl.html%3fid%3dfjxc
+#EXTINF:-1 tvg-id="福建电视剧" tvg-name="福建电视剧" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/福建电视剧.png" group-title="冰茶地方",福建电视剧
+https://migu.188766.xyz/要用订阅的地址/fjtv%2ffjxl.html%3fid%3dfjdsj
+#EXTINF:-1 tvg-id="福建旅游" tvg-name="福建旅游" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/福建旅游.png" group-title="冰茶地方",福建旅游
+https://migu.188766.xyz/要用订阅的地址/fjtv%2ffjxl.html%3fid%3dfjly
+#EXTINF:-1 tvg-id="福建经济" tvg-name="福建经济" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/福建经济.png" group-title="冰茶地方",福建经济
+https://migu.188766.xyz/要用订阅的地址/fjtv%2ffjxl.html%3fid%3dfjjj
+#EXTINF:-1 tvg-id="福建文体" tvg-name="福建文体" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/福建文体.png" group-title="冰茶地方",福建文体
+https://migu.188766.xyz/要用订阅的地址/fjtv%2ffjxl.html%3fid%3dfjwt
+#EXTINF:-1 tvg-id="福建少儿" tvg-name="福建少儿" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/福建少儿.png" group-title="冰茶地方",福建少儿
+https://migu.188766.xyz/要用订阅的地址/fjtv%2ffjxl.html%3fid%3dfjse
 #EXTINF:-1 tvg-id="浙江公共新闻" tvg-name="浙江公共新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/浙江新闻.png" group-title="冰茶地方",浙江新闻
 https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
 #EXTINF:-1 tvg-id="浙江国际" tvg-name="浙江国际" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/浙江国际.png" group-title="冰茶地方",浙江国际

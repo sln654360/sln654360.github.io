@@ -265,6 +265,16 @@ https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 tvg-id="浙江钱江都市" tvg-name="浙江钱江都市" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/钱江都市.png" group-title="冰茶地方",浙江钱江
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+#EXTINF:-1 tvg-id="安徽公共" tvg-name="安徽公共" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安徽公共.png" group-title="冰茶地方",安徽公共
+https://migu.188766.xyz/要用订阅的地址/ahtv%2fahsx.php%3fid%3dahgg
+#EXTINF:-1 tvg-id="安徽影视" tvg-name="安徽影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安徽影视.png" group-title="冰茶地方",安徽影视
+https://migu.188766.xyz/要用订阅的地址/ahtv%2fahsx.php%3fid%3dahys
+#EXTINF:-1 tvg-id="安徽农业科教" tvg-name="安徽农业科教" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安徽农业科教.png" group-title="冰茶地方",安徽农业科教
+https://migu.188766.xyz/要用订阅的地址/ahtv%2fahsx.php%3fid%3dahkj
+#EXTINF:-1 tvg-id="安徽经济生活" tvg-name="安徽经济生活" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安徽经济生活.png" group-title="冰茶地方",安徽经济生活
+https://migu.188766.xyz/要用订阅的地址/ahtv%2fahsx.php%3fid%3dahjjsh
+#EXTINF:-1 tvg-id="安徽国际" tvg-name="安徽国际" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/安徽国际.png" group-title="冰茶地方",安徽国际
+https://migu.188766.xyz/要用订阅的地址/ahtv%2fahsx.php%3fid%3dahgj
 #EXTINF:-1 tvg-id="江苏新闻" tvg-name="江苏新闻" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏公共新闻.png" group-title="冰茶地方",江苏新闻
 https://migu.188766.xyz/订阅后播放/公共新闻频道
 #EXTINF:-1 tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏国际.png" group-title="冰茶地方",江苏国际

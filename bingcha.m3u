@@ -179,6 +179,23 @@ https://migu.188766.xyz/订阅后播放/大湾区卫视
 https://migu.188766.xyz/请使用订阅链接观看/香港卫视
 
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="冰茶超清",北京卫视4K
+https://mursor.ottiptv.cc/gptv/G_BEIJING-4K.m3u8
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4K.png" group-title="冰茶超清",CCTV4K
+https://mursor.ottiptv.cc/bst/cctv4k@15000000
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4K.png" group-title="冰茶超清",CCTV4K
+https://mursor.ottiptv.cc/gptv/G_CCTV-4K-HD.m3u8
+#EXTINF:-1 tvg-id="CCTV164K" tvg-name="CCTV164K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV16.png" group-title="冰茶超清",CCTV16-4K
+https://mursor.ottiptv.cc/bst/cctv16hd4k@15000000.m3u8
+#EXTINF:-1 tvg-id="视界4K" tvg-name="视界4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/bestv4k.png" group-title="冰茶超清",视界4K
+https://mursor.ottiptv.cc/bst/sjpd4k@15000000.m3u8
+#EXTINF:-1 tvg-id="电影4K" tvg-name="电影4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/bestv4k.png" group-title="冰茶超清",电影4K
+https://mursor.ottiptv.cc/bst/dypd4k@15000000.m3u8
+#EXTINF:-1 tvg-id="少儿4K" tvg-name="少儿4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/bestv4k.png" group-title="冰茶超清",少儿4K
+https://mursor.ottiptv.cc/bst/sepd4k@15000000.m3u8
+#EXTINF:-1 tvg-id="欢笑剧场4K" tvg-name="欢笑剧场4K" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/欢笑剧场.png" group-title="冰茶超清",欢笑剧场4K
+https://mursor.ottiptv.cc/bst/hxjc4k@15000000.m3u8
+
+#EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京卫视4K.png" group-title="冰茶超清",北京卫视4K
 https://migu.188766.xyz/请使用订阅链接观看/北京卫视
 #EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/深圳卫视4K.png" group-title="冰茶超清",深圳卫视4K
 https://migu.188766.xyz/请使用订阅链接观看/深圳卫视
@@ -219,6 +236,90 @@ https://migu.188766.xyz/请使用订阅链接观看/CHC动作电影
 https://migu.188766.xyz/请使用订阅链接观看/CHC影迷电影
 #EXTINF:-1 tvg-id="五星体育" tvg-name="五星体育" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/五星体育.png" group-title="冰茶其他",五星体育
 https://migu.188766.xyz/请使用订阅链接观看/五星体育
+
+#EXTINF:-1 tvg-id="北京冬奥纪实" tvg-name="北京冬奥纪实" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/北京冬奥纪实.png" group-title="冰茶其他",北京冬奥纪实
+https://mursor.ottiptv.cc/gptv/G_BEIJINGJS-HD.m3u8
+#EXTINF:-1 tvg-id="天元围棋" tvg-name="天元围棋" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/天元围棋.png" group-title="冰茶其他",天元围棋
+https://mursor.ottiptv.cc/gptv/G_TIANYUANWQ.m3u8
+#EXTINF:-1 tvg-id="新视觉" tvg-name="新视觉" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/新视觉.png" group-title="冰茶其他",新视觉
+https://mursor.ottiptv.cc/bst/xsjhd@4000000.m3u8
+#EXTINF:-1 tvg-id="中国天气" tvg-name="中国天气" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/中国天气.png" group-title="冰茶其他",中国天气
+https://mursor.ottiptv.cc/bst/zgqxhd4mc@4000000.m3u8
+#EXTINF:-1 tvg-id="欢笑剧场" tvg-name="欢笑剧场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/欢笑剧场.png" group-title="冰茶其他",欢笑剧场
+https://mursor.ottiptv.cc/bst/hxjchd@4000000.m3u8
+#EXTINF:-1 tvg-id="热门剧场" tvg-name="热门剧场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/热门剧场.png" group-title="冰茶其他",热门剧场
+https://mursor.ottiptv.cc/bst/rmjcvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="都市剧场" tvg-name="都市剧场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/都市剧场.png" group-title="冰茶其他",都市剧场
+https://mursor.ottiptv.cc/bst/dsjchd@4000000.m3u8
+#EXTINF:-1 tvg-id="谍战剧场" tvg-name="谍战剧场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/谍战剧场.png" group-title="冰茶其他",谍战剧场
+https://mursor.ottiptv.cc/bst/dzjcvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="华语影院" tvg-name="华语影院" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/华语影院.png" group-title="冰茶其他",华语影院
+https://mursor.ottiptv.cc/bst/hyyyvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="星光院线" tvg-name="星光院线" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/星光院线.png" group-title="冰茶其他",星光院线
+https://mursor.ottiptv.cc/bst/xgyyvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="全球大片" tvg-name="全球大片" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/全球大片.png" group-title="冰茶其他",全球大片
+https://mursor.ottiptv.cc/bst/qqdpvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="热门综艺" tvg-name="热门综艺" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/热门综艺.png" group-title="冰茶其他",热门综艺
+https://mursor.ottiptv.cc/bst/rmzyvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="哈哈炫动" tvg-name="哈哈炫动" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/哈哈炫动.png" group-title="冰茶其他",哈哈炫动
+https://mursor.ottiptv.cc/bst/hhxdhd@4000000.m3u8
+#EXTINF:-1 tvg-id="哈哈炫动" tvg-name="哈哈炫动" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/哈哈炫动.png" group-title="冰茶其他",哈哈炫动
+https://mursor.ottiptv.cc/gptv/G_XUANDONG.m3u8
+#EXTINF:-1 tvg-id="金鹰纪实" tvg-name="金鹰纪实" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰纪实.png" group-title="冰茶其他",金鹰纪实
+https://mursor.ottiptv.cc/bst/jyjs8m@8000000.m3u8
+#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰卡通.png" group-title="冰茶其他",金鹰卡通
+https://mursor.ottiptv.cc/bst/jykt@1300000.m3u8
+#EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金鹰卡通.png" group-title="冰茶其他",金鹰卡通
+https://mursor.ottiptv.cc/gptv/G_JINYING.m3u8
+#EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/嘉佳卡通.png" group-title="冰茶其他",嘉佳卡通
+https://mursor.ottiptv.cc/bst/jjkt@1300000.m3u8
+#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="冰茶其他",卡酷少儿
+https://mursor.ottiptv.cc/bst/kkkt@1300000.m3u8
+#EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/卡酷少儿.png" group-title="冰茶其他",卡酷少儿
+https://mursor.ottiptv.cc/gptv/G_KAKU.m3u8
+#EXTINF:-1 tvg-id="动漫秀场" tvg-name="动漫秀场" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/动漫秀场.png" group-title="冰茶其他",动漫秀场
+https://mursor.ottiptv.cc/bst/dmxchd@4000000.m3u8
+#EXTINF:-1 tvg-id="宝宝动画" tvg-name="宝宝动画" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/宝宝动画.png" group-title="冰茶其他",宝宝动画
+https://mursor.ottiptv.cc/bst/bbdhvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="青春动漫" tvg-name="青春动漫" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/青春动漫.png" group-title="冰茶其他",青春动漫
+https://mursor.ottiptv.cc/bst/qcdmvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="百变课堂" tvg-name="百变课堂" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/百变课堂.png" group-title="冰茶其他",百变课堂
+https://mursor.ottiptv.cc/bst/bbktvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="生活时尚" tvg-name="生活时尚" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/生活时尚.png" group-title="冰茶其他",生活时尚
+https://mursor.ottiptv.cc/bst/shsshd@4000000.m3u8
+#EXTINF:-1 tvg-id="游戏风云" tvg-name="游戏风云" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/游戏风云.png" group-title="冰茶其他",游戏风云
+https://mursor.ottiptv.cc/bst/yxfyhd@4000000.m3u8
+#EXTINF:-1 tvg-id="电竞天堂" tvg-name="电竞天堂" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/电竞天堂.png" group-title="冰茶其他",电竞天堂
+https://mursor.ottiptv.cc/bst/djttvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="金色学堂" tvg-name="金色学堂" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/金色学堂.png" group-title="冰茶其他",金色学堂
+https://mursor.ottiptv.cc/bst/jsxthd4m@4000000.m3u8
+#EXTINF:-1 tvg-id="健康养生" tvg-name="健康养生" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/健康养生.png" group-title="冰茶其他",健康养生
+https://mursor.ottiptv.cc/bst/jkysvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="戏曲精选" tvg-name="戏曲精选" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/戏曲精选.png" group-title="冰茶其他",戏曲精选
+https://mursor.ottiptv.cc/bst/xqjxvcc4m@4000000.m3u8
+#EXTINF:-1 tvg-id="茶" tvg-name="茶" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/茶.png" group-title="冰茶其他",茶频道
+https://mursor.ottiptv.cc/bst/cpdhdavs8m@8000000.m3u8
+#EXTINF:-1 tvg-id="快乐垂钓" tvg-name="快乐垂钓" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/快乐垂钓.png" group-title="冰茶其他",快乐垂钓
+https://mursor.ottiptv.cc/bst/klcdhd4m@4000000.m3u8
+#EXTINF:-1 tvg-id="东方财经" tvg-name="东方财经" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/东方财经.png" group-title="冰茶其他",东方财经
+https://mursor.ottiptv.cc/bst/dfcjhd4m@4000000.m3u8
+#EXTINF:-1 tvg-id="家庭理财" tvg-name="家庭理财" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/家庭理财.png" group-title="冰茶其他",家庭理财
+https://mursor.ottiptv.cc/bst/jtlcsd2d5mc@2500000.m3u8
+#EXTINF:-1 tvg-id="家庭理财" tvg-name="家庭理财" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/家庭理财.png" group-title="冰茶其他",家庭理财
+https://mursor.ottiptv.cc/gptv/G_JIATINGLC.m3u8
+#EXTINF:-1 tvg-id="财富天下" tvg-name="财富天下" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/财富天下.png" group-title="冰茶其他",财富天下
+https://mursor.ottiptv.cc/bst/cftx@2500000.m3u8
+#EXTINF:-1 tvg-id="法治天地" tvg-name="法治天地" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/法治天地.png" group-title="冰茶其他",法治天地
+https://mursor.ottiptv.cc/bst/fztd2d5m@2500000.m3u8
+#EXTINF:-1 tvg-id="看天下精选" tvg-name="看天下精选" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/看天下精选.png" group-title="冰茶其他",看天下精选
+https://mursor.ottiptv.cc/bst/ktxjx8m@8000000.m3u8
+#EXTINF:-1 tvg-id="乐游" tvg-name="乐游" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/乐游.png" group-title="冰茶其他",乐游
+https://mursor.ottiptv.cc/bst/qjshd@4000000.m3u8
+#EXTINF:-1 tvg-id="优漫卡通频道" tvg-name="优漫卡通频道" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/优漫卡通频道.png" group-title="冰茶其他",优漫卡通频道
+https://mursor.ottiptv.cc/gptv/G_YOUMAN.m3u8
+
+
+
 #EXTINF:-1 tvg-id="东方影视" tvg-name="东方影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/东方影视.png" group-title="冰茶其他",东方影视
 https://migu.188766.xyz/订阅后播放/上视东方影视
 #EXTINF:-1 tvg-id="新片放映厅" tvg-name="新片放映厅" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/新片放映厅.png" group-title="冰茶其他",新片放映厅

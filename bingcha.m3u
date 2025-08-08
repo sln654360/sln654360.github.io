@@ -226,6 +226,10 @@ https://migu.188766.xyz/必须用订阅地址/Xinhe
 https://migu.188766.xyz/必须用订阅地址/inews_twn
 #EXTINF:-1 tvg-id="千禧经典" tvg-name="千禧经典" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/千禧经典.png" group-title="冰茶港台",千禧经典
 https://migu.188766.xyz/必须用订阅地址/Tvbclassic
+#EXTINF:-1 tvg-id="天映经典" tvg-name="天映经典" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/天映经典.png" group-title="冰茶港台",天映经典
+https://migu.188766.xyz/必须用订阅地址/Celestial2
+#EXTINF:-1 tvg-id="天映电影" tvg-name="天映电影" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/天映电影.png" group-title="冰茶港台",天映电影
+https://migu.188766.xyz/必须用订阅地址/Celestial
 #EXTINF:-1 tvg-id="Astro AOD" tvg-name="Astro AOD" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/AstroAOD.png" group-title="冰茶港台",Astro AOD
 https://migu.188766.xyz/必须用订阅地址/Aodhd
 #EXTINF:-1 tvg-id="Astro AEC" tvg-name="Astro AEC" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/AstroAEC.png" group-title="冰茶港台",Astro AEC

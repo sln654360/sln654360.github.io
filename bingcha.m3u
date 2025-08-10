@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url="https://fy.188766.xyz/e.xml"
 
-#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV1.png" group-title="冰茶央视",CCTV-1 综合
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV1.png" group-title="冰茶央视",CCTV-1 综合
 https://migu.188766.xyz/请使用订阅链接观看/CCTV1
 #EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV2.png" group-title="冰茶央视",CCTV-2 财经
 https://migu.188766.xyz/请使用订阅链接观看/CCTV2

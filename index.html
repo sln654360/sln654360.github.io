@@ -236,7 +236,7 @@
             if (bcOnlyEnabled) playLink += `&bconly=true`;
         
             navigator.clipboard.writeText(playLink).then(() => {
-                showModal('影视专用接口已复制到剪贴板！请粘贴到播放器中使用！', [
+                showModal('影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', [
                     { text: '确定', onClick: () => {} }
                 ]);
             }).catch(err => {
@@ -270,7 +270,7 @@
             if (bcOnlyEnabled) playLink += `&bconly=true`;
         
             navigator.clipboard.writeText(playLink).then(() => {
-                showModal('APTV专用链接已复制到剪贴板！请粘贴到播放器中使用！', [
+                showModal('APTV专用链接已复制到剪贴板！请粘贴到APTV播放器中使用！', [
                     { text: '确定', onClick: () => {} }
                 ]);
             }).catch(err => {

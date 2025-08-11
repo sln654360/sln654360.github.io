@@ -5,10 +5,11 @@ https://mursor.ottiptv.cc/migu/608807420.m3u8?migutoken=0750a700442bfa1c44cf8ae9
 #EXTVLCOPT:http-user-agent=okHttp/Mod-1.0.0
 #EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV2.png" group-title="央视频道",CCTV-2 财经
 https://mursor.ottiptv.cc/migu/631780532.m3u8?migutoken=2657ba54d0ca1ca514715909a2c59710960927d0814591b918c4a011adcc23fc5f7f719558ee2d2719be5bf36a0c2e3d3e1a52ed4da324e1030ec5ebe662948ae72770f17608e0d536c0485a14
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.0.0
 #EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV3.png" group-title="央视频道",CCTV-3 综艺
-https://mursor.ottiptv.cc/migu/624878271.m3u8?migutoken=702d2bdad2ab4197023a5a00a065cd67b6fcdccfdab33907dfb40c43028a0f26d0f7c573aceb3549816f28c0165523eb85334c12e30fe3aef530f357ec3667ce37157d69bf7b29ffb04465933d|user-agent=okHttp/Mod-1.0.0
+https://mursor.ottiptv.cc/migu/624878271.m3u8?migutoken=702d2bdad2ab4197023a5a00a065cd67b6fcdccfdab33907dfb40c43028a0f26d0f7c573aceb3549816f28c0165523eb85334c12e30fe3aef530f357ec3667ce37157d69bf7b29ffb04465933d
 #EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4.png" group-title="央视频道",CCTV-4 中文国际
-https://mursor.ottiptv.cc/migu/631780421.m3u8?migutoken=7f3164d57099adfd5bef74e9b64125cd18586cacd57f5ccfbcd97e6455801679cdce43ec23a90d6dece6eed81daf7e0639b147f51f25d1d23304154572a003c8021e3ab2d5ea7367911b280baf|http-user-agent=okHttp/Mod-1.0.0
+https://mursor.ottiptv.cc/migu/631780421.m3u8?migutoken=7f3164d57099adfd5bef74e9b64125cd18586cacd57f5ccfbcd97e6455801679cdce43ec23a90d6dece6eed81daf7e0639b147f51f25d1d23304154572a003c8021e3ab2d5ea7367911b280baf
 #EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV5.png" group-title="央视频道",CCTV-5 体育
 https://mursor.ottiptv.cc/migu/641886683.m3u8?migutoken=77f0c548618e5e42bb7bf80c4f009258545d4049642fe079206e982e5f28aa06f2bb8d8ab63f5c519f74f772eef76d514bd132556cf4ae68caabbcc3d4d2efe119537c7e94d9ca40320f25a224
 #EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV5+.png" group-title="央视频道",CCTV-5+ 体育赛事

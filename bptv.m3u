@@ -39,8 +39,7 @@ http://192.168.1.2:35455/gptv/G_CCTV-16-HQ.m3u8
 http://192.168.1.2:35455/gptv/G_CCTV-17-HQ.m3u8
 #EXTINF:-1 tvg-id="女性时尚" tvg-name="女性时尚" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/女性时尚.png" group-title="央视频道",CCTV-女性时尚
 http://192.168.1.2:35455/gptv/G_NVXINGSS.m3u8
-EXTVLCOPT:http-user-agent=okHttp/Mod-1.0.0
-#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
+#EXTINF:-1  tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" http-user-agent="okHttp/Mod-1.0.0" group-title="卫视频道",湖南卫视
 https://mursor.ottiptv.cc/mcp/hunan.m3u8
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/浙江卫视.png" group-title="卫视频道",浙江卫视
 https://mursor.ottiptv.cc/mcp/zhejiang.m3u8|user-agent=okHttp/Mod-1.0.0

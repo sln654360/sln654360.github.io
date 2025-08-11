@@ -1,5 +1,6 @@
 
 #EXTM3U x-tvg-url="https://fy.188766.xyz/e.xml"
+#EXTVLCOPT:http-user-agent=okHttp/Mod-1.0.0
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV1.png" group-title="央视频道",CCTV-1 综合
 http://192.168.1.2:35455/gptv/G_CCTV-1-HQ.m3u8
 #EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV2.png" group-title="央视频道",CCTV-2 财经
@@ -39,7 +40,7 @@ http://192.168.1.2:35455/gptv/G_CCTV-17-HQ.m3u8
 #EXTINF:-1 tvg-id="女性时尚" tvg-name="女性时尚" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/女性时尚.png" group-title="央视频道",CCTV-女性时尚
 http://192.168.1.2:35455/gptv/G_NVXINGSS.m3u8
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
-http://192.168.1.2:35455/gptv/G_HUNAN-HQ.m3u8
+https://mursor.ottiptv.cc/mcp/hunan.m3u8
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/浙江卫视.png" group-title="卫视频道",浙江卫视
 http://192.168.1.2:35455/gptv/G_ZHEJIANG-HQ.m3u8
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/江苏卫视.png" group-title="卫视频道",江苏卫视

@@ -84,7 +84,7 @@
     </div>
 
     <p>配置ip后，可复制和下载，但建议使用下方的生成订阅链接，用订阅链接播放！<a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank">点击加入Tg群</a></p>
-    <p>目前已切换为Mursor的订阅，PotPlayer会自动设置UA， 并提供影视/OK影视、APTV的专用链接（自动设置UA），其他的自行测试，不行就自行设置UA！</p>
+    <p>目前已切换为Mursor的订阅，生成订阅会自动设置UA，支持：影视/OK影视、PotPlayer、VLC等大部分播放器，APTV使用的专用链接，其他的播放器自行测试，不行就自行设置UA！</p>
     <div class="button-group">
         <!-- Commented out the following buttons to hide them -->
         <!--
@@ -96,7 +96,6 @@
         -->
         <button onclick="copyOverseasJsonLink()">生成影视专用接口(海外建议)</button>
         <button onclick="copyPlayLink()">生成订阅链接</button>
-        <button onclick="copyYingshiLink()">生成影视专用链接</button>
         <button onclick="copyAptvLink()">生成APTV专用链接</button>
     </div>
     <!-- Commented out the result pre element to prevent displaying M3U content -->
@@ -253,41 +252,7 @@
             if (bcOnlyEnabled) playLink += `&bconly=true`;
         
             navigator.clipboard.writeText(playLink).then(() => {
-                showModal('影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', [
-                    { text: '确定', onClick: () => {} }
-                ]);
-            }).catch(err => {
-                console.error('复制失败: ', err);
-                showModal('复制失败，请重试！', [
-                    { text: '确定', onClick: () => {} }
-                ]);
-            });
-        }
-
-        function copyYingshiLink() {
-            const ipInput = document.getElementById('ipInput').value.trim();
-            const fullUrl = getFullUrl();
-            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
-            const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-            const includeLunbo = document.getElementById('lunboCheckbox').checked;
-            const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
-        
-            let playLink;
-            if (fullUrl) {
-                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
-                playLink = `https://fy.188766.xyz/?url=${urlParam}&yingshi=true`;
-            } else {
-                const ipParam = ipInput || '192.168.1.2';
-                playLink = `https://fy.188766.xyz/?ip=${ipParam}&yingshi=true`;
-            }
-        
-            if (proxyEnabled) playLink += `&proxy=true`;
-            if (!includeMishitong) playLink += `&mishitong=false`;
-            if (!includeLunbo) playLink += `&lunbo=false`;
-            if (bcOnlyEnabled) playLink += `&bconly=true`;
-        
-            navigator.clipboard.writeText(playLink).then(() => {
-                showModal('影视专用链接已复制到剪贴板！请粘贴到播放器中使用！', [
+                showModal('影视专用接口已复制到剪贴板！请粘贴到播放器中使用！', [
                     { text: '确定', onClick: () => {} }
                 ]);
             }).catch(err => {

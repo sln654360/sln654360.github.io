@@ -49,6 +49,11 @@
             padding: 8px 16px;
             cursor: pointer;
         }
+        #generatedLink {
+            width: 100%;
+            margin-top: 10px;
+            resize: none;
+        }
     </style>
 </head>
 <body>
@@ -86,20 +91,11 @@
     <p>如需看allinone轮播可配置ip，如不需要，可以直接生成订阅链接，用订阅链接播放，如只看冰茶的可在更多设置中勾选！<a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank">点击加入Tg群</a></p>
     <p>目前已切换为Mursor的订阅，生成订阅会自动设置UA，支持：影视/OK影视、PotPlayer、VLC等大部分播放器，APTV使用的专用链接，其他的播放器自行测试，不行就自行设置UA！</p>
     <div class="button-group">
-        <!-- Commented out the following buttons to hide them -->
-        <!--
-        <button onclick="copyToClipboard()">复制以下内容</button>
-        <button id="convertButton" onclick="toggleFormat()">转换TXT格式</button>
-        <a id="downloadLink" style="display: none;" download="playlist.m3u">
-            <button>下载 M3U 文件</button>
-        </a>
-        -->
         <button onclick="copyOverseasJsonLink()">生成影视专用接口(海外建议)</button>
         <button onclick="copyPlayLink()">生成订阅链接</button>
         <button onclick="copyAptvLink()">生成APTV专用链接</button>
     </div>
-    <!-- Commented out the result pre element to prevent displaying M3U content -->
-    <!-- <pre id="result">生成中，请稍候...</pre> -->
+    <textarea id="generatedLink" readonly style="display: none;" placeholder="生成链接将显示在这里"></textarea>
 
     <div id="customModal" class="modal">
         <div class="modal-content">
@@ -142,12 +138,12 @@
             }
         }
 
-        function showModal(message, buttons) {
+        function showModal(message, buttons, link = '') {
             const modal = document.getElementById('customModal');
             const messageEl = document.getElementById('modalMessage');
             const buttonsEl = document.getElementById('modalButtons');
             
-            messageEl.textContent = message;
+            messageEl.innerHTML = message;
             buttonsEl.innerHTML = '';
 
             buttons.forEach(btn => {
@@ -175,15 +171,61 @@
             }
         }
 
-        function copyPlayLink() {
-            const ipInput = document.getElementById('ipInput').value.trim();
-            const fullUrl = getFullUrl();
-            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
-            const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-            const includeLunbo = document.getElementById('lunboCheckbox').checked;
-            const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
+        function fallbackCopyText(text, successCallback, errorCallback) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                document.body.removeChild(textArea);
+                if (successful) {
+                    successCallback();
+                } else {
+                    errorCallback();
+                }
+            } catch (err) {
+                document.body.removeChild(textArea);
+                errorCallback();
+            }
+        }
 
-            generatePlayLink(ipInput || '192.168.1.2', proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
+        function copyToClipboard(text, successMessage, linkType) {
+            const generatedLinkArea = document.getElementById('generatedLink');
+            generatedLinkArea.value = text;
+            
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    generatedLinkArea.style.display = 'none';
+                    showModal(successMessage, [{ text: '确定', onClick: () => {} }]);
+                }).catch(err => {
+                    console.error('Clipboard API failed: ', err);
+                    generatedLinkArea.style.display = 'block';
+                    showModal(
+                        `复制失败！请手动复制以下链接：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
+                        [{ text: '确定', onClick: () => {} }]
+                    );
+                });
+            } else {
+                fallbackCopyText(
+                    text,
+                    () => {
+                        generatedLinkArea.style.display = 'none';
+                        showModal(successMessage, [{ text: '确定', onClick: () => {} }]);
+                    },
+                    () => {
+                        generatedLinkArea.style.display = 'block';
+                        showModal(
+                            `复制失败！请手动复制以下链接：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
+                            [{ text: '确定', onClick: () => {} }]
+                        );
+                    }
+                );
+            }
         }
 
         function generatePlayLink(ip, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '') {
@@ -201,16 +243,19 @@
             if (!includeLunbo) playLink += `&lunbo=false`;
             if (bcOnlyEnabled) playLink += `&bconly=true`;
 
-            navigator.clipboard.writeText(playLink).then(() => {
-                showModal('订阅链接已复制到剪贴板！请粘贴到播放器中使用！', [
-                    { text: '确定', onClick: () => {} }
-                ]);
-            }).catch(err => {
-                console.error('复制失败: ', err);
-                showModal('复制失败，请重试！', [
-                    { text: '确定', onClick: () => {} }
-                ]);
-            });
+            return playLink;
+        }
+
+        function copyPlayLink() {
+            const ipInput = document.getElementById('ipInput').value.trim();
+            const fullUrl = getFullUrl();
+            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+            const includeMishitong = document.getElementById('mishitongCheckbox').checked;
+            const includeLunbo = document.getElementById('lunboCheckbox').checked;
+            const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
+
+            const playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
+            copyToClipboard(playLink, '订阅链接已复制到剪贴板！请粘贴到播放器中使用！', 'play');
         }
 
         function copyOverseasJsonLink() {
@@ -221,30 +266,10 @@
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
         
-            let playLink;
-            if (fullUrl) {
-                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
-                playLink = `https://fy.188766.xyz/?url=${urlParam}&haiwai=true`;
-            } else {
-                const ipParam = ipInput || '192.168.1.2';
-                playLink = `https://fy.188766.xyz/?ip=${ipParam}&haiwai=true`;
-            }
+            let playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
+            playLink += `&haiwai=true`;
         
-            if (proxyEnabled) playLink += `&proxy=true`;
-            if (!includeMishitong) playLink += `&mishitong=false`;
-            if (!includeLunbo) playLink += `&lunbo=false`;
-            if (bcOnlyEnabled) playLink += `&bconly=true`;
-        
-            navigator.clipboard.writeText(playLink).then(() => {
-                showModal('影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', [
-                    { text: '确定', onClick: () => {} }
-                ]);
-            }).catch(err => {
-                console.error('复制失败: ', err);
-                showModal('复制失败，请重试！', [
-                    { text: '确定', onClick: () => {} }
-                ]);
-            });
+            copyToClipboard(playLink, '影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', 'overseas');
         }
 
         function copyAptvLink() {
@@ -255,30 +280,10 @@
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
         
-            let playLink;
-            if (fullUrl) {
-                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
-                playLink = `https://fy.188766.xyz/?url=${urlParam}&aptv=true`;
-            } else {
-                const ipParam = ipInput || '192.168.1.2';
-                playLink = `https://fy.188766.xyz/?ip=${ipParam}&aptv=true`;
-            }
+            let playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
+            playLink += `&aptv=true`;
         
-            if (proxyEnabled) playLink += `&proxy=true`;
-            if (!includeMishitong) playLink += `&mishitong=false`;
-            if (!includeLunbo) playLink += `&lunbo=false`;
-            if (bcOnlyEnabled) playLink += `&bconly=true`;
-        
-            navigator.clipboard.writeText(playLink).then(() => {
-                showModal('APTV专用链接已复制到剪贴板！请粘贴到APTV播放器中使用！', [
-                    { text: '确定', onClick: () => {} }
-                ]);
-            }).catch(err => {
-                console.error('复制失败: ', err);
-                showModal('复制失败，请重试！', [
-                    { text: '确定', onClick: () => {} }
-                ]);
-            });
+            copyToClipboard(playLink, 'APTV专用链接已复制到剪贴板！请粘贴到APTV播放器中使用！', 'aptv');
         }
 
         function toggleAdvanced() {

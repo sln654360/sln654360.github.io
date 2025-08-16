@@ -206,7 +206,7 @@
                     console.error('Clipboard API failed: ', err);
                     generatedLinkArea.style.display = 'block';
                     showModal(
-                        `复制失败！请手动复制以下链接：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
+                        `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
                         [{ text: '确定', onClick: () => {} }]
                     );
                 });
@@ -220,7 +220,7 @@
                     () => {
                         generatedLinkArea.style.display = 'block';
                         showModal(
-                            `复制失败！请手动复制以下链接：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
+                            `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
                             [{ text: '确定', onClick: () => {} }]
                         );
                     }

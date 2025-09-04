@@ -228,9 +228,9 @@ https://mursor.ottiptv.cc/migu/624878970.m3u8?migutoken=625bcde8b8f108d2dfc68aa4
 #EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5910/019/355/202405081702_1715158104256_H169_1080.jpg" group-title="数字频道", 中学生
 https://mursor.ottiptv.cc/migu/708869532.m3u8?migutoken=dd986ac7712e54ea393391444799d4a208c74bb745ad8085519de0642cd760f3a361e25b98f5e259d11ac65173c67fc912860210982e38490aa1fd7ef1a3b5367fa000aeb1968e9dd2d1d750f8
 #EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2202/196/407/202204010052_1642124762081_H169_1080.jpg" group-title="数字频道", CGTN
-https://mursor.ottiptv.cc/migu/609017205.m3u8?migutoken=5b6f9adace2d1637d52406eed201f4eca86c6f51c05c823bcef2d7141a033c21d6247f91329bee829a1b38511e192d9fa9bb2f5f05816838ab9e2c71bec054cae64cbb14dd88bdf698d5b0a238
-#EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2202/196/407/202204010052_1642124762081_H169_1080.jpg" group-title="数字频道", CGTN
 https://mursor.ottiptv.cc/mcp/cgtn.m3u8
+#EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2202/196/407/202204010052_1642124762081_H169_1080.jpg" group-title="数字频道", CGTN
+https://mursor.ottiptv.cc/migu/609017205.m3u8?migutoken=5b6f9adace2d1637d52406eed201f4eca86c6f51c05c823bcef2d7141a033c21d6247f91329bee829a1b38511e192d9fa9bb2f5f05816838ab9e2c71bec054cae64cbb14dd88bdf698d5b0a238
 #EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2200/179/356/202502251602_1740470533820_H169_1080.jpg" group-title="数字频道", CGTN外语纪录
 https://mursor.ottiptv.cc/mcp/cgtndoc.m3u8
 #EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2200/179/356/202502251602_1740470533820_H169_1080.jpg" group-title="数字频道", CGTN外语纪录

@@ -37,9 +37,9 @@ https://mursor.ottiptv.cc/mst/cctv16.m3u8
 https://mursor.ottiptv.cc/mcp/cctv16.m3u8
 #EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV17.png" group-title="央视频道",CCTV-17 农业农村
 https://mursor.ottiptv.cc/migu/673168256.m3u8?migutoken=2466a10f369f37b6c745c075a5680588e719357e53933d2cb6ae21e5fee723b709cf54b61ae8c03ab865d86f9b1a63316aebcd1c07132c809480d321f906d5b36bf5ffa75e6832abcc940c1385
-#EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2200/179/315/202204010055_1626831001078_H169_1080.jpg" group-title="央视频道", CCTV4欧洲
+#EXTINF:-1 tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4欧洲.png" group-title="央视频道", CCTV4欧洲
 https://mursor.ottiptv.cc/migu/608807419.m3u8?migutoken=2b7c75057cec82baa099e99cb96c935225c7ac131a222f623a069af2133072d64807166bf9c0148baff6bea615352c216cca30d00134be3e93f97fcfc1b39cb4931f11e4f6ce074918cf926b17
-#EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2200/179/344/202204010055_1626830735444_H169_1080.jpg" group-title="央视频道", CCTV4美洲
+#EXTINF:-1 tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV4美洲.png" group-title="央视频道", CCTV4美洲
 https://mursor.ottiptv.cc/migu/608807416.m3u8?migutoken=182309560c01093eb8c68728c6daf7b14ed3b8ac7360a433040d719acc5746007d1f9c2a782dc21e1049f044243d01f685c0c761856e5bf0feeb7492418e2a2a80d99926d7a49514a1dbd42cf0
 #EXTINF:-1 tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/第一剧场.png" group-title="央视频道", 第一剧场
 https://mursor.ottiptv.cc/mcp/dyjc.m3u8

@@ -33,6 +33,8 @@ https://mursor.ottiptv.cc/migu/624878440.m3u8?migutoken=1b1a5a59541fd99da69a8f77
 https://mursor.ottiptv.cc/migu/673168223.m3u8?migutoken=d942dc5b1190acabbd5d62bdc11b2a4a52a64dd9194b40331492868ea88404d6800a9e14730e39e88e84c5261608daae82cb82201bd3d8d2b4ec548ae4e6c34a239266fbf70fd48433911c5444
 #EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV16.png" group-title="央视频道",CCTV-16 奥林匹克
 https://mursor.ottiptv.cc/mst/cctv16.m3u8
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV16.png" group-title="央视频道",CCTV-16 奥林匹克
+https://mursor.ottiptv.cc/mcp/cctv16.m3u8
 #EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV17.png" group-title="央视频道",CCTV-17 农业农村
 https://mursor.ottiptv.cc/migu/673168256.m3u8?migutoken=2466a10f369f37b6c745c075a5680588e719357e53933d2cb6ae21e5fee723b709cf54b61ae8c03ab865d86f9b1a63316aebcd1c07132c809480d321f906d5b36bf5ffa75e6832abcc940c1385
 #EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2200/179/315/202204010055_1626831001078_H169_1080.jpg" group-title="央视频道", CCTV4欧洲

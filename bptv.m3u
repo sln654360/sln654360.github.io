@@ -263,7 +263,7 @@ https://mursor.ottiptv.cc/migu/609169285.m3u8?migutoken=76bc989f5982addab5d4d415
 
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/CCTV4K.png" group-title="超清频道",CCTV4K
 https://mursor.ottiptv.cc/mxw/cctv4k.m3u8
-#EXTINF:-1 tvg-id="CCTV4k" tvg-name="CCTV4k" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/CCTV4K.png" group-title="超清频道",CCTV4k
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/CCTV4K.png" group-title="超清频道",CCTV4K
 https://mursor.ottiptv.cc/mcp/cctv4k.m3u8
 #EXTINF:-1 tvg-id="CCTV8K" tvg-name="CCTV8K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/CCTV8K.png" group-title="超清频道",CCTV8K
 https://mursor.ottiptv.cc/mcp/cctv8k.m3u8

@@ -46,7 +46,7 @@ if not os.path.exists(target_file):
 with open(target_file, 'r', encoding='utf-8') as f:
     target_content = f.read()
 
-# 解析目标文件的migutoken，检查是否需要更新
+# 替换目标文件的migutoken
 updated_lines = []
 lines = target_content.splitlines()
 i = 0
@@ -65,18 +65,15 @@ while i < len(lines):
                     new_token = source_tokens[id_part]
                     if current_token != new_token:
                         base_url = url.split('?migutoken=')[0]
-                        new_url = f"{base_url}?migutoken={new_token}"
-                        updated_lines.append(new_url)
+                        updated_lines[-1] = line  # 保留#EXTINF行
+                        updated_lines.append(f"{base_url}?migutoken={new_token}")
                         has_changes = True
-                        i += 1
                     else:
-                        updated_lines.append(url)
-                        i += 1
-                else:
-                    updated_lines.append(url)
-                    i += 1
-            else:
-                i += 1
+                        updated_lines.append(url)  # 保留原URL
+                    i += 2  # 跳过URL行
+                    continue
+            updated_lines.append(url)  # 未匹配或无token，保留原URL
+            i += 2
         else:
             i += 1
     else:

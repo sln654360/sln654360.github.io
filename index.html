@@ -93,7 +93,6 @@
     <div class="button-group">
         <button onclick="copyOverseasJsonLink()">生成影视专用接口(海外建议)</button>
         <button onclick="copyPlayLink()">生成订阅链接</button>
-        <button onclick="copyAptvLink()">生成APTV专用链接</button>
     </div>
     <textarea id="generatedLink" readonly style="display: none;" placeholder="生成链接将显示在这里"></textarea>
 
@@ -270,20 +269,6 @@
             playLink += `&haiwai=true`;
         
             copyToClipboard(playLink, '影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', 'overseas');
-        }
-
-        function copyAptvLink() {
-            const ipInput = document.getElementById('ipInput').value.trim();
-            const fullUrl = getFullUrl();
-            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
-            const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-            const includeLunbo = document.getElementById('lunboCheckbox').checked;
-            const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
-        
-            let playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
-            playLink += `&aptv=true`;
-        
-            copyToClipboard(playLink, 'APTV专用链接已复制到剪贴板！请粘贴到APTV播放器中使用！', 'aptv');
         }
 
         function toggleAdvanced() {

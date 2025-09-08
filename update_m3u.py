@@ -8,8 +8,8 @@ source_url = 'https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/
 # 目标文件路径（在repo中）
 target_file = 'bptv.m3u'
 
-# 支持的路径（添加 mg）
-supported_paths = ['migu', 'mg', 'mcp', 'mxw']
+# 支持的路径
+supported_paths = ['mg', 'mcp', 'mxw']
 
 # 下载来源M3U内容
 try:
@@ -28,7 +28,7 @@ while i < len(lines):
     if lines[i].startswith('#EXTINF:'):
         if i + 1 < len(lines):
             url = lines[i + 1]
-            # 支持非数字ID
+            # 修改正则表达式，支持非数字ID
             match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/([^/]+)\.m3u8(?:\?(.*))?', url)
             if match:
                 domain = match.group(1)
@@ -38,9 +38,7 @@ while i < len(lines):
                 # 解析查询参数为字典
                 params = {}
                 for param in re.findall(r'([^&?]+)=([^&]+)', query):
-                    # 将 token 映射为 migutoken
-                    param_key = 'migutoken' if param[0] == 'token' else param[0]
-                    params[param_key] = param[1]
+                    params[param[0]] = param[1]
                 source_tokens[(path, id_part)] = (domain, params)
                 print(f"Found params for {path}/{id_part}: domain={domain}, params={params}")
         i += 2
@@ -74,6 +72,7 @@ while i < len(lines):
     if line.startswith('#EXTINF:'):
         if i + 1 < len(lines):
             url = lines[i + 1]
+            # 修改正则表达式，支持非数字ID
             match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/([^/]+)\.m3u8(?:\?(.*))?', url)
             if match:
                 current_domain = match.group(1)
@@ -82,27 +81,15 @@ while i < len(lines):
                 query = match.group(4) or ''
                 current_params = {}
                 for param in re.findall(r'([^&?]+)=([^&]+)', query):
-                    # 将 token 映射为 migutoken
-                    param_key = 'migutoken' if param[0] == 'token' else param[0]
-                    current_params[param_key] = param[1]
+                    current_params[param[0]] = param[1]
                 
-                # 尝试匹配 migu 和 mg 的 ID
                 key = (path, id_part)
-                source_key = None
-                if path == 'migu' and ('mg', id_part) in source_tokens:
-                    source_key = ('mg', id_part)  # 如果目标是 migu，源是 mg
-                elif path == 'mg' and ('migu', id_part) in source_tokens:
-                    source_key = ('migu', id_part)  # 如果目标是 mg，源是 migu
-                else:
-                    source_key = key
-
-                if source_key in source_tokens:
-                    new_domain, new_params = source_tokens[source_key]
+                if key in source_tokens:
+                    new_domain, new_params = source_tokens[key]
                     # 比较域名和参数（忽略顺序）
                     if current_domain != new_domain or set(current_params.items()) != set(new_params.items()):
                         # 构建新查询字符串，排序键以保持一致
                         new_query = '&'.join(f"{k}={new_params[k]}" for k in sorted(new_params)) if new_params else ''
-                        # 使用目标文件的路径（migu 或 mg）
                         new_url = f"https://{new_domain}/{path}/{id_part}.m3u8"
                         if new_query:
                             new_url += f"?{new_query}"

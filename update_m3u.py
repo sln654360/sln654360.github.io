@@ -9,7 +9,7 @@ source_url = 'https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/
 target_file = 'bptv.m3u'
 
 # 支持的路径
-supported_paths = ['migu', 'mcp', 'mxw']
+supported_paths = ['mg', 'mcp', 'mxw']
 
 # 下载来源M3U内容
 try:

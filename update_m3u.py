@@ -13,12 +13,12 @@ supported_paths = ['migu', 'mcp', 'mxw']
 
 # 下载来源M3U内容
 try:
-    source_response = requests.get(source_url)
+    source_response = requests.get(source_url, timeout=10)
     source_response.raise_for_status()
     source_content = source_response.text
-except Exception as e:
-    print(f"Error fetching source: {e}")
-    exit(0)  # 如果来源失败，不更新
+except requests.RequestException as e:
+    print(f"Error fetching source {source_url}: {e}")
+    exit(1)  # 如果来源失败，退出并返回错误码
 
 # 解析来源，提取 (path, ID) -> (域名, params_dict)
 source_tokens = {}
@@ -28,39 +28,7 @@ while i < len(lines):
     if lines[i].startswith('#EXTINF:'):
         if i + 1 < len(lines):
             url = lines[i + 1]
-            match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/(\d+)\.m Converting to code block...
-
-```python
-import requests
-import os
-import re
-
-# 来源URL
-source_url = 'https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/iptv.m3u'
-
-# 目标文件路径（在repo中）
-target_file = 'bptv.m3u'
-
-# 支持的路径
-supported_paths = ['migu', 'mcp', 'mxw']
-
-# 下载来源M3U内容
-try:
-    source_response = requests.get(source_url)
-    source_response.raise_for_status()
-    source_content = source_response.text
-except Exception as e:
-    print(f"Error fetching source: {e}")
-    exit(0)  # 如果来源失败，不更新
-
-# 解析来源，提取 (path, ID) -> (域名, params_dict)
-source_tokens = {}
-lines = source_content.splitlines()
-i = 0
-while i < len(lines):
-    if lines[i].startswith('#EXTINF:'):
-        if i + 1 < len(lines):
-            url = lines[i + 1]
+            # 修正正则表达式，确保完整且无多余文本
             match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/(\d+)\.m3u8(?:\?(.*))?', url)
             if match:
                 domain = match.group(1)
@@ -78,16 +46,20 @@ while i < len(lines):
         i += 1
 
 if not source_tokens:
-    print("No tokens found in source.")
-    exit(0)
+    print("No tokens found in source. Exiting.")
+    exit(1)
 
 # 读取目标文件
 if not os.path.exists(target_file):
-    print(f"Target file {target_file} not found.")
-    exit(0)
+    print(f"Target file {target_file} not found. Exiting.")
+    exit(1)
 
-with open(target_file, 'r', encoding='utf-8') as f:
-    target_content = f.read()
+try:
+    with open(target_file, 'r', encoding='utf-8') as f:
+        target_content = f.read()
+except Exception as e:
+    print(f"Error reading target file {target_file}: {e}")
+    exit(1)
 
 # 替换目标文件的域名和参数
 updated_lines = []
@@ -134,9 +106,12 @@ while i < len(lines):
 
 # 如果有变化，写回文件
 if has_changes:
-    with open(target_file, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(updated_lines) + '\n')
-    print("Updated domain and parameters successfully.")
+    try:
+        with open(target_file, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(updated_lines) + '\n')
+        print("Updated domain and parameters successfully.")
+    except Exception as e:
+        print(f"Error writing to target file {target_file}: {e}")
+        exit(1)
 else:
     print("No domain or parameter changes detected, skipping update.")
-```

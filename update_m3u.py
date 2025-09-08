@@ -18,7 +18,7 @@ try:
     source_content = source_response.text
 except requests.RequestException as e:
     print(f"Error fetching source {source_url}: {e}")
-    exit(1)  # 如果来源失败，退出并返回错误码
+    exit(1)
 
 # 解析来源，提取 (path, ID) -> (域名, params_dict)
 source_tokens = {}
@@ -28,8 +28,8 @@ while i < len(lines):
     if lines[i].startswith('#EXTINF:'):
         if i + 1 < len(lines):
             url = lines[i + 1]
-            # 修正正则表达式，确保完整且无多余文本
-            match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/(\d+)\.m3u8(?:\?(.*))?', url)
+            # 修改正则表达式，支持非数字ID
+            match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/([^/]+)\.m3u8(?:\?(.*))?', url)
             if match:
                 domain = match.group(1)
                 path = match.group(2)
@@ -72,7 +72,8 @@ while i < len(lines):
     if line.startswith('#EXTINF:'):
         if i + 1 < len(lines):
             url = lines[i + 1]
-            match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/(\d+)\.m3u8(?:\?(.*))?', url)
+            # 修改正则表达式，支持非数字ID
+            match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/([^/]+)\.m3u8(?:\?(.*))?', url)
             if match:
                 current_domain = match.group(1)
                 path = match.group(2)

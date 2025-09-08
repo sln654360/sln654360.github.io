@@ -77,7 +77,7 @@
                 <label><input type="checkbox" id="proxyCheckbox"> 启用反代</label>
             </p>
             <p>
-                <label><input type="checkbox" id="mishitongCheckbox" checked> 包含咪视通</label>
+                <label><input type="checkbox" id="mishitongCheckbox"> 包含咪视通</label>
             </p>
             <p>
                 <label><input type="checkbox" id="lunboCheckbox" checked> 包含影视轮播</label>
@@ -203,9 +203,9 @@
                     showModal(successMessage, [{ text: '确定', onClick: () => {} }]);
                 }).catch(err => {
                     console.error('Clipboard API failed: ', err);
-                    generatedLinkArea.style.display = 'block';
+                    generatedLinkArea style.display = 'block';
                     showModal(
-                        `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
+                        `复制失败！可手动复制以下链接到播放器中播放：br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
                         [{ text: '确定', onClick: () => {} }]
                     );
                 });
@@ -238,7 +238,7 @@
             }
 
             if (proxyEnabled) playLink += `&proxy=true`;
-            if (!includeMishitong) playLink += `&mishitong=false`;
+            if (includeMishitong) playLink += `&mishitong=true`;
             if (!includeLunbo) playLink += `&lunbo=false`;
             if (bcOnlyEnabled) playLink += `&bconly=true`;
 

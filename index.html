@@ -70,6 +70,7 @@
                         <option value="http://">http://</option>
                         <option value="https://">https://</option>
                     </select>
+                    < Ascending
                     <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455">
                 </div>
             </p>
@@ -77,7 +78,7 @@
                 <label><input type="checkbox" id="proxyCheckbox"> 启用反代</label>
             </p>
             <p>
-                <label><input type="checkbox" id="mishitongCheckbox" checked> 包含咪视通</label>
+                <label><input type="checkbox" id="mishitongCheckbox"> 包含咪视通</label>
             </p>
             <p>
                 <label><input type="checkbox" id="lunboCheckbox" checked> 包含影视轮播</label>
@@ -196,7 +197,7 @@
         function copyToClipboard(text, successMessage, linkType) {
             const generatedLinkArea = document.getElementById('generatedLink');
             generatedLinkArea.value = text;
-            
+
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(text).then(() => {
                     generatedLinkArea.style.display = 'none';
@@ -238,7 +239,7 @@
             }
 
             if (proxyEnabled) playLink += `&proxy=true`;
-            if (!includeMishitong) playLink += `&mishitong=false`;
+            if (includeMishitong) playLink += `&mishitong=true`;
             if (!includeLunbo) playLink += `&lunbo=false`;
             if (bcOnlyEnabled) playLink += `&bconly=true`;
 
@@ -264,10 +265,10 @@
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
-        
+
             let playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
             playLink += `&haiwai=true`;
-        
+
             copyToClipboard(playLink, '影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', 'overseas');
         }
 

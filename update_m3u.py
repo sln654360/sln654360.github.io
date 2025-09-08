@@ -8,6 +8,9 @@ source_url = 'https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/
 # 目标文件路径（在repo中）
 target_file = 'bptv.m3u'
 
+# 支持的路径
+supported_paths = ['migu', 'mcp', 'mxw']
+
 # 下载来源M3U内容
 try:
     source_response = requests.get(source_url)
@@ -17,23 +20,59 @@ except Exception as e:
     print(f"Error fetching source: {e}")
     exit(0)  # 如果来源失败，不更新
 
-# 解析来源，提取ID -> (域名, migutoken)
+# 解析来源，提取 (path, ID) -> (域名, params_dict)
 source_tokens = {}
 lines = source_content.splitlines()
 i = 0
 while i < len(lines):
     if lines[i].startswith('#EXTINF:'):
-        if i + 1 < len(lines) and '/migu/' in lines[i + 1]:
+        if i + 1 < len(lines):
             url = lines[i + 1]
-            if '?migutoken=' in url:
-                # 提取域名和ID
-                match = re.match(r'https?://([^/]+)/migu/(\d+)\.m3u8\?migutoken=([0-9a-f]+)', url)
-                if match:
-                    domain = match.group(1)
-                    id_part = match.group(2)
-                    token = match.group(3)
-                    source_tokens[id_part] = (domain, token)
-                    print(f"Found token for ID {id_part}: domain={domain}, migutoken={token}")
+            match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/(\d+)\.m Converting to code block...
+
+```python
+import requests
+import os
+import re
+
+# 来源URL
+source_url = 'https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/iptv.m3u'
+
+# 目标文件路径（在repo中）
+target_file = 'bptv.m3u'
+
+# 支持的路径
+supported_paths = ['migu', 'mcp', 'mxw']
+
+# 下载来源M3U内容
+try:
+    source_response = requests.get(source_url)
+    source_response.raise_for_status()
+    source_content = source_response.text
+except Exception as e:
+    print(f"Error fetching source: {e}")
+    exit(0)  # 如果来源失败，不更新
+
+# 解析来源，提取 (path, ID) -> (域名, params_dict)
+source_tokens = {}
+lines = source_content.splitlines()
+i = 0
+while i < len(lines):
+    if lines[i].startswith('#EXTINF:'):
+        if i + 1 < len(lines):
+            url = lines[i + 1]
+            match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/(\d+)\.m3u8(?:\?(.*))?', url)
+            if match:
+                domain = match.group(1)
+                path = match.group(2)
+                id_part = match.group(3)
+                query = match.group(4) or ''
+                # 解析查询参数为字典
+                params = {}
+                for param in re.findall(r'([^&?]+)=([^&]+)', query):
+                    params[param[0]] = param[1]
+                source_tokens[(path, id_part)] = (domain, params)
+                print(f"Found params for {path}/{id_part}: domain={domain}, params={params}")
         i += 2
     else:
         i += 1
@@ -50,7 +89,7 @@ if not os.path.exists(target_file):
 with open(target_file, 'r', encoding='utf-8') as f:
     target_content = f.read()
 
-# 替换目标文件的域名和migutoken
+# 替换目标文件的域名和参数
 updated_lines = []
 lines = target_content.splitlines()
 i = 0
@@ -59,25 +98,34 @@ while i < len(lines):
     line = lines[i]
     updated_lines.append(line)
     if line.startswith('#EXTINF:'):
-        if i + 1 < len(lines) and '/migu/' in lines[i + 1]:
+        if i + 1 < len(lines):
             url = lines[i + 1]
-            match = re.match(r'https?://([^/]+)/migu/(\d+)\.m3u8(\?migutoken=[0-9a-f]+)?', url)
+            match = re.match(r'https?://([^/]+)/(' + '|'.join(supported_paths) + r')/(\d+)\.m3u8(?:\?(.*))?', url)
             if match:
                 current_domain = match.group(1)
-                id_part = match.group(2)
-                current_token = match.group(3).split('=')[1] if match.group(3) else ''
-                if id_part in source_tokens:
-                    new_domain, new_token = source_tokens[id_part]
-                    if current_domain != new_domain or current_token != new_token:
-                        new_url = f"https://{new_domain}/migu/{id_part}.m3u8?migutoken={new_token}"
+                path = match.group(2)
+                id_part = match.group(3)
+                query = match.group(4) or ''
+                current_params = {}
+                for param in re.findall(r'([^&?]+)=([^&]+)', query):
+                    current_params[param[0]] = param[1]
+                
+                key = (path, id_part)
+                if key in source_tokens:
+                    new_domain, new_params = source_tokens[key]
+                    # 比较域名和参数（忽略顺序）
+                    if current_domain != new_domain or set(current_params.items()) != set(new_params.items()):
+                        # 构建新查询字符串，排序键以保持一致
+                        new_query = '&'.join(f"{k}={new_params[k]}" for k in sorted(new_params)) if new_params else ''
+                        new_url = f"https://{new_domain}/{path}/{id_part}.m3u8"
+                        if new_query:
+                            new_url += f"?{new_query}"
                         updated_lines.append(new_url)
                         has_changes = True
-                        print(f"Updated ID {id_part}: domain={current_domain} -> {new_domain}, migutoken={current_token} -> {new_token}")
-                    else:
-                        updated_lines.append(url)  # 无变化，保留原URL
-                    i += 2
-                    continue
-            updated_lines.append(url)  # 未匹配，保留原URL
+                        print(f"Updated {path}/{id_part}: domain={current_domain} -> {new_domain}, params={current_params} -> {new_params}")
+                        i += 2
+                        continue
+            updated_lines.append(url)  # 未匹配或无变化，保留原URL
             i += 2
         else:
             i += 1
@@ -88,6 +136,7 @@ while i < len(lines):
 if has_changes:
     with open(target_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(updated_lines) + '\n')
-    print("Updated domain and migutoken successfully.")
+    print("Updated domain and parameters successfully.")
 else:
-    print("No domain or token changes detected, skipping update.")
+    print("No domain or parameter changes detected, skipping update.")
+```

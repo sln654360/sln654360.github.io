@@ -275,10 +275,11 @@ https://mgtv.ottiptv.cc/mg/609169226.m3u8?sign=d7a060f3563f6510c4fbb6e1c48305a5&
 #EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2200/192/937/202209211800_2200192937_H169_1080.jpg" group-title="数字频道", 熊猫频道10
 https://mgtv.ottiptv.cc/mg/609169285.m3u8?sign=7242d8a228a76b8238b9d213b9bf3718&tm=1757478943&token=d7fc4b7eafd3de9f52291b51cba2830e65bcd3b7c2281d5f2bda99b95c4607d4c6fddd724b1a0334e14afb6fdfec1df92a7d71195bad855b8bd9e3f960b816bb080de3ff4181fa1add9d34a069
 
-#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/CCTV4K.png" group-title="超清频道",CCTV4K
-https://mursor.ottiptv.cc/mcp/cctv4k.m3u8?sign=388fc6703782a4729c8deba2d99d30e1&tm=1757499165
+
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/CCTV4K.png" group-title="超清频道",CCTV4K
 https://mursor.ottiptv.cc/mxw/cctv4k-2.m3u8?sign=a5eee40a16d7334e0a7f902f7f9e27ff&tm=1757507321
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/CCTV4K.png" group-title="超清频道",CCTV4K
+https://mursor.ottiptv.cc/mcp/cctv4k.m3u8?sign=388fc6703782a4729c8deba2d99d30e1&tm=1757499165
 #EXTINF:-1 tvg-id="CCTV8K" tvg-name="CCTV8K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/CCTV8K.png" group-title="超清频道",CCTV8K
 https://mursor.ottiptv.cc/mcp/cctv8k.m3u8?sign=b4a117c435612cf83245bd91bb2788d1&tm=1757499165
 #EXTINF:-1 tvg-id="咪咕4K-1" tvg-name="咪咕4K-1" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/咪咕体育.png" group-title="超清频道",咪咕4K-1

@@ -60,6 +60,11 @@
     <p>可输入部署了肥羊allinone的设备 IP 地址，【可选，不看轮播可以不输入】：</p>
     <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
     
+    <p>
+        <label>本期密码：</label><br>
+        <input type="text" id="passwordInput" placeholder="tg群内获取">
+    </p>
+
     <div class="advanced-options">
         <button onclick="toggleAdvanced()">更多选项</button>
         <div id="advancedContent" class="advanced-content">
@@ -226,7 +231,7 @@
             }
         }
 
-        function generatePlayLink(ip, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '') {
+        function generatePlayLink(ip, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '', password = '') {
             let playLink;
             if (fullUrl) {
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
@@ -240,6 +245,7 @@
             if (includeMishitong) playLink += `&mishitong=true`;
             if (!includeLunbo) playLink += `&lunbo=false`;
             if (bcOnlyEnabled) playLink += `&bconly=true`;
+            if (password) playLink += `&mima=${encodeURIComponent(password)}`;
 
             return playLink;
         }
@@ -251,8 +257,9 @@
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
+            const password = document.getElementById('passwordInput').value.trim();
 
-            const playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
+            const playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password);
             copyToClipboard(playLink, '订阅链接已复制到剪贴板！请粘贴到播放器中使用！', 'play');
         }
 
@@ -263,8 +270,9 @@
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
+            const password = document.getElementById('passwordInput').value.trim();
 
-            let playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl);
+            let playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password);
             playLink += `&haiwai=true`;
 
             copyToClipboard(playLink, '影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', 'overseas');

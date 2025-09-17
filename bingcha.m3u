@@ -366,7 +366,7 @@ http://[2409:8087:1e01:20::3]/PLTV/11/224/3221225697/1.m3u8
 http://[2409:8087:1e01:20::3]/PLTV/11/224/3221225699/1.m3u8
 #EXTINF:-1 tvg-id="咪视界-31" tvg-name="咪视界-31" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界v6",咪视界-31
 http://[2409:8087:1e01:20::3]/PLTV/11/224/3221226125/1.m3u8
-#EXTINF:-1 tvg-id="咪视界4K" tvg-name="咪视界4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界4K.png" group-title="咪视界v6",咪视界4K
+#EXTINF:-1 tvg-id="咪视界-4K" tvg-name="咪视界-4K" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界4K.png" group-title="咪视界v6",咪视界-4K
 http://[2409:8087:1e01:20::3]/PLTV/11/224/3221225687/1.m3u8
 
 

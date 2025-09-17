@@ -69,13 +69,19 @@
         <button onclick="toggleAdvanced()">更多选项</button>
         <div id="advancedContent" class="advanced-content">
             <p>
-                <label>自定义完整URL（选择协议并输入域名:端口）：</label><br>
+                <label>自定义完整URL（选择协议并输入或选择域名:端口）：</label><br>
                 <div class="protocol-group">
                     <select id="protocolSelect">
                         <option value="http://">http://</option>
                         <option value="https://">https://</option>
                     </select>
-                    <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455">
+                    <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" list="urlSuggestions">
+                    <datalist id="urlSuggestions">
+                        <option value="https://live.iill.top">
+                        <option value="http://cdn.jdshipin.com:8880">
+                        <option value="https://live.metshop.top">
+                        <option value="https://dns.yiandrive.com:13571">
+                    </datalist>
                 </div>
             </p>
             <p>
@@ -121,6 +127,13 @@
         let originalM3uData = '';
         let isTxtFormat = false;
 
+        const predefinedUrls = [
+            'https://live.iill.top',
+            'http://cdn.jdshipin.com:8880',
+            'https://live.metshop.top',
+            'https://dns.yiandrive.com:13571'
+        ];
+
         function needsUrlEncoding(str) {
             if (/%[0-9A-Fa-f]{2}/.test(str)) return false;
             const specialChars = /[&=?#\s]|[^\x00-\x7F]/;
@@ -130,6 +143,9 @@
         function getFullUrl() {
             const protocol = document.getElementById('protocolSelect').value;
             const domain = document.getElementById('fullUrlInput').value.trim();
+            if (predefinedUrls.includes(`${protocol}${domain}`)) {
+                return `${protocol}${domain}`;
+            }
             return domain ? `${protocol}${domain}` : '';
         }
 
@@ -163,6 +179,11 @@
         }
 
         function validateUrlInput(value, callback) {
+            const protocol = document.getElementById('protocolSelect').value;
+            if (predefinedUrls.includes(`${protocol}${value}`)) {
+                callback('valid');
+                return;
+            }
             if (value && !value.includes(':')) {
                 showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n请选择如何处理：`, [
                     { text: '使用默认端口35455', onClick: () => callback('defaultPort') },
@@ -322,6 +343,10 @@
                 return;
             }
             document.getElementById('ipInput').value = '';
+            const protocol = document.getElementById('protocolSelect').value;
+            if (predefinedUrls.includes(`${protocol}${value}`)) {
+                return;
+            }
             validateUrlInput(value, (result) => {
                 if (result === 'edit') {
                     const advancedContent = document.getElementById('advancedContent');
@@ -336,14 +361,20 @@
 
         document.getElementById('fullUrlInput').addEventListener('input', function() {
             const value = this.value.trim();
+            const protocolSelect = document.getElementById('protocolSelect');
             if (value.match(/^https?:\/\//)) {
                 let cleanedValue = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
                 this.value = cleanedValue;
-                const protocolSelect = document.getElementById('protocolSelect');
                 if (value.startsWith('https://')) {
                     protocolSelect.value = 'https://';
                 } else if (value.startsWith('http://')) {
                     protocolSelect.value = 'http://';
+                }
+            }
+            if (predefinedUrls.includes(`${protocolSelect.value}${value}`)) {
+                const matchedUrl = predefinedUrls.find(url => url.endsWith(value));
+                if (matchedUrl) {
+                    protocolSelect.value = matchedUrl.startsWith('https://') ? 'https://' : 'http://';
                 }
             }
         });

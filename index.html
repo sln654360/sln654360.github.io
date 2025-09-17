@@ -78,6 +78,7 @@
                     <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" list="urlSuggestions">
                     <datalist id="urlSuggestions">
                         <option value="https://live.iill.top">
+                        <option value="http://tv123.top:35455">
                         <option value="http://cdn.jdshipin.com:8880">
                         <option value="https://live.metshop.top">
                         <option value="https://dns.yiandrive.com:13571">
@@ -144,10 +145,8 @@
         function getFullUrl() {
             const protocol = document.getElementById('protocolSelect').value;
             const domain = document.getElementById('fullUrlInput').value.trim();
-            if (predefinedUrls.includes(`${protocol}${domain}`)) {
-                return `${protocol}${domain}`;
-            }
-            return domain ? `${protocol}${domain}` : '';
+            const fullUrl = domain ? `${protocol}${domain}` : '';
+            return predefinedUrls.includes(fullUrl) ? fullUrl : fullUrl;
         }
 
         function getHostname(url) {
@@ -325,16 +324,19 @@
         document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
             const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
             let cleanedValue = pastedData;
+            const protocolSelect = document.getElementById('protocolSelect');
             if (pastedData.match(/^https?:\/\//)) {
                 e.preventDefault();
                 cleanedValue = pastedData.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
                 this.value = cleanedValue;
-                const protocolSelect = document.getElementById('protocolSelect');
                 if (pastedData.startsWith('https://')) {
                     protocolSelect.value = 'https://';
                 } else if (pastedData.startsWith('http://')) {
                     protocolSelect.value = 'http://';
                 }
+            }
+            if (predefinedUrls.includes(`${protocolSelect.value}${cleanedValue}`)) {
+                this.value = cleanedValue;
             }
         });
 

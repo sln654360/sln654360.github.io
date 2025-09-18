@@ -9402,7 +9402,75 @@
 <channel id="160">
 <display-name lang="zh">广东经济科教</display-name>
 </channel>
-
+<programme start="20250919000000 +0800" stop="20250919000200 +0800" channel="160">
+<title lang="zh">精彩呈现</title>
+</programme><programme start="20250919000200 +0800" stop="20250919000600 +0800" channel="160">
+<title lang="zh">经视1线</title>
+</programme><programme start="20250919000600 +0800" stop="20250919011000 +0800" channel="160">
+<title lang="zh">探索</title>
+</programme><programme start="20250919011000 +0800" stop="20250919015600 +0800" channel="160">
+<title lang="zh">馆长来了</title>
+</programme><programme start="20250919015600 +0800" stop="20250919022300 +0800" channel="160">
+<title lang="zh">南方财经报道</title>
+</programme><programme start="20250919022300 +0800" stop="20250919024800 +0800" channel="160">
+<title lang="zh">经视1线</title>
+</programme><programme start="20250919024800 +0800" stop="20250919032900 +0800" channel="160">
+<title lang="zh">探索</title>
+</programme><programme start="20250919032900 +0800" stop="20250919041500 +0800" channel="160">
+<title lang="zh">馆长来了</title>
+</programme><programme start="20250919041500 +0800" stop="20250919045900 +0800" channel="160">
+<title lang="zh">探索</title>
+</programme><programme start="20250919045900 +0800" stop="20250919053300 +0800" channel="160">
+<title lang="zh">岭南大医生</title>
+</programme><programme start="20250919053300 +0800" stop="20250919061400 +0800" channel="160">
+<title lang="zh">探索</title>
+</programme><programme start="20250919061400 +0800" stop="20250919064200 +0800" channel="160">
+<title lang="zh">经视1线</title>
+</programme><programme start="20250919064200 +0800" stop="20250919071200 +0800" channel="160">
+<title lang="zh">南方财经报道</title>
+</programme><programme start="20250919071200 +0800" stop="20250919083800 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919083800 +0800" stop="20250919100600 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919100600 +0800" stop="20250919113100 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919113100 +0800" stop="20250919115900 +0800" channel="160">
+<title lang="zh">岭南大医生</title>
+</programme><programme start="20250919115900 +0800" stop="20250919123700 +0800" channel="160">
+<title lang="zh">经视1线</title>
+</programme><programme start="20250919123700 +0800" stop="20250919140000 +0800" channel="160">
+<title lang="zh">南方财经报道</title>
+</programme><programme start="20250919140000 +0800" stop="20250919141900 +0800" channel="160">
+<title lang="zh">海洋季风原来是这样</title>
+</programme><programme start="20250919141900 +0800" stop="20250919153500 +0800" channel="160">
+<title lang="zh">岭南大医生</title>
+</programme><programme start="20250919153500 +0800" stop="20250919164700 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919164700 +0800" stop="20250919165300 +0800" channel="160">
+<title lang="zh">南方新视野</title>
+</programme><programme start="20250919165300 +0800" stop="20250919172500 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919172500 +0800" stop="20250919175600 +0800" channel="160">
+<title lang="zh">大揭秘</title>
+</programme><programme start="20250919175600 +0800" stop="20250919184300 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919184300 +0800" stop="20250919192900 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919192900 +0800" stop="20250919200200 +0800" channel="160">
+<title lang="zh">南方财经报道</title>
+</programme><programme start="20250919200200 +0800" stop="20250919203500 +0800" channel="160">
+<title lang="zh">经视1线</title>
+</programme><programme start="20250919203500 +0800" stop="20250919210100 +0800" channel="160">
+<title lang="zh">岭南大医生</title>
+</programme><programme start="20250919210100 +0800" stop="20250919215100 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919215100 +0800" stop="20250919231000 +0800" channel="160">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919231000 +0800" stop="20250919233900 +0800" channel="160">
+<title lang="zh">奇趣大自然</title>
+</programme><programme start="20250919233900 +0800" stop="20250919235959 +0800" channel="160">
+<title lang="zh">经视1线</title>
+</programme>
 <channel id="161">
 <display-name lang="zh">广东综艺</display-name>
 </channel>
@@ -9448,7 +9516,69 @@
 <channel id="162">
 <display-name lang="zh">广东影视</display-name>
 </channel>
-
+<programme start="20250919000000 +0800" stop="20250919002800 +0800" channel="162">
+<title lang="zh">精彩呈现</title>
+</programme><programme start="20250919002800 +0800" stop="20250919010100 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919010100 +0800" stop="20250919030000 +0800" channel="162">
+<title lang="zh">电视台无节目</title>
+</programme><programme start="20250919030000 +0800" stop="20250919045900 +0800" channel="162">
+<title lang="zh">电视台无节目</title>
+</programme><programme start="20250919045900 +0800" stop="20250919060200 +0800" channel="162">
+<title lang="zh">电视台无节目</title>
+</programme><programme start="20250919060200 +0800" stop="20250919070700 +0800" channel="162">
+<title lang="zh">仁心说养生</title>
+</programme><programme start="20250919070700 +0800" stop="20250919081700 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919081700 +0800" stop="20250919085800 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919085800 +0800" stop="20250919093800 +0800" channel="162">
+<title lang="zh">仁心说养生</title>
+</programme><programme start="20250919093800 +0800" stop="20250919102800 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919102800 +0800" stop="20250919111000 +0800" channel="162">
+<title lang="zh">上医来了</title>
+</programme><programme start="20250919111000 +0800" stop="20250919121000 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919121000 +0800" stop="20250919132200 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919132200 +0800" stop="20250919135600 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919135600 +0800" stop="20250919140700 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919140700 +0800" stop="20250919144700 +0800" channel="162">
+<title lang="zh">一起健康吧</title>
+</programme><programme start="20250919144700 +0800" stop="20250919152600 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919152600 +0800" stop="20250919160600 +0800" channel="162">
+<title lang="zh">仁心说养生</title>
+</programme><programme start="20250919160600 +0800" stop="20250919170000 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919170000 +0800" stop="20250919175700 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919175700 +0800" stop="20250919183500 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919183500 +0800" stop="20250919185000 +0800" channel="162">
+<title lang="zh">闪闪小红星</title>
+</programme><programme start="20250919185000 +0800" stop="20250919193100 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919193100 +0800" stop="20250919201300 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919201300 +0800" stop="20250919205200 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919205200 +0800" stop="20250919213600 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919213600 +0800" stop="20250919221000 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919221000 +0800" stop="20250919221600 +0800" channel="162">
+<title lang="zh">广东电影报道</title>
+</programme><programme start="20250919221600 +0800" stop="20250919225200 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919225200 +0800" stop="20250919232900 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919232900 +0800" stop="20250919235959 +0800" channel="162">
+<title lang="zh">剧场</title>
+</programme>
 <channel id="163">
 <display-name lang="zh">广东国际</display-name>
 </channel>
@@ -35186,7 +35316,71 @@
 <channel id="518">
 <display-name lang="zh">星空卫视</display-name>
 </channel>
-
+<programme start="20250919000000 +0800" stop="20250919000200 +0800" channel="518">
+<title lang="zh">精彩呈现</title>
+</programme><programme start="20250919000200 +0800" stop="20250919010200 +0800" channel="518">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919010200 +0800" stop="20250919013100 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919013100 +0800" stop="20250919013400 +0800" channel="518">
+<title lang="zh">探访城市新地标</title>
+</programme><programme start="20250919013400 +0800" stop="20250919020500 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919020500 +0800" stop="20250919023400 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919023400 +0800" stop="20250919042300 +0800" channel="518">
+<title lang="zh">中国达人秀</title>
+</programme><programme start="20250919042300 +0800" stop="20250919043300 +0800" channel="518">
+<title lang="zh">益起向未来</title>
+</programme><programme start="20250919043300 +0800" stop="20250919053700 +0800" channel="518">
+<title lang="zh">金星秀</title>
+</programme><programme start="20250919053700 +0800" stop="20250919060200 +0800" channel="518">
+<title lang="zh">星空直播间</title>
+</programme><programme start="20250919060200 +0800" stop="20250919080100 +0800" channel="518">
+<title lang="zh">电影</title>
+</programme><programme start="20250919080100 +0800" stop="20250919080200 +0800" channel="518">
+<title lang="zh">电影</title>
+</programme><programme start="20250919080200 +0800" stop="20250919090300 +0800" channel="518">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919090300 +0800" stop="20250919093200 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919093200 +0800" stop="20250919093500 +0800" channel="518">
+<title lang="zh">探访城市新地标</title>
+</programme><programme start="20250919093500 +0800" stop="20250919100500 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919100500 +0800" stop="20250919103400 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919103400 +0800" stop="20250919122300 +0800" channel="518">
+<title lang="zh">中国达人秀</title>
+</programme><programme start="20250919122300 +0800" stop="20250919123300 +0800" channel="518">
+<title lang="zh">益起向未来</title>
+</programme><programme start="20250919123300 +0800" stop="20250919133700 +0800" channel="518">
+<title lang="zh">金星秀</title>
+</programme><programme start="20250919133700 +0800" stop="20250919140300 +0800" channel="518">
+<title lang="zh">星空直播间</title>
+</programme><programme start="20250919140300 +0800" stop="20250919160200 +0800" channel="518">
+<title lang="zh">电影</title>
+</programme><programme start="20250919160200 +0800" stop="20250919160300 +0800" channel="518">
+<title lang="zh">电影</title>
+</programme><programme start="20250919160300 +0800" stop="20250919170200 +0800" channel="518">
+<title lang="zh">剧场</title>
+</programme><programme start="20250919170200 +0800" stop="20250919173200 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919173200 +0800" stop="20250919180200 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919180200 +0800" stop="20250919183300 +0800" channel="518">
+<title lang="zh">动画片</title>
+</programme><programme start="20250919183300 +0800" stop="20250919202300 +0800" channel="518">
+<title lang="zh">中国达人秀</title>
+</programme><programme start="20250919202300 +0800" stop="20250919203300 +0800" channel="518">
+<title lang="zh">一堰倾城都江堰</title>
+</programme><programme start="20250919203300 +0800" stop="20250919213200 +0800" channel="518">
+<title lang="zh">金星秀</title>
+</programme><programme start="20250919213200 +0800" stop="20250919220200 +0800" channel="518">
+<title lang="zh">星空直播间</title>
+</programme><programme start="20250919220200 +0800" stop="20250919235959 +0800" channel="518">
+<title lang="zh">电影</title>
+</programme>
 <channel id="519">
 <display-name lang="zh">澳视澳门</display-name>
 </channel>
@@ -38210,7 +38404,69 @@
 <channel id="571">
 <display-name lang="zh">广州影视</display-name>
 </channel>
-
+<programme start="20250919000000 +0800" stop="20250919002700 +0800" channel="571">
+<title lang="zh">精彩呈现</title>
+</programme><programme start="20250919002700 +0800" stop="20250919015800 +0800" channel="571">
+<title lang="zh">电影</title>
+</programme><programme start="20250919015800 +0800" stop="20250919030300 +0800" channel="571">
+<title lang="zh">纪录片</title>
+</programme><programme start="20250919030300 +0800" stop="20250919035100 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919035100 +0800" stop="20250919043300 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919043300 +0800" stop="20250919051700 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919051700 +0800" stop="20250919060600 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919060600 +0800" stop="20250919065000 +0800" channel="571">
+<title lang="zh">翡翠剧场</title>
+</programme><programme start="20250919065000 +0800" stop="20250919073300 +0800" channel="571">
+<title lang="zh">翡翠剧场</title>
+</programme><programme start="20250919073300 +0800" stop="20250919081600 +0800" channel="571">
+<title lang="zh">翡翠剧场</title>
+</programme><programme start="20250919081600 +0800" stop="20250919090000 +0800" channel="571">
+<title lang="zh">翡翠剧场</title>
+</programme><programme start="20250919090000 +0800" stop="20250919104600 +0800" channel="571">
+<title lang="zh">电影</title>
+</programme><programme start="20250919104600 +0800" stop="20250919113200 +0800" channel="571">
+<title lang="zh">小蛮腰剧场</title>
+</programme><programme start="20250919113200 +0800" stop="20250919121700 +0800" channel="571">
+<title lang="zh">小蛮腰剧场</title>
+</programme><programme start="20250919121700 +0800" stop="20250919130000 +0800" channel="571">
+<title lang="zh">小蛮腰剧场</title>
+</programme><programme start="20250919130000 +0800" stop="20250919131600 +0800" channel="571">
+<title lang="zh">我叹我世界</title>
+</programme><programme start="20250919131600 +0800" stop="20250919141100 +0800" channel="571">
+<title lang="zh">纪录片</title>
+</programme><programme start="20250919141100 +0800" stop="20250919150300 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919150300 +0800" stop="20250919154600 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919154600 +0800" stop="20250919163200 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919163200 +0800" stop="20250919172300 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919172300 +0800" stop="20250919181100 +0800" channel="571">
+<title lang="zh">翡翠剧场</title>
+</programme><programme start="20250919181100 +0800" stop="20250919185500 +0800" channel="571">
+<title lang="zh">翡翠剧场</title>
+</programme><programme start="20250919185500 +0800" stop="20250919191700 +0800" channel="571">
+<title lang="zh">我叹我世界</title>
+</programme><programme start="20250919191700 +0800" stop="20250919200600 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919200600 +0800" stop="20250919205500 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919205500 +0800" stop="20250919214000 +0800" channel="571">
+<title lang="zh">风云剧场</title>
+</programme><programme start="20250919214000 +0800" stop="20250919220000 +0800" channel="571">
+<title lang="zh">我叹我世界</title>
+</programme><programme start="20250919220000 +0800" stop="20250919225500 +0800" channel="571">
+<title lang="zh">纪录片</title>
+</programme><programme start="20250919225500 +0800" stop="20250919234000 +0800" channel="571">
+<title lang="zh">小蛮腰剧场</title>
+</programme><programme start="20250919234000 +0800" stop="20250919235959 +0800" channel="571">
+<title lang="zh">小蛮腰剧场</title>
+</programme>
 <channel id="572">
 <display-name lang="zh">北京IPTV4K超清</display-name>
 </channel>

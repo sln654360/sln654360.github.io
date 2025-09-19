@@ -1,24 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>冰茶-肥羊TV助手</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冰茶TV官网</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        .advanced-options { margin-top: 10px; }
-        .advanced-content { display: none; margin-left: 20px; }
-        .button-group { 
-            margin-top: 10px; 
-            display: flex; 
-            gap: 10px;
-        }
-        #fullUrlInput { 
-            width: 250px; 
-        }
-        .protocol-group {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
         .modal {
             display: none;
             position: fixed;
@@ -34,20 +22,9 @@
         .modal-content {
             background-color: white;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 0.5rem;
             max-width: 400px;
             text-align: center;
-        }
-        .modal-buttons {
-            margin-top: 20px;
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .modal-buttons button {
-            padding: 8px 16px;
-            cursor: pointer;
         }
         #generatedLink {
             width: 100%;
@@ -56,61 +33,92 @@
         }
     </style>
 </head>
-<body>
-    <p>可输入部署了肥羊allinone的设备 IP 地址，【可选，不看轮播可以不输入】：</p>
-    <input type="text" id="ipInput" placeholder="例如: 192.168.1.2">
-    
-    <p>
-        <label>查看隐藏内容的密码：</label><br>
-        <input type="text" id="passwordInput" placeholder="tg群内获取">
-    </p>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6 max-w-2xl">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">
+            <i class="fas fa-tv mr-2"></i> 冰茶TV(原肥羊TV助手)
+        </h1>
+        <p class="text-center text-gray-600 mb-6">
+            ❤️ 免费分享，用爱发电，拒绝贩卖，部分频道已加密
+        </p>
 
-    <div class="advanced-options">
-        <button onclick="toggleAdvanced()">更多选项</button>
-        <div id="advancedContent" class="advanced-content">
-            <p>
-                <label>自定义完整URL（提供了几个公共接口，建议使用自己的）：</label><br>
-                <div class="protocol-group">
-                    <select id="protocolSelect">
-                        <option value="http://">http://</option>
-                        <option value="https://">https://</option>
-                    </select>
-                    <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" list="urlSuggestions">
-                    <datalist id="urlSuggestions">
-                        <option value="https://live.iill.top">
-                        <option value="http://tv123.top:35455">
-                        <option value="http://cdn.jdshipin.com:8880">
-                        <option value="https://live.metshop.top">
-                        <option value="https://dns.yiandrive.com:13571">
-                    </datalist>
-                </div>
-            </p>
-            <p>
-                <label><input type="checkbox" id="proxyCheckbox"> 启用反代(可忽视)</label>
-            </p>
-            <p>
-                <label><input type="checkbox" id="mishitongCheckbox"> 包含咪视通(分组)</label>
-            </p>
-            <p>
-                <label><input type="checkbox" id="lunboCheckbox" checked> 包含影视轮播(分组)</label>
-            </p>
-            <p>
-                <label><input type="checkbox" id="bcOnlyCheckbox"> 只生成冰茶频道(不用填ip)</label>
-            </p>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-network-wired mr-2"></i> 设备IP地址</h2>
+            <p class="text-gray-600 mb-2">输入部署了肥羊allinone的设备IP地址（可选，不看轮播可不填）：</p>
+            <input type="text" id="ipInput" placeholder="例如: 192.168.1.2" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
         </div>
-    </div>
 
-    <p>如需看allinone轮播可配置ip，如不需要，可以直接生成订阅链接，用订阅链接播放。<a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank">点击加入Tg群</a></p>
-    <div class="button-group">
-        <button onclick="copyOverseasJsonLink()">生成影视专用接口(海外建议)</button>
-        <button onclick="copyPlayLink()">生成订阅链接</button>
-    </div>
-    <textarea id="generatedLink" readonly style="display: none;" placeholder="生成链接将显示在这里"></textarea>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-lock mr-2"></i> 查看隐藏内容</h2>
+            <p class="text-gray-600 mb-2">输入密码（TG群内获取）：</p>
+            <input type="text" id="passwordInput" placeholder="请输入密码" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
 
-    <div id="customModal" class="modal">
-        <div class="modal-content">
-            <p id="modalMessage"></p>
-            <div class="modal-buttons" id="modalButtons"></div>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-cog mr-2"></i> 更多选项</h2>
+            <button onclick="toggleAdvanced()" class="w-full bg-blue-400 text-white p-2 rounded-md hover:bg-blue-500 transition duration-200 flex items-center justify-center">
+                <i class="fas fa-chevron-down mr-2"></i> 展开/收起
+            </button>
+            <div id="advancedContent" class="hidden mt-4">
+                <div class="mb-4">
+                    <label class="block text-gray-600 mb-2">自定义完整URL（建议使用自己的接口）：</label>
+                    <div class="flex items-center gap-2">
+                        <select id="protocolSelect" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+                            <option value="http://">http://</option>
+                            <option value="https://">https://</option>
+                        </select>
+                        <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" list="urlSuggestions" class="flex-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <datalist id="urlSuggestions">
+                            <option value="https://live.iill.top">
+                            <option value="http://tv123.top:35455">
+                            <option value="http://cdn.jdshipin.com:8880">
+                            <option value="https://live.metshop.top">
+                            <option value="https://dns.yiandrive.com:13571">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="checkbox" id="proxyCheckbox" class="mr-2">
+                        <span class="text-gray-600">启用反代（可忽视）</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" id="mishitongCheckbox" class="mr-2">
+                        <span class="text-gray-600">包含咪视通（分组）</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" id="lunboCheckbox" checked class="mr-2">
+                        <span class="text-gray-600">包含影视轮播（分组）</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" id="bcOnlyCheckbox" class="mr-2">
+                        <span class="text-gray-600">只生成冰茶频道（无需填IP）</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-info-circle mr-2"></i> 使用说明</h2>
+            <p class="text-gray-600">如需看allinone轮播请配置IP地址，否则可直接生成订阅链接用于播放。加入我们的 <a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank" class="text-blue-500 hover:underline">TG群</a> 获取更多信息。</p>
+        </div>
+
+        <div class="flex gap-4 mb-6">
+            <button onclick="copyOverseasJsonLink()" class="flex-1 bg-blue-400 text-white p-3 rounded-md hover:bg-blue-500 transition duration-200 flex items-center justify-center">
+                <i class="fas fa-globe mr-2"></i> 生成影视专用接口（海外推荐）
+            </button>
+            <button onclick="copyPlayLink()" class="flex-1 bg-green-400 text-white p-3 rounded-md hover:bg-green-500 transition duration-200 flex items-center justify-center">
+                <i class="fas fa-play mr-2"></i> 生成订阅链接
+            </button>
+        </div>
+
+        <textarea id="generatedLink" readonly class="hidden w-full p-2 border rounded-md bg-gray-50" placeholder="生成链接将显示在这里"></textarea>
+
+        <div id="customModal" class="modal">
+            <div class="modal-content">
+                <p id="modalMessage" class="text-gray-700"></p>
+                <div class="flex gap-4 justify-center mt-4" id="modalButtons"></div>
+            </div>
         </div>
     </div>
 
@@ -168,6 +176,7 @@
             buttons.forEach(btn => {
                 const button = document.createElement('button');
                 button.textContent = btn.text;
+                button.className = 'bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500';
                 button.onclick = () => {
                     modal.style.display = 'none';
                     if (btn.onClick) btn.onClick();
@@ -224,13 +233,13 @@
 
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(text).then(() => {
-                    generatedLinkArea.style.display = 'none';
+                    generatedLinkArea.classList.add('hidden');
                     showModal(successMessage, [{ text: '确定', onClick: () => {} }]);
                 }).catch(err => {
                     console.error('Clipboard API failed: ', err);
-                    generatedLinkArea.style.display = 'block';
+                    generatedLinkArea.classList.remove('hidden');
                     showModal(
-                        `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
+                        `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly class="w-full p-2 border rounded-md bg-gray-50 mt-2">${text}</textarea>`,
                         [{ text: '确定', onClick: () => {} }]
                     );
                 });
@@ -238,13 +247,13 @@
                 fallbackCopyText(
                     text,
                     () => {
-                        generatedLinkArea.style.display = 'none';
+                        generatedLinkArea.classList.add('hidden');
                         showModal(successMessage, [{ text: '确定', onClick: () => {} }]);
                     },
                     () => {
-                        generatedLinkArea.style.display = 'block';
+                        generatedLinkArea.classList.remove('hidden');
                         showModal(
-                            `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly style="width: 100%; margin-top: 10px;">${text}</textarea>`,
+                            `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly class="w-full p-2 border rounded-md bg-gray-50 mt-2">${text}</textarea>`,
                             [{ text: '确定', onClick: () => {} }]
                         );
                     }
@@ -301,7 +310,7 @@
 
         function toggleAdvanced() {
             const content = document.getElementById('advancedContent');
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            content.classList.toggle('hidden');
         }
 
         document.getElementById('bcOnlyCheckbox').addEventListener('change', function() {
@@ -353,7 +362,7 @@
             validateUrlInput(value, (result) => {
                 if (result === 'edit') {
                     const advancedContent = document.getElementById('advancedContent');
-                    advancedContent.style.display = 'block';
+                    advancedContent.classList.remove('hidden');
                     this.focus();
                     this.select();
                 } else if (result === 'defaultPort') {

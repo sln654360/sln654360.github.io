@@ -267,14 +267,16 @@
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
                 playLink = `https://fy.188766.xyz/?url=${urlParam}`;
             } else {
-                const ipParam = ip || '192.168.1.2';
-                playLink = `https://fy.188766.xyz/?ip=${ipParam}`;
+                playLink = `https://fy.188766.xyz/?ip=${ip || ''}`;
             }
 
-            if (proxyEnabled) playLink += `&proxy=true`;
-            if (includeMishitong) playLink += `&mishitong=true`;
-            if (!includeLunbo) playLink += `&lunbo=false`;
-            if (bcOnlyEnabled) playLink += `&bconly=true`;
+            if (bcOnlyEnabled) {
+                playLink += `&bconly=true`;
+            } else {
+                if (proxyEnabled) playLink += `&proxy=true`;
+                if (includeMishitong) playLink += `&mishitong=true`;
+                if (!includeLunbo) playLink += `&lunbo=false`;
+            }
             if (password) playLink += `&mima=${encodeURIComponent(password)}`;
 
             return playLink;

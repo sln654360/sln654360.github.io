@@ -18,101 +18,156 @@
             z-index: 1000;
             justify-content: center;
             align-items: center;
+            animation: fadeIn 0.3s ease-in-out;
         }
         .modal-content {
             background-color: white;
-            padding: 20px;
-            border-radius: 0.5rem;
+            padding: 24px;
+            border-radius: 12px;
             max-width: 400px;
             text-align: center;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
         }
         #generatedLink {
             width: 100%;
             margin-top: 10px;
             resize: none;
+            border-radius: 8px;
+        }
+        .tab-button {
+            flex: 1;
+            padding: 12px;
+            background-color: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            color: #4b5563;
+        }
+        .tab-button:hover {
+            background-color: #e2e8f0;
+        }
+        .tab-button.active {
+            background-color: #3b82f6;
+            color: white;
+            border-bottom: none;
+        }
+        .tab-content {
+            display: none;
+            padding: 16px;
+            border: 1px solid #cbd5e1;
+            border-top: none;
+            background-color: #f9fafb;
+            border-radius: 0 0 8px 8px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .section-card {
+            background: linear-gradient(145deg, #ffffff, #f1f5f9);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header-gradient {
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            color: white;
+            padding: 24px;
+            border-radius: 12px 12px 0 0;
+        }
+        input:focus, select:focus {
+            ring: 2px solid #3b82f6;
+            border-color: #3b82f6;
+            outline: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto p-6 max-w-2xl">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">
-            <i class="fas fa-tv mr-2"></i> 冰茶TV(原肥羊TV助手)
-        </h1>
-        <p class="text-center text-gray-600 mb-6">
-            ❤️ 免费分享，用爱发电，拒绝贩卖，部分频道已加密
-        </p>
-
-        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-network-wired mr-2"></i> 部署的IP地址</h2>
-            <p class="text-gray-600 mb-2">输入部署了肥羊allinone的设备IP地址（可选，不看轮播可不填）：</p>
-            <input type="text" id="ipInput" placeholder="例如: 192.168.1.2" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <div class="header-gradient text-center mb-6">
+            <h1 class="text-4xl font-bold">
+                <i class="fas fa-tv mr-2"></i> 冰茶TV
+            </h1>
+            <p class="text-lg mt-2 opacity-90">原肥羊TV助手 | 免费分享，用爱发电</p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <div class="section-card p-6 mb-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-network-wired mr-2"></i> allinone的设置</h2>
+            <p class="text-gray-600 mb-4">输入部署了肥羊allinone的IP地址或自定义URL（二选一，不看轮播可不填）：</p>
+            <div class="flex mb-4">
+                <button class="tab-button active" onclick="openTab('ip')">使用IP地址</button>
+                <button class="tab-button" onclick="openTab('url')">使用自定义URL</button>
+            </div>
+            <div id="ipTab" class="tab-content active">
+                <p class="text-gray-600 mb-2">输入IP地址：</p>
+                <input type="text" id="ipInput" placeholder="例如: 192.168.1.2" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            </div>
+            <div id="urlTab" class="tab-content">
+                <p class="text-gray-600 mb-2">输入自定义URL（提供几个公共的，建议填写自己的接口）：</p>
+                <div class="flex items-center gap-2">
+                    <select id="protocolSelect" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                        <option value="http://">http://</option>
+                        <option value="https://">https://</option>
+                    </select>
+                    <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" list="urlSuggestions" class="flex-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                    <datalist id="urlSuggestions">
+                        <option value="live.188766.xyz">
+                        <option value="live.iill.top">
+                        <option value="tv123.top:35455">
+                        <option value="cdn.jdshipin.com:8880">
+                        <option value="live.metshop.top">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card p-6 mb-6">
             <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-lock mr-2"></i> 加载隐藏频道</h2>
             <p class="text-gray-600 mb-2">输入密码（TG通知群会公告，不定时更改）：</p>
-            <input type="text" id="passwordInput" placeholder="请输入密码" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <input type="text" id="passwordInput" placeholder="请输入密码" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <div class="section-card p-6 mb-6">
             <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-cog mr-2"></i> 更多选项</h2>
-            <button onclick="toggleAdvanced()" class="w-full bg-blue-400 text-white p-2 rounded-md hover:bg-blue-500 transition duration-200 flex items-center justify-center">
+            <button onclick="toggleAdvanced()" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white p-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition duration-200 flex items-center justify-center">
                 <i class="fas fa-chevron-down mr-2"></i> 展开/收起
             </button>
             <div id="advancedContent" class="hidden mt-4">
-                <div class="mb-4">
-                    <label class="block text-gray-600 mb-2">自定义allinone的地址（提供几个公共的，建议填写自己的接口）：</label>
-                    <div class="flex items-center gap-2">
-                        <select id="protocolSelect" class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
-                            <option value="http://">http://</option>
-                            <option value="https://">https://</option>
-                        </select>
-                        <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" list="urlSuggestions" class="flex-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        <datalist id="urlSuggestions">
-                            <option value="https://live.188766.xyz">
-                            <option value="https://live.iill.top">
-                            <option value="http://tv123.top:35455">
-                            <option value="http://cdn.jdshipin.com:8880">
-                            <option value="https://live.metshop.top">
-                        </datalist>
-                    </div>
-                </div>
-                <div class="space-y-2">
+                <div class="space-y-3">
                     <label class="flex items-center">
-                        <input type="checkbox" id="proxyCheckbox" class="mr-2">
-                        <span class="text-gray-600">启用反代（可忽视）</span>
-                    </label>
-                    <label class="flex items-center">
-                        <input type="checkbox" id="mishitongCheckbox" class="mr-2">
+                        <input type="checkbox" id="mishitongCheckbox" class="mr-2 h-5 w-5 text-blue-500">
                         <span class="text-gray-600">包含咪视通（分组）</span>
                     </label>
                     <label class="flex items-center">
-                        <input type="checkbox" id="lunboCheckbox" checked class="mr-2">
+                        <input type="checkbox" id="lunboCheckbox" checked class="mr-2 h-5 w-5 text-blue-500">
                         <span class="text-gray-600">包含影视轮播（分组）</span>
                     </label>
                     <label class="flex items-center">
-                        <input type="checkbox" id="bcOnlyCheckbox" class="mr-2">
-                        <span class="text-gray-600">只生成冰茶频道（无需填IP）</span>
+                        <input type="checkbox" id="bcOnlyCheckbox" class="mr-2 h-5 w-5 text-blue-500">
+                        <span class="text-gray-600">只生成冰茶频道（无需填IP或URL）</span>
                     </label>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <div class="section-card p-6 mb-6">
             <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-info-circle mr-2"></i> 使用说明</h2>
-            <p class="text-gray-600">如需看allinone轮播请配置IP地址，否则可直接生成订阅链接用于播放。加入我们的 <a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank" class="text-blue-500 hover:underline">TG群</a> 获取更多信息。</p>
+            <p class="text-gray-600">如需看allinone轮播请配置IP地址或URL，否则可直接生成订阅链接用于播放。加入我们的 <a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank" class="text-blue-500 hover:underline">TG群</a> 获取更多信息。</p>
         </div>
 
         <div class="flex gap-4 mb-6">
-            <button onclick="copyOverseasJsonLink()" class="flex-1 bg-blue-400 text-white p-3 rounded-md hover:bg-blue-500 transition duration-200 flex items-center justify-center">
+            <button onclick="copyOverseasJsonLink()" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-lg hover:from-blue-600 hover:to-blue-700 transition duration-200 flex items-center justify-center">
                 <i class="fas fa-globe mr-2"></i> 生成影视专用接口（海外推荐）
             </button>
-            <button onclick="copyPlayLink()" class="flex-1 bg-green-400 text-white p-3 rounded-md hover:bg-green-500 transition duration-200 flex items-center justify-center">
+            <button onclick="copyPlayLink()" class="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-lg hover:from-green-600 hover:to-green-700 transition duration-200 flex items-center justify-center">
                 <i class="fas fa-play mr-2"></i> 生成订阅链接
             </button>
         </div>
 
-        <textarea id="generatedLink" readonly class="hidden w-full p-2 border rounded-md bg-gray-50" placeholder="生成链接将显示在这里"></textarea>
+        <textarea id="generatedLink" readonly class="hidden w-full p-3 border rounded-lg bg-gray-50" placeholder="生成链接将显示在这里"></textarea>
 
         <div id="customModal" class="modal">
             <div class="modal-content">
@@ -176,7 +231,7 @@
             buttons.forEach(btn => {
                 const button = document.createElement('button');
                 button.textContent = btn.text;
-                button.className = 'bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500';
+                button.className = 'bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 transition';
                 button.onclick = () => {
                     modal.style.display = 'none';
                     if (btn.onClick) btn.onClick();
@@ -189,7 +244,9 @@
 
         function validateUrlInput(value, callback) {
             const protocol = document.getElementById('protocolSelect').value;
-            if (predefinedUrls.includes(`${protocol}${value}`)) {
+            // Extract domain part from predefinedUrls for comparison
+            const predefinedDomains = predefinedUrls.map(url => url.replace(/^https?:\/\//, ''));
+            if (predefinedDomains.includes(value)) {
                 callback('valid');
                 return;
             }
@@ -239,7 +296,7 @@
                     console.error('Clipboard API failed: ', err);
                     generatedLinkArea.classList.remove('hidden');
                     showModal(
-                        `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly class="w-full p-2 border rounded-md bg-gray-50 mt-2">${text}</textarea>`,
+                        `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly class="w-full p-3 border rounded-lg bg-gray-50 mt-2">${text}</textarea>`,
                         [{ text: '确定', onClick: () => {} }]
                     );
                 });
@@ -253,7 +310,7 @@
                     () => {
                         generatedLinkArea.classList.remove('hidden');
                         showModal(
-                            `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly class="w-full p-2 border rounded-md bg-gray-50 mt-2">${text}</textarea>`,
+                            `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly class="w-full p-3 border rounded-lg bg-gray-50 mt-2">${text}</textarea>`,
                             [{ text: '确定', onClick: () => {} }]
                         );
                     }
@@ -261,19 +318,20 @@
             }
         }
 
-        function generatePlayLink(ip, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '', password = '') {
+        function generatePlayLink(ip, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '', password = '') {
             let playLink;
             if (fullUrl) {
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
                 playLink = `https://fy.188766.xyz/?url=${urlParam}`;
+            } else if (ip) {
+                playLink = `https://fy.188766.xyz/?ip=${ip}`;
             } else {
-                playLink = `https://fy.188766.xyz/?ip=${ip || ''}`;
+                playLink = `https://fy.188766.xyz/?ip=`;
             }
 
             if (bcOnlyEnabled) {
                 playLink += `&bconly=true`;
             } else {
-                if (proxyEnabled) playLink += `&proxy=true`;
                 if (includeMishitong) playLink += `&mishitong=true`;
                 if (!includeLunbo) playLink += `&lunbo=false`;
             }
@@ -283,28 +341,46 @@
         }
 
         function copyPlayLink() {
-            const ipInput = document.getElementById('ipInput').value.trim();
-            const fullUrl = getFullUrl();
-            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+            let ipInput = '';
+            let fullUrl = '';
+            if (document.querySelector('.tab-button.active').textContent === '使用IP地址') {
+                ipInput = document.getElementById('ipInput').value.trim();
+            } else {
+                fullUrl = getFullUrl();
+            }
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
             const password = document.getElementById('passwordInput').value.trim();
 
-            const playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password);
+            if (ipInput && fullUrl) {
+                showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定', onClick: () => {} }]);
+                return;
+            }
+
+            const playLink = generatePlayLink(ipInput, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password);
             copyToClipboard(playLink, '订阅链接已复制到剪贴板！请粘贴到播放器中使用！', 'play');
         }
 
         function copyOverseasJsonLink() {
-            const ipInput = document.getElementById('ipInput').value.trim();
-            const fullUrl = getFullUrl();
-            const proxyEnabled = document.getElementById('proxyCheckbox').checked;
+            let ipInput = '';
+            let fullUrl = '';
+            if (document.querySelector('.tab-button.active').textContent === '使用IP地址') {
+                ipInput = document.getElementById('ipInput').value.trim();
+            } else {
+                fullUrl = getFullUrl();
+            }
             const includeMishitong = document.getElementById('mishitongCheckbox').checked;
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
             const password = document.getElementById('passwordInput').value.trim();
 
-            let playLink = generatePlayLink(ipInput, proxyEnabled, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password);
+            if (ipInput && fullUrl) {
+                showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定', onClick: () => {} }]);
+                return;
+            }
+
+            let playLink = generatePlayLink(ipInput, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password);
             playLink += `&haiwai=true`;
 
             copyToClipboard(playLink, '影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', 'overseas');
@@ -356,15 +432,8 @@
             if (!value) {
                 return;
             }
-            document.getElementById('ipInput').value = '';
-            const protocol = document.getElementById('protocolSelect').value;
-            if (predefinedUrls.includes(`${protocol}${value}`)) {
-                return;
-            }
             validateUrlInput(value, (result) => {
                 if (result === 'edit') {
-                    const advancedContent = document.getElementById('advancedContent');
-                    advancedContent.classList.remove('hidden');
                     this.focus();
                     this.select();
                 } else if (result === 'defaultPort') {
@@ -393,12 +462,27 @@
             }
         });
 
-        document.getElementById('ipInput').addEventListener('input', function() {
-            document.getElementById('fullUrlInput').value = '';
-        });
+        // Tab switching
+        function openTab(tabName) {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
 
-        document.getElementById('proxyCheckbox').addEventListener('change', () => {});
-        document.getElementById('protocolSelect').addEventListener('change', () => {});
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            event.target.classList.add('active');
+            document.getElementById(tabName + 'Tab').classList.add('active');
+
+            if (tabName === 'ip') {
+                document.getElementById('fullUrlInput').value = '';
+            } else {
+                document.getElementById('ipInput').value = '';
+            }
+        }
     </script>
 </body>
 </html>

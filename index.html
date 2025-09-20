@@ -454,8 +454,9 @@
                     protocolSelect.value = 'http://';
                 }
             }
-            if (predefinedUrls.includes(`${protocolSelect.value}${value}`)) {
-                const matchedUrl = predefinedUrls.find(url => url.endsWith(value));
+            const predefinedDomains = predefinedUrls.map(url => url.replace(/^https?:\/\//, ''));
+            if (predefinedDomains.includes(value)) {
+                const matchedUrl = predefinedUrls.find(url => url.replace(/^https?:\/\//, '') === value);
                 if (matchedUrl) {
                     protocolSelect.value = matchedUrl.startsWith('https://') ? 'https://' : 'http://';
                 }

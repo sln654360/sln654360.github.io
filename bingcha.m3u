@@ -243,7 +243,7 @@ https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 http://36.129.204.120:65501/1051.m3u8
 #EXTINF:-1 tvg-id="辽宁影视剧" tvg-name="辽宁影视剧" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁影视剧.png" group-title="地方频道",辽宁影视剧
 http://36.129.204.120:65501/1052.m3u8
-#EXTINF:-1 tvg-id="辽宁体育休闲" tvg-name="辽宁体育休闲" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁体育休闲.png" group-title="地方频道",辽宁体育休闲
+#EXTINF:-1 tvg-id="辽宁体育休闲" tvg-name="辽宁体育休闲" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁体育.png" group-title="地方频道",辽宁体育休闲
 http://36.129.204.120:65501/1053.m3u8
 #EXTINF:-1 tvg-id="辽宁生活" tvg-name="辽宁生活" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁生活.png" group-title="地方频道",辽宁生活
 http://36.129.204.120:65501/1054.m3u8

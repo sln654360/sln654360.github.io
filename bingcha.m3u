@@ -40,7 +40,7 @@ https://migu.188766.xyz/订阅后播放/CCTV4欧洲
 https://migu.188766.xyz/订阅后播放/CCTV4美洲
 
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
-https://migu.188766.xyz/要用订阅的地址/hunws_hd
+https://migu.188766.xyz/要用订阅的地址/hunws_hb
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
 https://migu.188766.xyz/要用订阅的地址/hunws
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/浙江卫视.png" group-title="卫视频道",浙江卫视
@@ -239,24 +239,6 @@ https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 tvg-id="浙江钱江都市" tvg-name="浙江钱江都市" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/钱江都市.png" group-title="地方频道",浙江钱江
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
-#EXTINF:-1 tvg-id="辽宁都市" tvg-name="辽宁都市" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁都市.png" group-title="地方频道",辽宁都市
-http://36.129.204.120:65501/1051.m3u8
-#EXTINF:-1 tvg-id="辽宁影视剧" tvg-name="辽宁影视剧" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁影视剧.png" group-title="地方频道",辽宁影视剧
-http://36.129.204.120:65501/1052.m3u8
-#EXTINF:-1 tvg-id="辽宁体育休闲" tvg-name="辽宁体育休闲" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁体育.png" group-title="地方频道",辽宁体育休闲
-http://36.129.204.120:65501/1053.m3u8
-#EXTINF:-1 tvg-id="辽宁生活" tvg-name="辽宁生活" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁生活.png" group-title="地方频道",辽宁生活
-http://36.129.204.120:65501/1054.m3u8
-#EXTINF:-1 tvg-id="辽宁北方" tvg-name="辽宁北方" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁北方.png" group-title="地方频道",辽宁北方
-http://36.129.204.120:65501/1055.m3u8
-#EXTINF:-1 tvg-id="辽宁教育青少" tvg-name="辽宁教育青少" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁教育青少.png" group-title="地方频道",辽宁教育青少
-http://36.129.204.120:65501/1056.m3u8
-#EXTINF:-1 tvg-id="辽宁经济" tvg-name="辽宁经济" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁经济.png" group-title="地方频道",辽宁经济
-http://36.129.204.120:65501/1057.m3u8
-#EXTINF:-1 tvg-id="辽宁都市" 辽宁公共-name="辽宁公共" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁公共.png" group-title="地方频道",辽宁公共
-http://36.129.204.120:65501/1058.m3u8
-#EXTINF:-1 tvg-id="辽宁移动电视" tvg-name="辽宁移动电视" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/辽宁移动电视.png" group-title="地方频道",辽宁移动电视
-http://36.129.204.120:65501/1061.m3u8
 #EXTINF:-1 tvg-id="内蒙古农牧" tvg-name="内蒙古农牧" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/内蒙古农牧.png" group-title="地方频道",内蒙古农牧
 http://play1-qk.nmtv.cn:80/live/1686561299036179.m3u8
 #EXTINF:-1 tvg-id="内蒙古新闻综合" tvg-name="内蒙古新闻综合" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/内蒙古新闻综合.png" group-title="地方频道",内蒙古新闻综合

@@ -34,14 +34,14 @@ https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Main_Event&token=dc16dd47d
 #EXTVLCOPT:http-referer=https://p.lioncdn.net/6
 #KODIPROP:http-referer=https://p.lioncdn.net/6
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Premier_League&token=d3c21cd5d3c21cd5d3c21cd5d3c21cd5
-#EXTINF:-1 tvg-id="SKY SPORTS ACTION" tvg-name="SKY SPORTS ACTION" http-referer="https://p.lioncdn.net/" referer=https://p.lioncdn.net/7 tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Action.png" group-title="外语体育",SKY SPORTS ACTION
+#EXTINF:-1 tvg-id="SKY SPORTS ACTION" tvg-name="SKY SPORTS ACTION" http-referer="https://p.lioncdn.net/7" referer=https://p.lioncdn.net/7 tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Action.png" group-title="外语体育",SKY SPORTS ACTION
 #EXTVLCOPT:http-referer=https://p.lioncdn.net/7
 #KODIPROP:http-referer=https://p.lioncdn.net/7
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Action_Live_TV&token=3dad6cdf3dad6cdf3dad6cdf3dad6cdf
 #EXTINF:-1 tvg-id="SKY SPORTS MIX" tvg-name="SKY SPORTS MIX" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Mix.png" group-title="外语体育",SKY SPORTS MIX
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
-referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/8
+#referer=https://p.lioncdn.net/8
+#KODIPROP:http-referer=https://p.lioncdn.net/8
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Mix_Live_TV&token=3339093f3339093f3339093f3339093f
 #EXTINF:-1 tvg-id="SKY SPORTS ARENA" tvg-name="SKY SPORTS ARENA" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Arena.png" group-title="外语体育",SKY SPORTS ARENA
 #EXTVLCOPT:http-referer=https://p.lioncdn.net/

@@ -1,3 +1,4 @@
+#EXTM3U
 #EXTINF:-1 tvg-id="TNT SPORTS 1" tvg-name="TNT SPORTS 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-1.png" group-title="外语体育",TNT SPORTS 1
 #EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/

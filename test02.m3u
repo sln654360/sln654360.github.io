@@ -1,395 +1,396 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="TNT SPORTS 1" tvg-name="TNT SPORTS 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-1.png" group-title="外语体育",TNT SPORTS 1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#EXTINF:-1 tvg-id="TNT SPORTS 1" tvg-name="TNT SPORTS 1" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-1.png" group-title="外语体育",TNT SPORTS 1
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=TNT_Sports_1&token=be906225be906225be906225be906225
-referer=https://p.lioncdn.net/1
-#EXTINF:-1 tvg-id="TNT SPORTS 2" tvg-name="TNT SPORTS 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-2.png" group-title="外语体育",TNT SPORTS 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/1
-#KODIPROP:http-referer=https://p.lioncdn.net/1
+#EXTINF:-1 tvg-id="TNT SPORTS 2" tvg-name="TNT SPORTS 2" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-2.png" group-title="外语体育",TNT SPORTS 2
+referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=TNT_Sports_2&token=be906226be906226be906226be906226
-referer=https://p.lioncdn.net/2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/2
-#KODIPROP:http-referer=https://p.lioncdn.net/2
-#EXTINF:-1 tvg-id="TNT SPORTS 3" tvg-name="TNT SPORTS 3" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-3.png" group-title="外语体育",TNT SPORTS 3
+#EXTINF:-1 tvg-id="TNT SPORTS 3" tvg-name="TNT SPORTS 3" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-3.png" group-title="外语体育",TNT SPORTS 3
+referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=TNT_Sports_3&token=be906227be906227be906227be906227
-
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/3
-referer=https://p.lioncdn.net/3
-#KODIPROP:http-referer=https://p.lioncdn.net/3
 #EXTINF:-1 tvg-id="TNT SPORTS 4" tvg-name="TNT SPORTS 4" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-4.png" group-title="外语体育",TNT SPORTS 4
+referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=TNT_Sports_4&token=be906228be906228be906228be906228
 #EXTINF:-1 tvg-id="SKY SPORTS FOOTBALL" tvg-name="SKY SPORTS FOOTBALL" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Football.png" group-title="外语体育",SKY SPORTS FOOTBALL
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/4
-#KODIPROP:http-referer=https://p.lioncdn.net/4
-referer=https://p.lioncdn.net/4
+referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Football_Live_TV&token=44a86a5644a86a5644a86a5644a86a56
 #EXTINF:-1 tvg-id="SKY SPORTS MAIN EVENT" tvg-name="SKY SPORTS MAIN EVENT" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Main-Event.png" group-title="外语体育",SKY SPORTS MAIN EVENT
-referer=https://p.lioncdn.net/5
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/5
-#KODIPROP:http-referer=https://p.lioncdn.net/5
+referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Main_Event&token=dc16dd47dc16dd47dc16dd47dc16dd47
 #EXTINF:-1 tvg-id="SKY SPORTS PREMIER LEAGUE" tvg-name="SKY SPORTS PREMIER LEAGUE" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Premier-League.png" group-title="外语体育",SKY SPORTS PREMIER LEAGUE
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/6
-#KODIPROP:http-referer=https://p.lioncdn.net/6
+referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Premier_League&token=d3c21cd5d3c21cd5d3c21cd5d3c21cd5
-#EXTINF:-1 tvg-id="SKY SPORTS ACTION" tvg-name="SKY SPORTS ACTION" http-referer="https://p.lioncdn.net/7" referer=https://p.lioncdn.net/7 tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Action.png" group-title="外语体育",SKY SPORTS ACTION
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/7
-#KODIPROP:http-referer=https://p.lioncdn.net/7
+#EXTINF:-1 tvg-id="SKY SPORTS ACTION" tvg-name="SKY SPORTS ACTION" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Action.png" group-title="外语体育",SKY SPORTS ACTION
+referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Action_Live_TV&token=3dad6cdf3dad6cdf3dad6cdf3dad6cdf
 #EXTINF:-1 tvg-id="SKY SPORTS MIX" tvg-name="SKY SPORTS MIX" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Mix.png" group-title="外语体育",SKY SPORTS MIX
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/8
-#referer=https://p.lioncdn.net/8
-#KODIPROP:http-referer=https://p.lioncdn.net/8
+referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Mix_Live_TV&token=3339093f3339093f3339093f3339093f
 #EXTINF:-1 tvg-id="SKY SPORTS ARENA" tvg-name="SKY SPORTS ARENA" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Arena.png" group-title="外语体育",SKY SPORTS ARENA
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Arena_Live_TV&token=18b59baa18b59baa18b59baa18b59baa
 #EXTINF:-1 tvg-id="SKY SPORTS NEWS" tvg-name="SKY SPORTS NEWS" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-News.png" group-title="外语体育",SKY SPORTS NEWS
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_News_Live_TV&token=2b7b453c2b7b453c2b7b453c2b7b453c
 #EXTINF:-1 tvg-id="SKY SPORTS CRICKET" tvg-name="SKY SPORTS CRICKET" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Cricket.png" group-title="外语体育",SKY SPORTS CRICKET
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Cricket_Live_TV&token=dbc51354dbc51354dbc51354dbc51354
 #EXTINF:-1 tvg-id="Sky Sports Tennis" tvg-name="Sky Sports Tennis" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Tennis.png" group-title="外语体育",Sky Sports Tennis
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Tennis&token=d08f5b2ed08f5b2ed08f5b2ed08f5b2e
 #EXTINF:-1 tvg-id="SKY SPORTS F1" tvg-name="SKY SPORTS F1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-F1.png" group-title="外语体育",SKY SPORTS F1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_F1_Live_TV&token=5f9b77b45f9b77b45f9b77b45f9b77b4
 #EXTINF:-1 tvg-id="SKY SPORTS GOLF" tvg-name="SKY SPORTS GOLF" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Golf.png" group-title="外语体育",SKY SPORTS GOLF
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Golf_Live_TV&token=bfed3bcbbfed3bcbbfed3bcbbfed3bcb
 #EXTINF:-1 tvg-id="SKY SPORTS RACING" tvg-name="SKY SPORTS RACING" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Racing.png" group-title="外语体育",SKY SPORTS RACING
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Sky_Sports_Racing_Live_TV&token=db6d4df7db6d4df7db6d4df7db6d4df7
 #EXTINF:-1 tvg-id="TENNIS CHANNEL" tvg-name="TENNIS CHANNEL" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Tennis-Channel.png" group-title="外语体育",TENNIS CHANNEL
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Tennis_Channel_Live_TV&token=4a3e0a444a3e0a444a3e0a444a3e0a44
 #EXTINF:-1 tvg-id="LALIGA TV HD" tvg-name="LALIGA TV HD" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/La-Liga-TV.png" group-title="外语体育",LALIGA TV HD
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=La_Liga_TV_Live_TV&token=bf85db05bf85db05bf85db05bf85db05
 #EXTINF:-1 tvg-id="DAZN" tvg-name="DAZN" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/DAZN.png" group-title="外语体育",DAZN
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=DAZN_Live_TV&token=f92831d6f92831d6f92831d6f92831d6
 #EXTINF:-1 tvg-id="BEIN SPORTS USA" tvg-name="BEIN SPORTS USA" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Bein-Sports-USA.png" group-title="外语体育",BEIN SPORTS USA
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Bein_Sports_USA_Live_TV&token=a096db81a096db81a096db81a096db81
 #EXTINF:-1 tvg-id="Bein Sports English 2" tvg-name="Bein Sports English 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Bein-Sports-English-2.png" group-title="外语体育",Bein Sports English 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Bein_Sports_English_2_Live_TV&token=0673e6210673e6210673e6210673e621
 #EXTINF:-1 tvg-id="SuperSport Premier League" tvg-name="SuperSport Premier League" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-Premier-League.png" group-title="外语体育",SuperSport Premier League
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_Premier_League_Live_TV&token=3fbf196f3fbf196f3fbf196f3fbf196f
 #EXTINF:-1 tvg-id="SuperSport LaLiga" tvg-name="SuperSport LaLiga" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-LaLiga.png" group-title="外语体育",SuperSport LaLiga
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_LaLiga_Live_TV&token=247ee719247ee719247ee719247ee719
 #EXTINF:-1 tvg-id="SuperSport Action" tvg-name="SuperSport Action" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-Action.png" group-title="外语体育",SuperSport Action
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_Action_Live_TV&token=aa844d23aa844d23aa844d23aa844d23
 #EXTINF:-1 tvg-id="SuperSport Blitz" tvg-name="SuperSport Blitz" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-Blitz.png" group-title="外语体育",SuperSport Blitz
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_Blitz_Live_TV&token=01731204017312040173120401731204
 #EXTINF:-1 tvg-id="SuperSport Cricket" tvg-name="SuperSport Cricket" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-Cricket.png" group-title="外语体育",SuperSport Cricket
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_Cricket_Live_TV&token=09ca3b9009ca3b9009ca3b9009ca3b90
 #EXTINF:-1 tvg-id="SuperSport Football" tvg-name="SuperSport Football" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-Football.png" group-title="外语体育",SuperSport Football
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_Football_Live_TV&token=d748499ad748499ad748499ad748499a
 #EXTINF:-1 tvg-id="SuperSport Golf" tvg-name="SuperSport Golf" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-Golf.png" group-title="外语体育",SuperSport Golf
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_Golf_Live_TV&token=7ac75d0f7ac75d0f7ac75d0f7ac75d0f
 #EXTINF:-1 tvg-id="SuperSport Rugby" tvg-name="SuperSport Rugby" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-Rugby.png" group-title="外语体育",SuperSport Rugby
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_Rugby_Live_TV&token=43aa81ba43aa81ba43aa81ba43aa81ba
 #EXTINF:-1 tvg-id="SuperSport Tennis" tvg-name="SuperSport Tennis" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/SuperSport-Tennis.png" group-title="外语体育",SuperSport Tennis
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=SuperSport_Tennis_Live_TV&token=30eb72c830eb72c830eb72c830eb72c8
 #EXTINF:-1 tvg-id="Variety 1" tvg-name="Variety 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Variety-1.png" group-title="外语体育",Variety 1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Variety_1_Live_TV&token=3026f1813026f1813026f1813026f181
 #EXTINF:-1 tvg-id="Variety 2" tvg-name="Variety 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Variety-2.png" group-title="外语体育",Variety 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Variety_2_Live_TV&token=c46b6082c46b6082c46b6082c46b6082
 #EXTINF:-1 tvg-id="Variety 3" tvg-name="Variety 3" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Variety-3.png" group-title="外语体育",Variety 3
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Variety_3_Live_TV&token=58afcf8358afcf8358afcf8358afcf83
 #EXTINF:-1 tvg-id="Variety 4" tvg-name="Variety 4" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Variety-4.png" group-title="外语体育",Variety 4
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Variety_4_Live_TV&token=ecf43e84ecf43e84ecf43e84ecf43e84
 #EXTINF:-1 tvg-id="Eurosport 1" tvg-name="Eurosport 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Eurosport-1.png" group-title="外语体育",Eurosport 1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Eurosport_1_Live_TV&token=027ba2e0027ba2e0027ba2e0027ba2e0
 #EXTINF:-1 tvg-id="Eurosport 2" tvg-name="Eurosport 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Eurosport-2.png" group-title="外语体育",Eurosport 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Eurosport_2_Live_TV&token=96c011e196c011e196c011e196c011e1
 #EXTINF:-1 tvg-id="Premier Sports 1" tvg-name="Premier Sports 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Premier-Sports-1.png" group-title="外语体育",Premier Sports 1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Premier_Sports_1&token=c0a81bb3c0a81bb3c0a81bb3c0a81bb3
 #EXTINF:-1 tvg-id="Premier Sports 2" tvg-name="Premier Sports 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Premier-Sports-2.png" group-title="外语体育",Premier Sports 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Premier_Sports_2&token=c0a81bb4c0a81bb4c0a81bb4c0a81bb4
 #EXTINF:-1 tvg-id="Golf Channel" tvg-name="Golf Channel" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Golf-Channel.png" group-title="外语体育",Golf Channel
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Golf_Channel_Live_TV&token=be25538bbe25538bbe25538bbe25538b
 #EXTINF:-1 tvg-id="MLB Network" tvg-name="MLB Network" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/MLB-Network.png" group-title="外语体育",MLB Network
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=MLB_Network_Live_TV&token=a9c05fb9a9c05fb9a9c05fb9a9c05fb9
 #EXTINF:-1 tvg-id="NBA TV" tvg-name="NBA TV" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/NBA-TV.png" group-title="外语体育",NBA TV
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=NBA_TV_Live_TV&token=caf91999caf91999caf91999caf91999
 #EXTINF:-1 tvg-id="NFL Network" tvg-name="NFL Network" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/NFL-Network.png" group-title="外语体育",NFL Network
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=NFL_Network_Live_TV&token=02a220ca02a220ca02a220ca02a220ca
 #EXTINF:-1 tvg-id="NFL REDZONE" tvg-name="NFL REDZONE" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/NFL-REDZONE.png" group-title="外语体育",NFL REDZONE
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=NFL_REDZONE_Live_TV&token=9d92e7599d92e7599d92e7599d92e759
 #EXTINF:-1 tvg-id="NHL Network" tvg-name="NHL Network" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/NHL-Network.png" group-title="外语体育",NHL Network
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=NHL_Network_Live_TV&token=8bc5e5088bc5e5088bc5e5088bc5e508
 #EXTINF:-1 tvg-id="WWE" tvg-name="WWE" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/WWE.png" group-title="外语体育",WWE
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=WWE_Live_TV&token=1d00fecc1d00fecc1d00fecc1d00fecc
 #EXTINF:-1 tvg-id="Willow Cricket" tvg-name="Willow Cricket" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Willow-Cricket.png" group-title="外语体育",Willow Cricket
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Willow_Cricket_Live_TV&token=5942bd915942bd915942bd915942bd91
 #EXTINF:-1 tvg-id="Willow Extra" tvg-name="Willow Extra" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Willow-Extra.png" group-title="外语体育",Willow Extra
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Willow_Extra_Live_TV&token=6fe4e9306fe4e9306fe4e9306fe4e930
 #EXTINF:-1 tvg-id="World Fishing Network" tvg-name="World Fishing Network" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/World-Fishing-Network.png" group-title="外语体育",World Fishing Network
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=World_Fishing_Network_Live_TV&token=b1d75a93b1d75a93b1d75a93b1d75a93
 #EXTINF:-1 tvg-id="Fight Network" tvg-name="Fight Network" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Fight-Network.png" group-title="外语体育",Fight Network
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Fight_Network_Live_TV&token=be95b2e6be95b2e6be95b2e6be95b2e6
 #EXTINF:-1 tvg-id="ESPN" tvg-name="ESPN" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ESPN.png" group-title="外语体育",ESPN
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ESPN_Live_TV&token=ee0ffd91ee0ffd91ee0ffd91ee0ffd91
 #EXTINF:-1 tvg-id="ESPN 2" tvg-name="ESPN 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ESPN-2.png" group-title="外语体育",ESPN 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ESPN_2_Live_TV&token=e6a18384e6a18384e6a18384e6a18384
 #EXTINF:-1 tvg-id="ESPN News" tvg-name="ESPN News" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ESPN-News.png" group-title="外语体育",ESPN News
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ESPN_News_Live_TV&token=80953fcd80953fcd80953fcd80953fcd
 #EXTINF:-1 tvg-id="ESPN U" tvg-name="ESPN U" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ESPN-U.png" group-title="外语体育",ESPN U
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ESPN_U_Live_TV&token=2bfcb0a72bfcb0a72bfcb0a72bfcb0a7
 #EXTINF:-1 tvg-id="MUTV" tvg-name="MUTV" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/MUTV.png" group-title="外语体育",MUTV
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=MUTV_Live_TV&token=c8afca8fc8afca8fc8afca8fc8afca8f
 #EXTINF:-1 tvg-id="LFC TV" tvg-name="LFC TV" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/LFC-TV.png" group-title="外语体育",LFC TV
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=LFC_TV_Live_TV&token=d0aceb1dd0aceb1dd0aceb1dd0aceb1d
 #EXTINF:-1 tvg-id="ACC Network" tvg-name="ACC Network" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ACC-Network.png" group-title="外语体育",ACC Network
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ACC_Network_Live_TV&token=6d4cb5976d4cb5976d4cb5976d4cb597
 #EXTINF:-1 tvg-id="CBS Sports Network" tvg-name="CBS Sports Network" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CBS-Sports-Network.png" group-title="外语体育",CBS Sports Network
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=CBS_Sports_Network_Live_TV&token=ecca805eecca805eecca805eecca805e
 #EXTINF:-1 tvg-id="Fox Sports 1" tvg-name="Fox Sports 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Fox-Sports-1.png" group-title="外语体育",Fox Sports 1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Fox_Sports_1_Live_TV&token=46575f8646575f8646575f8646575f86
 #EXTINF:-1 tvg-id="Fox Sports 2" tvg-name="Fox Sports 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Fox-Sports-2.png" group-title="外语体育",Fox Sports 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Fox_Sports_2_Live_TV&token=da9bce87da9bce87da9bce87da9bce87
 #EXTINF:-1 tvg-id="HBO 1" tvg-name="HBO 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/HBO.png" group-title="外语体育",HBO 1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=HBO_Live_TV&token=244093fc244093fc244093fc244093fc
 #EXTINF:-1 tvg-id="HBO 2" tvg-name="HBO 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/HBO-2.png" group-title="外语体育",HBO 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=HBO_2_Live_TV&token=53062b2f53062b2f53062b2f53062b2f
 #EXTINF:-1 tvg-id="Cinemax West" tvg-name="Cinemax West" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Cinemax-West.png" group-title="外语体育",Cinemax West
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Cinemax_West_Live_TV&token=b5c83becb5c83becb5c83becb5c83bec
 #EXTINF:-1 tvg-id="Great Movies" tvg-name="Great Movies" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/UK-Great-Movies.png" group-title="外语体育",Great Movies
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=UK_Great_Movies_Live_TV&token=1c1843651c1843651c1843651c184365
 #EXTINF:-1 tvg-id="Sky Cinema Comedy" tvg-name="Sky Cinema Comedy" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/UK-Sky-Cinema-Comedy.png" group-title="外语体育",Sky Cinema Comedy
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=UK_Sky_Cinema_Comedy_Live_TV&token=5ca877e55ca877e55ca877e55ca877e5
 #EXTINF:-1 tvg-id="Sky Cinema Family" tvg-name="Sky Cinema Family" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/UK-Sky-Cinema-Family.png" group-title="外语体育",Sky Cinema Family
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=UK_Sky_Cinema_Family_Live_TV&token=ecf5cdb0ecf5cdb0ecf5cdb0ecf5cdb0
 #EXTINF:-1 tvg-id="ITV 1" tvg-name="ITV 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ITV-1.png" group-title="外语体育",ITV 1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ITV_1&token=d6042f4ed6042f4ed6042f4ed6042f4e
 #EXTINF:-1 tvg-id="ITV 2" tvg-name="ITV 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ITV-2.png" group-title="外语体育",ITV 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ITV_2&token=d6042f4fd6042f4fd6042f4fd6042f4f
 #EXTINF:-1 tvg-id="ITV 3" tvg-name="ITV 3" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ITV-3.png" group-title="外语体育",ITV 3
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ITV_3&token=d6042f50d6042f50d6042f50d6042f50
 #EXTINF:-1 tvg-id="ITV 4" tvg-name="ITV 4" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ITV-4.png" group-title="外语体育",ITV 4
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ITV_4&token=d6042f51d6042f51d6042f51d6042f51
 #EXTINF:-1 tvg-id="ABC Channel" tvg-name="ABC Channel" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/ABC-Channel.png" group-title="外语体育",ABC Channel
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=ABC&token=40b03a5340b03a5340b03a5340b03a53
 #EXTINF:-1 tvg-id="FOX NEWS" tvg-name="FOX NEWS" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/FOX-NEWS.png" group-title="外语体育",FOX NEWS
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=FOX_NEWS_Live_TV&token=65635848656358486563584865635848
 #EXTINF:-1 tvg-id="CNBC" tvg-name="CNBC" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/CNBC.png" group-title="外语体育",CNBC
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=CNBC_Live_TV&token=3b4040513b4040513b4040513b404051
 #EXTINF:-1 tvg-id="Virgin 1" tvg-name="Virgin 1" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/UK-Virgin-1.png" group-title="外语体育",Virgin 1
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=UK_Virgin_1&token=f46dfc79f46dfc79f46dfc79f46dfc79
 #EXTINF:-1 tvg-id="Virgin 2" tvg-name="Virgin 2" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/UK-Virgin-2.png" group-title="外语体育",Virgin 2
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=UK_Virgin_2&token=f46dfc7af46dfc7af46dfc7af46dfc7a
 #EXTINF:-1 tvg-id="Virgin 3" tvg-name="Virgin 3" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/UK-Virgin-3.png" group-title="外语体育",Virgin 3
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=UK_Virgin_3&token=f46dfc7bf46dfc7bf46dfc7bf46dfc7b
 #EXTINF:-1 tvg-id="Nat Geo Wild HD" tvg-name="Nat Geo Wild HD" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/National-Geographic-Wild.png" group-title="外语体育",Nat Geo Wild HD
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Nat_Geo_Wild_HD&token=5ed388b65ed388b65ed388b65ed388b6
 #EXTINF:-1 tvg-id="Discovery Channel" tvg-name="Discovery Channel" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Discovery-Channel.png" group-title="外语体育",Discovery Channel
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Discovery_Channel_Live_TV&token=5c378ddb5c378ddb5c378ddb5c378ddb
 #EXTINF:-1 tvg-id="Discovery Life" tvg-name="Discovery Life" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/Discovery-Life.png" group-title="外语体育",Discovery Life
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=Discovery_Life_Live_TV&token=35491910354919103549191035491910
 #EXTINF:-1 tvg-id="Cartoon Network" tvg-name="Cartoon Network" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/UK-Cartoon-Network.png" group-title="外语体育",Cartoon Network
-#EXTVLCOPT:http-referer=https://p.lioncdn.net/
 referer=https://p.lioncdn.net/
-#KODIPROP:http-referer=https://p.lioncdn.net/
+#EXTVLCOPT:http-referer=https://p.lioncdn.net/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=UK_Cartoon_Network_Live_TV&token=8dec66998dec66998dec66998dec6699

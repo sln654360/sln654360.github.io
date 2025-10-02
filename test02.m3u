@@ -5,17 +5,17 @@ referer=https://p.lioncdn.net/
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=TNT_Sports_1&token=be906225be906225be906225be906225
 #EXTINF:-1 tvg-id="TNT SPORTS 2" tvg-name="TNT SPORTS 2" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-2.png" group-title="外语体育",TNT SPORTS 2
-referer=https://p.lioncdn.net/
+#referer=https://p.lioncdn.net/
 #EXTVLCOPT:http-referer=https://p.lioncdn.net/
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=TNT_Sports_2&token=be906226be906226be906226be906226
 #EXTINF:-1 tvg-id="TNT SPORTS 3" tvg-name="TNT SPORTS 3" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-3.png" group-title="外语体育",TNT SPORTS 3
-referer=https://p.lioncdn.net/
+# referer=https://p.lioncdn.net/
 #EXTVLCOPT:http-referer=https://p.lioncdn.net/
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=TNT_Sports_3&token=be906227be906227be906227be906227
 #EXTINF:-1 tvg-id="TNT SPORTS 4" tvg-name="TNT SPORTS 4" http-referer="https://p.lioncdn.net/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-4.png" group-title="外语体育",TNT SPORTS 4
-referer=https://p.lioncdn.net/
+#EXTVLCOPT:referer=https://p.lioncdn.net/
 #EXTVLCOPT:http-referer=https://p.lioncdn.net/
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://p.lioncdn.net/
 https://bee.188766.xyz/bee?id=beesport&pid=TNT_Sports_4&token=be906228be906228be906228be906228

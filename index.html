@@ -27,6 +27,7 @@
             max-width: 400px;
             text-align: center;
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
         }
         #generatedLink {
             width: 100%;
@@ -83,6 +84,71 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+        
+        /* 自定义下拉菜单样式 */
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 8px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #e2e8f0;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        /* 移动端优化 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .flex.gap-4 {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .flex.gap-4 button {
+                width: 100%;
+            }
+            
+            .tab-button {
+                padding: 10px;
+                font-size: 14px;
+            }
+            
+            .section-card {
+                padding: 15px;
+            }
+            
+            input, select {
+                font-size: 16px; /* 防止iOS缩放 */
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -112,15 +178,14 @@
                         <option value="http://">http://</option>
                         <option value="https://">https://</option>
                     </select>
-                    <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" list="urlSuggestions" class="flex-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                    <datalist id="urlSuggestions">
-                        <option value="live.188766.xyz">
-                        <option value="live.iill.top">
-                        <option value="tv123.top:35455">
-                        <option value="cdn.jdshipin.com:8880">
-                        <option value="live.metshop.top">
-                    </datalist>
+                    <div class="custom-dropdown flex-1">
+                        <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                        <div id="customDropdown" class="dropdown-content">
+                            <!-- 下拉选项将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
                 </div>
+                <p class="text-gray-500 text-sm mt-2">点击输入框或输入内容查看推荐URL</p>
             </div>
         </div>
 
@@ -198,6 +263,45 @@
             'http://cdn.jdshipin.com:8880',
             'https://live.metshop.top'
         ];
+
+        // 初始化自定义下拉菜单
+        function initCustomDropdown() {
+            const dropdown = document.getElementById('customDropdown');
+            dropdown.innerHTML = '';
+            
+            predefinedUrls.forEach(url => {
+                const a = document.createElement('a');
+                // 只显示域名部分，更简洁
+                const displayText = url.replace(/^https?:\/\//, '');
+                a.textContent = displayText;
+                a.onclick = function() {
+                    document.getElementById('fullUrlInput').value = displayText;
+                    // 根据URL设置协议
+                    if (url.startsWith('https://')) {
+                        document.getElementById('protocolSelect').value = 'https://';
+                    } else {
+                        document.getElementById('protocolSelect').value = 'http://';
+                    }
+                    dropdown.classList.remove('show');
+                };
+                dropdown.appendChild(a);
+            });
+        }
+
+        // 显示/隐藏自定义下拉菜单
+        function toggleDropdown() {
+            const dropdown = document.getElementById('customDropdown');
+            dropdown.classList.toggle('show');
+        }
+
+        // 点击页面其他地方时关闭下拉菜单
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('customDropdown');
+            const input = document.getElementById('fullUrlInput');
+            if (!input.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
 
         function needsUrlEncoding(str) {
             if (/%[0-9A-Fa-f]{2}/.test(str)) return false;
@@ -408,6 +512,49 @@
             }
         });
 
+        document.getElementById('fullUrlInput').addEventListener('focus', function() {
+            toggleDropdown();
+        });
+
+        document.getElementById('fullUrlInput').addEventListener('input', function() {
+            const value = this.value.trim();
+            const protocolSelect = document.getElementById('protocolSelect');
+            if (value.match(/^https?:\/\//)) {
+                let cleanedValue = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
+                this.value = cleanedValue;
+                if (value.startsWith('https://')) {
+                    protocolSelect.value = 'https://';
+                } else if (value.startsWith('http://')) {
+                    protocolSelect.value = 'http://';
+                }
+            }
+            const predefinedDomains = predefinedUrls.map(url => url.replace(/^https?:\/\//, ''));
+            if (predefinedDomains.includes(value)) {
+                const matchedUrl = predefinedUrls.find(url => url.replace(/^https?:\/\//, '') === value);
+                if (matchedUrl) {
+                    protocolSelect.value = matchedUrl.startsWith('https://') ? 'https://' : 'http://';
+                }
+            }
+            
+            // 根据输入内容过滤下拉选项
+            filterDropdownOptions(value);
+        });
+
+        // 过滤下拉选项
+        function filterDropdownOptions(filter) {
+            const dropdown = document.getElementById('customDropdown');
+            const options = dropdown.getElementsByTagName('a');
+            
+            for (let i = 0; i < options.length; i++) {
+                const option = options[i];
+                if (option.textContent.toLowerCase().includes(filter.toLowerCase())) {
+                    option.style.display = "block";
+                } else {
+                    option.style.display = "none";
+                }
+            }
+        }
+
         document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
             const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
             let cleanedValue = pastedData;
@@ -442,27 +589,6 @@
             });
         });
 
-        document.getElementById('fullUrlInput').addEventListener('input', function() {
-            const value = this.value.trim();
-            const protocolSelect = document.getElementById('protocolSelect');
-            if (value.match(/^https?:\/\//)) {
-                let cleanedValue = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
-                this.value = cleanedValue;
-                if (value.startsWith('https://')) {
-                    protocolSelect.value = 'https://';
-                } else if (value.startsWith('http://')) {
-                    protocolSelect.value = 'http://';
-                }
-            }
-            const predefinedDomains = predefinedUrls.map(url => url.replace(/^https?:\/\//, ''));
-            if (predefinedDomains.includes(value)) {
-                const matchedUrl = predefinedUrls.find(url => url.replace(/^https?:\/\//, '') === value);
-                if (matchedUrl) {
-                    protocolSelect.value = matchedUrl.startsWith('https://') ? 'https://' : 'http://';
-                }
-            }
-        });
-
         // Tab switching
         function openTab(tabName) {
             const tabButtons = document.querySelectorAll('.tab-button');
@@ -484,6 +610,11 @@
                 document.getElementById('ipInput').value = '';
             }
         }
+
+        // 初始化页面
+        document.addEventListener('DOMContentLoaded', function() {
+            initCustomDropdown();
+        });
     </script>
 </body>
 </html>

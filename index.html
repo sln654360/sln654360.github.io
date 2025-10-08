@@ -405,7 +405,7 @@
                 option.style.display = option.textContent.toLowerCase().includes(filter.toLowerCase()) ? 'block' : 'none';
             }
         }
-
+        
         document.getElementById('playbackSelect').addEventListener('change', function() {
             const playbackText = document.getElementById('playbackText');
             playbackText.textContent = this.value === '1' 
@@ -423,7 +423,7 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             initCustomDropdown();
-            document.getElementById('playbackText').textContent = 'epg是gz格式，体积较大';
+            document.getElementById('playbackText').textContent = 'epg是gz格式，体积较大，需播放器支持';
         });
     </script>
 </body>

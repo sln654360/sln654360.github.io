@@ -359,15 +359,6 @@
             document.getElementById('advancedContent').classList.toggle('hidden');
         }
 
-        document.getElementById('bcOnlyCheckbox').addEventListener('change', function() {
-            if (this.checked) {
-                showModal('勾选后，仅生成冰茶专用频道，不含肥羊内容。确定？', [
-                    { text: '确定' },
-                    { text: '取消', onClick: "this.closest('.modal').querySelector('input[type=checkbox]').checked=false" }
-                ]);
-            }
-        });
-
         document.getElementById('fullUrlInput').addEventListener('input', function(e) {
             let value = this.value.trim();
             const protocolSelect = document.getElementById('protocolSelect');

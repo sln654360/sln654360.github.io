@@ -214,6 +214,13 @@
                         <input type="checkbox" id="bcOnlyCheckbox" class="mr-2 h-5 w-5 text-blue-500">
                         <span class="text-gray-600">只生成冰茶频道（无需填IP或URL）</span>
                     </label>
+                    <label class="flex items-center">
+                        <select id="playbackSelect" class="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            <option value="7" selected>7天回看</option>
+                            <option value="1">1天回看</option>
+                        </select>
+                        <span class="text-gray-600 ml-2">选择回看时长</span>
+                    </label>
                 </div>
             </div>
         </div>
@@ -422,7 +429,7 @@
             }
         }
 
-        function generatePlayLink(ip, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '', password = '') {
+        function generatePlayLink(ip, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '', password = '', playbackDays = '7') {
             let playLink;
             if (fullUrl) {
                 const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
@@ -440,6 +447,7 @@
                 if (!includeLunbo) playLink += `&lunbo=false`;
             }
             if (password) playLink += `&mima=${encodeURIComponent(password)}`;
+            if (playbackDays === '1') playLink += `&huikan=1`;
 
             return playLink;
         }
@@ -456,13 +464,14 @@
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
             const password = document.getElementById('passwordInput').value.trim();
+            const playbackDays = document.getElementById('playbackSelect').value;
 
             if (ipInput && fullUrl) {
                 showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定', onClick: () => {} }]);
                 return;
             }
 
-            const playLink = generatePlayLink(ipInput, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password);
+            const playLink = generatePlayLink(ipInput, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password, playbackDays);
             copyToClipboard(playLink, '订阅链接已复制到剪贴板！请粘贴到播放器中使用！', 'play');
         }
 
@@ -478,13 +487,14 @@
             const includeLunbo = document.getElementById('lunboCheckbox').checked;
             const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
             const password = document.getElementById('passwordInput').value.trim();
+            const playbackDays = document.getElementById('playbackSelect').value;
 
             if (ipInput && fullUrl) {
                 showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定', onClick: () => {} }]);
                 return;
             }
 
-            let playLink = generatePlayLink(ipInput, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password);
+            let playLink = generatePlayLink(ipInput, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password, playbackDays);
             playLink += `&haiwai=true`;
 
             copyToClipboard(playLink, '影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', 'overseas');

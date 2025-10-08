@@ -171,7 +171,7 @@
                         <option value="7" selected>7天回看</option>
                         <option value="1">1天回看</option>
                     </select>
-                    <span id="playbackText" class="text-gray-600 ml-2">epg是gz格式，体积较大，需播放器支持</span>
+                    <span id="playbackText" class="text-gray-600 ml-2">7天是gz格式，体积较大，需播放器支持</span>
                 </label>
             </div>
         </div>
@@ -410,7 +410,7 @@
             const playbackText = document.getElementById('playbackText');
             playbackText.textContent = this.value === '1' 
                 ? '1天是xml格式，体积小，兼容性更好' 
-                : 'epg是gz格式，体积较大，需播放器支持';
+                : '7天是gz格式，体积较大，需播放器支持';
         });
 
         function openTab(tabName) {
@@ -423,7 +423,7 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             initCustomDropdown();
-            document.getElementById('playbackText').textContent = 'epg是gz格式，体积较大，需播放器支持';
+            document.getElementById('playbackText').textContent = '7天是gz格式，体积较大，需播放器支持';
         });
     </script>
 </body>

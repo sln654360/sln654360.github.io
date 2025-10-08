@@ -160,22 +160,18 @@
             <div id="advancedContent" class="hidden mt-4 space-y-3">
                 <label class="flex items-center">
                     <input type="checkbox" id="mishitongCheckbox" class="mr-2 h-5 w-5 text-blue-500">
-                    <span class="text-gray-600">包含咪视通（去掉则不包含此分组）</span>
+                    <span class="text-gray-600">包含咪视通（仅适配部分allinone）</span>
                 </label>
                 <label class="flex items-center">
                     <input type="checkbox" id="lunboCheckbox" checked class="mr-2 h-5 w-5 text-blue-500">
-                    <span class="text-gray-600">包含影视轮播（去掉则不包含此分组）</span>
-                </label>
-                <label class="flex items-center">
-                    <input type="checkbox" id="bcOnlyCheckbox" class="mr-2 h-5 w-5 text-blue-500">
-                    <span class="text-gray-600">只生成冰茶频道（无需填写IP或URL，也不包含上面两项）</span>
+                    <span class="text-gray-600">包含影视轮播（不勾选则不带此分组）</span>
                 </label>
                 <label class="flex items-center">
                     <select id="playbackSelect" class="p-2 border rounded-lg transition">
                         <option value="7" selected>7天回看</option>
                         <option value="1">1天回看</option>
                     </select>
-                    <span class="text-gray-600 ml-2">7天的epg是gz格式，大概1-2M，1天是xml格式，更小兼容性好</span>
+                    <span id="playbackText" class="text-gray-600 ml-2">epg是gz格式，体积较大</span>
                 </label>
             </div>
         </div>
@@ -225,8 +221,14 @@
             const dropdown = document.getElementById('customDropdown');
             dropdown.innerHTML = predefinedUrls.map(url => {
                 const displayText = url.replace(/^https?:\/\//, '');
-                return `<a onclick="document.getElementById('fullUrlInput').value='${displayText}';document.getElementById('protocolSelect').value='${url.startsWith('https://') ? 'https://' : 'http://'}';this.parentNode.classList.remove('show');">${displayText}</a>`;
+                return `<a onclick="selectUrl('${displayText}', '${url.startsWith('https://') ? 'https://' : 'http://'}')">${displayText}</a>`;
             }).join('');
+        }
+
+        function selectUrl(displayText, protocol) {
+            document.getElementById('fullUrlInput').value = displayText;
+            document.getElementById('protocolSelect').value = protocol;
+            document.getElementById('customDropdown').classList.remove('show');
         }
 
         function toggleDropdown() {
@@ -312,17 +314,13 @@
             }
         }
 
-        function generatePlayLink(ip, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '', password = '', playbackDays = '7') {
+        function generatePlayLink(ip, includeMishitong, includeLunbo, fullUrl = '', password = '', playbackDays = '7') {
             const baseUrl = fullUrl 
                 ? `https://fy.188766.xyz/?url=${needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl}`
                 : `https://fy.188766.xyz/?ip=${ip || ''}`;
             const params = [];
-            if (bcOnlyEnabled) {
-                params.push('bconly=true');
-            } else {
-                if (includeMishitong) params.push('mishitong=true');
-                if (!includeLunbo) params.push('lunbo=false');
-            }
+            if (includeMishitong) params.push('mishitong=true');
+            if (!includeLunbo) params.push('lunbo=false');
             if (password) params.push(`mima=${encodeURIComponent(password)}`);
             if (playbackDays === '1') params.push('huikan=1');
             return params.length ? `${baseUrl}&${params.join('&')}` : baseUrl;
@@ -336,7 +334,6 @@
             const options = {
                 includeMishitong: document.getElementById('mishitongCheckbox').checked,
                 includeLunbo: document.getElementById('lunboCheckbox').checked,
-                bcOnlyEnabled: document.getElementById('bcOnlyCheckbox').checked,
                 password: document.getElementById('passwordInput').value.trim(),
                 playbackDays: document.getElementById('playbackSelect').value
             };
@@ -345,7 +342,7 @@
                 return showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定' }]);
             }
 
-            let playLink = generatePlayLink(ipInput, options.includeMishitong, options.includeLunbo, options.bcOnlyEnabled, fullUrl, options.password, options.playbackDays);
+            let playLink = generatePlayLink(ipInput, options.includeMishitong, options.includeLunbo, fullUrl, options.password, options.playbackDays);
             if (isOverseas) playLink += '&haiwai=true';
             copyToClipboard(playLink, isOverseas 
                 ? '影视专用接口已复制！请粘贴到影视或OK影视的直播接口！' 
@@ -358,14 +355,6 @@
         function toggleAdvanced() {
             document.getElementById('advancedContent').classList.toggle('hidden');
         }
-
-
-        document.getElementById('bcOnlyCheckbox').addEventListener('change', function() {
-            if (this.checked) {
-                document.getElementById('mishitongCheckbox').checked = false;
-                document.getElementById('lunboCheckbox').checked = false;
-            }
-        });
 
         document.getElementById('fullUrlInput').addEventListener('input', function(e) {
             let value = this.value.trim();
@@ -417,6 +406,13 @@
             }
         }
 
+        document.getElementById('playbackSelect').addEventListener('change', function() {
+            const playbackText = document.getElementById('playbackText');
+            playbackText.textContent = this.value === '1' 
+                ? '1天是xml格式，体积小兼容性好' 
+                : 'epg是gz格式，体积较大';
+        });
+
         function openTab(tabName) {
             document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
             document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
@@ -425,7 +421,10 @@
             document.getElementById(tabName === 'ip' ? 'fullUrlInput' : 'ipInput').value = '';
         }
 
-        document.addEventListener('DOMContentLoaded', initCustomDropdown);
+        document.addEventListener('DOMContentLoaded', function() {
+            initCustomDropdown();
+            document.getElementById('playbackText').textContent = 'epg是gz格式，体积较大';
+        });
     </script>
 </body>
 </html>

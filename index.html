@@ -359,6 +359,14 @@
             document.getElementById('advancedContent').classList.toggle('hidden');
         }
 
+
+        document.getElementById('bcOnlyCheckbox').addEventListener('change', function() {
+            if (this.checked) {
+                document.getElementById('mishitongCheckbox').checked = false;
+                document.getElementById('lunboCheckbox').checked = false;
+            }
+        });
+
         document.getElementById('fullUrlInput').addEventListener('input', function(e) {
             let value = this.value.trim();
             const protocolSelect = document.getElementById('protocolSelect');

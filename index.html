@@ -10,18 +10,15 @@
         .modal {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
             z-index: 1000;
             justify-content: center;
             align-items: center;
             animation: fadeIn 0.3s ease-in-out;
         }
         .modal-content {
-            background-color: white;
+            background: white;
             padding: 24px;
             border-radius: 12px;
             max-width: 400px;
@@ -38,18 +35,16 @@
         .tab-button {
             flex: 1;
             padding: 12px;
-            background-color: #f1f5f9;
+            background: #f1f5f9;
             border: 1px solid #cbd5e1;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.3s;
             font-weight: 500;
             color: #4b5563;
         }
-        .tab-button:hover {
-            background-color: #e2e8f0;
-        }
+        .tab-button:hover { background: #e2e8f0; }
         .tab-button.active {
-            background-color: #3b82f6;
+            background: #3b82f6;
             color: white;
             border-bottom: none;
         }
@@ -58,12 +53,10 @@
             padding: 16px;
             border: 1px solid #cbd5e1;
             border-top: none;
-            background-color: #f9fafb;
+            background: #f9fafb;
             border-radius: 0 0 8px 8px;
         }
-        .tab-content.active {
-            display: block;
-        }
+        .tab-content.active { display: block; }
         .section-card {
             background: linear-gradient(145deg, #ffffff, #f1f5f9);
             border-radius: 12px;
@@ -76,87 +69,53 @@
             border-radius: 12px 12px 0 0;
         }
         input:focus, select:focus {
-            ring: 2px solid #3b82f6;
             border-color: #3b82f6;
             outline: none;
+            box-shadow: 0 0 0 2px #3b82f6;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        
-        /* 自定义下拉菜单样式 */
         .custom-dropdown {
             position: relative;
             display: inline-block;
             width: 100%;
         }
-        
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background: #f9f9f9;
             min-width: 100%;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             z-index: 1;
             border-radius: 8px;
             max-height: 200px;
             overflow-y: auto;
         }
-        
         .dropdown-content a {
             color: black;
             padding: 12px 16px;
-            text-decoration: none;
             display: block;
             cursor: pointer;
             border-bottom: 1px solid #e5e7eb;
         }
-        
-        .dropdown-content a:hover {
-            background-color: #e2e8f0;
-        }
-        
-        .show {
-            display: block;
-        }
-        
-        /* 移动端优化 */
+        .dropdown-content a:hover { background: #e2e8f0; }
+        .show { display: block; }
         @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .flex.gap-4 {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .flex.gap-4 button {
-                width: 100%;
-            }
-            
-            .tab-button {
-                padding: 10px;
-                font-size: 14px;
-            }
-            
-            .section-card {
-                padding: 15px;
-            }
-            
-            input, select {
-                font-size: 16px; /* 防止iOS缩放 */
-            }
+            .container { padding: 10px; }
+            .flex.gap-4 { flex-direction: column; gap: 10px; }
+            .flex.gap-4 button { width: 100%; }
+            .tab-button { padding: 10px; font-size: 14px; }
+            .section-card { padding: 15px; }
+            input, select { font-size: 16px; }
         }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto p-6 max-w-2xl">
         <div class="header-gradient text-center mb-6">
-            <h1 class="text-4xl font-bold">
-                <i class="fas fa-tv mr-2"></i> 冰茶TV
-            </h1>
+            <h1 class="text-4xl font-bold"><i class="fas fa-tv mr-2"></i> 冰茶TV</h1>
             <p class="text-lg mt-2 opacity-90">原肥羊TV助手 | 免费分享，用爱发电</p>
         </div>
 
@@ -169,20 +128,18 @@
             </div>
             <div id="ipTab" class="tab-content active">
                 <p class="text-gray-600 mb-2">输入IP地址：</p>
-                <input type="text" id="ipInput" placeholder="例如: 192.168.1.2" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                <input type="text" id="ipInput" placeholder="例如: 192.168.1.2" class="w-full p-3 border rounded-lg transition">
             </div>
             <div id="urlTab" class="tab-content">
-                <p class="text-gray-600 mb-2">输入自定义URL（下拉提供了几个公共的，建议填写自己的接口）：</p>
+                <p class="text-gray-600 mb-2">输入自定义URL（下拉提供公共接口，建议填写自己的）：</p>
                 <div class="flex items-center gap-2">
-                    <select id="protocolSelect" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                    <select id="protocolSelect" class="p-3 border rounded-lg transition">
                         <option value="http://">http://</option>
                         <option value="https://">https://</option>
                     </select>
                     <div class="custom-dropdown flex-1">
-                        <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                        <div id="customDropdown" class="dropdown-content">
-                            <!-- 下拉选项将通过JavaScript动态生成 -->
-                        </div>
+                        <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" class="w-full p-3 border rounded-lg transition">
+                        <div id="customDropdown" class="dropdown-content"></div>
                     </div>
                 </div>
                 <p class="text-gray-500 text-sm mt-2">点击输入框或输入内容查看推荐URL</p>
@@ -191,50 +148,48 @@
 
         <div class="section-card p-6 mb-6">
             <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-lock mr-2"></i> 加载隐藏频道</h2>
-            <p class="text-gray-600 mb-2">输入密码（关注冰茶通知频道，不定时更换）：</p>
-            <input type="text" id="passwordInput" placeholder="请输入密码" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <p class="text-gray-600 mb-2">输入密码（关注冰茶通知频道获取）：</p>
+            <input type="text" id="passwordInput" placeholder="请输入密码" class="w-full p-3 border rounded-lg transition">
         </div>
 
         <div class="section-card p-6 mb-6">
             <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-cog mr-2"></i> 更多选项</h2>
-            <button onclick="toggleAdvanced()" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white p-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition duration-200 flex items-center justify-center">
+            <button onclick="toggleAdvanced()" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white p-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition flex items-center justify-center">
                 <i class="fas fa-chevron-down mr-2"></i> 展开/收起
             </button>
-            <div id="advancedContent" class="hidden mt-4">
-                <div class="space-y-3">
-                    <label class="flex items-center">
-                        <input type="checkbox" id="mishitongCheckbox" class="mr-2 h-5 w-5 text-blue-500">
-                        <span class="text-gray-600">包含咪视通（分组）</span>
-                    </label>
-                    <label class="flex items-center">
-                        <input type="checkbox" id="lunboCheckbox" checked class="mr-2 h-5 w-5 text-blue-500">
-                        <span class="text-gray-600">包含影视轮播（分组）</span>
-                    </label>
-                    <label class="flex items-center">
-                        <input type="checkbox" id="bcOnlyCheckbox" class="mr-2 h-5 w-5 text-blue-500">
-                        <span class="text-gray-600">只生成冰茶频道（无需填IP或URL）</span>
-                    </label>
-                    <label class="flex items-center">
-                        <select id="playbackSelect" class="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                            <option value="7" selected>7天回看</option>
-                            <option value="1">1天回看</option>
-                        </select>
-                        <span class="text-gray-600 ml-2">选择回看时长</span>
-                    </label>
-                </div>
+            <div id="advancedContent" class="hidden mt-4 space-y-3">
+                <label class="flex items-center">
+                    <input type="checkbox" id="mishitongCheckbox" class="mr-2 h-5 w-5 text-blue-500">
+                    <span class="text-gray-600">包含咪视通（分组）</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" id="lunboCheckbox" checked class="mr-2 h-5 w-5 text-blue-500">
+                    <span class="text-gray-600">包含影视轮播（分组）</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" id="bcOnlyCheckbox" class="mr-2 h-5 w-5 text-blue-500">
+                    <span class="text-gray-600">只生成冰茶频道（无需IP/URL）</span>
+                </label>
+                <label class="flex items-center">
+                    <select id="playbackSelect" class="p-2 border rounded-lg transition">
+                        <option value="7" selected>7天回看</option>
+                        <option value="1">1天回看</option>
+                    </select>
+                    <span class="text-gray-600 ml-2">选择回看时长</span>
+                </label>
             </div>
         </div>
 
         <div class="section-card p-6 mb-6">
             <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-info-circle mr-2"></i> 使用说明</h2>
-            <p class="text-gray-600">如需看轮播可配置IP地址或URL，否则可直接生成订阅链接（就是不懂不用填！就这么简单！），加入我们的 <a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank" class="text-blue-500 hover:underline">TG群</a> 获取更多信息。</p>
+            <p class="text-gray-600">配置IP或URL看轮播，或直接生成订阅链接（不懂可不填），加入 <a href="https://t.me/+r1PyU6_zT3o0ZmRl" target="_blank" class="text-blue-500 hover:underline">TG群</a> 获取更多信息。</p>
         </div>
 
         <div class="flex gap-4 mb-6">
-            <button onclick="copyOverseasJsonLink()" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-lg hover:from-blue-600 hover:to-blue-700 transition duration-200 flex items-center justify-center">
-                <i class="fas fa-globe mr-2"></i> 生成影视专用接口（安卓推荐）
+            <button onclick="copyOverseasJsonLink()" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-lg hover:from-blue-600 hover:to-blue-700 transition flex items-center justify-center">
+                <i class="fas fa-globe mr-2"></i> 生成影视专用接口
             </button>
-            <button onclick="copyPlayLink()" class="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-lg hover:from-green-600 hover:to-green-700 transition duration-200 flex items-center justify-center">
+            <button onclick="copyPlayLink()" class="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-lg hover:from-green-600 hover:to-green-700 transition flex items-center justify-center">
                 <i class="fas fa-play mr-2"></i> 生成订阅链接
             </button>
         </div>
@@ -251,17 +206,12 @@
 
     <script>
         if (!AbortSignal.timeout) {
-            AbortSignal.timeout = function(ms) {
+            AbortSignal.timeout = ms => {
                 const controller = new AbortController();
                 setTimeout(() => controller.abort(), ms);
                 return controller.signal;
             };
         }
-
-        const bptvUrl = '/bptv.m3u';
-        const mishitongUrl = '/mishitong.m3u';
-        let originalM3uData = '';
-        let isTxtFormat = false;
 
         const predefinedUrls = [
             'https://live.188766.xyz',
@@ -271,49 +221,28 @@
             'https://live.metshop.top'
         ];
 
-        // 初始化自定义下拉菜单
         function initCustomDropdown() {
             const dropdown = document.getElementById('customDropdown');
-            dropdown.innerHTML = '';
-            
-            predefinedUrls.forEach(url => {
-                const a = document.createElement('a');
-                // 只显示域名部分，更简洁
+            dropdown.innerHTML = predefinedUrls.map(url => {
                 const displayText = url.replace(/^https?:\/\//, '');
-                a.textContent = displayText;
-                a.onclick = function() {
-                    document.getElementById('fullUrlInput').value = displayText;
-                    // 根据URL设置协议
-                    if (url.startsWith('https://')) {
-                        document.getElementById('protocolSelect').value = 'https://';
-                    } else {
-                        document.getElementById('protocolSelect').value = 'http://';
-                    }
-                    dropdown.classList.remove('show');
-                };
-                dropdown.appendChild(a);
-            });
+                return `<a onclick="document.getElementById('fullUrlInput').value='${displayText}';document.getElementById('protocolSelect').value='${url.startsWith('https://') ? 'https://' : 'http://'}';this.parentNode.classList.remove('show');">${displayText}</a>`;
+            }).join('');
         }
 
-        // 显示/隐藏自定义下拉菜单
         function toggleDropdown() {
-            const dropdown = document.getElementById('customDropdown');
-            dropdown.classList.toggle('show');
+            document.getElementById('customDropdown').classList.toggle('show');
         }
 
-        // 点击页面其他地方时关闭下拉菜单
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', e => {
             const dropdown = document.getElementById('customDropdown');
             const input = document.getElementById('fullUrlInput');
-            if (!input.contains(event.target) && !dropdown.contains(event.target)) {
+            if (!input.contains(e.target) && !dropdown.contains(e.target)) {
                 dropdown.classList.remove('show');
             }
         });
 
         function needsUrlEncoding(str) {
-            if (/%[0-9A-Fa-f]{2}/.test(str)) return false;
-            const specialChars = /[&=?#\s]|[^\x00-\x7F]/;
-            return specialChars.test(str);
+            return !/%[0-9A-Fa-f]{2}/.test(str) && /[&=?#\s]|[^\x00-\x7F]/.test(str);
         }
 
         function getFullUrl() {
@@ -323,308 +252,181 @@
             return predefinedUrls.includes(fullUrl) ? fullUrl : fullUrl;
         }
 
-        function getHostname(url) {
-            try {
-                return new URL(url).hostname;
-            } catch (e) {
-                return '';
-            }
-        }
-
-        function showModal(message, buttons, link = '') {
+        function showModal(message, buttons) {
             const modal = document.getElementById('customModal');
-            const messageEl = document.getElementById('modalMessage');
+            document.getElementById('modalMessage').innerHTML = message;
             const buttonsEl = document.getElementById('modalButtons');
-            
-            messageEl.innerHTML = message;
-            buttonsEl.innerHTML = '';
-
-            buttons.forEach(btn => {
-                const button = document.createElement('button');
-                button.textContent = btn.text;
-                button.className = 'bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 transition';
-                button.onclick = () => {
-                    modal.style.display = 'none';
-                    if (btn.onClick) btn.onClick();
-                };
-                buttonsEl.appendChild(button);
-            });
-
+            buttonsEl.innerHTML = buttons.map(btn => 
+                `<button class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 transition" onclick="this.closest('.modal').style.display='none';${btn.onClick ? btn.onClick : ''}">${btn.text}</button>`
+            ).join('');
             modal.style.display = 'flex';
         }
 
         function validateUrlInput(value, callback) {
-            const protocol = document.getElementById('protocolSelect').value;
-            // Extract domain part from predefinedUrls for comparison
-            const predefinedDomains = predefinedUrls.map(url => url.replace(/^https?:\/\//, ''));
-            if (predefinedDomains.includes(value)) {
-                callback('valid');
-                return;
+            if (predefinedUrls.map(url => url.replace(/^https?:\/\//, '')).includes(value)) {
+                return callback('valid');
             }
             if (value && !value.includes(':')) {
                 showModal(`您输入的自定义URL（${value}）缺少端口号。\n通常需要端口号（例如: ${value}:35455）。\n请选择如何处理：`, [
-                    { text: '使用默认端口35455', onClick: () => callback('defaultPort') },
-                    { text: '确定不用端口号', onClick: () => callback('noPort') },
-                    { text: '返回修改', onClick: () => callback('edit') }
+                    { text: '使用默认端口35455', onClick: "callback('defaultPort')" },
+                    { text: '确定不用端口号', onClick: "callback('noPort')" },
+                    { text: '返回修改', onClick: "callback('edit')" }
                 ]);
             } else {
                 callback('valid');
             }
         }
 
-        function fallbackCopyText(text, successCallback, errorCallback) {
-            const textArea = document.createElement('textarea');
-            textArea.value = text;
-            textArea.style.position = 'fixed';
-            textArea.style.opacity = '0';
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-            
-            try {
-                const successful = document.execCommand('copy');
-                document.body.removeChild(textArea);
-                if (successful) {
-                    successCallback();
-                } else {
-                    errorCallback();
-                }
-            } catch (err) {
-                document.body.removeChild(textArea);
-                errorCallback();
-            }
-        }
-
-        function copyToClipboard(text, successMessage, linkType) {
+        function copyToClipboard(text, successMessage) {
             const generatedLinkArea = document.getElementById('generatedLink');
             generatedLinkArea.value = text;
+            const showError = () => {
+                generatedLinkArea.classList.remove('hidden');
+                showModal(`复制失败！可手动复制以下链接：<br><textarea readonly class="w-full p-3 border rounded-lg bg-gray-50 mt-2">${text}</textarea>`, [{ text: '确定' }]);
+            };
 
-            if (navigator.clipboard && navigator.clipboard.writeText) {
+            if (navigator.clipboard?.writeText) {
                 navigator.clipboard.writeText(text).then(() => {
                     generatedLinkArea.classList.add('hidden');
-                    showModal(successMessage, [{ text: '确定', onClick: () => {} }]);
-                }).catch(err => {
-                    console.error('Clipboard API failed: ', err);
-                    generatedLinkArea.classList.remove('hidden');
-                    showModal(
-                        `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly class="w-full p-3 border rounded-lg bg-gray-50 mt-2">${text}</textarea>`,
-                        [{ text: '确定', onClick: () => {} }]
-                    );
-                });
+                    showModal(successMessage, [{ text: '确定' }]);
+                }).catch(showError);
             } else {
-                fallbackCopyText(
-                    text,
-                    () => {
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                textArea.style.position = 'fixed';
+                textArea.style.opacity = '0';
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    if (document.execCommand('copy')) {
                         generatedLinkArea.classList.add('hidden');
-                        showModal(successMessage, [{ text: '确定', onClick: () => {} }]);
-                    },
-                    () => {
-                        generatedLinkArea.classList.remove('hidden');
-                        showModal(
-                            `复制失败！可手动复制以下链接到播放器中播放：<br><textarea readonly class="w-full p-3 border rounded-lg bg-gray-50 mt-2">${text}</textarea>`,
-                            [{ text: '确定', onClick: () => {} }]
-                        );
+                        showModal(successMessage, [{ text: '确定' }]);
+                    } else {
+                        showError();
                     }
-                );
+                } catch {
+                    showError();
+                } finally {
+                    document.body.removeChild(textArea);
+                }
             }
         }
 
         function generatePlayLink(ip, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl = '', password = '', playbackDays = '7') {
-            let playLink;
-            if (fullUrl) {
-                const urlParam = needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl;
-                playLink = `https://fy.188766.xyz/?url=${urlParam}`;
-            } else if (ip) {
-                playLink = `https://fy.188766.xyz/?ip=${ip}`;
-            } else {
-                playLink = `https://fy.188766.xyz/?ip=`;
-            }
-
+            const baseUrl = fullUrl 
+                ? `https://fy.188766.xyz/?url=${needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl}`
+                : `https://fy.188766.xyz/?ip=${ip || ''}`;
+            const params = [];
             if (bcOnlyEnabled) {
-                playLink += `&bconly=true`;
+                params.push('bconly=true');
             } else {
-                if (includeMishitong) playLink += `&mishitong=true`;
-                if (!includeLunbo) playLink += `&lunbo=false`;
+                if (includeMishitong) params.push('mishitong=true');
+                if (!includeLunbo) params.push('lunbo=false');
             }
-            if (password) playLink += `&mima=${encodeURIComponent(password)}`;
-            if (playbackDays === '1') playLink += `&huikan=1`;
-
-            return playLink;
+            if (password) params.push(`mima=${encodeURIComponent(password)}`);
+            if (playbackDays === '1') params.push('huikan=1');
+            return params.length ? `${baseUrl}&${params.join('&')}` : baseUrl;
         }
 
-        function copyPlayLink() {
-            let ipInput = '';
-            let fullUrl = '';
-            if (document.querySelector('.tab-button.active').textContent === '使用IP地址') {
-                ipInput = document.getElementById('ipInput').value.trim();
-            } else {
-                fullUrl = getFullUrl();
-            }
-            const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-            const includeLunbo = document.getElementById('lunboCheckbox').checked;
-            const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
-            const password = document.getElementById('passwordInput').value.trim();
-            const playbackDays = document.getElementById('playbackSelect').value;
+        function copyLink(isOverseas) {
+            const ipInput = document.querySelector('.tab-button.active').textContent === '使用IP地址' 
+                ? document.getElementById('ipInput').value.trim() 
+                : '';
+            const fullUrl = ipInput ? '' : getFullUrl();
+            const options = {
+                includeMishitong: document.getElementById('mishitongCheckbox').checked,
+                includeLunbo: document.getElementById('lunboCheckbox').checked,
+                bcOnlyEnabled: document.getElementById('bcOnlyCheckbox').checked,
+                password: document.getElementById('passwordInput').value.trim(),
+                playbackDays: document.getElementById('playbackSelect').value
+            };
 
             if (ipInput && fullUrl) {
-                showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定', onClick: () => {} }]);
-                return;
+                return showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定' }]);
             }
 
-            const playLink = generatePlayLink(ipInput, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password, playbackDays);
-            copyToClipboard(playLink, '订阅链接已复制到剪贴板！请粘贴到播放器中使用！', 'play');
+            let playLink = generatePlayLink(ipInput, options.includeMishitong, options.includeLunbo, options.bcOnlyEnabled, fullUrl, options.password, options.playbackDays);
+            if (isOverseas) playLink += '&haiwai=true';
+            copyToClipboard(playLink, isOverseas 
+                ? '影视专用接口已复制！请粘贴到影视或OK影视的直播接口！' 
+                : '订阅链接已复制！请粘贴到播放器中使用！');
         }
 
-        function copyOverseasJsonLink() {
-            let ipInput = '';
-            let fullUrl = '';
-            if (document.querySelector('.tab-button.active').textContent === '使用IP地址') {
-                ipInput = document.getElementById('ipInput').value.trim();
-            } else {
-                fullUrl = getFullUrl();
-            }
-            const includeMishitong = document.getElementById('mishitongCheckbox').checked;
-            const includeLunbo = document.getElementById('lunboCheckbox').checked;
-            const bcOnlyEnabled = document.getElementById('bcOnlyCheckbox').checked;
-            const password = document.getElementById('passwordInput').value.trim();
-            const playbackDays = document.getElementById('playbackSelect').value;
-
-            if (ipInput && fullUrl) {
-                showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定', onClick: () => {} }]);
-                return;
-            }
-
-            let playLink = generatePlayLink(ipInput, includeMishitong, includeLunbo, bcOnlyEnabled, fullUrl, password, playbackDays);
-            playLink += `&haiwai=true`;
-
-            copyToClipboard(playLink, '影视专用接口已复制到剪贴板！请粘贴到影视或者OK影视的直播接口中使用！', 'overseas');
-        }
+        function copyPlayLink() { copyLink(false); }
+        function copyOverseasJsonLink() { copyLink(true); }
 
         function toggleAdvanced() {
-            const content = document.getElementById('advancedContent');
-            content.classList.toggle('hidden');
+            document.getElementById('advancedContent').classList.toggle('hidden');
         }
 
         document.getElementById('bcOnlyCheckbox').addEventListener('change', function() {
             if (this.checked) {
-                showModal('勾选后，生成的订阅将仅包含冰茶专用频道，不包含肥羊内容。确定要这样吗？', [
-                    {
-                        text: '确定',
-                        onClick: () => {}
-                    },
-                    {
-                        text: '取消',
-                        onClick: () => {
-                            this.checked = false;
-                        }
-                    }
+                showModal('勾选后，仅生成冰茶专用频道，不含肥羊内容。确定？', [
+                    { text: '确定' },
+                    { text: '取消', onClick: "this.closest('.modal').querySelector('input[type=checkbox]').checked=false" }
                 ]);
             }
         });
 
-        document.getElementById('fullUrlInput').addEventListener('focus', function() {
-            toggleDropdown();
-        });
-
-        document.getElementById('fullUrlInput').addEventListener('input', function() {
-            const value = this.value.trim();
+        document.getElementById('fullUrlInput').addEventListener('input', function(e) {
+            let value = this.value.trim();
             const protocolSelect = document.getElementById('protocolSelect');
             if (value.match(/^https?:\/\//)) {
-                let cleanedValue = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
-                this.value = cleanedValue;
-                if (value.startsWith('https://')) {
-                    protocolSelect.value = 'https://';
-                } else if (value.startsWith('http://')) {
-                    protocolSelect.value = 'http://';
-                }
+                value = value.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
+                this.value = value;
+                protocolSelect.value = value.startsWith('https://') ? 'https://' : 'http://';
             }
             const predefinedDomains = predefinedUrls.map(url => url.replace(/^https?:\/\//, ''));
             if (predefinedDomains.includes(value)) {
                 const matchedUrl = predefinedUrls.find(url => url.replace(/^https?:\/\//, '') === value);
-                if (matchedUrl) {
-                    protocolSelect.value = matchedUrl.startsWith('https://') ? 'https://' : 'http://';
-                }
+                protocolSelect.value = matchedUrl.startsWith('https://') ? 'https://' : 'http://';
             }
-            
-            // 根据输入内容过滤下拉选项
             filterDropdownOptions(value);
         });
 
-        // 过滤下拉选项
-        function filterDropdownOptions(filter) {
-            const dropdown = document.getElementById('customDropdown');
-            const options = dropdown.getElementsByTagName('a');
-            
-            for (let i = 0; i < options.length; i++) {
-                const option = options[i];
-                if (option.textContent.toLowerCase().includes(filter.toLowerCase())) {
-                    option.style.display = "block";
-                } else {
-                    option.style.display = "none";
-                }
-            }
-        }
-
         document.getElementById('fullUrlInput').addEventListener('paste', function(e) {
             const pastedData = (e.clipboardData || window.clipboardData).getData('text').trim();
-            let cleanedValue = pastedData;
             const protocolSelect = document.getElementById('protocolSelect');
             if (pastedData.match(/^https?:\/\//)) {
                 e.preventDefault();
-                cleanedValue = pastedData.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
+                const cleanedValue = pastedData.replace(/^(https?:\/\/)/, '').replace(/\/+$/, '');
                 this.value = cleanedValue;
-                if (pastedData.startsWith('https://')) {
-                    protocolSelect.value = 'https://';
-                } else if (pastedData.startsWith('http://')) {
-                    protocolSelect.value = 'http://';
-                }
-            }
-            if (predefinedUrls.includes(`${protocolSelect.value}${cleanedValue}`)) {
-                this.value = cleanedValue;
+                protocolSelect.value = pastedData.startsWith('https://') ? 'https://' : 'http://';
             }
         });
+
+        document.getElementById('fullUrlInput').addEventListener('focus', toggleDropdown);
 
         document.getElementById('fullUrlInput').addEventListener('blur', function() {
             const value = this.value.trim();
-            if (!value) {
-                return;
+            if (value) {
+                validateUrlInput(value, result => {
+                    if (result === 'edit') {
+                        this.focus();
+                        this.select();
+                    } else if (result === 'defaultPort') {
+                        this.value = `${value}:35455`;
+                    }
+                });
             }
-            validateUrlInput(value, (result) => {
-                if (result === 'edit') {
-                    this.focus();
-                    this.select();
-                } else if (result === 'defaultPort') {
-                    this.value = `${value}:35455`;
-                }
-            });
         });
 
-        // Tab switching
-        function openTab(tabName) {
-            const tabButtons = document.querySelectorAll('.tab-button');
-            const tabContents = document.querySelectorAll('.tab-content');
-
-            tabButtons.forEach(button => {
-                button.classList.remove('active');
-            });
-            tabContents.forEach(content => {
-                content.classList.remove('active');
-            });
-
-            event.target.classList.add('active');
-            document.getElementById(tabName + 'Tab').classList.add('active');
-
-            if (tabName === 'ip') {
-                document.getElementById('fullUrlInput').value = '';
-            } else {
-                document.getElementById('ipInput').value = '';
+        function filterDropdownOptions(filter) {
+            const options = document.getElementById('customDropdown').getElementsByTagName('a');
+            for (let option of options) {
+                option.style.display = option.textContent.toLowerCase().includes(filter.toLowerCase()) ? 'block' : 'none';
             }
         }
 
-        // 初始化页面
-        document.addEventListener('DOMContentLoaded', function() {
-            initCustomDropdown();
-        });
+        function openTab(tabName) {
+            document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            event.target.classList.add('active');
+            document.getElementById(tabName + 'Tab').classList.add('active');
+            document.getElementById(tabName === 'ip' ? 'fullUrlInput' : 'ipInput').value = '';
+        }
+
+        document.addEventListener('DOMContentLoaded', initCustomDropdown);
     </script>
 </body>
 </html>

@@ -15,11 +15,11 @@ https://migu.188766.xyz/?migutoken=3b133eaa5f7788823adb1e269e48228b&id=CCTV5p&ty
 #EXTINF:-1 tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV6.png" group-title="央视频道",CCTV-6 电影
 https://migu.188766.xyz/?migutoken=d57c914dfed1fae2b9e39dcf31f053c9&id=CCTV6&type=yy
 #EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV7.png" group-title="央视频道",CCTV-7 国防军事
-https://migu.188766.xyz/?migutoken=aa80bd8e95566202a8a7e36de3049083&id=CCTV7&type=yy
+https://migu.188766.xyz/?migutoken=aa80bd8e95566202a8a7e36de3049083&id=CCTV7&type=yy&playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}
 #EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV8.png" group-title="央视频道",CCTV-8 电视剧
-https://migu.188766.xyz/?migutoken=9167968620222d0d24df7fa846e7b9c8&id=CCTV8&type=yy
+https://migu.188766.xyz/?migutoken=9167968620222d0d24df7fa846e7b9c8&id=CCTV8&type=yy&playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}
 #EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV9" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV9.png" group-title="央视频道",CCTV-9 纪录
-https://migu.188766.xyz/?migutoken=b6d29f13d9bc30906290db92a32cd2cb&id=CCTV9&type=yy
+https://migu.188766.xyz/?migutoken=b6d29f13d9bc30906290db92a32cd2cb&id=CCTV9&type=yy?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}
 #EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV10" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV10.png" group-title="央视频道",CCTV-10 科教
 https://migu.188766.xyz/?migutoken=4680f878a7a4eb27d9c03aa5965b8e43&id=CCTV10&type=yy
 #EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV11.png" group-title="央视频道",CCTV-11 戏曲

@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://fy.188766.xyz/logo/sparkssssssssss/epg/pp.xml.gz" catchup="append" catchup-source="?playbackbegin=${(b)yyyyMMddHHmmss}&playbackend=${(e)yyyyMMddHHmmss}"
+#EXTM3U x-tvg-url="https://012.112114.xyz/pp.xml" catchup="append" catchup-source="?playbackbegin=${(b)yyyyMMddHHmmss}&playbackend=${(e)yyyyMMddHHmmss}"
 
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/CCTV1.png" group-title="央视频道",CCTV-1 综合
 https://migu.188766.xyz/?migutoken=56053b228701c8031b4439dcf43a962b&id=CCTV1&type=yy

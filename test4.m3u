@@ -276,24 +276,24 @@ https://migu.188766.xyz/?migutoken=e2cc6552abf75ffd4a832b8c6f3baf2d&id=%E5%9B%9B
 https://migu.188766.xyz/?migutoken=e2cc6552abf75ffd4a832b8c6f3baf2d&id=%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%864K&pp=1
 
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" http-referer="https://api.chinaaudiovisual.cn/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/四川卫视4K.png" group-title="超清频道",四川卫视4K-2
-#EXTVLCOPT:http-referer=https://api.chinaaudiovisual.cn/
 #OKYSPROP:referer=https://api.chinaaudiovisual.cn/
+#EXTVLCOPT:http-referer=https://api.chinaaudiovisual.cn/
 https://migu.188766.xyz/?migutoken=e2cc6552abf75ffd4a832b8c6f3baf2d&id=%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%864K&pp=1
 
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" http-referer="https://api.chinaaudiovisual.cn/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/四川卫视4K.png" group-title="超清频道",四川卫视4K-3
-#EXTVLCOPT:http-referer=https://api.chinaaudiovisual.cn/
 #KODIPROP:referer=https://api.chinaaudiovisual.cn/
+#EXTVLCOPT:http-referer=https://api.chinaaudiovisual.cn/
 https://migu.188766.xyz/?migutoken=e2cc6552abf75ffd4a832b8c6f3baf2d&id=%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%864K&pp=1
 
 
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" http-referer="https://api.chinaaudiovisual.cn/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/四川卫视4K.png" group-title="超清频道",四川卫视4K-4
-#EXTVLCOPT:http-referer=https://api.chinaaudiovisual.cn/
 #referer=https://api.chinaaudiovisual.cn/
+#EXTVLCOPT:http-referer=https://api.chinaaudiovisual.cn/
 https://migu.188766.xyz/?migutoken=e2cc6552abf75ffd4a832b8c6f3baf2d&id=%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%864K&pp=1
 
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" http-referer="https://api.chinaaudiovisual.cn/" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/四川卫视4K.png" group-title="超清频道",四川卫视4K-5
-#EXTVLCOPT:http-referer=https://api.chinaaudiovisual.cn/
 referer=https://api.chinaaudiovisual.cn/
+#EXTVLCOPT:http-referer=https://api.chinaaudiovisual.cn/
 https://migu.188766.xyz/?migutoken=e2cc6552abf75ffd4a832b8c6f3baf2d&id=%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%864K&pp=1
 
 

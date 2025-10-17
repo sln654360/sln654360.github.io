@@ -259,7 +259,7 @@ https://migu.188766.xyz/要用订阅的地址/gd4k
 #EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/广东卫视4K.png" group-title="超清频道",广东卫视4K
 http://ikuai.haleeyo.cn:9003/udp/239.77.0.27:5146
 #EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/深圳卫视4K.png" group-title="超清频道",深圳卫视4K
-https://migu.188766.xyz/要用订阅的地址/深圳卫视
+https://migu.188766.xyz/请使用订阅链接观看/深圳卫视
 #EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" http-user-agent="aliplayer" tvg-logo="https://fy.188766.xyz/logo/sln162/iptv-back/logo/山东卫视4K.png" group-title="超清频道",山东卫视4K
 #EXTVLCOPT:http-user-agent=aliplayer
 https://migu.188766.xyz/要用订阅的地址/sd4k

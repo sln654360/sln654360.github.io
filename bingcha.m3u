@@ -164,6 +164,7 @@ https://migu.188766.xyz/订阅后播放/新动力量创一流
 #EXTINF:-1 tvg-id="钱塘江" tvg-name="钱塘江" tvg-logo="http://wapx.cmvideo.cn:8080/publish/poms/image/5500/613/479/202210281603_5102115888_H32_1080.webp" group-title="数字频道",钱塘江
 https://migu.188766.xyz/订阅后播放/钱塘江
 
+
 #EXTINF:-1 tvg-id="卡酷少儿" tvg-name="卡酷少儿" tvg-logo="https://fy.188766.xyz/logo/taksssss/tv/icon/卡酷少儿.png" group-title="地方频道",卡酷少儿
 https://migu.188766.xyz/订阅后播放/北京卡酷少儿
 #EXTINF:-1 tvg-id="北京影视" tvg-name="北京影视" tvg-logo="https://fy.188766.xyz/logo/fanmingming/live/tv/北京影视.png" group-title="地方频道",北京影视
@@ -231,7 +232,40 @@ https://migu.188766.xyz/要用订阅的地址/hhxd
 #EXTVLCOPT:http-referer=https://live.kankanews.com/
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://live.kankanews.com/
 https://migu.188766.xyz/要用订阅的地址/mdy
-#EXTINF:-1 tvg-id=" 海南新闻" tvg-name=" 海南新闻" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/海南新闻.png" group-title="地方频道", 海南新闻
+
+#EXTINF:-1 tvg-id="广东新闻" tvg-name="广东新闻" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/广东新闻.png" group-title="地方频道",广东新闻
+https://migu.188766.xyz/要用订阅的地址/gd_gdxw
+#EXTINF:-1 tvg-id="广东珠江" tvg-name="广东珠江" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/广东珠江.png" group-title="地方频道",广东珠江
+https://migu.188766.xyz/要用订阅的地址/gd_gdzj
+#EXTINF:-1 tvg-id="广东民生" tvg-name="广东民生" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/广东民生.png" group-title="地方频道",广东民生
+https://migu.188766.xyz/要用订阅的地址/gd_gdms
+#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/广东体育.png" group-title="地方频道",广东体育
+https://migu.188766.xyz/要用订阅的地址/gd_gdty
+#EXTINF:-1 tvg-id="广东影视" tvg-name="广东影视" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/广东影视.png" group-title="地方频道",广东影视
+https://migu.188766.xyz/要用订阅的地址/gd_gdys
+#EXTINF:-1 tvg-id="广东少儿" tvg-name="广东少儿" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/广东少儿.png" group-title="地方频道",广东少儿
+https://migu.188766.xyz/要用订阅的地址/gd_gdse
+#EXTINF:-1 tvg-id="嘉佳卡通" tvg-name="嘉佳卡通" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/嘉佳卡通.png" group-title="地方频道",嘉佳卡通
+https://migu.188766.xyz/要用订阅的地址/gd_jjkt
+#EXTINF:-1 tvg-id="岭南戏曲" tvg-name="岭南戏曲" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/岭南戏曲.png" group-title="地方频道",岭南戏曲
+https://migu.188766.xyz/要用订阅的地址/gd_lnxq
+#EXTINF:-1 tvg-id="广东移动" tvg-name="广东移动" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/广东移动.png" group-title="地方频道",广东移动
+https://migu.188766.xyz/要用订阅的地址/gd_gdyd
+#EXTINF:-1 tvg-id="现代教育" tvg-name="现代教育" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/现代教育.png" group-title="地方频道",现代教育
+https://migu.188766.xyz/要用订阅的地址/gd_xdjy
+#EXTINF:-1 tvg-id="广东台经典剧" tvg-name="广东台经典剧" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/广东台经典剧.png" group-title="地方频道",广东台经典剧
+https://migu.188766.xyz/要用订阅的地址/gd_gdjdj
+#EXTINF:-1 tvg-id="纪录片" tvg-name="纪录片" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/纪录片.png" group-title="地方频道",纪录片
+https://migu.188766.xyz/要用订阅的地址/gd_gdjlp
+#EXTINF:-1 tvg-id="GRTN健康频道" tvg-name="GRTN健康频道" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/GRTN健康频道.png" group-title="地方频道",GRTN健康频道
+https://migu.188766.xyz/要用订阅的地址/gd_gdjk
+#EXTINF:-1 tvg-id="GRTN文化频道" tvg-name="GRTN文化频道" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/GRTN文化频道.png" group-title="地方频道",GRTN文化频道
+https://migu.188766.xyz/要用订阅的地址/gd_gdwh
+#EXTINF:-1 tvg-id="GRTN生活频道" tvg-name="GRTN生活频道" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/GRTN生活频道.png" group-title="地方频道",GRTN生活频道
+https://migu.188766.xyz/要用订阅的地址/gd_gdsh
+
+
+#EXTINF:-1 tvg-id="海南新闻" tvg-name="海南新闻" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/海南新闻.png" group-title="地方频道",海南新闻
 https://migu.188766.xyz/要用订阅的地址/hn_xwpd
 #EXTINF:-1 tvg-id="海南文旅" tvg-name="海南文旅" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/海南文旅.png" group-title="地方频道",海南文旅
 https://migu.188766.xyz/要用订阅的地址/hn_wlpd

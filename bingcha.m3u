@@ -256,6 +256,11 @@ https://migu.188766.xyz/要用订阅的地址/hhxd
 #EXTVLCOPT:http-referer=https://live.kankanews.com/
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://live.kankanews.com/
 https://migu.188766.xyz/要用订阅的地址/mdy
+#EXTINF:-1 tvg-id="爱上海" tvg-name="爱上海" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/上海ICS.png" group-title="地方频道",爱上海
+#EXTVLCOPT:referer=https://live.kankanews.com/
+#EXTVLCOPT:http-referer=https://live.kankanews.com/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://live.kankanews.com/
+https://migu.188766.xyz/要用订阅的地址/ash
 
 #EXTINF:-1 tvg-id="海南新闻" tvg-name="海南新闻" tvg-logo="https://fy.188766.xyz/logo/sparkssssssssss/epg/logo/海南新闻.png" group-title="地方频道",海南新闻
 https://migu.188766.xyz/要用订阅的地址/hn_xwpd

@@ -316,8 +316,8 @@
 
         function generatePlayLink(ip, includeMishitong, includeLunbo, fullUrl = '', password = '', playbackDays = '7') {
             const baseUrl = fullUrl 
-                ? `https://fy.188766.xyz/?url=${needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl}`
-                : `https://fy.188766.xyz/?ip=${ip || ''}`;
+                ? `https://bc.188766.xyz/?url=${needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl}`
+                : `https://bc.188766.xyz/?ip=${ip || ''}`;
             const params = [];
             if (includeMishitong) params.push('mishitong=true');
             if (!includeLunbo) params.push('lunbo=false');

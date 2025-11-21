@@ -6,10 +6,12 @@
     <title>冰茶TV官网</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/FortAwesome/Font-Awesome/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #3b82f6;
             --primary-dark: #2563eb;
+            --primary-light: #93c5fd;
             --secondary: #10b981;
             --secondary-dark: #059669;
             --accent: #f59e0b;
@@ -20,30 +22,65 @@
         
         body {
             font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 50%, #dbeafe 100%);
             min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(147, 197, 253, 0.2) 0%, transparent 20%),
+                radial-gradient(circle at 90% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 50% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 30%);
+            z-index: -1;
         }
         
         .card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            box-shadow: 
+                0 10px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
         }
         
         .card:hover {
-            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.05);
-            transform: translateY(-2px);
+            box-shadow: 
+                0 20px 40px -10px rgba(0, 0, 0, 0.15), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            transform: translateY(-4px);
         }
         
         .header-gradient {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
-            border-radius: 16px;
+            border-radius: 20px;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
         }
         
         .header-gradient::before {
@@ -53,17 +90,37 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.2;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.6;
         }
         
         .btn-primary {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
-            border-radius: 12px;
+            border-radius: 14px;
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-primary:hover::before {
+            left: 100%;
         }
         
         .btn-primary:hover {
@@ -74,10 +131,27 @@
         .btn-secondary {
             background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
             color: white;
-            border-radius: 12px;
+            border-radius: 14px;
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-secondary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-secondary:hover::before {
+            left: 100%;
         }
         
         .btn-secondary:hover {
@@ -86,10 +160,11 @@
         }
         
         .input-field {
-            border-radius: 12px;
+            border-radius: 14px;
             border: 2px solid #e2e8f0;
             transition: all 0.3s ease;
             background: white;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
         }
         
         .input-field:focus {
@@ -99,7 +174,7 @@
         
         .tab-button {
             flex: 1;
-            padding: 14px;
+            padding: 16px;
             background: #f1f5f9;
             border: 1px solid #cbd5e1;
             cursor: pointer;
@@ -111,11 +186,11 @@
         }
         
         .tab-button:first-child {
-            border-radius: 12px 0 0 12px;
+            border-radius: 14px 0 0 14px;
         }
         
         .tab-button:last-child {
-            border-radius: 0 12px 12px 0;
+            border-radius: 0 14px 14px 0;
         }
         
         .tab-button:hover { 
@@ -135,7 +210,7 @@
             border: 1px solid #cbd5e1;
             border-top: none;
             background: #f9fafb;
-            border-radius: 0 0 16px 16px;
+            border-radius: 0 0 20px 20px;
         }
         
         .tab-content.active { 
@@ -156,7 +231,7 @@
             min-width: 100%;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             z-index: 10;
-            border-radius: 12px;
+            border-radius: 14px;
             max-height: 200px;
             overflow-y: auto;
             border: 1px solid #e2e8f0;
@@ -190,12 +265,13 @@
             justify-content: center;
             align-items: center;
             animation: fadeIn 0.3s ease-in-out;
+            backdrop-filter: blur(5px);
         }
         
         .modal-content {
             background: white;
             padding: 30px;
-            border-radius: 16px;
+            border-radius: 20px;
             max-width: 500px;
             text-align: center;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -207,9 +283,9 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
             margin-right: 16px;
@@ -225,10 +301,12 @@
         .status-indicator {
             display: inline-flex;
             align-items: center;
-            padding: 8px 16px;
+            padding: 10px 18px;
             border-radius: 20px;
             background: rgba(255, 255, 255, 0.2);
             font-size: 0.9rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .status-dot {
@@ -272,9 +350,11 @@
         .footer a {
             color: var(--primary);
             text-decoration: none;
+            transition: color 0.2s;
         }
         
         .footer a:hover {
+            color: var(--primary-dark);
             text-decoration: underline;
         }
         
@@ -301,7 +381,7 @@
             .container { padding: 16px; }
             .flex.gap-4 { flex-direction: column; gap: 12px; }
             .flex.gap-4 button { width: 100%; }
-            .tab-button { padding: 12px; font-size: 14px; }
+            .tab-button { padding: 14px; font-size: 14px; }
             .card { padding: 20px; }
             input, select { font-size: 16px; }
             .feature-item {
@@ -319,9 +399,29 @@
                 gap: 12px;
             }
         }
+        
+        /* 新增装饰元素 */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(59, 130, 246, 0.1);
+            animation: float 6s ease-in-out infinite;
+            z-index: -1;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+            100% { transform: translateY(0px) rotate(360deg); }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
+    <!-- 浮动装饰元素 -->
+    <div class="floating-element" style="width: 100px; height: 100px; top: 10%; left: 5%;"></div>
+    <div class="floating-element" style="width: 150px; height: 150px; top: 60%; right: 5%; animation-delay: -2s;"></div>
+    <div class="floating-element" style="width: 80px; height: 80px; bottom: 20%; left: 10%; animation-delay: -4s;"></div>
+    
     <div class="container mx-auto px-4 py-8 max-w-4xl">
         <!-- 头部区域 -->
         <div class="card mb-8">
@@ -499,12 +599,15 @@
 
         <!-- 页脚 -->
         <div class="footer mt-8">
-            <p>© 2025 冰茶TV - 免费分享，用爱发电</p>
+            <p>© <span id="currentYear"></span> 冰茶TV - 免费分享，用爱发电</p>
             <p class="mt-2">遇到问题？<a href="https://t.me/x188766" target="_blank">加入Telegram群组</a></p>
         </div>
     </div>
 
     <script>
+        // 更新年份
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
         // 保持原有JavaScript功能不变，只调整样式相关部分
         if (!AbortSignal.timeout) {
             AbortSignal.timeout = ms => {

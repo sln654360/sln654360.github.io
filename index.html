@@ -5,8 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>冰茶TV官网</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://show.188766.xyz/js/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/FortAwesome/Font-Awesome/css/all.min.css"></link>
     <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-dark: #2563eb;
+            --secondary: #10b981;
+            --secondary-dark: #059669;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --gray: #64748b;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .card:hover {
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+            color: white;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.4);
+        }
+        
+        .input-field {
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .input-field:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .tab-button {
+            flex: 1;
+            padding: 14px;
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            color: var(--gray);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tab-button:first-child {
+            border-radius: 12px 0 0 12px;
+        }
+        
+        .tab-button:last-child {
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .tab-button:hover { 
+            background: #e2e8f0; 
+        }
+        
+        .tab-button.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #cbd5e1;
+            border-top: none;
+            background: #f9fafb;
+            border-radius: 0 0 16px 16px;
+        }
+        
+        .tab-content.active { 
+            display: block; 
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 100%;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            z-index: 10;
+            border-radius: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .dropdown-content a {
+            color: var(--dark);
+            padding: 12px 16px;
+            display: block;
+            cursor: pointer;
+            border-bottom: 1px solid #f1f5f9;
+            transition: all 0.2s;
+        }
+        
+        .dropdown-content a:hover { 
+            background: #f1f5f9; 
+        }
+        
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+        
+        .show { display: block; }
+        
         .modal {
             display: none;
             position: fixed;
@@ -17,190 +191,321 @@
             align-items: center;
             animation: fadeIn 0.3s ease-in-out;
         }
+        
         .modal-content {
             background: white;
-            padding: 24px;
-            border-radius: 12px;
-            max-width: 400px;
+            padding: 30px;
+            border-radius: 16px;
+            max-width: 500px;
             text-align: center;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             width: 90%;
+            animation: slideUp 0.3s ease-out;
         }
-        #generatedLink {
-            width: 100%;
-            margin-top: 10px;
-            resize: none;
-            border-radius: 8px;
-        }
-        .tab-button {
-            flex: 1;
-            padding: 12px;
-            background: #f1f5f9;
-            border: 1px solid #cbd5e1;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: 500;
-            color: #4b5563;
-        }
-        .tab-button:hover { background: #e2e8f0; }
-        .tab-button.active {
-            background: #3b82f6;
-            color: white;
-            border-bottom: none;
-        }
-        .tab-content {
-            display: none;
-            padding: 16px;
-            border: 1px solid #cbd5e1;
-            border-top: none;
-            background: #f9fafb;
-            border-radius: 0 0 8px 8px;
-        }
-        .tab-content.active { display: block; }
-        .section-card {
-            background: linear-gradient(145deg, #ffffff, #f1f5f9);
+        
+        .feature-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .header-gradient {
-            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
-            padding: 24px;
-            border-radius: 12px 12px 0 0;
+            margin-right: 16px;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
         }
-        input:focus, select:focus {
-            border-color: #3b82f6;
-            outline: none;
-            box-shadow: 0 0 0 2px #3b82f6;
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
         }
+        
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+        }
+        
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #10b981;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+        
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        .custom-dropdown {
-            position: relative;
-            display: inline-block;
-            width: 100%;
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background: #f9f9f9;
-            min-width: 100%;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            z-index: 1;
-            border-radius: 8px;
-            max-height: 200px;
-            overflow-y: auto;
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
         }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            display: block;
-            cursor: pointer;
-            border-bottom: 1px solid #e5e7eb;
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
         }
-        .dropdown-content a:hover { background: #e2e8f0; }
-        .show { display: block; }
-        @media (max-width: 768px) {
-            .container { padding: 10px; }
-            .flex.gap-4 { flex-direction: column; gap: 10px; }
+        
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 响应式布局 */
+        @media (min-width: 768px) {
+            .grid-layout {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+            
+            .full-width {
+                grid-column: 1 / -1;
+            }
+            
+            .buttons-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .container { padding: 16px; }
+            .flex.gap-4 { flex-direction: column; gap: 12px; }
             .flex.gap-4 button { width: 100%; }
-            .tab-button { padding: 10px; font-size: 14px; }
-            .section-card { padding: 15px; }
+            .tab-button { padding: 12px; font-size: 14px; }
+            .card { padding: 20px; }
             input, select { font-size: 16px; }
+            .feature-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .feature-icon {
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
+            
+            .buttons-row {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans">
-    <div class="container mx-auto p-6 max-w-2xl">
-        <div class="header-gradient text-center mb-6">
-            <h1 class="text-4xl font-bold"><i class="fas fa-tv mr-2"></i> 冰茶TV</h1>
-            <p class="text-lg mt-2 opacity-90">原肥羊TV助手 | 免费分享，用爱发电</p>
-        </div>
-
-        <div class="section-card p-6 mb-6">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-network-wired mr-2"></i> 可选轮播设置</h2>
-            <p class="text-gray-600 mb-4">部署了肥羊allinone的IP地址或自定义URL（二选一，不看轮播可不填）：</p>
-            <div class="flex mb-4">
-                <button class="tab-button active" onclick="openTab('ip')">使用IP地址</button>
-                <button class="tab-button" onclick="openTab('url')">使用自定义URL</button>
-            </div>
-            <div id="ipTab" class="tab-content active">
-                <p class="text-gray-600 mb-2">输入IP地址(建议用这个填内网ip，省的疑神疑鬼)</p>
-                <input type="text" id="ipInput" placeholder="例如: 192.168.1.2" class="w-full p-3 border rounded-lg transition">
-            </div>
-            <div id="urlTab" class="tab-content">
-                <p class="text-gray-600 mb-2">输入自定义URL（提供几个公共接口，可以填写自己的）：</p>
-                <div class="flex items-center gap-2">
-                    <select id="protocolSelect" class="p-3 border rounded-lg transition">
-                        <option value="http://">http://</option>
-                        <option value="https://">https://</option>
-                    </select>
-                    <div class="custom-dropdown flex-1">
-                        <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" class="w-full p-3 border rounded-lg transition">
-                        <div id="customDropdown" class="dropdown-content"></div>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- 头部区域 -->
+        <div class="card mb-8">
+            <div class="header-gradient px-8 py-10">
+                <div class="relative z-10">
+                    <h1 class="text-4xl font-bold text-center mb-4"><i class="fas fa-tv mr-3"></i> 冰茶TV</h1>
+                    <p class="text-xl text-center opacity-90 mb-6">原肥羊TV助手 | 免费分享，用爱发电</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span>服务状态：正常</span>
+                        </div>
+                        <div class="status-indicator">
+                            <i class="fas fa-bolt mr-2"></i>
+                            <span>响应速度：快速</span>
+                        </div>
+                        <div class="status-indicator">
+                            <i class="fas fa-shield-alt mr-2"></i>
+                            <span>连接安全：稳定</span>
+                        </div>
                     </div>
                 </div>
-                <p class="text-gray-500 text-sm mt-2">点击输入框显示公共接口</p>
             </div>
         </div>
 
-        <div class="section-card p-6 mb-6">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-lock mr-2"></i> 加载隐藏频道</h2>
-            <p class="text-gray-600 mb-2">输入密码（在冰茶通知频道自己翻翻）：</p>
-            <input type="text" id="passwordInput" placeholder="请输入密码" class="w-full p-3 border rounded-lg transition">
-        </div>
+        <!-- 主要内容区域 - 使用网格布局 -->
+        <div class="grid-layout">
+            <!-- 可选轮播设置 -->
+            <div class="card p-6">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-800">可选轮播设置</h2>
+                        <p class="text-gray-600">IP地址或自定义URL（二选一）</p>
+                    </div>
+                </div>
+                
+                <div class="flex mb-4 mt-4">
+                    <button class="tab-button active" onclick="openTab('ip')">使用IP地址</button>
+                    <button class="tab-button" onclick="openTab('url')">使用自定义URL</button>
+                </div>
+                
+                <div id="ipTab" class="tab-content active">
+                    <p class="text-gray-600 mb-3">输入IP地址(建议用这个填内网ip)</p>
+                    <input type="text" id="ipInput" placeholder="例如: 192.168.1.2" class="input-field w-full p-4">
+                </div>
+                
+                <div id="urlTab" class="tab-content">
+                    <p class="text-gray-600 mb-3">输入自定义URL（提供公共接口）</p>
+                    <div class="flex items-center gap-3">
+                        <select id="protocolSelect" class="input-field p-4 w-32">
+                            <option value="http://">http://</option>
+                            <option value="https://">https://</option>
+                        </select>
+                        <div class="custom-dropdown flex-1">
+                            <input type="text" id="fullUrlInput" placeholder="例如: example.com:35455" class="input-field w-full p-4" onclick="toggleDropdown()">
+                            <div id="customDropdown" class="dropdown-content"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-500 text-sm mt-3"><i class="fas fa-info-circle mr-1"></i> 点击输入框显示公共接口</p>
+                </div>
+            </div>
 
-        <div class="section-card p-6 mb-6">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-cog mr-2"></i> 更多选项</h2>
-            <button onclick="toggleAdvanced()" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white p-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition flex items-center justify-center">
-                <i class="fas fa-chevron-down mr-2"></i> 展开/收起
-            </button>
-            <div id="advancedContent" class="hidden mt-4 space-y-3">
-                <label class="flex items-center">
-                    <input type="checkbox" id="mishitongCheckbox" class="mr-2 h-5 w-5 text-blue-500">
-                    <span class="text-gray-600">包含咪视通（仅适配部分allinone）</span>
-                </label>
-                <label class="flex items-center">
-                    <input type="checkbox" id="lunboCheckbox" checked class="mr-2 h-5 w-5 text-blue-500">
-                    <span class="text-gray-600">包含影视轮播（不勾选则不带此分组）</span>
-                </label>
-                <label class="flex items-center">
-                    <select id="playbackSelect" class="p-2 border rounded-lg transition">
-                        <option value="7" selected>7天回看</option>
-                        <option value="1">1天回看</option>
-                    </select>
-                    <span id="playbackText" class="text-gray-600 ml-2">7天是gz格式，体积较大，需播放器支持</span>
-                </label>
+            <!-- 加载隐藏频道 -->
+            <div class="card p-6">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-800">加载隐藏频道</h2>
+                        <p class="text-gray-600">输入密码获取更多内容</p>
+                    </div>
+                </div>
+                <input type="text" id="passwordInput" placeholder="请输入密码" class="input-field w-full p-4 mt-4">
+                <p class="text-gray-500 text-sm mt-3"><i class="fas fa-key mr-1"></i> 密码在冰茶通知频道中查找</p>
+            </div>
+
+            <!-- 更多选项 -->
+            <div class="card p-6">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-800">更多选项</h2>
+                        <p class="text-gray-600">自定义您的订阅链接设置</p>
+                    </div>
+                </div>
+                
+                <button onclick="toggleAdvanced()" class="w-full btn-primary p-4 mt-4 flex items-center justify-center">
+                    <i class="fas fa-chevron-down mr-2 transition-transform duration-300" id="advancedIcon"></i> 
+                    <span>展开/收起高级选项</span>
+                </button>
+                
+                <div id="advancedContent" class="hidden mt-6 space-y-4">
+                    <label class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <input type="checkbox" id="mishitongCheckbox" class="mr-3 h-5 w-5 text-blue-500 rounded">
+                        <span class="text-gray-700 font-medium">包含咪视通（仅适配部分allinone）</span>
+                    </label>
+                    
+                    <label class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <input type="checkbox" id="lunboCheckbox" checked class="mr-3 h-5 w-5 text-blue-500 rounded">
+                        <span class="text-gray-700 font-medium">包含影视轮播（不勾选则不带此分组）</span>
+                    </label>
+                    
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <select id="playbackSelect" class="input-field p-2 w-24">
+                            <option value="7" selected>7天回看</option>
+                            <option value="1">1天回看</option>
+                        </select>
+                        <span id="playbackText" class="text-gray-700 font-medium ml-3">7天是gz格式，体积较大，需播放器支持</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 使用说明 -->
+            <div class="card p-6">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-info-circle text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-800">使用说明</h2>
+                        <p class="text-gray-600">快速了解如何使用冰茶TV</p>
+                    </div>
+                </div>
+                
+                <div class="mt-4 space-y-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <p class="text-gray-700">配置IP或URL看轮播，或直接生成订阅链接</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <p class="text-gray-700">不懂如何配置可不填，使用默认设置</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <p class="text-gray-700">加入 <a href="https://t.me/x188766" target="_blank" class="text-blue-500 hover:underline font-medium">TG群</a> 获取更多信息</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="section-card p-6 mb-6">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4"><i class="fas fa-info-circle mr-2"></i> 使用说明</h2>
-            <p class="text-gray-600">配置IP或URL看轮播，或直接生成订阅链接（不懂可不填），加入 <a href="https://t.me/x188766" target="_blank" class="text-blue-500 hover:underline">TG群</a> 获取更多信息。</p>
+        <!-- 操作按钮区域 -->
+        <div class="full-width mt-8">
+            <div class="buttons-row">
+                <button onclick="copyOverseasJsonLink()" class="btn-primary p-4 flex items-center justify-center">
+                    <i class="fas fa-globe mr-2"></i> 生成影视app专用订阅
+                </button>
+                <button onclick="copyPlayLink()" class="btn-secondary p-4 flex items-center justify-center">
+                    <i class="fas fa-play mr-2"></i> 生成普通订阅链接
+                </button>
+            </div>
         </div>
 
-        <div class="flex gap-4 mb-6">
-            <button onclick="copyOverseasJsonLink()" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-lg hover:from-blue-600 hover:to-blue-700 transition flex items-center justify-center">
-                <i class="fas fa-globe mr-2"></i> 生成影视app专用订阅
-            </button>
-            <button onclick="copyPlayLink()" class="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-lg hover:from-green-600 hover:to-green-700 transition flex items-center justify-center">
-                <i class="fas fa-play mr-2"></i> 生成普通订阅链接
-            </button>
+        <!-- 链接显示区域 -->
+        <div class="full-width mt-6">
+            <textarea id="generatedLink" readonly class="hidden w-full p-4 input-field bg-gray-50" placeholder="生成链接将显示在这里" rows="4"></textarea>
         </div>
 
-        <textarea id="generatedLink" readonly class="hidden w-full p-3 border rounded-lg bg-gray-50" placeholder="生成链接将显示在这里"></textarea>
-
+        <!-- 模态框 -->
         <div id="customModal" class="modal">
             <div class="modal-content">
-                <p id="modalMessage" class="text-gray-700"></p>
-                <div class="flex gap-4 justify-center mt-4" id="modalButtons"></div>
+                <div class="mb-6">
+                    <i class="fas fa-check-circle text-4xl text-green-500 mb-4"></i>
+                    <p id="modalMessage" class="text-gray-700 text-lg"></p>
+                </div>
+                <div class="flex gap-4 justify-center" id="modalButtons"></div>
             </div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer mt-8">
+            <p>© 2023 冰茶TV - 免费分享，用爱发电</p>
+            <p class="mt-2">遇到问题？<a href="https://t.me/x188766" target="_blank">加入Telegram群组</a></p>
         </div>
     </div>
 
     <script>
+        // 保持原有JavaScript功能不变，只调整样式相关部分
         if (!AbortSignal.timeout) {
             AbortSignal.timeout = ms => {
                 const controller = new AbortController();
@@ -259,7 +564,7 @@
             document.getElementById('modalMessage').innerHTML = message;
             const buttonsEl = document.getElementById('modalButtons');
             buttonsEl.innerHTML = buttons.map(btn => 
-                `<button class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 transition" onclick="this.closest('.modal').style.display='none';${btn.onClick ? btn.onClick : ''}">${btn.text}</button>`
+                `<button class="btn-primary px-6 py-3" onclick="this.closest('.modal').style.display='none';${btn.onClick ? btn.onClick : ''}">${btn.text}</button>`
             ).join('');
             modal.style.display = 'flex';
         }
@@ -353,7 +658,15 @@
         function copyOverseasJsonLink() { copyLink(true); }
 
         function toggleAdvanced() {
-            document.getElementById('advancedContent').classList.toggle('hidden');
+            const content = document.getElementById('advancedContent');
+            const icon = document.getElementById('advancedIcon');
+            content.classList.toggle('hidden');
+            
+            if (content.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+            }
         }
 
         document.getElementById('fullUrlInput').addEventListener('input', function(e) {

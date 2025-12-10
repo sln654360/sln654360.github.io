@@ -658,9 +658,13 @@
         
         document.getElementById('playbackSelect').addEventListener('change', function() {
             const playbackText = document.getElementById('playbackText');
-            playbackText.textContent = this.value === '1' 
-                ? '1天是xml格式，体积小，兼容性更好' 
-                : '7天是gz格式，体积较大，需播放器支持';
+            if (this.value === '1') {
+                playbackText.textContent = '1天是xml格式，体积小，兼容性更好';
+            } else if (this.value === 'en') {
+                playbackText.textContent = '英语频道专用EPG/配置，来自YanG';
+            } else {
+                playbackText.textContent = '7天是gz格式，体积较大，需播放器支持';
+            }
         });
 
         function openTab(tabName) {

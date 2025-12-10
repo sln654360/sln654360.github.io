@@ -566,6 +566,7 @@
             if (!includeLunbo) params.push('lunbo=false');
             if (password) params.push(`mima=${encodeURIComponent(password)}`);
             if (playbackDays === '1') params.push('huikan=1');
+            if (playbackDays === 'en') params.push('huikan=en');
             return params.length ? `${baseUrl}&${params.join('&')}` : baseUrl;
         }
 

@@ -255,7 +255,6 @@
 </head>
 <body class="bg-gray-50">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
-        <!-- 头部区域 -->
         <div class="card mb-8">
             <div class="header-gradient px-6 py-8">
                 <div class="relative z-10">
@@ -279,9 +278,7 @@
             </div>
         </div>
 
-        <!-- 主要内容区域 - 使用网格布局 -->
         <div class="grid-layout">
-            <!-- 可选轮播设置 -->
             <div class="card p-6">
                 <div class="feature-item">
                     <div class="feature-icon">
@@ -319,7 +316,6 @@
                 </div>
             </div>
 
-            <!-- 加载隐藏频道 -->
             <div class="card p-6">
                 <div class="feature-item">
                     <div class="feature-icon">
@@ -334,7 +330,6 @@
                 <p class="text-gray-500 text-sm mt-3"><i class="fas fa-key mr-1"></i> 密码在冰茶通知频道中查找</p>
             </div>
 
-            <!-- 更多选项 -->
             <div class="card p-6">
                 <div class="feature-item">
                     <div class="feature-icon">
@@ -353,11 +348,6 @@
                 
                 <div id="advancedContent" class="hidden mt-6 space-y-4">
                     <label class="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <input type="checkbox" id="mishitongCheckbox" class="mr-3 h-5 w-5 text-blue-500 rounded">
-                        <span class="text-gray-700 font-medium">包含咪视通（仅适配部分allinone）</span>
-                    </label>
-                    
-                    <label class="flex items-center p-3 bg-gray-50 rounded-lg">
                         <input type="checkbox" id="lunboCheckbox" checked class="mr-3 h-5 w-5 text-blue-500 rounded">
                         <span class="text-gray-700 font-medium">包含影视轮播（不勾选则不带此分组）</span>
                     </label>
@@ -373,7 +363,6 @@
                 </div>
             </div>
 
-            <!-- 使用说明 -->
             <div class="card p-6">
                 <div class="feature-item">
                     <div class="feature-icon">
@@ -402,7 +391,6 @@
             </div>
         </div>
 
-        <!-- 操作按钮区域 -->
         <div class="full-width mt-8">
             <div class="buttons-row">
                 <button onclick="copyOverseasJsonLink()" class="btn-primary p-4 flex items-center justify-center">
@@ -414,12 +402,10 @@
             </div>
         </div>
 
-        <!-- 链接显示区域 -->
         <div class="full-width mt-6">
             <textarea id="generatedLink" readonly class="hidden w-full p-3 input-field bg-gray-50" placeholder="生成链接将显示在这里" rows="4"></textarea>
         </div>
 
-        <!-- 模态框 -->
         <div id="customModal" class="modal">
             <div class="modal-content">
                 <div class="mb-6">
@@ -430,7 +416,6 @@
             </div>
         </div>
 
-        <!-- 页脚 -->
         <div class="footer mt-8 text-center text-gray-500 text-sm">
             <p>© <span id="currentYear"></span> 冰茶TV - 免费分享，用爱发电</p>
             <p class="mt-2">遇到问题？<a href="https://t.me/x188766" target="_blank" class="text-blue-500 hover:underline">加入Telegram群组</a></p>
@@ -557,12 +542,13 @@
             }
         }
 
-        function generatePlayLink(ip, includeMishitong, includeLunbo, fullUrl = '', password = '', playbackDays = '7') {
+        // Updated function: Removed mishitong parameter
+        function generatePlayLink(ip, includeLunbo, fullUrl = '', password = '', playbackDays = '7') {
             const baseUrl = fullUrl 
                 ? `https://bc.188766.xyz/?url=${needsUrlEncoding(fullUrl) ? encodeURIComponent(fullUrl) : fullUrl}`
                 : `https://bc.188766.xyz/?ip=${ip || ''}`;
             const params = [];
-            if (includeMishitong) params.push('mishitong=true');
+            // mishitong logic removed
             if (!includeLunbo) params.push('lunbo=false');
             if (password) params.push(`mima=${encodeURIComponent(password)}`);
             if (playbackDays === '1') params.push('huikan=1');
@@ -576,7 +562,7 @@
                 : '';
             const fullUrl = ipInput ? '' : getFullUrl();
             const options = {
-                includeMishitong: document.getElementById('mishitongCheckbox').checked,
+                // mishitong checkbox retrieval removed
                 includeLunbo: document.getElementById('lunboCheckbox').checked,
                 password: document.getElementById('passwordInput').value.trim(),
                 playbackDays: document.getElementById('playbackSelect').value
@@ -586,7 +572,8 @@
                 return showModal('配置错误：只能选择一种方式（IP或URL）！', [{ text: '确定' }]);
             }
 
-            let playLink = generatePlayLink(ipInput, options.includeMishitong, options.includeLunbo, fullUrl, options.password, options.playbackDays);
+            // Updated function call without mishitong
+            let playLink = generatePlayLink(ipInput, options.includeLunbo, fullUrl, options.password, options.playbackDays);
             if (isOverseas) playLink += '&haiwai=true';
             copyToClipboard(playLink, isOverseas 
                 ? '影视专用接口已复制！请粘贴到影视或OK影视的直播接口！' 
